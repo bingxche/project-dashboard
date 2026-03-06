@@ -1,5 +1,5 @@
 {
-  "collected_at": "2026-03-05T08:12:55Z",
+  "collected_at": "2026-03-06T08:11:10Z",
   "prs": [
     {
       "number": 172,
@@ -48,6 +48,18 @@
       "html_url": "https://github.com/ROCm/FlyDSL/pull/133",
       "labels": [],
       "draft": true
+    },
+    {
+      "number": 175,
+      "title": "[FLYDSL]: add logical_divide 2D by-mode mlir tests",
+      "author": "xudoyuan",
+      "state": "closed",
+      "merged": true,
+      "created_at": "2026-03-05T08:37:46Z",
+      "updated_at": "2026-03-06T00:22:37Z",
+      "html_url": "https://github.com/ROCm/FlyDSL/pull/175",
+      "labels": [],
+      "draft": false
     },
     {
       "number": 174,
@@ -772,20 +784,6 @@
       "created_at": "2026-01-31T08:01:28Z",
       "updated_at": "2026-02-02T06:49:47Z",
       "html_url": "https://github.com/ROCm/FlyDSL/pull/77",
-      "labels": [
-        "enhancement"
-      ],
-      "draft": false
-    },
-    {
-      "number": 74,
-      "title": "[MoE] Support non-atomic reduce path for Stage2 large prefill workloads",
-      "author": "aoli26",
-      "state": "closed",
-      "merged": true,
-      "created_at": "2026-01-28T08:38:15Z",
-      "updated_at": "2026-01-30T01:42:24Z",
-      "html_url": "https://github.com/ROCm/FlyDSL/pull/74",
       "labels": [
         "enhancement"
       ],

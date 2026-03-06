@@ -1,43 +1,43 @@
 {
-  "collected_at": "2026-03-05T08:15:02Z",
+  "collected_at": "2026-03-06T08:12:56Z",
   "project": "atom",
   "repo": "ROCm/ATOM",
   "pr_velocity": {
     "this_week": {
-      "opened": 27,
-      "merged": 25,
+      "opened": 29,
+      "merged": 23,
       "closed": 2
     },
     "last_week": {
       "opened": 14,
-      "merged": 4,
+      "merged": 7,
       "closed": 3
     },
-    "median_time_to_merge_hours": 11.3,
-    "merge_count": 29,
+    "median_time_to_merge_hours": 10.9,
+    "merge_count": 30,
     "stale_prs": 12
   },
   "contributors": {
     "active_this_week": 15,
-    "total_contributors": 23,
+    "total_contributors": 24,
     "top_contributors": [
       {
         "author": "gyohuangxin",
         "prs_submitted": 38,
         "prs_merged": 36,
-        "commits": 18
+        "commits": 19
+      },
+      {
+        "author": "ZhangLirong-amd",
+        "prs_submitted": 13,
+        "prs_merged": 11,
+        "commits": 3
       },
       {
         "author": "valarLip",
         "prs_submitted": 12,
         "prs_merged": 11,
         "commits": 8
-      },
-      {
-        "author": "ZhangLirong-amd",
-        "prs_submitted": 12,
-        "prs_merged": 11,
-        "commits": 4
       },
       {
         "author": "ChuanLi1101",

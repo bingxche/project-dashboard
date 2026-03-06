@@ -1,15 +1,87 @@
 {
-  "collected_at": "2026-03-05T08:12:30Z",
+  "collected_at": "2026-03-06T08:10:44Z",
   "prs": [
     {
       "number": 9561,
-      "title": "[AMD]Support ScaleFactor=16 and E4M3 Scale and Add scale_factor to DotScaledOp",
+      "title": "[AMD]Support ScaleFactor=16 and E4M3 Scale for DotScaledOp",
       "author": "knwng",
       "state": "open",
       "merged": false,
       "created_at": "2026-02-25T02:43:25Z",
-      "updated_at": "2026-03-05T07:40:59Z",
+      "updated_at": "2026-03-06T07:29:21Z",
       "html_url": "https://github.com/triton-lang/triton/pull/9561",
+      "labels": [],
+      "draft": false
+    },
+    {
+      "number": 9628,
+      "title": "[AMD] Add gfx906 (Radeon VII / MI50 / MI60) target",
+      "author": "LunNova",
+      "state": "open",
+      "merged": false,
+      "created_at": "2026-03-03T19:16:51Z",
+      "updated_at": "2026-03-06T06:42:25Z",
+      "html_url": "https://github.com/triton-lang/triton/pull/9628",
+      "labels": [],
+      "draft": true
+    },
+    {
+      "number": 9585,
+      "title": "[AMD] Fixed `make_desc` lowering - i.e., findEncodingFromUsers ",
+      "author": "ravil-mobile",
+      "state": "closed",
+      "merged": true,
+      "created_at": "2026-02-26T13:47:27Z",
+      "updated_at": "2026-03-06T05:45:01Z",
+      "html_url": "https://github.com/triton-lang/triton/pull/9585",
+      "labels": [],
+      "draft": false
+    },
+    {
+      "number": 9604,
+      "title": "[AMD] Add num_threads, num_warps, and smid to tl.extra.hip",
+      "author": "brucechanglongxu",
+      "state": "closed",
+      "merged": true,
+      "created_at": "2026-02-28T05:24:38Z",
+      "updated_at": "2026-03-06T05:43:32Z",
+      "html_url": "https://github.com/triton-lang/triton/pull/9604",
+      "labels": [],
+      "draft": false
+    },
+    {
+      "number": 9657,
+      "title": "[Bench][AMD]Support Scale Preshuffling for Scale32 on GFX1250",
+      "author": "knwng",
+      "state": "closed",
+      "merged": true,
+      "created_at": "2026-03-05T18:41:36Z",
+      "updated_at": "2026-03-06T04:51:32Z",
+      "html_url": "https://github.com/triton-lang/triton/pull/9657",
+      "labels": [],
+      "draft": false
+    },
+    {
+      "number": 9619,
+      "title": "[AMD] Enable buffer ops for i64 offsets in ConvertToBufferOps",
+      "author": "nithinsubbiah",
+      "state": "closed",
+      "merged": true,
+      "created_at": "2026-03-02T18:09:06Z",
+      "updated_at": "2026-03-06T02:29:31Z",
+      "html_url": "https://github.com/triton-lang/triton/pull/9619",
+      "labels": [],
+      "draft": false
+    },
+    {
+      "number": 9655,
+      "title": "[AMD][FpSan] Fix dot emulation for MFMA/WMMA encodings",
+      "author": "kelesvol",
+      "state": "open",
+      "merged": false,
+      "created_at": "2026-03-05T13:38:53Z",
+      "updated_at": "2026-03-05T23:11:04Z",
+      "html_url": "https://github.com/triton-lang/triton/pull/9655",
       "labels": [],
       "draft": false
     },
@@ -20,8 +92,44 @@
       "state": "open",
       "merged": false,
       "created_at": "2026-03-05T00:16:44Z",
-      "updated_at": "2026-03-05T06:23:58Z",
+      "updated_at": "2026-03-05T18:08:49Z",
       "html_url": "https://github.com/triton-lang/triton/pull/9646",
+      "labels": [],
+      "draft": false
+    },
+    {
+      "number": 9541,
+      "title": "[AMD] CanonicalizePointers: Handle different base pointers and offsets",
+      "author": "kelesvol",
+      "state": "open",
+      "merged": false,
+      "created_at": "2026-02-23T12:07:17Z",
+      "updated_at": "2026-03-05T17:37:53Z",
+      "html_url": "https://github.com/triton-lang/triton/pull/9541",
+      "labels": [],
+      "draft": false
+    },
+    {
+      "number": 9651,
+      "title": "[AMD]Add GFX1250 Target Info",
+      "author": "knwng",
+      "state": "closed",
+      "merged": true,
+      "created_at": "2026-03-05T08:26:15Z",
+      "updated_at": "2026-03-05T16:30:40Z",
+      "html_url": "https://github.com/triton-lang/triton/pull/9651",
+      "labels": [],
+      "draft": false
+    },
+    {
+      "number": 9614,
+      "title": "[AMD] Load libhipblaslt from via. rocm_sdk lib if TheRock wheels are used",
+      "author": "jammm",
+      "state": "closed",
+      "merged": true,
+      "created_at": "2026-03-02T07:42:48Z",
+      "updated_at": "2026-03-05T10:14:11Z",
+      "html_url": "https://github.com/triton-lang/triton/pull/9614",
       "labels": [],
       "draft": false
     },
@@ -74,18 +182,6 @@
       "draft": false
     },
     {
-      "number": 9628,
-      "title": "[AMD] Add gfx906 (Radeon VII / MI50 / MI60) target",
-      "author": "LunNova",
-      "state": "open",
-      "merged": false,
-      "created_at": "2026-03-03T19:16:51Z",
-      "updated_at": "2026-03-03T21:13:20Z",
-      "html_url": "https://github.com/triton-lang/triton/pull/9628",
-      "labels": [],
-      "draft": true
-    },
-    {
       "number": 9629,
       "title": "[AMD] Fix two broken dot lit tests that missed -COUNT-",
       "author": "LunNova",
@@ -110,30 +206,6 @@
       "draft": false
     },
     {
-      "number": 9619,
-      "title": "[AMD] Enable buffer ops for i64 offsets in ConvertToBufferOps",
-      "author": "nithinsubbiah",
-      "state": "open",
-      "merged": false,
-      "created_at": "2026-03-02T18:09:06Z",
-      "updated_at": "2026-03-03T00:14:10Z",
-      "html_url": "https://github.com/triton-lang/triton/pull/9619",
-      "labels": [],
-      "draft": false
-    },
-    {
-      "number": 9614,
-      "title": "[AMD] Load libhipblaslt from via. rocm_sdk lib if TheRock wheels are used",
-      "author": "jammm",
-      "state": "closed",
-      "merged": true,
-      "created_at": "2026-03-02T07:42:48Z",
-      "updated_at": "2026-03-02T19:28:18Z",
-      "html_url": "https://github.com/triton-lang/triton/pull/9614",
-      "labels": [],
-      "draft": false
-    },
-    {
       "number": 7756,
       "title": "[AMD] Added initial support for mxfp6 data type",
       "author": "ravil-mobile",
@@ -142,18 +214,6 @@
       "created_at": "2025-08-04T12:54:15Z",
       "updated_at": "2026-03-02T13:35:09Z",
       "html_url": "https://github.com/triton-lang/triton/pull/7756",
-      "labels": [],
-      "draft": true
-    },
-    {
-      "number": 9585,
-      "title": "[AMD] Fixed `make_desc` lowering - i.e., findEncodingFromUsers ",
-      "author": "ravil-mobile",
-      "state": "open",
-      "merged": false,
-      "created_at": "2026-02-26T13:47:27Z",
-      "updated_at": "2026-03-02T13:10:59Z",
-      "html_url": "https://github.com/triton-lang/triton/pull/9585",
       "labels": [],
       "draft": true
     },
@@ -178,18 +238,6 @@
       "created_at": "2026-02-28T05:54:21Z",
       "updated_at": "2026-02-28T06:25:35Z",
       "html_url": "https://github.com/triton-lang/triton/pull/9605",
-      "labels": [],
-      "draft": false
-    },
-    {
-      "number": 9604,
-      "title": "[AMD] Add num_threads, num_warps, and smid to tl.extra.hip",
-      "author": "brucechanglongxu",
-      "state": "open",
-      "merged": false,
-      "created_at": "2026-02-28T05:24:38Z",
-      "updated_at": "2026-02-28T05:24:39Z",
-      "html_url": "https://github.com/triton-lang/triton/pull/9604",
       "labels": [],
       "draft": false
     },
@@ -298,18 +346,6 @@
       "created_at": "2026-02-23T17:20:42Z",
       "updated_at": "2026-02-23T19:26:38Z",
       "html_url": "https://github.com/triton-lang/triton/pull/9545",
-      "labels": [],
-      "draft": false
-    },
-    {
-      "number": 9541,
-      "title": "[AMD] CanonicalizePointers: Handle different base pointers and offsets",
-      "author": "kelesvol",
-      "state": "open",
-      "merged": false,
-      "created_at": "2026-02-23T12:07:17Z",
-      "updated_at": "2026-02-23T18:09:54Z",
-      "html_url": "https://github.com/triton-lang/triton/pull/9541",
       "labels": [],
       "draft": false
     },
@@ -506,66 +542,6 @@
       "draft": false
     },
     {
-      "number": 9455,
-      "title": "[AMD] Enable floating-point sanitizer (FpSan) support",
-      "author": "kelesvol",
-      "state": "closed",
-      "merged": true,
-      "created_at": "2026-02-13T12:35:26Z",
-      "updated_at": "2026-02-17T19:59:20Z",
-      "html_url": "https://github.com/triton-lang/triton/pull/9455",
-      "labels": [],
-      "draft": false
-    },
-    {
-      "number": 9487,
-      "title": "[AMD][BACKEND] Properly handle PointerTypes in v_perm ConvertLayout lowering",
-      "author": "AlexAUT",
-      "state": "closed",
-      "merged": true,
-      "created_at": "2026-02-17T17:33:19Z",
-      "updated_at": "2026-02-17T18:19:51Z",
-      "html_url": "https://github.com/triton-lang/triton/pull/9487",
-      "labels": [],
-      "draft": false
-    },
-    {
-      "number": 9302,
-      "title": "[AMD][gfx1250] Support TDM in software pipelining ",
-      "author": "yangshuxin",
-      "state": "closed",
-      "merged": true,
-      "created_at": "2026-01-26T16:26:30Z",
-      "updated_at": "2026-02-17T02:15:44Z",
-      "html_url": "https://github.com/triton-lang/triton/pull/9302",
-      "labels": [],
-      "draft": false
-    },
-    {
-      "number": 9449,
-      "title": "[AMD] Added hw FP upcast conversions for gfx1250",
-      "author": "ravil-mobile",
-      "state": "closed",
-      "merged": true,
-      "created_at": "2026-02-13T00:25:35Z",
-      "updated_at": "2026-02-16T19:22:30Z",
-      "html_url": "https://github.com/triton-lang/triton/pull/9449",
-      "labels": [],
-      "draft": false
-    },
-    {
-      "number": 9476,
-      "title": "[AMD] Disable True16 for assembler on gfx11 (#9447)",
-      "author": "jataylo",
-      "state": "closed",
-      "merged": true,
-      "created_at": "2026-02-16T14:13:22Z",
-      "updated_at": "2026-02-16T14:56:35Z",
-      "html_url": "https://github.com/triton-lang/triton/pull/9476",
-      "labels": [],
-      "draft": false
-    },
-    {
       "number": 9195,
       "title": "[AMD][mxfp4] ttg::Fp4ToFpOp add support for FP4 upcast to FP32",
       "author": "jwu10003",
@@ -720,6 +696,30 @@
       "html_url": "https://github.com/triton-lang/triton/pull/7616",
       "labels": [],
       "draft": true
+    },
+    {
+      "number": 7721,
+      "title": "[WIP] [AMD] Investigate custom epilogue peeling",
+      "author": "PMylon",
+      "state": "open",
+      "merged": false,
+      "created_at": "2025-07-31T18:19:56Z",
+      "updated_at": "2025-08-01T09:31:47Z",
+      "html_url": "https://github.com/triton-lang/triton/pull/7721",
+      "labels": [],
+      "draft": true
+    },
+    {
+      "number": 7147,
+      "title": "[BACKEND] Clean up hard code for NV and AMD GPU in the common TritonGPU dialect to support third party GPU extension.",
+      "author": "chengjunlu",
+      "state": "open",
+      "merged": false,
+      "created_at": "2025-06-11T00:53:24Z",
+      "updated_at": "2025-07-14T23:21:38Z",
+      "html_url": "https://github.com/triton-lang/triton/pull/7147",
+      "labels": [],
+      "draft": false
     }
   ]
 }

@@ -1,11 +1,11 @@
 {
-  "collected_at": "2026-03-05T08:13:34Z",
+  "collected_at": "2026-03-06T08:11:39Z",
   "project": "jax",
   "repo": "jax-ml/jax",
   "pr_velocity": {
     "this_week": {
-      "opened": 6,
-      "merged": 3,
+      "opened": 7,
+      "merged": 5,
       "closed": 0
     },
     "last_week": {
@@ -29,7 +29,7 @@
       },
       {
         "author": "magaonka-amd",
-        "prs_submitted": 7,
+        "prs_submitted": 8,
         "prs_merged": 6,
         "commits": 0
       },
@@ -47,14 +47,14 @@
       },
       {
         "author": "gulsumgudukbay",
-        "prs_submitted": 4,
-        "prs_merged": 2,
+        "prs_submitted": 3,
+        "prs_merged": 1,
         "commits": 0
       },
       {
         "author": "phambinhfin",
         "prs_submitted": 3,
-        "prs_merged": 1,
+        "prs_merged": 3,
         "commits": 0
       },
       {
@@ -70,13 +70,13 @@
         "commits": 0
       },
       {
-        "author": "Ruturaj4",
-        "prs_submitted": 2,
-        "prs_merged": 2,
+        "author": "psanal35",
+        "prs_submitted": 1,
+        "prs_merged": 0,
         "commits": 0
       },
       {
-        "author": "psanal35",
+        "author": "draganmladjenovic",
         "prs_submitted": 1,
         "prs_merged": 0,
         "commits": 0
@@ -86,14 +86,14 @@
   },
   "issue_health": {
     "total_open": 33,
-    "opened_this_week": 2,
+    "opened_this_week": 1,
     "closed_this_week": 2,
-    "unanswered": 13
+    "unanswered": 14
   },
   "ci_health": null,
   "ci_signal_time": null,
   "release_cadence": {
-    "days_since_last": 2.9,
+    "days_since_last": 3.9,
     "avg_interval_days": 18.4,
     "total_releases": 5,
     "latest_tag": "jax-v0.9.1"

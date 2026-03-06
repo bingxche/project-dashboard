@@ -1,22 +1,6 @@
 {
-  "collected_at": "2026-03-05T08:11:32Z",
+  "collected_at": "2026-03-06T08:09:41Z",
   "prs": [
-    {
-      "number": 35516,
-      "title": "[ROCm] Include prebuilt rocm plugin pkgs as deps to tests",
-      "author": "alekstheod",
-      "state": "open",
-      "merged": false,
-      "created_at": "2026-03-02T18:02:31Z",
-      "updated_at": "2026-03-05T08:05:21Z",
-      "html_url": "https://github.com/jax-ml/jax/pull/35516",
-      "labels": [
-        "CI",
-        "AMD GPU",
-        "GPU"
-      ],
-      "draft": false
-    },
     {
       "number": 35283,
       "title": "[ROCm] Add ROCm pytest results collection",
@@ -24,10 +8,25 @@
       "state": "open",
       "merged": false,
       "created_at": "2026-02-20T23:18:56Z",
-      "updated_at": "2026-03-05T02:41:30Z",
+      "updated_at": "2026-03-05T22:44:19Z",
       "html_url": "https://github.com/jax-ml/jax/pull/35283",
       "labels": [],
       "draft": false
+    },
+    {
+      "number": 35550,
+      "title": "[ROCm] Add ROCm wheel build and test pipeline to continuous CI",
+      "author": "alekstheod",
+      "state": "open",
+      "merged": false,
+      "created_at": "2026-03-03T11:01:34Z",
+      "updated_at": "2026-03-05T20:44:23Z",
+      "html_url": "https://github.com/jax-ml/jax/pull/35550",
+      "labels": [
+        "CI",
+        "AMD GPU"
+      ],
+      "draft": true
     },
     {
       "number": 35288,
@@ -36,8 +35,44 @@
       "state": "open",
       "merged": false,
       "created_at": "2026-02-21T13:03:07Z",
-      "updated_at": "2026-03-04T23:02:02Z",
+      "updated_at": "2026-03-05T20:31:37Z",
       "html_url": "https://github.com/jax-ml/jax/pull/35288",
+      "labels": [],
+      "draft": false
+    },
+    {
+      "number": 34768,
+      "title": "[ROCm] Add ROCm encoding for test_struct_encoding_determinism",
+      "author": "AratiGanesh",
+      "state": "open",
+      "merged": false,
+      "created_at": "2026-02-02T16:27:00Z",
+      "updated_at": "2026-03-05T20:30:33Z",
+      "html_url": "https://github.com/jax-ml/jax/pull/34768",
+      "labels": [],
+      "draft": false
+    },
+    {
+      "number": 35638,
+      "title": "[ROCm] Fix HIP memory leaks in RNN kernels",
+      "author": "magaonka-amd",
+      "state": "open",
+      "merged": false,
+      "created_at": "2026-03-05T16:19:36Z",
+      "updated_at": "2026-03-05T17:37:34Z",
+      "html_url": "https://github.com/jax-ml/jax/pull/35638",
+      "labels": [],
+      "draft": true
+    },
+    {
+      "number": 34722,
+      "title": "[ROCm] ToT ROCm Unit Test Skips",
+      "author": "gulsumgudukbay",
+      "state": "open",
+      "merged": false,
+      "created_at": "2026-01-30T07:48:47Z",
+      "updated_at": "2026-03-05T15:07:46Z",
+      "html_url": "https://github.com/jax-ml/jax/pull/34722",
       "labels": [],
       "draft": false
     },
@@ -45,12 +80,47 @@
       "number": 34598,
       "title": "[ROCm] Implement approx_tanh for ROCm using OCML tanh function",
       "author": "phambinhfin",
+      "state": "closed",
+      "merged": true,
+      "created_at": "2026-01-23T15:03:12Z",
+      "updated_at": "2026-03-05T13:13:59Z",
+      "html_url": "https://github.com/jax-ml/jax/pull/34598",
+      "labels": [
+        "kokoro:force-run",
+        "pull ready"
+      ],
+      "draft": false
+    },
+    {
+      "number": 34602,
+      "title": "[ROCm] Fix and enable Pallas ops tests on ROCm",
+      "author": "phambinhfin",
+      "state": "closed",
+      "merged": true,
+      "created_at": "2026-01-23T15:26:33Z",
+      "updated_at": "2026-03-05T09:35:06Z",
+      "html_url": "https://github.com/jax-ml/jax/pull/34602",
+      "labels": [
+        "kokoro:force-run",
+        "pull ready",
+        "AMD GPU"
+      ],
+      "draft": false
+    },
+    {
+      "number": 35516,
+      "title": "[ROCm] Include prebuilt rocm plugin pkgs as deps to tests",
+      "author": "alekstheod",
       "state": "open",
       "merged": false,
-      "created_at": "2026-01-23T15:03:12Z",
-      "updated_at": "2026-03-04T21:28:28Z",
-      "html_url": "https://github.com/jax-ml/jax/pull/34598",
-      "labels": [],
+      "created_at": "2026-03-02T18:02:31Z",
+      "updated_at": "2026-03-05T08:25:48Z",
+      "html_url": "https://github.com/jax-ml/jax/pull/35516",
+      "labels": [
+        "CI",
+        "AMD GPU",
+        "GPU"
+      ],
       "draft": false
     },
     {
@@ -76,21 +146,6 @@
       "html_url": "https://github.com/jax-ml/jax/pull/35611",
       "labels": [],
       "draft": false
-    },
-    {
-      "number": 35550,
-      "title": "[ROCm] Add ROCm wheel build and test pipeline to continuous CI",
-      "author": "alekstheod",
-      "state": "open",
-      "merged": false,
-      "created_at": "2026-03-03T11:01:34Z",
-      "updated_at": "2026-03-04T17:49:12Z",
-      "html_url": "https://github.com/jax-ml/jax/pull/35550",
-      "labels": [
-        "CI",
-        "AMD GPU"
-      ],
-      "draft": true
     },
     {
       "number": 35534,
@@ -152,32 +207,6 @@
       "draft": false
     },
     {
-      "number": 34768,
-      "title": "[ROCm] Add ROCm encoding for test_struct_encoding_determinism",
-      "author": "AratiGanesh",
-      "state": "open",
-      "merged": false,
-      "created_at": "2026-02-02T16:27:00Z",
-      "updated_at": "2026-03-03T18:21:52Z",
-      "html_url": "https://github.com/jax-ml/jax/pull/34768",
-      "labels": [],
-      "draft": false
-    },
-    {
-      "number": 34602,
-      "title": "[ROCm] Fix and enable Pallas ops tests on ROCm",
-      "author": "phambinhfin",
-      "state": "open",
-      "merged": false,
-      "created_at": "2026-01-23T15:26:33Z",
-      "updated_at": "2026-03-03T11:38:29Z",
-      "html_url": "https://github.com/jax-ml/jax/pull/34602",
-      "labels": [
-        "AMD GPU"
-      ],
-      "draft": false
-    },
-    {
       "number": 34135,
       "title": "[ROCm] update to test if there are GPU events when doing profiling on\u2026",
       "author": "cj401-amd",
@@ -206,18 +235,6 @@
         "kokoro:force-run",
         "pull ready"
       ],
-      "draft": false
-    },
-    {
-      "number": 34722,
-      "title": "[ROCm] ToT ROCm Unit Test Skips",
-      "author": "gulsumgudukbay",
-      "state": "open",
-      "merged": false,
-      "created_at": "2026-01-30T07:48:47Z",
-      "updated_at": "2026-03-02T15:48:05Z",
-      "html_url": "https://github.com/jax-ml/jax/pull/34722",
-      "labels": [],
       "draft": false
     },
     {
@@ -665,37 +682,6 @@
       "labels": [
         "kokoro:force-run",
         "pull ready"
-      ],
-      "draft": false
-    },
-    {
-      "number": 34689,
-      "title": "[ROCm] Fix ROCm GPU architecture detection and route to Triton backend",
-      "author": "Ruturaj4",
-      "state": "closed",
-      "merged": true,
-      "created_at": "2026-01-29T00:15:47Z",
-      "updated_at": "2026-02-11T10:49:29Z",
-      "html_url": "https://github.com/jax-ml/jax/pull/34689",
-      "labels": [
-        "kokoro:force-run",
-        "pull ready"
-      ],
-      "draft": false
-    },
-    {
-      "number": 34578,
-      "title": "[ROCm] Unskip supported dtypes for testConvolutionsPreferredElementType on ROCm",
-      "author": "gulsumgudukbay",
-      "state": "closed",
-      "merged": true,
-      "created_at": "2026-01-23T01:12:49Z",
-      "updated_at": "2026-02-11T09:47:20Z",
-      "html_url": "https://github.com/jax-ml/jax/pull/34578",
-      "labels": [
-        "kokoro:force-run",
-        "pull ready",
-        "AMD GPU"
       ],
       "draft": false
     }

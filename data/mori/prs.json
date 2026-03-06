@@ -1,18 +1,6 @@
 {
-  "collected_at": "2026-03-05T08:12:52Z",
+  "collected_at": "2026-03-06T08:11:06Z",
   "prs": [
-    {
-      "number": 182,
-      "title": "Refactor: decouple torch, separate host/device compilation, add JIT with hardware auto-detection",
-      "author": "jhchouuu",
-      "state": "open",
-      "merged": false,
-      "created_at": "2026-03-04T08:39:21Z",
-      "updated_at": "2026-03-05T08:06:05Z",
-      "html_url": "https://github.com/ROCm/mori/pull/182",
-      "labels": [],
-      "draft": false
-    },
     {
       "number": 180,
       "title": "[UMP] Feat: add control plane implementation for unified memory pool",
@@ -20,8 +8,20 @@
       "state": "open",
       "merged": false,
       "created_at": "2026-03-03T15:01:19Z",
-      "updated_at": "2026-03-05T04:57:07Z",
+      "updated_at": "2026-03-06T07:17:43Z",
       "html_url": "https://github.com/ROCm/mori/pull/180",
+      "labels": [],
+      "draft": false
+    },
+    {
+      "number": 185,
+      "title": "Optimization: ep async kernel",
+      "author": "TianDi101",
+      "state": "open",
+      "merged": false,
+      "created_at": "2026-03-05T15:41:33Z",
+      "updated_at": "2026-03-05T15:41:33Z",
+      "html_url": "https://github.com/ROCm/mori/pull/185",
       "labels": [],
       "draft": false
     },
@@ -106,6 +106,30 @@
       "created_at": "2025-10-28T06:17:21Z",
       "updated_at": "2026-01-08T09:18:21Z",
       "html_url": "https://github.com/ROCm/mori/pull/99",
+      "labels": [],
+      "draft": false
+    },
+    {
+      "number": 186,
+      "title": "Fix: unify NIC detection logic across CMake, setup.py, and JIT",
+      "author": "jhchouuu",
+      "state": "closed",
+      "merged": true,
+      "created_at": "2026-03-06T06:03:04Z",
+      "updated_at": "2026-03-06T06:58:53Z",
+      "html_url": "https://github.com/ROCm/mori/pull/186",
+      "labels": [],
+      "draft": false
+    },
+    {
+      "number": 182,
+      "title": "Refactor: universal wheel with host/device separation, JIT with hardware auto-detection",
+      "author": "jhchouuu",
+      "state": "closed",
+      "merged": true,
+      "created_at": "2026-03-04T08:39:21Z",
+      "updated_at": "2026-03-06T03:34:50Z",
+      "html_url": "https://github.com/ROCm/mori/pull/182",
       "labels": [],
       "draft": false
     },
@@ -1138,18 +1162,6 @@
       "created_at": "2025-09-17T04:45:57Z",
       "updated_at": "2025-09-18T05:36:55Z",
       "html_url": "https://github.com/ROCm/mori/pull/71",
-      "labels": [],
-      "draft": false
-    },
-    {
-      "number": 64,
-      "title": "Feature: support bnxt ibgda",
-      "author": "jhchouuu",
-      "state": "closed",
-      "merged": true,
-      "created_at": "2025-09-05T12:19:47Z",
-      "updated_at": "2025-09-16T03:46:38Z",
-      "html_url": "https://github.com/ROCm/mori/pull/64",
       "labels": [],
       "draft": false
     }

@@ -1,26 +1,38 @@
 {
-  "collected_at": "2026-03-05T08:13:40Z",
+  "collected_at": "2026-03-06T08:11:44Z",
   "project": "xla",
   "repo": "openxla/xla",
   "pr_velocity": {
     "this_week": {
-      "opened": 15,
+      "opened": 26,
       "merged": 9,
-      "closed": 0
+      "closed": 1
     },
     "last_week": {
-      "opened": 10,
-      "merged": 8,
+      "opened": 8,
+      "merged": 7,
       "closed": 0
     },
     "median_time_to_merge_hours": 5.2,
     "merge_count": 30,
-    "stale_prs": 8
+    "stale_prs": 3
   },
   "contributors": {
-    "active_this_week": 9,
-    "total_contributors": 15,
+    "active_this_week": 10,
+    "total_contributors": 13,
     "top_contributors": [
+      {
+        "author": "mfrancepillois",
+        "prs_submitted": 7,
+        "prs_merged": 0,
+        "commits": 0
+      },
+      {
+        "author": "zoranjovanovic-ns",
+        "prs_submitted": 4,
+        "prs_merged": 0,
+        "commits": 0
+      },
       {
         "author": "Eetusjo",
         "prs_submitted": 4,
@@ -28,25 +40,13 @@
         "commits": 0
       },
       {
-        "author": "mfrancepillois",
+        "author": "magaonka-amd",
         "prs_submitted": 3,
         "prs_merged": 0,
         "commits": 0
       },
       {
-        "author": "alekstheod",
-        "prs_submitted": 3,
-        "prs_merged": 0,
-        "commits": 0
-      },
-      {
-        "author": "hsharsha",
-        "prs_submitted": 3,
-        "prs_merged": 0,
-        "commits": 0
-      },
-      {
-        "author": "zoranjovanovic-ns",
+        "author": "pemeliya",
         "prs_submitted": 2,
         "prs_merged": 0,
         "commits": 0
@@ -58,14 +58,14 @@
         "commits": 0
       },
       {
-        "author": "pemeliya",
-        "prs_submitted": 2,
+        "author": "leo-amd",
+        "prs_submitted": 1,
         "prs_merged": 0,
         "commits": 0
       },
       {
-        "author": "phambinhfin",
-        "prs_submitted": 2,
+        "author": "mmakevic-amd",
+        "prs_submitted": 1,
         "prs_merged": 0,
         "commits": 0
       },
@@ -76,7 +76,7 @@
         "commits": 0
       },
       {
-        "author": "leo-amd",
+        "author": "nurmukhametov",
         "prs_submitted": 1,
         "prs_merged": 0,
         "commits": 0
@@ -87,37 +87,37 @@
   "issue_health": {
     "total_open": 9,
     "opened_this_week": 0,
-    "closed_this_week": 3,
+    "closed_this_week": 4,
     "unanswered": 0
   },
   "ci_health": {
     "rocm": {
       "total_runs": 20,
-      "succeeded": 6,
-      "failed": 7,
-      "success_rate": 30.0
+      "succeeded": 0,
+      "failed": 18,
+      "success_rate": 0.0
     },
     "cuda": {
       "total_runs": 20,
-      "succeeded": 11,
-      "failed": 4,
-      "success_rate": 55.0
+      "succeeded": 16,
+      "failed": 2,
+      "success_rate": 80.0
     }
   },
   "ci_signal_time": {
     "rocm": {
       "sample_size": 20,
-      "median_minutes": 10.8,
-      "p90_minutes": 45.9,
-      "min_minutes": 1.1,
-      "max_minutes": 72.1
+      "median_minutes": 9.4,
+      "p90_minutes": 22.6,
+      "min_minutes": 0.4,
+      "max_minutes": 30.6
     },
     "cuda": {
       "sample_size": 20,
-      "median_minutes": 9.8,
-      "p90_minutes": 28.1,
-      "min_minutes": 1.2,
-      "max_minutes": 60.5
+      "median_minutes": 10.3,
+      "p90_minutes": 21.8,
+      "min_minutes": 8.7,
+      "max_minutes": 36.0
     }
   },
   "release_cadence": {
