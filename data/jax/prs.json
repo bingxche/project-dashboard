@@ -1,6 +1,42 @@
 {
-  "collected_at": "2026-03-08T08:06:39Z",
+  "collected_at": "2026-03-09T08:13:57Z",
   "prs": [
+    {
+      "number": 35283,
+      "title": "[ROCm] Add ROCm pytest results collection",
+      "author": "psanal35",
+      "state": "open",
+      "merged": false,
+      "created_at": "2026-02-20T23:18:56Z",
+      "updated_at": "2026-03-09T01:25:38Z",
+      "html_url": "https://github.com/jax-ml/jax/pull/35283",
+      "labels": [],
+      "draft": false
+    },
+    {
+      "number": 35710,
+      "title": "[ROCm] Add TF_ROCM_AMDGPU_TARGETS to rocm.bazelrc",
+      "author": "alekstheod",
+      "state": "open",
+      "merged": false,
+      "created_at": "2026-03-08T12:41:28Z",
+      "updated_at": "2026-03-08T20:22:34Z",
+      "html_url": "https://github.com/jax-ml/jax/pull/35710",
+      "labels": [],
+      "draft": false
+    },
+    {
+      "number": 35713,
+      "title": "[ROCm] Install AWS CLI in build workflow",
+      "author": "alekstheod",
+      "state": "open",
+      "merged": false,
+      "created_at": "2026-03-08T20:17:57Z",
+      "updated_at": "2026-03-08T20:18:07Z",
+      "html_url": "https://github.com/jax-ml/jax/pull/35713",
+      "labels": [],
+      "draft": false
+    },
     {
       "number": 35111,
       "title": "[ROCm] Add ROCm support for eigh export backwards compatibility tests",
@@ -31,18 +67,6 @@
         "CI",
         "AMD GPU"
       ],
-      "draft": false
-    },
-    {
-      "number": 35283,
-      "title": "[ROCm] Add ROCm pytest results collection",
-      "author": "psanal35",
-      "state": "open",
-      "merged": false,
-      "created_at": "2026-02-20T23:18:56Z",
-      "updated_at": "2026-03-06T21:33:24Z",
-      "html_url": "https://github.com/jax-ml/jax/pull/35283",
-      "labels": [],
       "draft": false
     },
     {

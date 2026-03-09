@@ -1,30 +1,30 @@
 {
-  "collected_at": "2026-03-08T08:09:26Z",
+  "collected_at": "2026-03-09T08:17:01Z",
   "project": "flydsl",
   "repo": "ROCm/FlyDSL",
   "pr_velocity": {
     "this_week": {
-      "opened": 13,
-      "merged": 10,
-      "closed": 7
-    },
-    "last_week": {
-      "opened": 20,
-      "merged": 17,
+      "opened": 12,
+      "merged": 9,
       "closed": 4
     },
-    "median_time_to_merge_hours": 20.3,
-    "merge_count": 29,
+    "last_week": {
+      "opened": 21,
+      "merged": 19,
+      "closed": 6
+    },
+    "median_time_to_merge_hours": 18.0,
+    "merge_count": 30,
     "stale_prs": 0
   },
   "contributors": {
-    "active_this_week": 13,
+    "active_this_week": 12,
     "total_contributors": 20,
     "top_contributors": [
       {
         "author": "coderfeli",
-        "prs_submitted": 14,
-        "prs_merged": 14,
+        "prs_submitted": 16,
+        "prs_merged": 15,
         "commits": 9
       },
       {
@@ -58,6 +58,12 @@
         "commits": 0
       },
       {
+        "author": "sunway513",
+        "prs_submitted": 3,
+        "prs_merged": 2,
+        "commits": 2
+      },
+      {
         "author": "gyohuangxin",
         "prs_submitted": 3,
         "prs_merged": 3,
@@ -74,21 +80,15 @@
         "prs_submitted": 3,
         "prs_merged": 3,
         "commits": 3
-      },
-      {
-        "author": "sunway513",
-        "prs_submitted": 2,
-        "prs_merged": 2,
-        "commits": 2
       }
     ],
     "bus_factor": 4
   },
   "issue_health": {
-    "total_open": 10,
-    "opened_this_week": 1,
-    "closed_this_week": 0,
-    "unanswered": 8
+    "total_open": 7,
+    "opened_this_week": 0,
+    "closed_this_week": 3,
+    "unanswered": 7
   },
   "ci_health": null,
   "ci_signal_time": null,

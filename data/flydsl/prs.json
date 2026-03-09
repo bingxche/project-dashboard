@@ -1,6 +1,30 @@
 {
-  "collected_at": "2026-03-08T08:07:44Z",
+  "collected_at": "2026-03-09T08:15:11Z",
   "prs": [
+    {
+      "number": 164,
+      "title": "Pr/v0.1",
+      "author": "coderfeli",
+      "state": "open",
+      "merged": false,
+      "created_at": "2026-03-02T06:25:52Z",
+      "updated_at": "2026-03-09T07:15:50Z",
+      "html_url": "https://github.com/ROCm/FlyDSL/pull/164",
+      "labels": [],
+      "draft": false
+    },
+    {
+      "number": 176,
+      "title": "[Docs] Add Sphinx documentation website with GitHub Actions deployment",
+      "author": "sunway513",
+      "state": "open",
+      "merged": false,
+      "created_at": "2026-03-09T02:00:21Z",
+      "updated_at": "2026-03-09T02:55:37Z",
+      "html_url": "https://github.com/ROCm/FlyDSL/pull/176",
+      "labels": [],
+      "draft": false
+    },
     {
       "number": 172,
       "title": "Add gfx1201 (RDNA4) support with WMMA GEMM kernel",
@@ -48,6 +72,18 @@
       "html_url": "https://github.com/ROCm/FlyDSL/pull/133",
       "labels": [],
       "draft": true
+    },
+    {
+      "number": 177,
+      "title": "Dev blockscale new api",
+      "author": "coderfeli",
+      "state": "closed",
+      "merged": true,
+      "created_at": "2026-03-09T06:33:22Z",
+      "updated_at": "2026-03-09T07:15:48Z",
+      "html_url": "https://github.com/ROCm/FlyDSL/pull/177",
+      "labels": [],
+      "draft": false
     },
     {
       "number": 175,

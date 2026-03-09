@@ -1,35 +1,35 @@
 {
-  "collected_at": "2026-03-08T08:08:18Z",
+  "collected_at": "2026-03-09T08:15:42Z",
   "project": "vllm",
   "repo": "vllm-project/vllm",
   "pr_velocity": {
     "this_week": {
       "opened": 56,
-      "merged": 48,
-      "closed": 1
+      "merged": 49,
+      "closed": 0
     },
     "last_week": {
-      "opened": 18,
+      "opened": 19,
       "merged": 6,
       "closed": 0
     },
-    "median_time_to_merge_hours": 153.3,
-    "merge_count": 73,
-    "stale_prs": 9
+    "median_time_to_merge_hours": 149.4,
+    "merge_count": 74,
+    "stale_prs": 10
   },
   "contributors": {
-    "active_this_week": 69,
-    "total_contributors": 89,
+    "active_this_week": 63,
+    "total_contributors": 87,
     "top_contributors": [
       {
         "author": "AndreasKaratzas",
-        "prs_submitted": 17,
-        "prs_merged": 13,
+        "prs_submitted": 16,
+        "prs_merged": 11,
         "commits": 0
       },
       {
         "author": "ChuanLi1101",
-        "prs_submitted": 6,
+        "prs_submitted": 8,
         "prs_merged": 2,
         "commits": 0
       },
@@ -37,12 +37,6 @@
         "author": "micah-wil",
         "prs_submitted": 5,
         "prs_merged": 4,
-        "commits": 0
-      },
-      {
-        "author": "Rohan138",
-        "prs_submitted": 4,
-        "prs_merged": 3,
         "commits": 0
       },
       {
@@ -76,24 +70,30 @@
         "commits": 0
       },
       {
-        "author": "vllmellm",
+        "author": "mikaylagawarecki",
         "prs_submitted": 3,
-        "prs_merged": 1,
+        "prs_merged": 0,
+        "commits": 0
+      },
+      {
+        "author": "rjrock",
+        "prs_submitted": 3,
+        "prs_merged": 3,
         "commits": 0
       }
     ],
-    "bus_factor": 11
+    "bus_factor": 13
   },
   "issue_health": {
-    "total_open": 50,
-    "opened_this_week": 16,
-    "closed_this_week": 171,
+    "total_open": 56,
+    "opened_this_week": 21,
+    "closed_this_week": 164,
     "unanswered": 0
   },
   "ci_health": null,
   "ci_signal_time": null,
   "release_cadence": {
-    "days_since_last": 1.3,
+    "days_since_last": 2.3,
     "avg_interval_days": 10.3,
     "total_releases": 5,
     "latest_tag": "v0.17.0"
