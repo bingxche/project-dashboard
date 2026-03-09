@@ -77,7 +77,7 @@ projects:
     track_authors: []
     track_labels: []
     track_keywords: []
-    depends_on: [triton]
+    depends_on: [triton, llvm]
     build_workflows: []
 
   aiter:

@@ -83,7 +83,8 @@
       "repo": "ROCm/AMDMIGraphX",
       "role": "active_dev",
       "depends_on": [
-        "triton"
+        "triton",
+        "llvm"
       ],
       "build_workflows": []
     },
