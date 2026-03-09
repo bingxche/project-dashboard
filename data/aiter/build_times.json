@@ -1,5 +1,5 @@
 {
-  "collected_at": "2026-03-09T04:31:49Z",
+  "collected_at": "2026-03-09T04:36:23Z",
   "workflows": {
     "Aiter Test": {
       "workflow_id": 179476100,
@@ -11,10 +11,10 @@
         "html_url": "https://github.com/ROCm/aiter/actions/runs/22836609650"
       },
       "stats": {
-        "sample_size": 16,
-        "median_minutes": 69.6,
-        "p90_minutes": 110.4,
-        "min_minutes": 1.9,
+        "sample_size": 10,
+        "median_minutes": 92.2,
+        "p90_minutes": 328.3,
+        "min_minutes": 54.4,
         "max_minutes": 328.3
       },
       "recent_runs": [

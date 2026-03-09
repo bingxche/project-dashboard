@@ -1043,11 +1043,47 @@ function buildDependencyGraph(projectsCfg, dataMap) {
     }
   }
 
-  var html = '<div class="dep-graph">';
+  // Collect edges
+  var edges = [];
+  for (var name in projectsCfg) {
+    var deps = projectsCfg[name].depends_on || [];
+    for (var i = 0; i < deps.length; i++) {
+      edges.push({ from: deps[i], to: name });
+    }
+  }
+
+  // Build node info for badge text/color
+  var nodeInfo = {};
+  for (var name in projectsCfg) {
+    var d = dataMap[name] || {};
+    var bt = d.buildTimes;
+    var badgeText = "N/A";
+    var status = "none";
+    if (bt && bt.workflows) {
+      var wfNames = Object.keys(bt.workflows);
+      if (wfNames.length > 0) {
+        var wf = bt.workflows[wfNames[0]];
+        var median = wf.stats ? wf.stats.median_minutes : null;
+        var target = wf.target_minutes;
+        if (median != null) {
+          badgeText = Math.round(median) + "m";
+          if (target) {
+            if (median <= target) status = "good";
+            else if (median <= target * 1.2) status = "warn";
+            else status = "bad";
+          }
+        }
+      }
+    }
+    nodeInfo[name] = { badge: badgeText, status: status };
+  }
+
+  // Generate the graph using HTML + post-render SVG overlay for edges
+  var graphId = "dep-graph-" + Math.random().toString(36).substr(2, 6);
+  var html = '<div class="dep-graph" id="' + graphId + '" style="position:relative">';
   html += '<h3>Project Dependencies</h3>';
   html += '<div class="dep-layers">';
 
-  // Render each layer
   var layers = [
     { label: "Upstream", projects: layer0 },
     { label: "Core", projects: layer1 },
@@ -1065,40 +1101,12 @@ function buildDependencyGraph(projectsCfg, dataMap) {
     for (var pi = 0; pi < layer.projects.length; pi++) {
       var pname = layer.projects[pi];
       var pcfg = projectsCfg[pname];
-      var d = dataMap[pname] || {};
-      var bt = d.buildTimes;
-
-      // Determine node status based on build target
-      var nodeClass = "dep-node dep-node-none";
-      var badgeText = "N/A";
-
-      if (bt && bt.workflows) {
-        var wfNames = Object.keys(bt.workflows);
-        if (wfNames.length > 0) {
-          var wf = bt.workflows[wfNames[0]];
-          var median = wf.stats ? wf.stats.median_minutes : null;
-          var target = wf.target_minutes;
-          if (median != null) {
-            badgeText = Math.round(median) + "m";
-            if (target) {
-              if (median <= target) {
-                nodeClass = "dep-node dep-node-good";
-              } else if (median <= target * 1.2) {
-                nodeClass = "dep-node dep-node-warn";
-              } else {
-                nodeClass = "dep-node dep-node-bad";
-              }
-            } else {
-              nodeClass = "dep-node dep-node-none";
-            }
-          }
-        }
-      }
-
+      var ni = nodeInfo[pname];
+      var nodeClass = "dep-node dep-node-" + ni.status;
       var repoUrl = "https://github.com/" + pcfg.repo;
-      html += '<div class="' + nodeClass + '">';
+      html += '<div class="' + nodeClass + '" data-dep-node="' + escapeHtml(pname) + '">';
       html += '<div class="dep-node-name"><a href="' + repoUrl + '" target="_blank">' + escapeHtml(pname) + '</a></div>';
-      html += '<span class="dep-node-badge">' + badgeText + '</span>';
+      html += '<span class="dep-node-badge">' + ni.badge + '</span>';
       html += '</div>';
     }
 
@@ -1107,26 +1115,59 @@ function buildDependencyGraph(projectsCfg, dataMap) {
   }
 
   html += '</div>'; // dep-layers
-
-  // Show dependency edges as text
-  var edges = [];
-  for (var name in projectsCfg) {
-    var deps = projectsCfg[name].depends_on || [];
-    for (var i = 0; i < deps.length; i++) {
-      edges.push({ from: deps[i], to: name });
-    }
-  }
-
-  if (edges.length > 0) {
-    html += '<div class="dep-arrows">';
-    for (var i = 0; i < edges.length; i++) {
-      html += '<span class="dep-arrow-item">' + escapeHtml(edges[i].from) + ' <span class="arrow">&rarr;</span> ' + escapeHtml(edges[i].to) + '</span>';
-    }
-    html += '</div>';
-  }
-
+  html += '<svg class="dep-svg-overlay"></svg>';
   html += '</div>'; // dep-graph
+
+  // Schedule SVG edge drawing after DOM render
+  if (edges.length > 0) {
+    setTimeout(function() { drawDepEdges(graphId, edges); }, 100);
+  }
+
   return html;
+}
+
+function drawDepEdges(graphId, edges) {
+  var container = document.getElementById(graphId);
+  if (!container) return;
+  var svg = container.querySelector(".dep-svg-overlay");
+  if (!svg) return;
+
+  var rect = container.getBoundingClientRect();
+  svg.setAttribute("width", rect.width);
+  svg.setAttribute("height", rect.height);
+  svg.style.position = "absolute";
+  svg.style.top = "0";
+  svg.style.left = "0";
+  svg.style.pointerEvents = "none";
+
+  // Define arrowhead marker
+  svg.innerHTML = '<defs><marker id="dep-arrowhead" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="var(--accent-orange, #f0883e)"/></marker></defs>';
+
+  for (var i = 0; i < edges.length; i++) {
+    var fromNode = container.querySelector('[data-dep-node="' + edges[i].from + '"]');
+    var toNode = container.querySelector('[data-dep-node="' + edges[i].to + '"]');
+    if (!fromNode || !toNode) continue;
+
+    var fromRect = fromNode.getBoundingClientRect();
+    var toRect = toNode.getBoundingClientRect();
+
+    // Coordinates relative to container
+    var x1 = fromRect.left + fromRect.width / 2 - rect.left;
+    var y1 = fromRect.bottom - rect.top;
+    var x2 = toRect.left + toRect.width / 2 - rect.left;
+    var y2 = toRect.top - rect.top;
+
+    // Curved path: from bottom of source to top of target
+    var midY = (y1 + y2) / 2;
+    var path = document.createElementNS("http://www.w3.org/2000/svg", "path");
+    path.setAttribute("d", "M " + x1 + " " + y1 + " C " + x1 + " " + midY + ", " + x2 + " " + midY + ", " + x2 + " " + y2);
+    path.setAttribute("stroke", "var(--accent-orange, #f0883e)");
+    path.setAttribute("stroke-width", "2");
+    path.setAttribute("fill", "none");
+    path.setAttribute("marker-end", "url(#dep-arrowhead)");
+    path.setAttribute("opacity", "0.7");
+    svg.appendChild(path);
+  }
 }
 
 function buildBuildTimeSummary(projectsCfg, dataMap) {
