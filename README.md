@@ -1,5 +1,7 @@
 # Project Dashboard
 
+> **Live Dashboard: [sunway513.github.io/project-dashboard](https://sunway513.github.io/project-dashboard/)**
+
 Auto-updated tracking of AMD GPU ecosystem projects. Last updated: **2026-03-08 08:09 UTC**
 
 ## Overview
@@ -21,9 +23,9 @@ Auto-updated tracking of AMD GPU ecosystem projects. Last updated: **2026-03-08 
 
 ## Live Dashboard
 
-Interactive dashboard with 4 views: **Projects**, **Test Parity**, **Activity**, and **Trends**.
+**[sunway513.github.io/project-dashboard](https://sunway513.github.io/project-dashboard/)** — Interactive dashboard with 4 views: **Projects**, **Test Parity**, **Activity**, and **Trends**.
 
-Hosted on GitHub Pages — deployed automatically on every push to main.
+Deployed automatically on every push to main via GitHub Pages.
 
 ## Views
 
