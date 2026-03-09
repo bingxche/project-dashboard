@@ -1,5 +1,5 @@
 {
-  "collected_at": "2026-03-09T04:31:42Z",
+  "collected_at": "2026-03-09T04:36:16Z",
   "workflows": {
     "Documentation": {
       "workflow_id": 11689091,
@@ -11,11 +11,11 @@
         "html_url": "https://github.com/triton-lang/triton/actions/runs/22834043159"
       },
       "stats": {
-        "sample_size": 20,
-        "median_minutes": 30.2,
-        "p90_minutes": 69.8,
+        "sample_size": 11,
+        "median_minutes": 29.9,
+        "p90_minutes": 43.5,
         "min_minutes": 29.4,
-        "max_minutes": 76.6
+        "max_minutes": 53.0
       },
       "recent_runs": [
         {
@@ -154,10 +154,10 @@
         "html_url": "https://github.com/triton-lang/triton/actions/runs/22817192136"
       },
       "stats": {
-        "sample_size": 20,
-        "median_minutes": 132.2,
-        "p90_minutes": 197.2,
-        "min_minutes": 120.4,
+        "sample_size": 6,
+        "median_minutes": 135.7,
+        "p90_minutes": 233.5,
+        "min_minutes": 128.4,
         "max_minutes": 233.5
       },
       "recent_runs": [

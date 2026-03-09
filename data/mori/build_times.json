@@ -1,145 +1,6 @@
 {
-  "collected_at": "2026-03-09T04:31:54Z",
+  "collected_at": "2026-03-09T04:36:27Z",
   "workflows": {
-    "mori": {
-      "workflow_id": 196573763,
-      "latest_run": {
-        "id": 22802139237,
-        "conclusion": "cancelled",
-        "duration_minutes": 1440.0,
-        "started_at": "2026-03-07T15:51:07Z",
-        "html_url": "https://github.com/ROCm/mori/actions/runs/22802139237"
-      },
-      "stats": {
-        "sample_size": 20,
-        "median_minutes": 1440.0,
-        "p90_minutes": 1440.0,
-        "min_minutes": 1440.0,
-        "max_minutes": 1440.0
-      },
-      "recent_runs": [
-        {
-          "id": 22802139237,
-          "conclusion": "cancelled",
-          "duration_minutes": 1440.0,
-          "date": "2026-03-07"
-        },
-        {
-          "id": 22762814571,
-          "conclusion": "cancelled",
-          "duration_minutes": 1440.0,
-          "date": "2026-03-06"
-        },
-        {
-          "id": 22757586488,
-          "conclusion": "cancelled",
-          "duration_minutes": 1440.0,
-          "date": "2026-03-06"
-        },
-        {
-          "id": 22757067460,
-          "conclusion": "cancelled",
-          "duration_minutes": 1440.0,
-          "date": "2026-03-06"
-        },
-        {
-          "id": 22756904189,
-          "conclusion": "cancelled",
-          "duration_minutes": 1440.0,
-          "date": "2026-03-06"
-        },
-        {
-          "id": 22755612267,
-          "conclusion": "cancelled",
-          "duration_minutes": 1440.0,
-          "date": "2026-03-06"
-        },
-        {
-          "id": 22755002747,
-          "conclusion": "cancelled",
-          "duration_minutes": 1440.0,
-          "date": "2026-03-06"
-        },
-        {
-          "id": 22754349051,
-          "conclusion": "cancelled",
-          "duration_minutes": 1440.0,
-          "date": "2026-03-06"
-        },
-        {
-          "id": 22754130118,
-          "conclusion": "cancelled",
-          "duration_minutes": 1440.0,
-          "date": "2026-03-06"
-        },
-        {
-          "id": 22753917226,
-          "conclusion": "cancelled",
-          "duration_minutes": 1440.0,
-          "date": "2026-03-06"
-        },
-        {
-          "id": 22753736275,
-          "conclusion": "cancelled",
-          "duration_minutes": 1440.0,
-          "date": "2026-03-06"
-        },
-        {
-          "id": 22753697620,
-          "conclusion": "cancelled",
-          "duration_minutes": 1440.0,
-          "date": "2026-03-06"
-        },
-        {
-          "id": 22753620968,
-          "conclusion": "cancelled",
-          "duration_minutes": 1440.0,
-          "date": "2026-03-06"
-        },
-        {
-          "id": 22753594064,
-          "conclusion": "cancelled",
-          "duration_minutes": 1440.0,
-          "date": "2026-03-06"
-        },
-        {
-          "id": 22753320428,
-          "conclusion": "cancelled",
-          "duration_minutes": 1440.0,
-          "date": "2026-03-06"
-        },
-        {
-          "id": 22753306152,
-          "conclusion": "cancelled",
-          "duration_minutes": 1440.0,
-          "date": "2026-03-06"
-        },
-        {
-          "id": 22753017767,
-          "conclusion": "cancelled",
-          "duration_minutes": 1440.0,
-          "date": "2026-03-06"
-        },
-        {
-          "id": 22751383786,
-          "conclusion": "cancelled",
-          "duration_minutes": 1440.0,
-          "date": "2026-03-06"
-        },
-        {
-          "id": 22750962191,
-          "conclusion": "cancelled",
-          "duration_minutes": 1440.0,
-          "date": "2026-03-06"
-        },
-        {
-          "id": 22750930463,
-          "conclusion": "cancelled",
-          "duration_minutes": 1440.0,
-          "date": "2026-03-06"
-        }
-      ]
-    },
     "Copilot code review": {
       "workflow_id": 201892494,
       "latest_run": {
@@ -150,8 +11,8 @@
         "html_url": "https://github.com/ROCm/mori/actions/runs/22757075937"
       },
       "stats": {
-        "sample_size": 18,
-        "median_minutes": 5.7,
+        "sample_size": 17,
+        "median_minutes": 5.6,
         "p90_minutes": 9.5,
         "min_minutes": 2.5,
         "max_minutes": 16.9

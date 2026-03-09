@@ -126,18 +126,22 @@ def collect_workflow_build_times(repo, wf_id, wf_name, target_minutes=None):
         started = run.get("run_started_at") or run.get("created_at")
         updated = run.get("updated_at")
         dur = minutes_between(started, updated)
+        conclusion = run.get("conclusion")
         if dur is not None and dur > 0:
-            durations.append(dur)
             recent_runs.append(
                 {
                     "id": run["id"],
-                    "conclusion": run.get("conclusion"),
+                    "conclusion": conclusion,
                     "duration_minutes": dur,
                     "date": (run.get("run_started_at") or run.get("created_at", ""))[
                         :10
                     ],
                 }
             )
+            # Only count successful runs for duration stats;
+            # failed/cancelled runs have unreliable updated_at timestamps
+            if conclusion == "success":
+                durations.append(dur)
 
     if not durations:
         return None

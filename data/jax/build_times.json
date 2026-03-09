@@ -1,5 +1,5 @@
 {
-  "collected_at": "2026-03-09T04:31:24Z",
+  "collected_at": "2026-03-09T04:35:59Z",
   "workflows": {
     "CI": {
       "workflow_id": 1535540,
@@ -11,10 +11,10 @@
         "html_url": "https://github.com/jax-ml/jax/actions/runs/22836741669"
       },
       "stats": {
-        "sample_size": 20,
-        "median_minutes": 9.4,
-        "p90_minutes": 19.1,
-        "min_minutes": 1.4,
+        "sample_size": 5,
+        "median_minutes": 10.2,
+        "p90_minutes": 19.5,
+        "min_minutes": 8.6,
         "max_minutes": 19.5
       },
       "recent_runs": [
