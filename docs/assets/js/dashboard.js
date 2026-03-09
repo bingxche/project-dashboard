@@ -69,7 +69,12 @@
   renderParityView(projects.projects, dataMap, parityHistData);
   renderActivityView(projects.projects, dataMap);
   renderTrendsView(projects.projects, dataMap, historyData);
-  renderBuildsView(projects.projects, dataMap, historyData);
+  try {
+    renderBuildsView(projects.projects, dataMap, historyData);
+  } catch (e) {
+    console.error("renderBuildsView error:", e);
+    document.getElementById("builds-view").innerHTML = '<p class="empty">Error rendering builds: ' + e.message + '</p>';
+  }
 
   // Tab switching
   var tabBtns = document.querySelectorAll(".tab-btn");
