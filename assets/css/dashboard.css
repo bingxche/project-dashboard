@@ -852,7 +852,6 @@ footer {
   border-radius: 8px;
   padding: 24px;
   margin-bottom: 24px;
-  position: relative;
 }
 
 .dep-graph h3 {
@@ -861,72 +860,88 @@ footer {
   margin-bottom: 16px;
 }
 
-.dep-layers {
+.dep-graph-svg-wrap {
+  overflow-x: auto;
   display: flex;
-  flex-direction: column;
-  gap: 32px;
+  justify-content: center;
 }
 
-.dep-layer {
+/* Dagre SVG node styles */
+.dep-svg-rect {
+  fill: #0d1117;
+  stroke: #30363d;
+  stroke-width: 1;
+}
+.dep-svg-core .dep-svg-rect {
+  stroke: #1f6feb;
+  stroke-width: 1.5;
+}
+.dep-svg-upstream .dep-svg-rect {
+  stroke: #30363d;
+}
+.dep-svg-name {
+  fill: #e6edf3;
+  font-size: 13px;
+  font-weight: 600;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+}
+.dep-svg-badge {
+  font-size: 11px;
+  font-weight: 500;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+}
+.dep-svg-node:hover .dep-svg-rect {
+  stroke: #58a6ff;
+  stroke-width: 2;
+}
+
+/* Standalone projects (not in the DAG) */
+.dep-standalone {
+  margin-top: 16px;
+  padding-top: 12px;
+  border-top: 1px solid var(--border);
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 10px;
+  flex-wrap: wrap;
 }
-
-.dep-layer-label {
-  width: 80px;
+.dep-standalone-label {
   font-size: 11px;
   color: var(--text-muted);
   text-transform: uppercase;
   letter-spacing: 0.5px;
   font-weight: 600;
-  flex-shrink: 0;
 }
-
-.dep-layer-nodes {
-  display: flex;
-  gap: 12px;
-  flex-wrap: wrap;
-  flex: 1;
-}
-
-.dep-node {
+.dep-standalone-node {
   display: inline-flex;
-  flex-direction: column;
   align-items: center;
-  gap: 4px;
-  padding: 8px 16px;
-  border-radius: 8px;
+  gap: 6px;
+  padding: 4px 12px;
+  border-radius: 6px;
   border: 1px solid var(--border);
   background: var(--bg);
-  min-width: 100px;
-  text-align: center;
-}
-
-.dep-node-name {
   font-size: 13px;
   font-weight: 600;
-}
-
-.dep-node-name a {
   color: var(--text);
+  text-decoration: none;
 }
-
+.dep-standalone-node:hover {
+  border-color: #58a6ff;
+}
+.dep-standalone-core {
+  border-color: #1f6feb;
+}
 .dep-node-badge {
-  font-size: 11px;
-  padding: 1px 6px;
-  border-radius: 8px;
+  font-size: 10px;
+  padding: 1px 5px;
+  border-radius: 6px;
   font-weight: 500;
   color: #fff;
 }
-
-.dep-node-good { border-color: var(--accent-green); }
-.dep-node-good .dep-node-badge { background: var(--accent-green); }
-.dep-node-warn { border-color: var(--accent-orange); }
-.dep-node-warn .dep-node-badge { background: var(--accent-orange); }
-.dep-node-bad { border-color: var(--badge-closed); }
-.dep-node-bad .dep-node-badge { background: var(--badge-closed); }
-.dep-node-none .dep-node-badge { background: var(--badge-draft); }
+.dep-badge-good { background: var(--accent-green); }
+.dep-badge-warn { background: var(--accent-orange); }
+.dep-badge-bad { background: var(--badge-closed); }
+.dep-badge-none { background: var(--badge-draft); }
 
 /* Build summary boxes */
 .build-summary-boxes {
@@ -1010,24 +1025,7 @@ footer {
   border-radius: 3px;
 }
 
-/* Dependency arrows */
-.dep-arrows {
-  font-size: 12px;
-  color: var(--text-muted);
-  margin-top: 8px;
-  padding-top: 8px;
-  border-top: 1px solid var(--border);
-}
-
-.dep-arrow-item {
-  display: inline-block;
-  margin-right: 16px;
-  margin-bottom: 4px;
-}
-
-.dep-arrow-item .arrow {
-  color: var(--accent-orange);
-}
+/* (dep-arrows removed — edges now rendered by dagre SVG) */
 
 @media (max-width: 768px) {
   .build-summary-boxes {
@@ -1036,12 +1034,9 @@ footer {
   .build-summary-box {
     flex: 1 1 45%;
   }
-  .dep-layer {
+  .dep-standalone {
     flex-direction: column;
     align-items: flex-start;
-  }
-  .dep-layer-label {
-    width: auto;
   }
 }
 

@@ -85,10 +85,12 @@
       document.querySelectorAll(".tab-panel").forEach(function (p) { p.classList.remove("active"); });
       this.classList.add("active");
       document.getElementById("tab-" + target).classList.add("active");
-      // Draw dependency edges when Builds tab becomes visible
+      // Render dagre graph when Builds tab becomes visible
       if (target === "builds" && window._depGraphPending) {
         var dg = window._depGraphPending;
-        setTimeout(function() { drawDepEdges(dg.graphId, dg.edges); }, 50);
+        setTimeout(function() {
+          renderDagreGraph(dg.graphId, dg.graphNodes, dg.projectsCfg, dg.nodeInfo);
+        }, 50);
       }
     });
   }
@@ -1026,46 +1028,22 @@ function renderBuildsView(projectsCfg, dataMap, historyData) {
 }
 
 function buildDependencyGraph(projectsCfg, dataMap) {
-  // Topological layering: assign each project to the deepest layer
-  // based on its longest dependency chain depth
-  var depthOf = {};
-  var names = Object.keys(projectsCfg);
+  var graphId = "dep-graph-" + Math.random().toString(36).substr(2, 6);
 
-  function getDepth(name) {
-    if (depthOf[name] !== undefined) return depthOf[name];
-    depthOf[name] = -1; // cycle guard
-    var deps = (projectsCfg[name] || {}).depends_on || [];
-    var maxChildDepth = -1;
-    for (var i = 0; i < deps.length; i++) {
-      if (projectsCfg[deps[i]]) {
-        maxChildDepth = Math.max(maxChildDepth, getDepth(deps[i]));
-      }
-    }
-    depthOf[name] = maxChildDepth + 1;
-    return depthOf[name];
-  }
-  for (var ni = 0; ni < names.length; ni++) getDepth(names[ni]);
-
-  // Group by depth, then map to labeled layers
-  var maxDepth = 0;
-  for (var ni = 0; ni < names.length; ni++) {
-    if (depthOf[names[ni]] > maxDepth) maxDepth = depthOf[names[ni]];
-  }
-
-  var layerLabels = ["Foundations", "Libraries", "Frameworks", "Serving", "Engines"];
-  var layerMap = {}; // depth -> [names]
-  for (var ni = 0; ni < names.length; ni++) {
-    var d = depthOf[names[ni]];
-    if (!layerMap[d]) layerMap[d] = [];
-    layerMap[d].push(names[ni]);
-  }
-
-  // Collect edges
-  var edges = [];
+  // Separate standalone projects (no deps AND not depended upon)
+  var depended = {};
   for (var name in projectsCfg) {
     var deps = projectsCfg[name].depends_on || [];
-    for (var i = 0; i < deps.length; i++) {
-      edges.push({ from: deps[i], to: name });
+    for (var i = 0; i < deps.length; i++) depended[deps[i]] = true;
+  }
+  var graphNodes = [];
+  var standaloneNodes = [];
+  for (var name in projectsCfg) {
+    var deps = projectsCfg[name].depends_on || [];
+    if (deps.length === 0 && !depended[name]) {
+      standaloneNodes.push(name);
+    } else {
+      graphNodes.push(name);
     }
   }
 
@@ -1074,7 +1052,7 @@ function buildDependencyGraph(projectsCfg, dataMap) {
   for (var name in projectsCfg) {
     var d = dataMap[name] || {};
     var bt = d.buildTimes;
-    var badgeText = "N/A";
+    var badgeText = "";
     var status = "none";
     if (bt && bt.workflows) {
       var wfNames = Object.keys(bt.workflows);
@@ -1083,7 +1061,7 @@ function buildDependencyGraph(projectsCfg, dataMap) {
         var median = wf.stats ? wf.stats.median_minutes : null;
         var target = wf.target_minutes;
         if (median != null) {
-          badgeText = Math.round(median) + "m";
+          badgeText = formatMinutes(median);
           if (target) {
             if (median <= target) status = "good";
             else if (median <= target * 1.2) status = "warn";
@@ -1092,101 +1070,204 @@ function buildDependencyGraph(projectsCfg, dataMap) {
         }
       }
     }
-    nodeInfo[name] = { badge: badgeText, status: status };
+    var roleLabel = (projectsCfg[name].role === "active_dev") ? "core" : "upstream";
+    nodeInfo[name] = { badge: badgeText, status: status, role: roleLabel };
   }
 
-  // Generate the graph using HTML + post-render SVG overlay for edges
-  var graphId = "dep-graph-" + Math.random().toString(36).substr(2, 6);
-  var html = '<div class="dep-graph" id="' + graphId + '" style="position:relative">';
+  // Build HTML container: SVG for dagre graph + standalone section
+  var html = '<div class="dep-graph" id="' + graphId + '">';
   html += '<h3>Project Dependencies</h3>';
-  html += '<div class="dep-layers">';
+  html += '<div class="dep-graph-svg-wrap"><svg id="' + graphId + '-svg"></svg></div>';
 
-  // Build layers array from bottom (depth 0) to top (max depth), reversed for display
-  var layers = [];
-  for (var d = maxDepth; d >= 0; d--) {
-    if (layerMap[d]) {
-      layers.push({ label: layerLabels[d] || ("Layer " + d), projects: layerMap[d] });
+  if (standaloneNodes.length > 0) {
+    html += '<div class="dep-standalone"><span class="dep-standalone-label">Standalone</span>';
+    for (var si = 0; si < standaloneNodes.length; si++) {
+      var sname = standaloneNodes[si];
+      var sni = nodeInfo[sname];
+      var scfg = projectsCfg[sname];
+      html += '<a href="https://github.com/' + scfg.repo + '" target="_blank" class="dep-standalone-node dep-standalone-' + sni.role + '">';
+      html += escapeHtml(sname);
+      if (sni.badge) html += ' <span class="dep-node-badge dep-badge-' + sni.status + '">' + sni.badge + '</span>';
+      html += '</a>';
     }
+    html += '</div>';
   }
+  html += '</div>';
 
-  for (var li = 0; li < layers.length; li++) {
-    var layer = layers[li];
-    if (layer.projects.length === 0) continue;
-
-    html += '<div class="dep-layer">';
-    html += '<div class="dep-layer-label">' + layer.label + '</div>';
-    html += '<div class="dep-layer-nodes">';
-
-    for (var pi = 0; pi < layer.projects.length; pi++) {
-      var pname = layer.projects[pi];
-      var pcfg = projectsCfg[pname];
-      var ni = nodeInfo[pname];
-      var nodeClass = "dep-node dep-node-" + ni.status;
-      var repoUrl = "https://github.com/" + pcfg.repo;
-      html += '<div class="' + nodeClass + '" data-dep-node="' + escapeHtml(pname) + '">';
-      html += '<div class="dep-node-name"><a href="' + repoUrl + '" target="_blank">' + escapeHtml(pname) + '</a></div>';
-      html += '<span class="dep-node-badge">' + ni.badge + '</span>';
-      html += '</div>';
-    }
-
-    html += '</div>'; // dep-layer-nodes
-    html += '</div>'; // dep-layer
-  }
-
-  html += '</div>'; // dep-layers
-  html += '<svg class="dep-svg-overlay"></svg>';
-  html += '</div>'; // dep-graph
-
-  // Store graph info for deferred edge drawing (tab may be hidden)
-  if (edges.length > 0) {
-    window._depGraphPending = { graphId: graphId, edges: edges };
-  }
+  // Store render info for when the tab becomes visible
+  window._depGraphPending = {
+    graphId: graphId,
+    graphNodes: graphNodes,
+    projectsCfg: projectsCfg,
+    nodeInfo: nodeInfo
+  };
 
   return html;
 }
 
-function drawDepEdges(graphId, edges) {
-  var container = document.getElementById(graphId);
-  if (!container) return;
-  var svg = container.querySelector(".dep-svg-overlay");
-  if (!svg) return;
+function renderDagreGraph(graphId, graphNodes, projectsCfg, nodeInfo) {
+  var svgEl = document.getElementById(graphId + "-svg");
+  if (!svgEl || !window.dagre || !window.d3) return;
+  // Avoid double-render
+  if (svgEl.getAttribute("data-rendered")) return;
+  svgEl.setAttribute("data-rendered", "1");
 
-  var rect = container.getBoundingClientRect();
-  svg.setAttribute("width", rect.width);
-  svg.setAttribute("height", rect.height);
-  svg.style.position = "absolute";
-  svg.style.top = "0";
-  svg.style.left = "0";
-  svg.style.pointerEvents = "none";
+  var g = new dagre.graphlib.Graph().setGraph({
+    rankdir: "TB",
+    nodesep: 50,
+    ranksep: 60,
+    marginx: 20,
+    marginy: 20
+  }).setDefaultEdgeLabel(function() { return {}; });
 
-  // Define arrowhead marker
-  svg.innerHTML = '<defs><marker id="dep-arrowhead" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="var(--accent-orange, #f0883e)"/></marker></defs>';
+  var NODE_W = 120, NODE_H = 44;
 
-  for (var i = 0; i < edges.length; i++) {
-    var fromNode = container.querySelector('[data-dep-node="' + edges[i].from + '"]');
-    var toNode = container.querySelector('[data-dep-node="' + edges[i].to + '"]');
-    if (!fromNode || !toNode) continue;
-
-    var fromRect = fromNode.getBoundingClientRect();
-    var toRect = toNode.getBoundingClientRect();
-
-    // Coordinates relative to container
-    var x1 = fromRect.left + fromRect.width / 2 - rect.left;
-    var y1 = fromRect.bottom - rect.top;
-    var x2 = toRect.left + toRect.width / 2 - rect.left;
-    var y2 = toRect.top - rect.top;
-
-    // Curved path: from bottom of source to top of target
-    var midY = (y1 + y2) / 2;
-    var path = document.createElementNS("http://www.w3.org/2000/svg", "path");
-    path.setAttribute("d", "M " + x1 + " " + y1 + " C " + x1 + " " + midY + ", " + x2 + " " + midY + ", " + x2 + " " + y2);
-    path.setAttribute("stroke", "var(--accent-orange, #f0883e)");
-    path.setAttribute("stroke-width", "2");
-    path.setAttribute("fill", "none");
-    path.setAttribute("marker-end", "url(#dep-arrowhead)");
-    path.setAttribute("opacity", "0.7");
-    svg.appendChild(path);
+  // Add nodes
+  for (var i = 0; i < graphNodes.length; i++) {
+    var name = graphNodes[i];
+    g.setNode(name, { label: name, width: NODE_W, height: NODE_H });
   }
+
+  // Add edges (dependency → dependent, i.e. top to bottom)
+  for (var i = 0; i < graphNodes.length; i++) {
+    var name = graphNodes[i];
+    var deps = projectsCfg[name].depends_on || [];
+    for (var j = 0; j < deps.length; j++) {
+      if (g.hasNode(deps[j])) {
+        g.setEdge(deps[j], name);
+      }
+    }
+  }
+
+  dagre.layout(g);
+
+  var gGraph = g.graph();
+  var svgW = gGraph.width + 40;
+  var svgH = gGraph.height + 40;
+  var svg = d3.select(svgEl)
+    .attr("width", svgW)
+    .attr("height", svgH)
+    .attr("viewBox", "0 0 " + svgW + " " + svgH);
+
+  // Clear any previous content
+  svg.selectAll("*").remove();
+
+  var defs = svg.append("defs");
+  // Arrowhead marker
+  defs.append("marker")
+    .attr("id", "dep-arrow")
+    .attr("viewBox", "0 0 12 12")
+    .attr("refX", 10).attr("refY", 6)
+    .attr("markerWidth", 10).attr("markerHeight", 10)
+    .attr("orient", "auto")
+    .append("path")
+    .attr("d", "M2,2 L10,6 L2,10 L4,6 Z")
+    .attr("fill", "#8b949e");
+
+  // Glow filter for hover
+  var filter = defs.append("filter").attr("id", "dep-glow");
+  filter.append("feGaussianBlur").attr("stdDeviation", "2").attr("result", "blur");
+  var merge = filter.append("feMerge");
+  merge.append("feMergeNode").attr("in", "blur");
+  merge.append("feMergeNode").attr("in", "SourceGraphic");
+
+  var container = svg.append("g").attr("transform", "translate(20,20)");
+
+  // Render edges first (behind nodes)
+  var edgeGroup = container.append("g").attr("class", "dep-edges");
+  g.edges().forEach(function(e) {
+    var edge = g.edge(e);
+    var points = edge.points;
+    var line = d3.line()
+      .x(function(p) { return p.x; })
+      .y(function(p) { return p.y; })
+      .curve(d3.curveBasis);
+    edgeGroup.append("path")
+      .attr("d", line(points))
+      .attr("class", "dep-edge-path")
+      .attr("data-from", e.v)
+      .attr("data-to", e.w)
+      .attr("stroke", "#30363d")
+      .attr("stroke-width", 1.5)
+      .attr("fill", "none")
+      .attr("marker-end", "url(#dep-arrow)");
+  });
+
+  // Render nodes
+  var nodeGroup = container.append("g").attr("class", "dep-nodes");
+  g.nodes().forEach(function(name) {
+    var node = g.node(name);
+    var ni = nodeInfo[name];
+    var cfg = projectsCfg[name];
+    var x = node.x - NODE_W / 2;
+    var y = node.y - NODE_H / 2;
+
+    var roleClass = ni.role === "core" ? "dep-svg-core" : "dep-svg-upstream";
+    var statusColor = { good: "#238636", warn: "#d29922", bad: "#da3633", none: null }[ni.status];
+
+    var ng = nodeGroup.append("g")
+      .attr("class", "dep-svg-node " + roleClass)
+      .attr("transform", "translate(" + x + "," + y + ")")
+      .attr("data-node", name)
+      .style("cursor", "pointer");
+
+    // Node rectangle
+    var rect = ng.append("rect")
+      .attr("width", NODE_W).attr("height", NODE_H)
+      .attr("rx", 8).attr("ry", 8)
+      .attr("class", "dep-svg-rect");
+
+    // Left accent bar for status
+    if (statusColor) {
+      ng.append("rect")
+        .attr("x", 0).attr("y", 0)
+        .attr("width", 3).attr("height", NODE_H)
+        .attr("rx", 1.5)
+        .attr("fill", statusColor);
+    }
+
+    // Project name
+    ng.append("text")
+      .attr("x", NODE_W / 2).attr("y", ni.badge ? 18 : 24)
+      .attr("text-anchor", "middle")
+      .attr("class", "dep-svg-name")
+      .text(name);
+
+    // Badge (build time)
+    if (ni.badge) {
+      ng.append("text")
+        .attr("x", NODE_W / 2).attr("y", 34)
+        .attr("text-anchor", "middle")
+        .attr("class", "dep-svg-badge")
+        .attr("fill", statusColor || "#8b949e")
+        .text(ni.badge);
+    }
+
+    // Click to open repo
+    ng.on("click", function() {
+      var n = d3.select(this).attr("data-node");
+      window.open("https://github.com/" + projectsCfg[n].repo, "_blank");
+    });
+
+    // Hover: highlight connected edges
+    ng.on("mouseenter", function() {
+      var n = d3.select(this).attr("data-node");
+      d3.select(this).select(".dep-svg-rect").attr("filter", "url(#dep-glow)");
+      edgeGroup.selectAll(".dep-edge-path").each(function() {
+        var el = d3.select(this);
+        if (el.attr("data-from") === n || el.attr("data-to") === n) {
+          el.attr("stroke", "#58a6ff").attr("stroke-width", 2.5);
+        } else {
+          el.attr("opacity", 0.2);
+        }
+      });
+    });
+    ng.on("mouseleave", function() {
+      d3.select(this).select(".dep-svg-rect").attr("filter", null);
+      edgeGroup.selectAll(".dep-edge-path")
+        .attr("stroke", "#30363d").attr("stroke-width", 1.5).attr("opacity", 1);
+    });
+  });
 }
 
 function buildBuildTimeSummary(projectsCfg, dataMap) {
