@@ -5,7 +5,7 @@ projects:
     track_authors: []
     track_labels: ["module: rocm"]
     track_keywords: [ROCm, AMD]
-    depends_on: []
+    depends_on: [triton]
     build_workflows:
       - name: "pull"
 
@@ -16,7 +16,7 @@ projects:
     track_labels: ["AMD GPU"]
     track_keywords: [ROCm]
     keyword_scope: title
-    depends_on: []
+    depends_on: [xla]
     build_workflows:
       - name: "CI"
 
@@ -27,7 +27,7 @@ projects:
     track_authors: []
     track_labels: [rocm, amd]
     track_keywords: [ROCm, AMD, HIP]
-    depends_on: [aiter]
+    depends_on: [pytorch, aiter, mori, triton]
     build_workflows:
       - name: "Docker Image CI"
         id: 141341664
@@ -38,7 +38,7 @@ projects:
     track_authors: []
     track_labels: [rocm, amd]
     track_keywords: [ROCm, AMD, HIP]
-    depends_on: []
+    depends_on: [pytorch, aiter, mori, triton]
     build_workflows: []
 
   xla:
@@ -77,7 +77,7 @@ projects:
     track_authors: [sunway513]
     track_labels: []
     track_keywords: []
-    depends_on: []
+    depends_on: [pytorch, triton, flydsl]
     build_workflows:
       - name: "Aiter Test"
         id: 179476100
@@ -90,7 +90,7 @@ projects:
     track_authors: [sunway513]
     track_labels: []
     track_keywords: []
-    depends_on: [aiter]
+    depends_on: [aiter, mori, vllm, triton]
     build_workflows:
       - name: "ATOM CI"
 
@@ -101,7 +101,7 @@ projects:
     track_authors: [sunway513]
     track_labels: []
     track_keywords: []
-    depends_on: []
+    depends_on: [pytorch]
     build_workflows: []
 
   flydsl:
