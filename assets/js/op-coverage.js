@@ -85,6 +85,7 @@ function buildOcCategory(cat) {
   // Header row
   html += '<tr>';
   html += '<th>Operator</th>';
+  html += '<th>Backend</th>';
   for (var a = 0; a < amdProjects.length; a++) {
     html += '<th>' + escapeHtml(amdProjects[a]) + '</th>';
   }
@@ -98,6 +99,7 @@ function buildOcCategory(cat) {
     var op = ops[i];
     html += '<tr>';
     html += '<td>' + escapeHtml(op.name) + '</td>';
+    html += '<td>' + backendBadges(op.backend) + '</td>';
     for (var a = 0; a < amdProjects.length; a++) {
       html += '<td>' + coverageIcon(op.coverage[amdProjects[a]]) + '</td>';
     }
@@ -135,4 +137,28 @@ function coverageIconSimple(val) {
   if (val === true) return '<span class="oc-yes">&#10003;</span>';
   if (val === "partial") return '<span class="oc-partial">&#9881;</span>';
   return '<span class="oc-no">&mdash;</span>';
+}
+
+function backendBadges(val) {
+  if (!val) return '<span class="oc-no">&mdash;</span>';
+  var parts = val.split(/\s*[\/+]\s*/);
+  var html = '';
+  for (var i = 0; i < parts.length; i++) {
+    var p = parts[i].trim();
+    var cls = 'oc-be-other';
+    var label = p;
+    if (p === 'Triton') cls = 'oc-be-triton';
+    else if (p === 'CK') cls = 'oc-be-ck';
+    else if (p === 'ASM') cls = 'oc-be-asm';
+    else if (p.indexOf('ASM') >= 0 && p.indexOf('Triton') >= 0) { cls = 'oc-be-asm'; label = 'ASM+Triton'; }
+    else if (p === 'HIP') cls = 'oc-be-hip';
+    else if (p === 'FlyDSL') cls = 'oc-be-flydsl';
+    else if (p === 'PyTorch') cls = 'oc-be-hip';
+    if (i === 0) {
+      html += '<span class="oc-be ' + cls + '">' + escapeHtml(label) + '</span>';
+    } else {
+      html += '<span class="oc-be oc-be-alt ' + cls + '">' + escapeHtml(label) + '</span>';
+    }
+  }
+  return html;
 }

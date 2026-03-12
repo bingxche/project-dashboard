@@ -1225,6 +1225,30 @@ footer {
   color: var(--accent-orange);
 }
 
+/* Backend badges */
+.oc-be {
+  display: inline-block;
+  padding: 2px 7px;
+  border-radius: 4px;
+  font-size: 11px;
+  font-weight: 600;
+  color: #fff;
+  margin: 1px 2px;
+  white-space: nowrap;
+}
+
+.oc-be-alt {
+  opacity: 0.5;
+  font-weight: 400;
+}
+
+.oc-be-triton { background: #8957e5; }
+.oc-be-ck { background: #1f6feb; }
+.oc-be-asm { background: #da3633; }
+.oc-be-hip { background: #636e7b; }
+.oc-be-flydsl { background: #d29922; }
+.oc-be-other { background: #30363d; }
+
 .oc-link {
   text-decoration: none;
   position: relative;
