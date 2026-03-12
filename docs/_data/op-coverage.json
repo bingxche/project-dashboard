@@ -7,22 +7,22 @@
       "amd_projects": ["Aiter"],
       "nv_projects": ["FlashInfer", "FlashMLA"],
       "operators": [
-        { "name": "MHA Prefill (FP16/BF16)", "coverage": { "Aiter": true, "FlashInfer": true, "FlashMLA": false } },
-        { "name": "MHA Prefill (FP8)", "coverage": { "Aiter": true, "FlashInfer": true, "FlashMLA": false } },
-        { "name": "MHA Decode", "coverage": { "Aiter": true, "FlashInfer": true, "FlashMLA": false } },
-        { "name": "MHA Varlen", "coverage": { "Aiter": true, "FlashInfer": true, "FlashMLA": false } },
-        { "name": "MLA Decode", "coverage": { "Aiter": true, "FlashInfer": true, "FlashMLA": true } },
-        { "name": "MLA Prefill", "coverage": { "Aiter": true, "FlashInfer": false, "FlashMLA": false } },
-        { "name": "Paged Attention Decode", "coverage": { "Aiter": true, "FlashInfer": true, "FlashMLA": false } },
-        { "name": "Paged Attention Prefill", "coverage": { "Aiter": true, "FlashInfer": true, "FlashMLA": false } },
-        { "name": "Paged Attention Ragged", "coverage": { "Aiter": true, "FlashInfer": false, "FlashMLA": false } },
-        { "name": "Cascade Attention", "coverage": { "Aiter": false, "FlashInfer": true, "FlashMLA": false } },
-        { "name": "Sparse MLA", "coverage": { "Aiter": true, "FlashInfer": false, "FlashMLA": false } },
-        { "name": "SAGE Attention (MXFP4)", "coverage": { "Aiter": true, "FlashInfer": false, "FlashMLA": false } },
-        { "name": "HSTU Attention", "coverage": { "Aiter": true, "FlashInfer": false, "FlashMLA": false } },
-        { "name": "POD Attention", "coverage": { "Aiter": true, "FlashInfer": false, "FlashMLA": false } },
-        { "name": "Lean Attention", "coverage": { "Aiter": true, "FlashInfer": false, "FlashMLA": false } },
-        { "name": "Unified Attention", "coverage": { "Aiter": true, "FlashInfer": false, "FlashMLA": false } }
+        { "name": "MHA Prefill (FP16/BF16)", "coverage": { "Aiter": { "supported": true, "url": "https://github.com/ROCm/aiter/blob/main/aiter/ops/mha.py" }, "FlashInfer": { "supported": true, "url": "https://docs.flashinfer.ai/api/prefill.html" }, "FlashMLA": false } },
+        { "name": "MHA Prefill (FP8)", "coverage": { "Aiter": { "supported": true, "url": "https://github.com/ROCm/aiter/blob/main/aiter/ops/mha.py" }, "FlashInfer": { "supported": true, "url": "https://docs.flashinfer.ai/api/prefill.html" }, "FlashMLA": false } },
+        { "name": "MHA Decode", "coverage": { "Aiter": { "supported": true, "url": "https://github.com/ROCm/aiter/blob/main/aiter/ops/mha.py" }, "FlashInfer": { "supported": true, "url": "https://docs.flashinfer.ai/api/decode.html" }, "FlashMLA": false } },
+        { "name": "MHA Varlen", "coverage": { "Aiter": { "supported": true, "url": "https://github.com/ROCm/aiter/blob/main/aiter/ops/mha.py" }, "FlashInfer": { "supported": true, "url": "https://docs.flashinfer.ai/api/prefill.html" }, "FlashMLA": false } },
+        { "name": "MLA Decode", "coverage": { "Aiter": { "supported": true, "url": "https://github.com/ROCm/aiter/blob/main/aiter/mla.py" }, "FlashInfer": { "supported": true, "url": "https://docs.flashinfer.ai/api/mla.html" }, "FlashMLA": { "supported": true, "url": "https://github.com/deepseek-ai/FlashMLA" } } },
+        { "name": "MLA Prefill", "coverage": { "Aiter": { "supported": true, "url": "https://github.com/ROCm/aiter/blob/main/aiter/mla.py" }, "FlashInfer": false, "FlashMLA": false } },
+        { "name": "Paged Attention Decode", "coverage": { "Aiter": { "supported": true, "url": "https://github.com/ROCm/aiter/blob/main/aiter/ops/attention.py" }, "FlashInfer": { "supported": true, "url": "https://docs.flashinfer.ai/api/decode.html" }, "FlashMLA": false } },
+        { "name": "Paged Attention Prefill", "coverage": { "Aiter": { "supported": true, "url": "https://github.com/ROCm/aiter/blob/main/aiter/ops/attention.py" }, "FlashInfer": { "supported": true, "url": "https://docs.flashinfer.ai/api/prefill.html" }, "FlashMLA": false } },
+        { "name": "Paged Attention Ragged", "coverage": { "Aiter": { "supported": true, "url": "https://github.com/ROCm/aiter/blob/main/aiter/paged_attn.py" }, "FlashInfer": { "supported": true, "url": "https://docs.flashinfer.ai/tutorials/kv_layout.html" }, "FlashMLA": false } },
+        { "name": "Cascade Attention", "coverage": { "Aiter": false, "FlashInfer": { "supported": true, "url": "https://docs.flashinfer.ai/api/cascade.html" }, "FlashMLA": false } },
+        { "name": "Sparse MLA", "coverage": { "Aiter": { "supported": true, "url": "https://github.com/ROCm/aiter/blob/main/aiter/ops/triton/attention/unified_attention_sparse_mla.py" }, "FlashInfer": false, "FlashMLA": { "supported": true, "url": "https://github.com/deepseek-ai/FlashMLA" } } },
+        { "name": "SAGE Attention (MXFP4)", "coverage": { "Aiter": { "supported": true, "url": "https://github.com/ROCm/aiter/blob/main/aiter/ops/triton/attention/fav3_sage.py" }, "FlashInfer": false, "FlashMLA": false } },
+        { "name": "HSTU Attention", "coverage": { "Aiter": { "supported": true, "url": "https://github.com/ROCm/aiter/blob/main/aiter/ops/triton/attention/hstu_attention.py" }, "FlashInfer": false, "FlashMLA": false } },
+        { "name": "POD Attention", "coverage": { "Aiter": { "supported": true, "url": "https://github.com/ROCm/aiter/blob/main/aiter/ops/triton/attention/pod_attention.py" }, "FlashInfer": { "supported": true, "url": "https://github.com/flashinfer-ai/flashinfer/issues/1022" }, "FlashMLA": false } },
+        { "name": "Lean Attention", "coverage": { "Aiter": { "supported": true, "url": "https://github.com/ROCm/aiter/blob/main/aiter/ops/triton/attention/lean_atten.py" }, "FlashInfer": false, "FlashMLA": false } },
+        { "name": "Unified Attention", "coverage": { "Aiter": { "supported": true, "url": "https://github.com/ROCm/aiter/blob/main/aiter/ops/triton/attention/unified_attention.py" }, "FlashInfer": false, "FlashMLA": false } }
       ]
     },
     {
@@ -31,24 +31,24 @@
       "amd_projects": ["Aiter", "hipBLASLt"],
       "nv_projects": ["cuBLASLt"],
       "operators": [
-        { "name": "GEMM FP16/BF16", "coverage": { "Aiter": true, "hipBLASLt": true, "cuBLASLt": true } },
-        { "name": "GEMM FP8 (per-tensor)", "coverage": { "Aiter": true, "hipBLASLt": true, "cuBLASLt": true } },
-        { "name": "GEMM FP8 blockscale", "coverage": { "Aiter": true, "hipBLASLt": true, "cuBLASLt": true } },
-        { "name": "GEMM INT8", "coverage": { "Aiter": true, "hipBLASLt": true, "cuBLASLt": true } },
-        { "name": "GEMM FP4/MXFP4", "coverage": { "Aiter": true, "hipBLASLt": true, "cuBLASLt": true } },
-        { "name": "GEMM A16W8 blockscale", "coverage": { "Aiter": true, "hipBLASLt": false, "cuBLASLt": false } },
-        { "name": "GEMM A16WFP4", "coverage": { "Aiter": true, "hipBLASLt": false, "cuBLASLt": false } },
-        { "name": "GEMM A8WFP4", "coverage": { "Aiter": true, "hipBLASLt": false, "cuBLASLt": false } },
-        { "name": "Batched GEMM BF16", "coverage": { "Aiter": true, "hipBLASLt": true, "cuBLASLt": true } },
-        { "name": "Batched GEMM FP8", "coverage": { "Aiter": true, "hipBLASLt": true, "cuBLASLt": true } },
-        { "name": "Batched GEMM FP4", "coverage": { "Aiter": true, "hipBLASLt": false, "cuBLASLt": false } },
-        { "name": "Grouped GEMM (MoE)", "coverage": { "Aiter": true, "hipBLASLt": true, "cuBLASLt": true } },
-        { "name": "GEMM + Bias fusion", "coverage": { "Aiter": false, "hipBLASLt": true, "cuBLASLt": true } },
-        { "name": "GEMM + ReLU/GELU/SiLU fusion", "coverage": { "Aiter": false, "hipBLASLt": true, "cuBLASLt": true } },
-        { "name": "DeepGEMM", "coverage": { "Aiter": true, "hipBLASLt": false, "cuBLASLt": false } },
-        { "name": "Fused GEMM (multi-stage)", "coverage": { "Aiter": true, "hipBLASLt": false, "cuBLASLt": false } },
-        { "name": "Feed-Forward Fused", "coverage": { "Aiter": true, "hipBLASLt": false, "cuBLASLt": false } },
-        { "name": "B-preshuffle GEMM", "coverage": { "Aiter": true, "hipBLASLt": false, "cuBLASLt": false } }
+        { "name": "GEMM FP16/BF16", "coverage": { "Aiter": { "supported": true, "url": "https://github.com/ROCm/aiter/blob/main/aiter/ops/gemm_op_a16w16.py" }, "hipBLASLt": { "supported": true, "url": "https://github.com/ROCm/hipBLASLt" }, "cuBLASLt": true } },
+        { "name": "GEMM FP8 (per-tensor)", "coverage": { "Aiter": { "supported": true, "url": "https://github.com/ROCm/aiter/blob/main/aiter/ops/gemm_op_a8w8.py" }, "hipBLASLt": { "supported": true, "url": "https://github.com/ROCm/hipBLASLt" }, "cuBLASLt": true } },
+        { "name": "GEMM FP8 blockscale", "coverage": { "Aiter": { "supported": true, "url": "https://github.com/ROCm/aiter/blob/main/aiter/ops/triton/gemm/basic/gemm_a8w8_blockscale.py" }, "hipBLASLt": { "supported": true, "url": "https://github.com/ROCm/hipBLASLt" }, "cuBLASLt": true } },
+        { "name": "GEMM INT8", "coverage": { "Aiter": { "supported": true, "url": "https://github.com/ROCm/aiter/blob/main/aiter/ops/gemm_op_a8w8.py" }, "hipBLASLt": { "supported": true, "url": "https://github.com/ROCm/hipBLASLt" }, "cuBLASLt": true } },
+        { "name": "GEMM FP4/MXFP4", "coverage": { "Aiter": { "supported": true, "url": "https://github.com/ROCm/aiter/blob/main/aiter/ops/gemm_op_a4w4.py" }, "hipBLASLt": { "supported": true, "url": "https://github.com/ROCm/hipBLASLt" }, "cuBLASLt": true } },
+        { "name": "GEMM A16W8 blockscale", "coverage": { "Aiter": { "supported": true, "url": "https://github.com/ROCm/aiter/blob/main/aiter/ops/triton/gemm/basic/gemm_a16w8_blockscale.py" }, "hipBLASLt": false, "cuBLASLt": false } },
+        { "name": "GEMM A16WFP4", "coverage": { "Aiter": { "supported": true, "url": "https://github.com/ROCm/aiter/blob/main/aiter/ops/triton/gemm/basic/gemm_a16wfp4.py" }, "hipBLASLt": false, "cuBLASLt": false } },
+        { "name": "GEMM A8WFP4", "coverage": { "Aiter": { "supported": true, "url": "https://github.com/ROCm/aiter/blob/main/aiter/ops/triton/gemm/basic/gemm_a8wfp4.py" }, "hipBLASLt": false, "cuBLASLt": false } },
+        { "name": "Batched GEMM BF16", "coverage": { "Aiter": { "supported": true, "url": "https://github.com/ROCm/aiter/blob/main/aiter/ops/batched_gemm_op_bf16.py" }, "hipBLASLt": { "supported": true, "url": "https://github.com/ROCm/hipBLASLt" }, "cuBLASLt": true } },
+        { "name": "Batched GEMM FP8", "coverage": { "Aiter": { "supported": true, "url": "https://github.com/ROCm/aiter/blob/main/aiter/ops/batched_gemm_op_a8w8.py" }, "hipBLASLt": { "supported": true, "url": "https://github.com/ROCm/hipBLASLt" }, "cuBLASLt": true } },
+        { "name": "Batched GEMM FP4", "coverage": { "Aiter": { "supported": true, "url": "https://github.com/ROCm/aiter/blob/main/aiter/ops/triton/gemm/batched/batched_gemm_afp4wfp4.py" }, "hipBLASLt": false, "cuBLASLt": false } },
+        { "name": "Grouped GEMM (MoE)", "coverage": { "Aiter": { "supported": true, "url": "https://github.com/ROCm/aiter/blob/main/aiter/ops/moe_op.py" }, "hipBLASLt": { "supported": true, "url": "https://github.com/ROCm/hipBLASLt" }, "cuBLASLt": true } },
+        { "name": "GEMM + Bias fusion", "coverage": { "Aiter": false, "hipBLASLt": { "supported": true, "url": "https://github.com/ROCm/hipBLASLt" }, "cuBLASLt": true } },
+        { "name": "GEMM + ReLU/GELU/SiLU fusion", "coverage": { "Aiter": false, "hipBLASLt": { "supported": true, "url": "https://github.com/ROCm/hipBLASLt" }, "cuBLASLt": true } },
+        { "name": "DeepGEMM", "coverage": { "Aiter": { "supported": true, "url": "https://github.com/ROCm/aiter/blob/main/aiter/ops/deepgemm.py" }, "hipBLASLt": false, "cuBLASLt": false } },
+        { "name": "Fused GEMM (multi-stage)", "coverage": { "Aiter": { "supported": true, "url": "https://github.com/ROCm/aiter/blob/main/aiter/ops/triton/gemm/fused/fused_gemm_a8w8_blockscale_a16w16.py" }, "hipBLASLt": false, "cuBLASLt": false } },
+        { "name": "Feed-Forward Fused", "coverage": { "Aiter": { "supported": true, "url": "https://github.com/ROCm/aiter/blob/main/aiter/ops/triton/gemm/feed_forward/ff_a16w16.py" }, "hipBLASLt": false, "cuBLASLt": false } },
+        { "name": "B-preshuffle GEMM", "coverage": { "Aiter": { "supported": true, "url": "https://github.com/ROCm/aiter/blob/main/aiter/ops/gradlib.py" }, "hipBLASLt": false, "cuBLASLt": false } }
       ]
     },
     {
@@ -57,22 +57,22 @@
       "amd_projects": ["Aiter"],
       "nv_projects": ["FlashInfer"],
       "operators": [
-        { "name": "Fused MoE BF16", "coverage": { "Aiter": true, "FlashInfer": true } },
-        { "name": "Fused MoE FP8", "coverage": { "Aiter": true, "FlashInfer": true } },
-        { "name": "Fused MoE FP8 blockscale", "coverage": { "Aiter": true, "FlashInfer": false } },
-        { "name": "Fused MoE MXFP4", "coverage": { "Aiter": true, "FlashInfer": true } },
-        { "name": "Fused MoE INT8 SmoothQuant", "coverage": { "Aiter": true, "FlashInfer": false } },
-        { "name": "Fused MoE A8W4", "coverage": { "Aiter": true, "FlashInfer": false } },
-        { "name": "Fused MoE A4W4", "coverage": { "Aiter": true, "FlashInfer": false } },
-        { "name": "MoE + SiLU fused", "coverage": { "Aiter": true, "FlashInfer": false } },
-        { "name": "MoE + GELU fused", "coverage": { "Aiter": true, "FlashInfer": false } },
-        { "name": "MoE 2-stage (CK/CKTile)", "coverage": { "Aiter": true, "FlashInfer": false } },
-        { "name": "TopK Softmax", "coverage": { "Aiter": true, "FlashInfer": false } },
-        { "name": "TopK Sigmoid", "coverage": { "Aiter": true, "FlashInfer": false } },
-        { "name": "Biased Grouped TopK", "coverage": { "Aiter": true, "FlashInfer": false } },
-        { "name": "MoE Sorting", "coverage": { "Aiter": true, "FlashInfer": false } },
-        { "name": "MoE Align Block Size", "coverage": { "Aiter": true, "FlashInfer": true } },
-        { "name": "MoE Routing (bitmatrix)", "coverage": { "Aiter": true, "FlashInfer": false } }
+        { "name": "Fused MoE BF16", "coverage": { "Aiter": { "supported": true, "url": "https://github.com/ROCm/aiter/blob/main/aiter/fused_moe.py" }, "FlashInfer": { "supported": true, "url": "https://docs.flashinfer.ai/api/moe.html" } } },
+        { "name": "Fused MoE FP8", "coverage": { "Aiter": { "supported": true, "url": "https://github.com/ROCm/aiter/blob/main/aiter/fused_moe.py" }, "FlashInfer": { "supported": true, "url": "https://docs.flashinfer.ai/generated/flashinfer.gemm.group_deepgemm_fp8_nt_groupwise.html" } } },
+        { "name": "Fused MoE FP8 blockscale", "coverage": { "Aiter": { "supported": true, "url": "https://github.com/ROCm/aiter/blob/main/aiter/ops/triton/moe/moe_op_gemm_a8w8.py" }, "FlashInfer": false } },
+        { "name": "Fused MoE MXFP4", "coverage": { "Aiter": { "supported": true, "url": "https://github.com/ROCm/aiter/blob/main/aiter/ops/triton/moe/moe_op_mxfp4.py" }, "FlashInfer": { "supported": true, "url": "https://docs.flashinfer.ai/api/moe.html" } } },
+        { "name": "Fused MoE INT8 SmoothQuant", "coverage": { "Aiter": { "supported": true, "url": "https://github.com/ROCm/aiter/blob/main/aiter/ops/moe_op.py" }, "FlashInfer": false } },
+        { "name": "Fused MoE A8W4", "coverage": { "Aiter": { "supported": true, "url": "https://github.com/ROCm/aiter/blob/main/aiter/ops/moe_op.py" }, "FlashInfer": false } },
+        { "name": "Fused MoE A4W4", "coverage": { "Aiter": { "supported": true, "url": "https://github.com/ROCm/aiter/blob/main/aiter/ops/moe_op.py" }, "FlashInfer": false } },
+        { "name": "MoE + SiLU fused", "coverage": { "Aiter": { "supported": true, "url": "https://github.com/ROCm/aiter/blob/main/aiter/fused_moe.py" }, "FlashInfer": false } },
+        { "name": "MoE + GELU fused", "coverage": { "Aiter": { "supported": true, "url": "https://github.com/ROCm/aiter/blob/main/aiter/fused_moe.py" }, "FlashInfer": false } },
+        { "name": "MoE 2-stage (CK/CKTile)", "coverage": { "Aiter": { "supported": true, "url": "https://github.com/ROCm/aiter/blob/main/aiter/ops/moe_op.py" }, "FlashInfer": false } },
+        { "name": "TopK Softmax", "coverage": { "Aiter": { "supported": true, "url": "https://github.com/ROCm/aiter/blob/main/aiter/ops/moe_op.py" }, "FlashInfer": false } },
+        { "name": "TopK Sigmoid", "coverage": { "Aiter": { "supported": true, "url": "https://github.com/ROCm/aiter/blob/main/aiter/ops/topk.py" }, "FlashInfer": false } },
+        { "name": "Biased Grouped TopK", "coverage": { "Aiter": { "supported": true, "url": "https://github.com/ROCm/aiter/blob/main/aiter/ops/topk.py" }, "FlashInfer": false } },
+        { "name": "MoE Sorting", "coverage": { "Aiter": { "supported": true, "url": "https://github.com/ROCm/aiter/blob/main/aiter/ops/moe_sorting.py" }, "FlashInfer": false } },
+        { "name": "MoE Align Block Size", "coverage": { "Aiter": { "supported": true, "url": "https://github.com/ROCm/aiter/blob/main/aiter/ops/moe_op.py" }, "FlashInfer": { "supported": true, "url": "https://docs.flashinfer.ai/api/moe.html" } } },
+        { "name": "MoE Routing (bitmatrix)", "coverage": { "Aiter": { "supported": true, "url": "https://github.com/ROCm/aiter/blob/main/aiter/fused_moe.py" }, "FlashInfer": false } }
       ]
     },
     {
@@ -81,15 +81,15 @@
       "amd_projects": ["Aiter"],
       "nv_projects": ["FlashInfer"],
       "operators": [
-        { "name": "RMSNorm", "coverage": { "Aiter": true, "FlashInfer": true } },
-        { "name": "RMSNorm + Add (fused)", "coverage": { "Aiter": true, "FlashInfer": true } },
-        { "name": "RMSNorm + Quant (fused)", "coverage": { "Aiter": true, "FlashInfer": false } },
-        { "name": "RMSNorm + Add + Quant (fused)", "coverage": { "Aiter": true, "FlashInfer": false } },
-        { "name": "RMSNorm + SmoothQuant", "coverage": { "Aiter": true, "FlashInfer": false } },
-        { "name": "LayerNorm", "coverage": { "Aiter": true, "FlashInfer": true } },
-        { "name": "LayerNorm + Add", "coverage": { "Aiter": true, "FlashInfer": false } },
-        { "name": "LayerNorm + SmoothQuant", "coverage": { "Aiter": true, "FlashInfer": false } },
-        { "name": "GroupNorm", "coverage": { "Aiter": true, "FlashInfer": false } }
+        { "name": "RMSNorm", "coverage": { "Aiter": { "supported": true, "url": "https://github.com/ROCm/aiter/blob/main/aiter/ops/rmsnorm.py" }, "FlashInfer": { "supported": true, "url": "https://docs.flashinfer.ai/generated/flashinfer.norm.rmsnorm.html" } } },
+        { "name": "RMSNorm + Add (fused)", "coverage": { "Aiter": { "supported": true, "url": "https://github.com/ROCm/aiter/blob/main/aiter/ops/rmsnorm.py" }, "FlashInfer": { "supported": true, "url": "https://docs.flashinfer.ai/generated/flashinfer.norm.fused_add_rmsnorm.html" } } },
+        { "name": "RMSNorm + Quant (fused)", "coverage": { "Aiter": { "supported": true, "url": "https://github.com/ROCm/aiter/blob/main/aiter/ops/rmsnorm.py" }, "FlashInfer": false } },
+        { "name": "RMSNorm + Add + Quant (fused)", "coverage": { "Aiter": { "supported": true, "url": "https://github.com/ROCm/aiter/blob/main/aiter/ops/rmsnorm.py" }, "FlashInfer": false } },
+        { "name": "RMSNorm + SmoothQuant", "coverage": { "Aiter": { "supported": true, "url": "https://github.com/ROCm/aiter/blob/main/aiter/ops/rmsnorm.py" }, "FlashInfer": false } },
+        { "name": "LayerNorm", "coverage": { "Aiter": { "supported": true, "url": "https://github.com/ROCm/aiter/blob/main/aiter/ops/norm.py" }, "FlashInfer": true } },
+        { "name": "LayerNorm + Add", "coverage": { "Aiter": { "supported": true, "url": "https://github.com/ROCm/aiter/blob/main/aiter/ops/norm.py" }, "FlashInfer": false } },
+        { "name": "LayerNorm + SmoothQuant", "coverage": { "Aiter": { "supported": true, "url": "https://github.com/ROCm/aiter/blob/main/aiter/ops/norm.py" }, "FlashInfer": false } },
+        { "name": "GroupNorm", "coverage": { "Aiter": { "supported": true, "url": "https://github.com/ROCm/aiter/blob/main/aiter/ops/groupnorm.py" }, "FlashInfer": false } }
       ]
     },
     {
@@ -98,13 +98,13 @@
       "amd_projects": ["Aiter"],
       "nv_projects": ["FlashInfer"],
       "operators": [
-        { "name": "Static per-tensor quant", "coverage": { "Aiter": true, "FlashInfer": false } },
-        { "name": "Dynamic per-tensor quant", "coverage": { "Aiter": true, "FlashInfer": true } },
-        { "name": "Dynamic per-token quant", "coverage": { "Aiter": true, "FlashInfer": true } },
-        { "name": "Per-group FP4 quant", "coverage": { "Aiter": true, "FlashInfer": true } },
-        { "name": "SmoothQuant", "coverage": { "Aiter": true, "FlashInfer": false } },
-        { "name": "MXFP4 quant", "coverage": { "Aiter": true, "FlashInfer": false } },
-        { "name": "Fused FP8 quant", "coverage": { "Aiter": true, "FlashInfer": false } }
+        { "name": "Static per-tensor quant", "coverage": { "Aiter": { "supported": true, "url": "https://github.com/ROCm/aiter/blob/main/aiter/ops/quant.py" }, "FlashInfer": false } },
+        { "name": "Dynamic per-tensor quant", "coverage": { "Aiter": { "supported": true, "url": "https://github.com/ROCm/aiter/blob/main/aiter/ops/quant.py" }, "FlashInfer": true } },
+        { "name": "Dynamic per-token quant", "coverage": { "Aiter": { "supported": true, "url": "https://github.com/ROCm/aiter/blob/main/aiter/ops/quant.py" }, "FlashInfer": true } },
+        { "name": "Per-group FP4 quant", "coverage": { "Aiter": { "supported": true, "url": "https://github.com/ROCm/aiter/blob/main/aiter/ops/quant.py" }, "FlashInfer": true } },
+        { "name": "SmoothQuant", "coverage": { "Aiter": { "supported": true, "url": "https://github.com/ROCm/aiter/blob/main/aiter/ops/quant.py" }, "FlashInfer": false } },
+        { "name": "MXFP4 quant", "coverage": { "Aiter": { "supported": true, "url": "https://github.com/ROCm/aiter/blob/main/aiter/ops/quant.py" }, "FlashInfer": false } },
+        { "name": "Fused FP8 quant", "coverage": { "Aiter": { "supported": true, "url": "https://github.com/ROCm/aiter/blob/main/aiter/ops/quant.py" }, "FlashInfer": false } }
       ]
     },
     {
@@ -113,14 +113,14 @@
       "amd_projects": ["Aiter"],
       "nv_projects": ["FlashInfer"],
       "operators": [
-        { "name": "RoPE (NEOX/GPT-J)", "coverage": { "Aiter": true, "FlashInfer": true } },
-        { "name": "RoPE cached (cos/sin)", "coverage": { "Aiter": true, "FlashInfer": true } },
-        { "name": "RoPE 2-channel (Q+K)", "coverage": { "Aiter": true, "FlashInfer": false } },
-        { "name": "RoPE THD (varlen)", "coverage": { "Aiter": true, "FlashInfer": false } },
-        { "name": "RoPE 2D (vision)", "coverage": { "Aiter": true, "FlashInfer": false } },
-        { "name": "RoPE + positions + offsets", "coverage": { "Aiter": true, "FlashInfer": true } },
-        { "name": "Batched RoPE", "coverage": { "Aiter": true, "FlashInfer": false } },
-        { "name": "LLaMA 3.1 RoPE", "coverage": { "Aiter": false, "FlashInfer": true } }
+        { "name": "RoPE (NEOX/GPT-J)", "coverage": { "Aiter": { "supported": true, "url": "https://github.com/ROCm/aiter/blob/main/aiter/ops/rope.py" }, "FlashInfer": { "supported": true, "url": "https://docs.flashinfer.ai/api/rope.html" } } },
+        { "name": "RoPE cached (cos/sin)", "coverage": { "Aiter": { "supported": true, "url": "https://github.com/ROCm/aiter/blob/main/aiter/ops/rope.py" }, "FlashInfer": { "supported": true, "url": "https://docs.flashinfer.ai/generated/flashinfer.rope.apply_rope.html" } } },
+        { "name": "RoPE 2-channel (Q+K)", "coverage": { "Aiter": { "supported": true, "url": "https://github.com/ROCm/aiter/blob/main/aiter/ops/rope.py" }, "FlashInfer": false } },
+        { "name": "RoPE THD (varlen)", "coverage": { "Aiter": { "supported": true, "url": "https://github.com/ROCm/aiter/blob/main/aiter/ops/rope.py" }, "FlashInfer": false } },
+        { "name": "RoPE 2D (vision)", "coverage": { "Aiter": { "supported": true, "url": "https://github.com/ROCm/aiter/blob/main/aiter/ops/pos_encoding.py" }, "FlashInfer": false } },
+        { "name": "RoPE + positions + offsets", "coverage": { "Aiter": { "supported": true, "url": "https://github.com/ROCm/aiter/blob/main/aiter/ops/rope.py" }, "FlashInfer": { "supported": true, "url": "https://docs.flashinfer.ai/generated/flashinfer.rope.apply_rope_pos_ids.html" } } },
+        { "name": "Batched RoPE", "coverage": { "Aiter": { "supported": true, "url": "https://github.com/ROCm/aiter/blob/main/aiter/ops/rope.py" }, "FlashInfer": { "supported": true, "url": "https://docs.flashinfer.ai/generated/flashinfer.rope.apply_rope_pos_ids_inplace.html" } } },
+        { "name": "LLaMA 3.1 RoPE", "coverage": { "Aiter": false, "FlashInfer": { "supported": true, "url": "https://docs.flashinfer.ai/generated/flashinfer.rope.apply_llama31_rope.html" } } }
       ]
     },
     {
@@ -129,13 +129,13 @@
       "amd_projects": ["Aiter"],
       "nv_projects": ["FlashInfer"],
       "operators": [
-        { "name": "Greedy sampling", "coverage": { "Aiter": true, "FlashInfer": false } },
-        { "name": "Random sampling", "coverage": { "Aiter": true, "FlashInfer": false } },
-        { "name": "Top-K sampling", "coverage": { "Aiter": true, "FlashInfer": true } },
-        { "name": "Top-P sampling", "coverage": { "Aiter": true, "FlashInfer": true } },
-        { "name": "Top-K + Top-P joint", "coverage": { "Aiter": true, "FlashInfer": true } },
-        { "name": "Min-P sampling", "coverage": { "Aiter": false, "FlashInfer": true } },
-        { "name": "Speculative sampling", "coverage": { "Aiter": false, "FlashInfer": true } }
+        { "name": "Greedy sampling", "coverage": { "Aiter": { "supported": true, "url": "https://github.com/ROCm/aiter/blob/main/aiter/ops/sampling.py" }, "FlashInfer": false } },
+        { "name": "Random sampling", "coverage": { "Aiter": { "supported": true, "url": "https://github.com/ROCm/aiter/blob/main/aiter/ops/sampling.py" }, "FlashInfer": false } },
+        { "name": "Top-K sampling", "coverage": { "Aiter": { "supported": true, "url": "https://github.com/ROCm/aiter/blob/main/aiter/ops/sampling.py" }, "FlashInfer": { "supported": true, "url": "https://docs.flashinfer.ai/api/sampling.html" } } },
+        { "name": "Top-P sampling", "coverage": { "Aiter": { "supported": true, "url": "https://github.com/ROCm/aiter/blob/main/aiter/ops/sampling.py" }, "FlashInfer": { "supported": true, "url": "https://docs.flashinfer.ai/api/sampling.html" } } },
+        { "name": "Top-K + Top-P joint", "coverage": { "Aiter": { "supported": true, "url": "https://github.com/ROCm/aiter/blob/main/aiter/ops/sampling.py" }, "FlashInfer": { "supported": true, "url": "https://docs.flashinfer.ai/api/sampling.html" } } },
+        { "name": "Min-P sampling", "coverage": { "Aiter": false, "FlashInfer": { "supported": true, "url": "https://docs.flashinfer.ai/api/sampling.html" } } },
+        { "name": "Speculative sampling", "coverage": { "Aiter": false, "FlashInfer": { "supported": true, "url": "https://docs.flashinfer.ai/api/sampling.html" } } }
       ]
     },
     {
@@ -144,12 +144,12 @@
       "amd_projects": ["Aiter"],
       "nv_projects": ["FlashInfer"],
       "operators": [
-        { "name": "SiLU and mul", "coverage": { "Aiter": true, "FlashInfer": true } },
-        { "name": "GELU and mul", "coverage": { "Aiter": true, "FlashInfer": false } },
-        { "name": "GELU-Tanh and mul", "coverage": { "Aiter": true, "FlashInfer": false } },
-        { "name": "Scaled SiLU and mul", "coverage": { "Aiter": true, "FlashInfer": false } },
-        { "name": "add / sub / mul / div", "coverage": { "Aiter": true, "FlashInfer": false } },
-        { "name": "sigmoid / tanh", "coverage": { "Aiter": true, "FlashInfer": false } }
+        { "name": "SiLU and mul", "coverage": { "Aiter": { "supported": true, "url": "https://github.com/ROCm/aiter/blob/main/aiter/ops/activation.py" }, "FlashInfer": { "supported": true, "url": "https://docs.flashinfer.ai/api/activation.html" } } },
+        { "name": "GELU and mul", "coverage": { "Aiter": { "supported": true, "url": "https://github.com/ROCm/aiter/blob/main/aiter/ops/activation.py" }, "FlashInfer": false } },
+        { "name": "GELU-Tanh and mul", "coverage": { "Aiter": { "supported": true, "url": "https://github.com/ROCm/aiter/blob/main/aiter/ops/activation.py" }, "FlashInfer": false } },
+        { "name": "Scaled SiLU and mul", "coverage": { "Aiter": { "supported": true, "url": "https://github.com/ROCm/aiter/blob/main/aiter/ops/activation.py" }, "FlashInfer": false } },
+        { "name": "add / sub / mul / div", "coverage": { "Aiter": { "supported": true, "url": "https://github.com/ROCm/aiter/blob/main/aiter/ops/activation.py" }, "FlashInfer": false } },
+        { "name": "sigmoid / tanh", "coverage": { "Aiter": { "supported": true, "url": "https://github.com/ROCm/aiter/blob/main/aiter/ops/activation.py" }, "FlashInfer": false } }
       ]
     },
     {
@@ -158,14 +158,14 @@
       "amd_projects": ["Aiter"],
       "nv_projects": ["FlashInfer"],
       "operators": [
-        { "name": "reshape_and_cache", "coverage": { "Aiter": true, "FlashInfer": true } },
-        { "name": "reshape_and_cache FP8/INT8", "coverage": { "Aiter": true, "FlashInfer": false } },
-        { "name": "reshape_and_cache block quant", "coverage": { "Aiter": true, "FlashInfer": false } },
-        { "name": "swap_blocks", "coverage": { "Aiter": true, "FlashInfer": false } },
-        { "name": "copy_blocks", "coverage": { "Aiter": true, "FlashInfer": false } },
-        { "name": "concat_and_cache MLA", "coverage": { "Aiter": true, "FlashInfer": false } },
-        { "name": "Fused QK+RoPE+Cache+Quant", "coverage": { "Aiter": true, "FlashInfer": false } },
-        { "name": "Paged KV append", "coverage": { "Aiter": false, "FlashInfer": true } }
+        { "name": "reshape_and_cache", "coverage": { "Aiter": { "supported": true, "url": "https://github.com/ROCm/aiter/blob/main/aiter/ops/cache.py" }, "FlashInfer": { "supported": true, "url": "https://docs.flashinfer.ai/tutorials/kv_layout.html" } } },
+        { "name": "reshape_and_cache FP8/INT8", "coverage": { "Aiter": { "supported": true, "url": "https://github.com/ROCm/aiter/blob/main/aiter/ops/cache.py" }, "FlashInfer": false } },
+        { "name": "reshape_and_cache block quant", "coverage": { "Aiter": { "supported": true, "url": "https://github.com/ROCm/aiter/blob/main/aiter/ops/cache.py" }, "FlashInfer": false } },
+        { "name": "swap_blocks", "coverage": { "Aiter": { "supported": true, "url": "https://github.com/ROCm/aiter/blob/main/aiter/ops/cache.py" }, "FlashInfer": false } },
+        { "name": "copy_blocks", "coverage": { "Aiter": { "supported": true, "url": "https://github.com/ROCm/aiter/blob/main/aiter/ops/cache.py" }, "FlashInfer": false } },
+        { "name": "concat_and_cache MLA", "coverage": { "Aiter": { "supported": true, "url": "https://github.com/ROCm/aiter/blob/main/aiter/ops/cache.py" }, "FlashInfer": false } },
+        { "name": "Fused QK+RoPE+Cache+Quant", "coverage": { "Aiter": { "supported": true, "url": "https://github.com/ROCm/aiter/blob/main/aiter/ops/fused_qk_norm_rope_cache_quant.py" }, "FlashInfer": false } },
+        { "name": "Paged KV append", "coverage": { "Aiter": false, "FlashInfer": { "supported": true, "url": "https://docs.flashinfer.ai/tutorials/kv_layout.html" } } }
       ]
     },
     {
@@ -174,22 +174,22 @@
       "amd_projects": ["Aiter", "Mori", "RCCL"],
       "nv_projects": ["DeepEP", "NCCL"],
       "operators": [
-        { "name": "AllReduce", "coverage": { "Aiter": true, "Mori": false, "RCCL": true, "DeepEP": false, "NCCL": true } },
-        { "name": "AllReduce + RMSNorm (fused)", "coverage": { "Aiter": true, "Mori": false, "RCCL": false, "DeepEP": false, "NCCL": false } },
-        { "name": "ReduceScatter", "coverage": { "Aiter": true, "Mori": false, "RCCL": true, "DeepEP": false, "NCCL": true } },
-        { "name": "AllGather", "coverage": { "Aiter": true, "Mori": false, "RCCL": true, "DeepEP": false, "NCCL": true } },
-        { "name": "AllToAll", "coverage": { "Aiter": false, "Mori": false, "RCCL": true, "DeepEP": false, "NCCL": true } },
-        { "name": "Broadcast", "coverage": { "Aiter": false, "Mori": false, "RCCL": true, "DeepEP": false, "NCCL": true } },
-        { "name": "Send / Recv", "coverage": { "Aiter": false, "Mori": false, "RCCL": true, "DeepEP": false, "NCCL": true } },
-        { "name": "EP Dispatch (IntraNode)", "coverage": { "Aiter": true, "Mori": true, "RCCL": false, "DeepEP": true, "NCCL": false } },
-        { "name": "EP Dispatch (InterNode)", "coverage": { "Aiter": true, "Mori": true, "RCCL": false, "DeepEP": true, "NCCL": false } },
-        { "name": "EP Combine (IntraNode)", "coverage": { "Aiter": true, "Mori": true, "RCCL": false, "DeepEP": true, "NCCL": false } },
-        { "name": "EP Combine (InterNode)", "coverage": { "Aiter": true, "Mori": true, "RCCL": false, "DeepEP": true, "NCCL": false } },
-        { "name": "EP Low-Latency (LL)", "coverage": { "Aiter": false, "Mori": true, "RCCL": false, "DeepEP": true, "NCCL": false } },
-        { "name": "RDMA Read/Write (P2P)", "coverage": { "Aiter": false, "Mori": true, "RCCL": false, "DeepEP": false, "NCCL": false } },
-        { "name": "RDMA Batch IO", "coverage": { "Aiter": false, "Mori": true, "RCCL": false, "DeepEP": false, "NCCL": false } },
-        { "name": "Shmem (symmetric memory)", "coverage": { "Aiter": false, "Mori": true, "RCCL": false, "DeepEP": false, "NCCL": false } },
-        { "name": "ReduceScatter+RMSNorm+Quant+AllGather (fused)", "coverage": { "Aiter": true, "Mori": false, "RCCL": false, "DeepEP": false, "NCCL": false } }
+        { "name": "AllReduce", "coverage": { "Aiter": { "supported": true, "url": "https://github.com/ROCm/aiter/blob/main/aiter/ops/custom_all_reduce.py" }, "Mori": false, "RCCL": { "supported": true, "url": "https://github.com/ROCm/rccl" }, "DeepEP": false, "NCCL": { "supported": true, "url": "https://github.com/NVIDIA/nccl" } } },
+        { "name": "AllReduce + RMSNorm (fused)", "coverage": { "Aiter": { "supported": true, "url": "https://github.com/ROCm/aiter/blob/main/aiter/ops/communication.py" }, "Mori": false, "RCCL": false, "DeepEP": false, "NCCL": false } },
+        { "name": "ReduceScatter", "coverage": { "Aiter": { "supported": true, "url": "https://github.com/ROCm/aiter/blob/main/aiter/ops/communication.py" }, "Mori": false, "RCCL": { "supported": true, "url": "https://github.com/ROCm/rccl" }, "DeepEP": false, "NCCL": { "supported": true, "url": "https://github.com/NVIDIA/nccl" } } },
+        { "name": "AllGather", "coverage": { "Aiter": { "supported": true, "url": "https://github.com/ROCm/aiter/blob/main/aiter/ops/communication.py" }, "Mori": false, "RCCL": { "supported": true, "url": "https://github.com/ROCm/rccl" }, "DeepEP": false, "NCCL": { "supported": true, "url": "https://github.com/NVIDIA/nccl" } } },
+        { "name": "AllToAll", "coverage": { "Aiter": false, "Mori": false, "RCCL": { "supported": true, "url": "https://github.com/ROCm/rccl" }, "DeepEP": false, "NCCL": { "supported": true, "url": "https://github.com/NVIDIA/nccl" } } },
+        { "name": "Broadcast", "coverage": { "Aiter": false, "Mori": false, "RCCL": { "supported": true, "url": "https://github.com/ROCm/rccl" }, "DeepEP": false, "NCCL": { "supported": true, "url": "https://github.com/NVIDIA/nccl" } } },
+        { "name": "Send / Recv", "coverage": { "Aiter": false, "Mori": false, "RCCL": { "supported": true, "url": "https://github.com/ROCm/rccl" }, "DeepEP": false, "NCCL": { "supported": true, "url": "https://github.com/NVIDIA/nccl" } } },
+        { "name": "EP Dispatch (IntraNode)", "coverage": { "Aiter": { "supported": true, "url": "https://github.com/ROCm/aiter/blob/main/aiter/ops/communication.py" }, "Mori": { "supported": true, "url": "https://github.com/ROCm/mori/blob/main/python/mori/ops/dispatch_combine.py" }, "RCCL": false, "DeepEP": { "supported": true, "url": "https://github.com/deepseek-ai/DeepEP" }, "NCCL": false } },
+        { "name": "EP Dispatch (InterNode)", "coverage": { "Aiter": { "supported": true, "url": "https://github.com/ROCm/aiter/blob/main/aiter/ops/communication.py" }, "Mori": { "supported": true, "url": "https://github.com/ROCm/mori/blob/main/python/mori/ops/dispatch_combine.py" }, "RCCL": false, "DeepEP": { "supported": true, "url": "https://github.com/deepseek-ai/DeepEP" }, "NCCL": false } },
+        { "name": "EP Combine (IntraNode)", "coverage": { "Aiter": { "supported": true, "url": "https://github.com/ROCm/aiter/blob/main/aiter/ops/communication.py" }, "Mori": { "supported": true, "url": "https://github.com/ROCm/mori/blob/main/python/mori/ops/dispatch_combine.py" }, "RCCL": false, "DeepEP": { "supported": true, "url": "https://github.com/deepseek-ai/DeepEP" }, "NCCL": false } },
+        { "name": "EP Combine (InterNode)", "coverage": { "Aiter": { "supported": true, "url": "https://github.com/ROCm/aiter/blob/main/aiter/ops/communication.py" }, "Mori": { "supported": true, "url": "https://github.com/ROCm/mori/blob/main/python/mori/ops/dispatch_combine.py" }, "RCCL": false, "DeepEP": { "supported": true, "url": "https://github.com/deepseek-ai/DeepEP" }, "NCCL": false } },
+        { "name": "EP Low-Latency (LL)", "coverage": { "Aiter": false, "Mori": { "supported": true, "url": "https://github.com/ROCm/mori/blob/main/python/mori/ops/dispatch_combine.py" }, "RCCL": false, "DeepEP": { "supported": true, "url": "https://github.com/deepseek-ai/DeepEP" }, "NCCL": false } },
+        { "name": "RDMA Read/Write (P2P)", "coverage": { "Aiter": false, "Mori": { "supported": true, "url": "https://github.com/ROCm/mori/blob/main/python/mori/io/engine.py" }, "RCCL": false, "DeepEP": false, "NCCL": false } },
+        { "name": "RDMA Batch IO", "coverage": { "Aiter": false, "Mori": { "supported": true, "url": "https://github.com/ROCm/mori/blob/main/python/mori/io/engine.py" }, "RCCL": false, "DeepEP": false, "NCCL": false } },
+        { "name": "Shmem (symmetric memory)", "coverage": { "Aiter": false, "Mori": { "supported": true, "url": "https://github.com/ROCm/mori/blob/main/python/mori/shmem/api.py" }, "RCCL": false, "DeepEP": false, "NCCL": false } },
+        { "name": "ReduceScatter+RMSNorm+Quant+AllGather (fused)", "coverage": { "Aiter": { "supported": true, "url": "https://github.com/ROCm/aiter/blob/main/aiter/ops/communication.py" }, "Mori": false, "RCCL": false, "DeepEP": false, "NCCL": false } }
       ]
     },
     {
@@ -198,11 +198,11 @@
       "amd_projects": ["Aiter"],
       "nv_projects": ["FlashInfer"],
       "operators": [
-        { "name": "Causal Conv1D", "coverage": { "Aiter": true, "FlashInfer": false } },
-        { "name": "Gated Delta Net (SSM)", "coverage": { "Aiter": true, "FlashInfer": false } },
-        { "name": "Weight Shuffle/Preshuffle", "coverage": { "Aiter": true, "FlashInfer": false } },
-        { "name": "Ragged Layout Transform", "coverage": { "Aiter": true, "FlashInfer": false } },
-        { "name": "Softmax", "coverage": { "Aiter": true, "FlashInfer": false } }
+        { "name": "Causal Conv1D", "coverage": { "Aiter": { "supported": true, "url": "https://github.com/ROCm/aiter/blob/main/aiter/ops/causal_conv1d.py" }, "FlashInfer": false } },
+        { "name": "Gated Delta Net (SSM)", "coverage": { "Aiter": { "supported": true, "url": "https://github.com/ROCm/aiter/blob/main/aiter/ops/triton/gated_delta_net/gated_delta_rule.py" }, "FlashInfer": false } },
+        { "name": "Weight Shuffle/Preshuffle", "coverage": { "Aiter": { "supported": true, "url": "https://github.com/ROCm/aiter/blob/main/aiter/ops/shuffle.py" }, "FlashInfer": false } },
+        { "name": "Ragged Layout Transform", "coverage": { "Aiter": { "supported": true, "url": "https://github.com/ROCm/aiter/blob/main/aiter/ops/trans_ragged_layout.py" }, "FlashInfer": false } },
+        { "name": "Softmax", "coverage": { "Aiter": { "supported": true, "url": "https://github.com/ROCm/aiter/blob/main/aiter/ops/softmax.py" }, "FlashInfer": false } }
       ]
     }
   ]

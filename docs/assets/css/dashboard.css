@@ -897,9 +897,9 @@ footer {
 }
 
 .oc-category summary {
-  padding: 12px 16px;
+  padding: 14px 16px;
   cursor: pointer;
-  font-size: 14px;
+  font-size: 15px;
   font-weight: 600;
   list-style: none;
   display: flex;
@@ -927,7 +927,7 @@ footer {
 }
 
 .oc-cat-count {
-  font-size: 12px;
+  font-size: 13px;
   font-weight: 400;
   color: var(--text-muted);
 }
@@ -940,9 +940,9 @@ footer {
 .oc-badge-amd,
 .oc-badge-nv {
   display: inline-block;
-  padding: 2px 8px;
+  padding: 3px 10px;
   border-radius: 12px;
-  font-size: 11px;
+  font-size: 12px;
   font-weight: 500;
   color: #fff;
 }
@@ -962,16 +962,16 @@ footer {
 .oc-table {
   width: 100%;
   border-collapse: collapse;
-  font-size: 13px;
+  font-size: 14px;
 }
 
 .oc-table th {
   text-align: center;
-  padding: 6px 10px;
+  padding: 8px 12px;
   border-bottom: 2px solid var(--border);
   color: var(--text-muted);
-  font-weight: 500;
-  font-size: 12px;
+  font-weight: 600;
+  font-size: 13px;
   white-space: nowrap;
 }
 
@@ -984,7 +984,7 @@ footer {
 }
 
 .oc-table td {
-  padding: 6px 10px;
+  padding: 8px 12px;
   border-bottom: 1px solid var(--border);
   text-align: center;
 }
@@ -1017,6 +1017,14 @@ footer {
 
 .oc-partial {
   color: var(--accent-orange);
+}
+
+.oc-link {
+  text-decoration: none;
+}
+
+.oc-link:hover {
+  text-decoration: underline;
 }
 
 .oc-updated {

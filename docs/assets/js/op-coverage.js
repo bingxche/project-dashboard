@@ -6,7 +6,7 @@
 function renderOpCoverage(data) {
   var el = document.getElementById("op-coverage-view");
   if (!data || !data.categories) {
-    el.innerHTML = '<h2>Op Coverage</h2><p class="empty">No op coverage data available.</p>';
+    el.innerHTML = '<h2>AI Operator Coverage</h2><p class="empty">No op coverage data available.</p>';
     return;
   }
 
@@ -22,14 +22,14 @@ function renderOpCoverage(data) {
     totalOps += ops.length;
     for (var j = 0; j < ops.length; j++) {
       var cov = ops[j].coverage;
-      var hasAmd = amdProjects.some(function (p) { return cov[p] === true; });
-      var hasNv = nvProjects.some(function (p) { return cov[p] === true; });
+      var hasAmd = amdProjects.some(function (p) { return covSupported(cov[p]); });
+      var hasNv = nvProjects.some(function (p) { return covSupported(cov[p]); });
       if (hasAmd) totalAmd++;
       if (hasNv) totalNv++;
     }
   }
 
-  var html = '<h2>Op Coverage &mdash; AMD vs NV Ecosystem</h2>';
+  var html = '<h2>AI Operator Coverage &mdash; AMD vs NV Ecosystem</h2>';
 
   // Summary boxes
   html += '<div class="oc-summary">';
@@ -62,8 +62,8 @@ function buildOcCategory(cat) {
   var nvCount = 0;
   for (var i = 0; i < ops.length; i++) {
     var cov = ops[i].coverage;
-    if (amdProjects.some(function (p) { return cov[p] === true; })) amdCount++;
-    if (nvProjects.some(function (p) { return cov[p] === true; })) nvCount++;
+    if (amdProjects.some(function (p) { return covSupported(cov[p]); })) amdCount++;
+    if (nvProjects.some(function (p) { return covSupported(cov[p]); })) nvCount++;
   }
 
   var html = '<details class="oc-category">';
@@ -113,7 +113,25 @@ function buildOcCategory(cat) {
   return html;
 }
 
+// val can be: true, false, "partial", or { supported: true/false/"partial", url: "..." }
+function covSupported(val) {
+  if (val === true) return true;
+  if (val && typeof val === "object") return val.supported === true;
+  return false;
+}
+
 function coverageIcon(val) {
+  if (val && typeof val === "object") {
+    var icon = coverageIconSimple(val.supported);
+    if (val.url && val.supported) {
+      return '<a href="' + val.url + '" target="_blank" class="oc-link">' + icon + '</a>';
+    }
+    return icon;
+  }
+  return coverageIconSimple(val);
+}
+
+function coverageIconSimple(val) {
   if (val === true) return '<span class="oc-yes">&#10003;</span>';
   if (val === "partial") return '<span class="oc-partial">&#9881;</span>';
   return '<span class="oc-no">&mdash;</span>';
