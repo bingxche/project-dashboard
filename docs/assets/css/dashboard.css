@@ -679,7 +679,7 @@ footer {
   color: #fff;
 }
 
-.platform-rocm { background: #ed1c24; }
+.platform-rocm { background: #1f6feb; }
 .platform-cuda { background: #76b900; }
 
 /* CI health badges */
@@ -812,7 +812,7 @@ footer {
 /* ---------------------------------------------------------------------------
    PyTorch Enhanced Parity Card
    --------------------------------------------------------------------------- */
-.parity-arch-badge { padding: 2px 8px; border-radius: 12px; font-size: 11px; font-weight: 600; color: #fff; background: #ed1c24; }
+.parity-arch-badge { padding: 2px 8px; border-radius: 12px; font-size: 11px; font-weight: 600; color: #fff; background: #1f6feb; }
 .parity-primary { text-align: center; margin: 12px 0; }
 .parity-big-num { font-size: 48px; font-weight: 700; line-height: 1.1; }
 .parity-big-label { font-size: 13px; color: var(--text-muted); margin-top: 4px; }
@@ -1154,7 +1154,7 @@ footer {
 }
 
 .oc-badge-amd {
-  background: #ed1c24;
+  background: #1f6feb;
 }
 
 .oc-badge-nv {
