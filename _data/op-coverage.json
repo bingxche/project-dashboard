@@ -628,7 +628,7 @@
             },
             "FlashInfer": false
           },
-          "backend": "ASM / CK"
+          "backend": "ASM / CK / FlyDSL"
         },
         {
           "name": "MoE + SiLU fused",
