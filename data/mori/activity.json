@@ -1,43 +1,43 @@
 {
-  "collected_at": "2026-03-09T08:16:58Z",
+  "collected_at": "2026-03-13T04:34:16Z",
   "project": "mori",
   "repo": "ROCm/mori",
   "pr_velocity": {
     "this_week": {
       "opened": 12,
+      "merged": 9,
+      "closed": 2
+    },
+    "last_week": {
+      "opened": 10,
       "merged": 7,
       "closed": 3
     },
-    "last_week": {
-      "opened": 6,
-      "merged": 5,
-      "closed": 1
-    },
-    "median_time_to_merge_hours": 0.3,
-    "merge_count": 13,
+    "median_time_to_merge_hours": 0.5,
+    "merge_count": 17,
     "stale_prs": 2
   },
   "contributors": {
     "active_this_week": 5,
-    "total_contributors": 11,
+    "total_contributors": 10,
     "top_contributors": [
       {
         "author": "TianDi101",
         "prs_submitted": 25,
-        "prs_merged": 21,
+        "prs_merged": 22,
         "commits": 2
       },
       {
         "author": "jhchouuu",
         "prs_submitted": 23,
-        "prs_merged": 22,
-        "commits": 9
+        "prs_merged": 20,
+        "commits": 10
       },
       {
         "author": "maning00",
-        "prs_submitted": 18,
-        "prs_merged": 15,
-        "commits": 4
+        "prs_submitted": 19,
+        "prs_merged": 16,
+        "commits": 6
       },
       {
         "author": "zhangfei829",
@@ -53,8 +53,8 @@
       },
       {
         "author": "dongmin-ra",
-        "prs_submitted": 5,
-        "prs_merged": 4,
+        "prs_submitted": 3,
+        "prs_merged": 2,
         "commits": 0
       },
       {
@@ -66,8 +66,8 @@
       {
         "author": "sunway513",
         "prs_submitted": 2,
-        "prs_merged": 0,
-        "commits": 0
+        "prs_merged": 1,
+        "commits": 1
       },
       {
         "author": "TennyWang1223",
