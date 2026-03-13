@@ -28,7 +28,8 @@
           "backend": "CK / ASM / Triton",
           "backend_urls": {
             "CK": "https://github.com/ROCm/aiter/blob/main/csrc/py_itfs_ck/mha_fwd_kernels.cu",
-            "ASM": "https://github.com/ROCm/aiter/blob/main/csrc/py_itfs_cu/asm_mha_fwd.cu"
+            "ASM": "https://github.com/ROCm/aiter/blob/main/csrc/py_itfs_cu/asm_mha_fwd.cu",
+            "Triton": "https://github.com/ROCm/aiter/blob/main/aiter/ops/triton/attention/mha.py"
           }
         },
         {
@@ -47,7 +48,8 @@
           "backend": "CK / ASM / Triton",
           "backend_urls": {
             "CK": "https://github.com/ROCm/aiter/blob/main/csrc/py_itfs_ck/mha_fwd_kernels.cu",
-            "ASM": "https://github.com/ROCm/aiter/blob/main/csrc/py_itfs_cu/asm_mha_fwd.cu"
+            "ASM": "https://github.com/ROCm/aiter/blob/main/csrc/py_itfs_cu/asm_mha_fwd.cu",
+            "Triton": "https://github.com/ROCm/aiter/blob/main/aiter/ops/triton/attention/mha.py"
           }
         },
         {
@@ -66,7 +68,8 @@
           "backend": "CK / ASM / Triton",
           "backend_urls": {
             "CK": "https://github.com/ROCm/aiter/blob/main/csrc/py_itfs_ck/mha_fwd_kernels.cu",
-            "ASM": "https://github.com/ROCm/aiter/blob/main/csrc/py_itfs_cu/asm_mha_fwd.cu"
+            "ASM": "https://github.com/ROCm/aiter/blob/main/csrc/py_itfs_cu/asm_mha_fwd.cu",
+            "Triton": "https://github.com/ROCm/aiter/blob/main/aiter/ops/triton/_triton_kernels/flash_attn_triton_amd/fwd_decode.py"
           }
         },
         {
@@ -85,7 +88,8 @@
           "backend": "CK / ASM / Triton",
           "backend_urls": {
             "CK": "https://github.com/ROCm/aiter/blob/main/csrc/py_itfs_ck/mha_varlen_fwd_kernels.cu",
-            "ASM": "https://github.com/ROCm/aiter/blob/main/csrc/py_itfs_cu/asm_mha_varlen_fwd.cu"
+            "ASM": "https://github.com/ROCm/aiter/blob/main/csrc/py_itfs_cu/asm_mha_varlen_fwd.cu",
+            "Triton": "https://github.com/ROCm/aiter/blob/main/aiter/ops/triton/attention/mha.py"
           }
         },
         {
@@ -144,7 +148,8 @@
           "backend_urls": {
             "ASM": "https://github.com/ROCm/aiter/blob/main/csrc/py_itfs_cu/asm_pa.cu",
             "HIP": "https://github.com/ROCm/aiter/blob/main/csrc/cpp_itfs/pa/pa.py",
-            "Gluon": "https://github.com/ROCm/aiter/blob/main/aiter/ops/triton/gluon/pa_decode_gluon.py"
+            "Gluon": "https://github.com/ROCm/aiter/blob/main/aiter/ops/triton/gluon/pa_decode_gluon.py",
+            "Triton": "https://github.com/ROCm/aiter/blob/main/aiter/ops/triton/attention/pa_decode.py"
           }
         },
         {
@@ -163,7 +168,8 @@
           "backend": "ASM / HIP / Triton",
           "backend_urls": {
             "ASM": "https://github.com/ROCm/aiter/blob/main/csrc/py_itfs_cu/asm_pa.cu",
-            "HIP": "https://github.com/ROCm/aiter/blob/main/csrc/cpp_itfs/pa/pa.py"
+            "HIP": "https://github.com/ROCm/aiter/blob/main/csrc/cpp_itfs/pa/pa.py",
+            "Triton": "https://github.com/ROCm/aiter/blob/main/aiter/ops/triton/attention/pa_prefill.py"
           }
         },
         {
@@ -181,7 +187,8 @@
           },
           "backend": "HIP / Triton",
           "backend_urls": {
-            "HIP": "https://github.com/ROCm/aiter/blob/main/csrc/cpp_itfs/pa/pa_ragged.py"
+            "HIP": "https://github.com/ROCm/aiter/blob/main/csrc/cpp_itfs/pa/pa_ragged.py",
+            "Triton": "https://github.com/ROCm/aiter/blob/main/aiter/ops/triton/attention/chunked_pa_prefill.py"
           }
         },
         {
@@ -324,7 +331,8 @@
           "backend": "ASM / CK / Triton",
           "backend_urls": {
             "ASM": "https://github.com/ROCm/aiter/blob/main/csrc/py_itfs_cu/asm_gemm_a16w16.cu",
-            "CK": "https://github.com/ROCm/aiter/blob/main/aiter/ops/gemm_op_a16w16.py"
+            "CK": "https://github.com/ROCm/aiter/blob/main/aiter/ops/gemm_op_a16w16.py",
+            "Triton": "https://github.com/ROCm/aiter/blob/main/aiter/ops/triton/gemm/basic/gemm_a16w16.py"
           }
         },
         {
@@ -346,7 +354,8 @@
           "backend": "CK / ASM / Triton",
           "backend_urls": {
             "CK": "https://github.com/ROCm/aiter/blob/main/csrc/ck_gemm_a8w8/",
-            "ASM": "https://github.com/ROCm/aiter/blob/main/csrc/py_itfs_cu/asm_gemm_a8w8.cu"
+            "ASM": "https://github.com/ROCm/aiter/blob/main/csrc/py_itfs_cu/asm_gemm_a8w8.cu",
+            "Triton": "https://github.com/ROCm/aiter/blob/main/aiter/ops/triton/gemm/basic/gemm_a8w8.py"
           }
         },
         {
@@ -391,7 +400,8 @@
           "backend": "CK / ASM / Triton",
           "backend_urls": {
             "CK": "https://github.com/ROCm/aiter/blob/main/csrc/ck_gemm_a8w8/",
-            "ASM": "https://github.com/ROCm/aiter/blob/main/csrc/py_itfs_cu/asm_gemm_a8w8.cu"
+            "ASM": "https://github.com/ROCm/aiter/blob/main/csrc/py_itfs_cu/asm_gemm_a8w8.cu",
+            "Triton": "https://github.com/ROCm/aiter/blob/main/aiter/ops/triton/gemm/basic/gemm_a8w8.py"
           }
         },
         {
@@ -413,7 +423,8 @@
           "backend": "ASM / CK / Triton",
           "backend_urls": {
             "ASM": "https://github.com/ROCm/aiter/blob/main/csrc/py_itfs_cu/asm_gemm_a4w4.cu",
-            "CK": "https://github.com/ROCm/aiter/blob/main/csrc/ck_gemm_a4w4_blockscale/"
+            "CK": "https://github.com/ROCm/aiter/blob/main/csrc/ck_gemm_a4w4_blockscale/",
+            "Triton": "https://github.com/ROCm/aiter/blob/main/aiter/ops/triton/gemm/basic/gemm_afp4wfp4.py"
           }
         },
         {
@@ -479,7 +490,8 @@
           },
           "backend": "CK / Triton",
           "backend_urls": {
-            "CK": "https://github.com/ROCm/aiter/blob/main/csrc/ck_batched_gemm_bf16/"
+            "CK": "https://github.com/ROCm/aiter/blob/main/csrc/ck_batched_gemm_bf16/",
+            "Triton": "https://github.com/ROCm/aiter/blob/main/aiter/ops/triton/gemm/batched/batched_gemm_bf16.py"
           }
         },
         {
@@ -500,7 +512,8 @@
           },
           "backend": "CK / Triton",
           "backend_urls": {
-            "CK": "https://github.com/ROCm/aiter/blob/main/csrc/ck_batched_gemm_a8w8/"
+            "CK": "https://github.com/ROCm/aiter/blob/main/csrc/ck_batched_gemm_a8w8/",
+            "Triton": "https://github.com/ROCm/aiter/blob/main/aiter/ops/triton/gemm/batched/batched_gemm_a8w8.py"
           }
         },
         {
@@ -541,7 +554,8 @@
           "backend_urls": {
             "ASM": "https://github.com/ROCm/aiter/blob/main/csrc/py_itfs_cu/asm_fmoe.cu",
             "CK": "https://github.com/ROCm/aiter/blob/main/csrc/ck_gemm_moe_2stages_codegen/",
-            "FlyDSL": "https://github.com/ROCm/aiter/blob/main/aiter/ops/flydsl/moe_kernels.py"
+            "FlyDSL": "https://github.com/ROCm/aiter/blob/main/aiter/ops/flydsl/moe_kernels.py",
+            "Triton": "https://github.com/ROCm/aiter/blob/main/aiter/ops/triton/gmm.py"
           }
         },
         {
@@ -557,7 +571,10 @@
               "url": "https://developer.nvidia.com/blog/new-cublas-12-0-features-and-matrix-multiplication-performance-on-nvidia-hopper-gpus/"
             }
           },
-          "backend": "Triton"
+          "backend": "Triton",
+          "backend_urls": {
+            "Triton": "https://github.com/ROCm/aiter/blob/main/aiter/ops/triton/gemm/basic/gemm_a16w16.py"
+          }
         },
         {
           "name": "GEMM + ReLU/GELU/SiLU fusion",
@@ -572,7 +589,10 @@
               "url": "https://docs.nvidia.com/cuda/cublas/"
             }
           },
-          "backend": "Triton"
+          "backend": "Triton",
+          "backend_urls": {
+            "Triton": "https://github.com/ROCm/aiter/blob/main/aiter/ops/triton/gemm/basic/gemm_a16w16_gated.py"
+          }
         },
         {
           "name": "DeepGEMM",
@@ -669,7 +689,8 @@
           "backend_urls": {
             "ASM": "https://github.com/ROCm/aiter/blob/main/csrc/py_itfs_cu/asm_fmoe.cu",
             "CK": "https://github.com/ROCm/aiter/blob/main/csrc/ck_gemm_moe_2stages_codegen/",
-            "FlyDSL": "https://github.com/ROCm/aiter/blob/main/aiter/ops/flydsl/kernels/moe_gemm_2stage.py"
+            "FlyDSL": "https://github.com/ROCm/aiter/blob/main/aiter/ops/flydsl/kernels/moe_gemm_2stage.py",
+            "Triton": "https://github.com/ROCm/aiter/blob/main/aiter/ops/triton/moe/moe_op.py"
           }
         },
         {
@@ -688,7 +709,8 @@
           "backend_urls": {
             "ASM": "https://github.com/ROCm/aiter/blob/main/csrc/py_itfs_cu/asm_fmoe.cu",
             "CK": "https://github.com/ROCm/aiter/blob/main/csrc/ck_gemm_moe_2stages_codegen/",
-            "FlyDSL": "https://github.com/ROCm/aiter/blob/main/aiter/ops/flydsl/kernels/moe_gemm_2stage.py"
+            "FlyDSL": "https://github.com/ROCm/aiter/blob/main/aiter/ops/flydsl/kernels/moe_gemm_2stage.py",
+            "Triton": "https://github.com/ROCm/aiter/blob/main/aiter/ops/triton/moe/moe_op_gemm_a8w8.py"
           }
         },
         {
@@ -754,7 +776,8 @@
           "backend": "ASM / CK / Triton",
           "backend_urls": {
             "ASM": "https://github.com/ROCm/aiter/blob/main/csrc/py_itfs_cu/asm_fmoe.cu",
-            "CK": "https://github.com/ROCm/aiter/blob/main/csrc/ck_gemm_moe_2stages_codegen/"
+            "CK": "https://github.com/ROCm/aiter/blob/main/csrc/ck_gemm_moe_2stages_codegen/",
+            "Triton": "https://github.com/ROCm/aiter/blob/main/aiter/ops/triton/moe/moe_op_gemm_a8w4.py"
           }
         },
         {
@@ -770,7 +793,8 @@
           "backend_urls": {
             "ASM": "https://github.com/ROCm/aiter/blob/main/csrc/py_itfs_cu/asm_fmoe.cu",
             "CK": "https://github.com/ROCm/aiter/blob/main/csrc/ck_gemm_moe_2stages_codegen/",
-            "FlyDSL": "https://github.com/ROCm/aiter/blob/main/aiter/ops/flydsl/kernels/mixed_moe_gemm_2stage.py"
+            "FlyDSL": "https://github.com/ROCm/aiter/blob/main/aiter/ops/flydsl/kernels/mixed_moe_gemm_2stage.py",
+            "Triton": "https://github.com/ROCm/aiter/blob/main/aiter/ops/triton/moe/moe_op_gemm_a4w4.py"
           }
         },
         {
@@ -789,7 +813,8 @@
           "backend_urls": {
             "ASM": "https://github.com/ROCm/aiter/blob/main/csrc/py_itfs_cu/asm_fmoe.cu",
             "CK": "https://github.com/ROCm/aiter/blob/main/csrc/ck_gemm_moe_2stages_codegen/",
-            "FlyDSL": "https://github.com/ROCm/aiter/blob/main/aiter/ops/flydsl/kernels/moe_gemm_2stage.py"
+            "FlyDSL": "https://github.com/ROCm/aiter/blob/main/aiter/ops/flydsl/kernels/moe_gemm_2stage.py",
+            "Triton": "https://github.com/ROCm/aiter/blob/main/aiter/ops/triton/moe/moe_op_silu_fused.py"
           }
         },
         {
@@ -805,7 +830,8 @@
           "backend_urls": {
             "ASM": "https://github.com/ROCm/aiter/blob/main/csrc/py_itfs_cu/asm_fmoe.cu",
             "CK": "https://github.com/ROCm/aiter/blob/main/csrc/ck_gemm_moe_2stages_codegen/",
-            "FlyDSL": "https://github.com/ROCm/aiter/blob/main/aiter/ops/flydsl/kernels/moe_gemm_2stage.py"
+            "FlyDSL": "https://github.com/ROCm/aiter/blob/main/aiter/ops/flydsl/kernels/moe_gemm_2stage.py",
+            "Triton": "https://github.com/ROCm/aiter/blob/main/aiter/ops/triton/moe/moe_op_gelu.py"
           }
         },
         {
@@ -820,7 +846,8 @@
           "backend": "CK / FlyDSL / Triton",
           "backend_urls": {
             "CK": "https://github.com/ROCm/aiter/blob/main/csrc/ck_tile_gemm_moe_2stages/",
-            "FlyDSL": "https://github.com/ROCm/aiter/blob/main/aiter/ops/flydsl/kernels/moe_gemm_2stage.py"
+            "FlyDSL": "https://github.com/ROCm/aiter/blob/main/aiter/ops/flydsl/kernels/moe_gemm_2stage.py",
+            "Triton": "https://github.com/ROCm/aiter/blob/main/aiter/ops/triton/moe/moe_op_e2e.py"
           }
         },
         {
@@ -838,7 +865,8 @@
           "backend": "ASM / CK / Triton",
           "backend_urls": {
             "ASM": "https://github.com/ROCm/aiter/blob/main/csrc/py_itfs_cu/asm_topksoftmax.cu",
-            "CK": "https://github.com/ROCm/aiter/blob/main/aiter/ops/topk.py"
+            "CK": "https://github.com/ROCm/aiter/blob/main/aiter/ops/topk.py",
+            "Triton": "https://github.com/ROCm/aiter/blob/main/aiter/ops/triton/topk.py"
           }
         },
         {
@@ -855,7 +883,8 @@
           },
           "backend": "CK / Triton",
           "backend_urls": {
-            "CK": "https://github.com/ROCm/aiter/blob/main/csrc/py_itfs_ck/topk_sigmoid_kernels.cu"
+            "CK": "https://github.com/ROCm/aiter/blob/main/csrc/py_itfs_ck/topk_sigmoid_kernels.cu",
+            "Triton": "https://github.com/ROCm/aiter/blob/main/aiter/ops/triton/moe/moe_routing_sigmoid_top1_fused.py"
           }
         },
         {
@@ -872,7 +901,8 @@
           },
           "backend": "HIP / Triton",
           "backend_urls": {
-            "HIP": "https://github.com/ROCm/aiter/blob/main/csrc/kernels/moe_fused_gate.cu"
+            "HIP": "https://github.com/ROCm/aiter/blob/main/csrc/kernels/moe_fused_gate.cu",
+            "Triton": "https://github.com/ROCm/aiter/blob/main/aiter/ops/triton/moe/moe_routing/topk.py"
           }
         },
         {
@@ -886,7 +916,8 @@
           },
           "backend": "CK / Triton",
           "backend_urls": {
-            "CK": "https://github.com/ROCm/aiter/blob/main/csrc/py_itfs_ck/moe_sorting_kernels.cu"
+            "CK": "https://github.com/ROCm/aiter/blob/main/csrc/py_itfs_ck/moe_sorting_kernels.cu",
+            "Triton": "https://github.com/ROCm/aiter/blob/main/aiter/ops/triton/moe/moe_routing/routing.py"
           }
         },
         {
@@ -900,7 +931,8 @@
           },
           "backend": "ASM / Triton",
           "backend_urls": {
-            "ASM": "https://github.com/ROCm/aiter/blob/main/csrc/kernels/moe_align_block_size_kernels.cu"
+            "ASM": "https://github.com/ROCm/aiter/blob/main/csrc/kernels/moe_align_block_size_kernels.cu",
+            "Triton": "https://github.com/ROCm/aiter/blob/main/aiter/ops/triton/moe/moe_align_block_size.py"
           }
         },
         {
@@ -914,7 +946,8 @@
           },
           "backend": "ASM / Triton",
           "backend_urls": {
-            "ASM": "https://github.com/ROCm/aiter/blob/main/aiter/fused_moe.py"
+            "ASM": "https://github.com/ROCm/aiter/blob/main/aiter/fused_moe.py",
+            "Triton": "https://github.com/ROCm/aiter/blob/main/aiter/ops/triton/moe/moe_routing/bitmatrix.py"
           }
         }
       ]
@@ -944,7 +977,8 @@
           "backend": "CK / HIP / Triton",
           "backend_urls": {
             "CK": "https://github.com/ROCm/aiter/blob/main/csrc/py_itfs_ck/rmsnorm_ck_kernels.cu",
-            "HIP": "https://github.com/ROCm/aiter/blob/main/csrc/kernels/rmsnorm_kernels.cu"
+            "HIP": "https://github.com/ROCm/aiter/blob/main/csrc/kernels/rmsnorm_kernels.cu",
+            "Triton": "https://github.com/ROCm/aiter/blob/main/aiter/ops/triton/normalization/rmsnorm.py"
           }
         },
         {
@@ -962,7 +996,8 @@
           "backend": "CK / HIP / Triton",
           "backend_urls": {
             "CK": "https://github.com/ROCm/aiter/blob/main/csrc/py_itfs_ck/rmsnorm_ck_kernels.cu",
-            "HIP": "https://github.com/ROCm/aiter/blob/main/csrc/kernels/rmsnorm_kernels.cu"
+            "HIP": "https://github.com/ROCm/aiter/blob/main/csrc/kernels/rmsnorm_kernels.cu",
+            "Triton": "https://github.com/ROCm/aiter/blob/main/aiter/ops/triton/normalization/fused_add_rmsnorm_pad.py"
           }
         },
         {
@@ -977,7 +1012,8 @@
           "backend": "HIP / CK / Triton",
           "backend_urls": {
             "HIP": "https://github.com/ROCm/aiter/blob/main/csrc/kernels/rmsnorm_quant_kernels.cu",
-            "CK": "https://github.com/ROCm/aiter/blob/main/csrc/py_itfs_ck/rmsnorm_ck_kernels.cu"
+            "CK": "https://github.com/ROCm/aiter/blob/main/csrc/py_itfs_ck/rmsnorm_ck_kernels.cu",
+            "Triton": "https://github.com/ROCm/aiter/blob/main/aiter/ops/triton/normalization/rmsnorm.py"
           }
         },
         {
@@ -995,7 +1031,8 @@
           "backend": "HIP / CK / Triton",
           "backend_urls": {
             "HIP": "https://github.com/ROCm/aiter/blob/main/csrc/kernels/rmsnorm_quant_kernels.cu",
-            "CK": "https://github.com/ROCm/aiter/blob/main/csrc/py_itfs_ck/rmsnorm_ck_kernels.cu"
+            "CK": "https://github.com/ROCm/aiter/blob/main/csrc/py_itfs_ck/rmsnorm_ck_kernels.cu",
+            "Triton": "https://github.com/ROCm/aiter/blob/main/aiter/ops/triton/normalization/rmsnorm.py"
           }
         },
         {
@@ -1009,7 +1046,8 @@
           },
           "backend": "CK / Triton",
           "backend_urls": {
-            "CK": "https://github.com/ROCm/aiter/blob/main/csrc/py_itfs_ck/rmsnorm_ck_kernels.cu"
+            "CK": "https://github.com/ROCm/aiter/blob/main/csrc/py_itfs_ck/rmsnorm_ck_kernels.cu",
+            "Triton": "https://github.com/ROCm/aiter/blob/main/aiter/ops/triton/normalization/rmsnorm.py"
           }
         },
         {
@@ -1058,7 +1096,8 @@
           },
           "backend": "CK / Triton",
           "backend_urls": {
-            "CK": "https://github.com/ROCm/aiter/blob/main/csrc/py_itfs_ck/norm_kernels.cu"
+            "CK": "https://github.com/ROCm/aiter/blob/main/csrc/py_itfs_ck/norm_kernels.cu",
+            "Triton": "https://github.com/ROCm/aiter/blob/main/aiter/ops/triton/normalization/norm.py"
           }
         },
         {
@@ -1072,7 +1111,8 @@
           },
           "backend": "HIP / Triton",
           "backend_urls": {
-            "HIP": "https://github.com/ROCm/aiter/blob/main/csrc/kernels/groupnorm.cu"
+            "HIP": "https://github.com/ROCm/aiter/blob/main/csrc/kernels/groupnorm.cu",
+            "Triton": "https://github.com/ROCm/aiter/blob/main/aiter/ops/triton/normalization/norm.py"
           }
         }
       ]
@@ -1484,7 +1524,8 @@
           },
           "backend": "HIP / Triton",
           "backend_urls": {
-            "HIP": "https://github.com/ROCm/aiter/blob/main/csrc/kernels/activation_kernels.cu"
+            "HIP": "https://github.com/ROCm/aiter/blob/main/csrc/kernels/activation_kernels.cu",
+            "Triton": "https://github.com/ROCm/aiter/blob/main/aiter/ops/triton/activation.py"
           }
         },
         {
@@ -1501,7 +1542,8 @@
           },
           "backend": "HIP / Triton",
           "backend_urls": {
-            "HIP": "https://github.com/ROCm/aiter/blob/main/csrc/kernels/activation_kernels.cu"
+            "HIP": "https://github.com/ROCm/aiter/blob/main/csrc/kernels/activation_kernels.cu",
+            "Triton": "https://github.com/ROCm/aiter/blob/main/aiter/ops/triton/activation.py"
           }
         },
         {
@@ -1518,7 +1560,8 @@
           },
           "backend": "HIP / Triton",
           "backend_urls": {
-            "HIP": "https://github.com/ROCm/aiter/blob/main/csrc/kernels/activation_kernels.cu"
+            "HIP": "https://github.com/ROCm/aiter/blob/main/csrc/kernels/activation_kernels.cu",
+            "Triton": "https://github.com/ROCm/aiter/blob/main/aiter/ops/triton/activation.py"
           }
         },
         {
@@ -1535,7 +1578,8 @@
           },
           "backend": "HIP / Triton",
           "backend_urls": {
-            "HIP": "https://github.com/ROCm/aiter/blob/main/csrc/kernels/activation_kernels.cu"
+            "HIP": "https://github.com/ROCm/aiter/blob/main/csrc/kernels/activation_kernels.cu",
+            "Triton": "https://github.com/ROCm/aiter/blob/main/aiter/ops/triton/activation.py"
           }
         },
         {
@@ -1549,7 +1593,8 @@
           },
           "backend": "HIP / Triton",
           "backend_urls": {
-            "HIP": "https://github.com/ROCm/aiter/blob/main/csrc/kernels/activation_kernels.cu"
+            "HIP": "https://github.com/ROCm/aiter/blob/main/csrc/kernels/activation_kernels.cu",
+            "Triton": "https://github.com/ROCm/aiter/blob/main/aiter/ops/triton/_triton_kernels/fusions/fused_mul_add.py"
           }
         },
         {
@@ -1563,7 +1608,8 @@
           },
           "backend": "HIP / Triton",
           "backend_urls": {
-            "HIP": "https://github.com/ROCm/aiter/blob/main/csrc/kernels/activation_kernels.cu"
+            "HIP": "https://github.com/ROCm/aiter/blob/main/csrc/kernels/activation_kernels.cu",
+            "Triton": "https://github.com/ROCm/aiter/blob/main/aiter/ops/triton/activation.py"
           }
         }
       ]
