@@ -1,6 +1,66 @@
 {
-  "collected_at": "2026-03-09T08:15:01Z",
+  "collected_at": "2026-03-13T08:13:48Z",
   "issues": [
+    {
+      "number": 1913,
+      "title": "[Issue]:GPU Core Dump in Multi-GPU Parallel GEMM Tuning (hipBLASLt 1.1.0, 8x MI308X)",
+      "author": "wacodespace",
+      "state": "open",
+      "created_at": "2026-01-27T06:44:40Z",
+      "updated_at": "2026-03-12T05:16:23Z",
+      "html_url": "https://github.com/ROCm/aiter/issues/1913",
+      "labels": []
+    },
+    {
+      "number": 2247,
+      "title": "[Issue]: Incorrect MXFP4 mantissa rounding in fp4_utils.py",
+      "author": "Knarf04",
+      "state": "open",
+      "created_at": "2026-03-11T06:29:45Z",
+      "updated_at": "2026-03-11T06:30:17Z",
+      "html_url": "https://github.com/ROCm/aiter/issues/2247",
+      "labels": []
+    },
+    {
+      "number": 2098,
+      "title": "[Issue]: GPU memory access faults on GLM-4.6 FP8",
+      "author": "richhx",
+      "state": "open",
+      "created_at": "2026-02-24T17:53:46Z",
+      "updated_at": "2026-03-10T20:46:20Z",
+      "html_url": "https://github.com/ROCm/aiter/issues/2098",
+      "labels": []
+    },
+    {
+      "number": 2236,
+      "title": "[Issue]: add_rmsnorm_quant_kernel precision",
+      "author": "Jacob0226",
+      "state": "open",
+      "created_at": "2026-03-10T06:38:56Z",
+      "updated_at": "2026-03-10T10:16:52Z",
+      "html_url": "https://github.com/ROCm/aiter/issues/2236",
+      "labels": []
+    },
+    {
+      "number": 2229,
+      "title": "[Issue]: `flash_attn_varlen_func` incorrect results for FP16 + q_len=1 (decode) on gfx942",
+      "author": "AndreasKaratzas",
+      "state": "open",
+      "created_at": "2026-03-10T01:56:56Z",
+      "updated_at": "2026-03-10T02:12:23Z",
+      "html_url": "https://github.com/ROCm/aiter/issues/2229",
+      "labels": []
+    },
+    {
+      "number": 2129,
+      "title": "Large launch overhead for aiter.flash_attn_func",
+      "author": "SampoAMD",
+      "state": "open",
+      "created_at": "2026-02-27T13:12:48Z",
+      "updated_at": "2026-03-09T09:04:05Z",
+      "html_url": "https://github.com/ROCm/aiter/issues/2129",
+      "labels": []
+    },
     {
       "number": 1468,
       "title": "[Issue]: \"AssertionError: Aiter MLA only supports 16 or 128 number of heads. Provided 32 number of heads\" in DeepSeek R1 + TP4 + MXFP4 +MI355 test",
@@ -39,16 +99,6 @@
       "created_at": "2026-03-05T06:50:40Z",
       "updated_at": "2026-03-05T11:44:54Z",
       "html_url": "https://github.com/ROCm/aiter/issues/2187",
-      "labels": []
-    },
-    {
-      "number": 2129,
-      "title": "Large launch overhead for aiter.flash_attn_func",
-      "author": "SampoAMD",
-      "state": "open",
-      "created_at": "2026-02-27T13:12:48Z",
-      "updated_at": "2026-03-05T11:33:09Z",
-      "html_url": "https://github.com/ROCm/aiter/issues/2129",
       "labels": []
     },
     {
@@ -126,16 +176,6 @@
       "labels": [
         "frameworks-devops"
       ]
-    },
-    {
-      "number": 2098,
-      "title": "[Issue]: GPU memory access faults on GLM-4.6 FP8",
-      "author": "richhx",
-      "state": "open",
-      "created_at": "2026-02-24T17:53:46Z",
-      "updated_at": "2026-02-25T03:02:02Z",
-      "html_url": "https://github.com/ROCm/aiter/issues/2098",
-      "labels": []
     },
     {
       "number": 2093,
@@ -257,16 +297,6 @@
       "created_at": "2025-08-28T01:23:15Z",
       "updated_at": "2026-02-07T16:31:46Z",
       "html_url": "https://github.com/ROCm/aiter/issues/900",
-      "labels": []
-    },
-    {
-      "number": 1913,
-      "title": "[Issue]:GPU Core Dump in Multi-GPU Parallel GEMM Tuning (hipBLASLt 1.1.0, 8x MI308X)",
-      "author": "wacodespace",
-      "state": "open",
-      "created_at": "2026-01-27T06:44:40Z",
-      "updated_at": "2026-02-07T14:18:48Z",
-      "html_url": "https://github.com/ROCm/aiter/issues/1913",
       "labels": []
     },
     {

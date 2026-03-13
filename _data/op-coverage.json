@@ -1522,10 +1522,9 @@
               "url": "https://docs.flashinfer.ai/generated/flashinfer.activation.silu_and_mul.html"
             }
           },
-          "backend": "HIP / Triton",
+          "backend": "HIP",
           "backend_urls": {
-            "HIP": "https://github.com/ROCm/aiter/blob/main/csrc/kernels/activation_kernels.cu",
-            "Triton": "https://github.com/ROCm/aiter/blob/main/aiter/ops/triton/activation.py"
+            "HIP": "https://github.com/ROCm/aiter/blob/main/csrc/kernels/activation_kernels.cu"
           }
         },
         {
@@ -1540,10 +1539,9 @@
               "url": "https://docs.flashinfer.ai/generated/flashinfer.activation.gelu_and_mul.html"
             }
           },
-          "backend": "HIP / Triton",
+          "backend": "HIP",
           "backend_urls": {
-            "HIP": "https://github.com/ROCm/aiter/blob/main/csrc/kernels/activation_kernels.cu",
-            "Triton": "https://github.com/ROCm/aiter/blob/main/aiter/ops/triton/activation.py"
+            "HIP": "https://github.com/ROCm/aiter/blob/main/csrc/kernels/activation_kernels.cu"
           }
         },
         {
@@ -1558,10 +1556,9 @@
               "url": "https://docs.flashinfer.ai/api/activation.html"
             }
           },
-          "backend": "HIP / Triton",
+          "backend": "HIP",
           "backend_urls": {
-            "HIP": "https://github.com/ROCm/aiter/blob/main/csrc/kernels/activation_kernels.cu",
-            "Triton": "https://github.com/ROCm/aiter/blob/main/aiter/ops/triton/activation.py"
+            "HIP": "https://github.com/ROCm/aiter/blob/main/csrc/kernels/activation_kernels.cu"
           }
         },
         {
@@ -1576,10 +1573,9 @@
               "url": "https://docs.flashinfer.ai/generated/flashinfer.activation.silu_and_mul.html"
             }
           },
-          "backend": "HIP / Triton",
+          "backend": "HIP",
           "backend_urls": {
-            "HIP": "https://github.com/ROCm/aiter/blob/main/csrc/kernels/activation_kernels.cu",
-            "Triton": "https://github.com/ROCm/aiter/blob/main/aiter/ops/triton/activation.py"
+            "HIP": "https://github.com/ROCm/aiter/blob/main/csrc/kernels/activation_kernels.cu"
           }
         },
         {
@@ -1591,10 +1587,9 @@
             },
             "FlashInfer": false
           },
-          "backend": "HIP / Triton",
+          "backend": "HIP",
           "backend_urls": {
-            "HIP": "https://github.com/ROCm/aiter/blob/main/csrc/kernels/activation_kernels.cu",
-            "Triton": "https://github.com/ROCm/aiter/blob/main/aiter/ops/triton/_triton_kernels/fusions/fused_mul_add.py"
+            "HIP": "https://github.com/ROCm/aiter/blob/main/csrc/kernels/activation_kernels.cu"
           }
         },
         {
@@ -1606,10 +1601,9 @@
             },
             "FlashInfer": false
           },
-          "backend": "HIP / Triton",
+          "backend": "HIP",
           "backend_urls": {
-            "HIP": "https://github.com/ROCm/aiter/blob/main/csrc/kernels/activation_kernels.cu",
-            "Triton": "https://github.com/ROCm/aiter/blob/main/aiter/ops/triton/activation.py"
+            "HIP": "https://github.com/ROCm/aiter/blob/main/csrc/kernels/activation_kernels.cu"
           }
         }
       ]

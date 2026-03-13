@@ -1,23 +1,299 @@
 {
-  "collected_at": "2026-03-09T08:17:24Z",
+  "collected_at": "2026-03-13T08:16:38Z",
   "workflows": {
+    "mori": {
+      "workflow_id": 196573763,
+      "latest_run": {
+        "id": 22989419015,
+        "conclusion": "cancelled",
+        "duration_minutes": 1440.0,
+        "started_at": "2026-03-12T06:24:26Z",
+        "html_url": "https://github.com/ROCm/mori/actions/runs/22989419015"
+      },
+      "stats": null,
+      "recent_runs": [
+        {
+          "id": 22989419015,
+          "conclusion": "cancelled",
+          "duration_minutes": 1440.0,
+          "date": "2026-03-12"
+        },
+        {
+          "id": 22986593722,
+          "conclusion": "cancelled",
+          "duration_minutes": 1440.0,
+          "date": "2026-03-12"
+        },
+        {
+          "id": 22985331397,
+          "conclusion": "cancelled",
+          "duration_minutes": 1440.0,
+          "date": "2026-03-12"
+        },
+        {
+          "id": 22985330312,
+          "conclusion": "cancelled",
+          "duration_minutes": 1440.0,
+          "date": "2026-03-12"
+        },
+        {
+          "id": 22984816678,
+          "conclusion": "cancelled",
+          "duration_minutes": 1440.0,
+          "date": "2026-03-12"
+        },
+        {
+          "id": 22984815623,
+          "conclusion": "cancelled",
+          "duration_minutes": 1440.0,
+          "date": "2026-03-12"
+        },
+        {
+          "id": 22956789823,
+          "conclusion": "cancelled",
+          "duration_minutes": 1440.0,
+          "date": "2026-03-11"
+        },
+        {
+          "id": 22956245710,
+          "conclusion": "cancelled",
+          "duration_minutes": 1440.0,
+          "date": "2026-03-11"
+        },
+        {
+          "id": 22954092341,
+          "conclusion": "cancelled",
+          "duration_minutes": 1440.0,
+          "date": "2026-03-11"
+        },
+        {
+          "id": 22911741864,
+          "conclusion": "cancelled",
+          "duration_minutes": 1440.0,
+          "date": "2026-03-10"
+        },
+        {
+          "id": 22897338831,
+          "conclusion": "cancelled",
+          "duration_minutes": 1440.0,
+          "date": "2026-03-10"
+        },
+        {
+          "id": 22896510718,
+          "conclusion": "cancelled",
+          "duration_minutes": 1440.0,
+          "date": "2026-03-10"
+        },
+        {
+          "id": 22896047321,
+          "conclusion": "cancelled",
+          "duration_minutes": 1440.0,
+          "date": "2026-03-10"
+        },
+        {
+          "id": 22895478535,
+          "conclusion": "cancelled",
+          "duration_minutes": 1440.0,
+          "date": "2026-03-10"
+        },
+        {
+          "id": 22895388686,
+          "conclusion": "cancelled",
+          "duration_minutes": 1440.0,
+          "date": "2026-03-10"
+        },
+        {
+          "id": 22893808581,
+          "conclusion": "cancelled",
+          "duration_minutes": 1440.0,
+          "date": "2026-03-10"
+        },
+        {
+          "id": 22893350578,
+          "conclusion": "cancelled",
+          "duration_minutes": 1440.0,
+          "date": "2026-03-10"
+        },
+        {
+          "id": 22893191171,
+          "conclusion": "cancelled",
+          "duration_minutes": 1440.0,
+          "date": "2026-03-10"
+        }
+      ]
+    },
+    "Build and Deploy Documentation": {
+      "workflow_id": 243910332,
+      "latest_run": {
+        "id": 23040949476,
+        "conclusion": "success",
+        "duration_minutes": 1.9,
+        "started_at": "2026-03-13T07:34:46Z",
+        "html_url": "https://github.com/ROCm/mori/actions/runs/23040949476"
+      },
+      "stats": {
+        "sample_size": 20,
+        "median_minutes": 1.2,
+        "p90_minutes": 1.9,
+        "min_minutes": 0.8,
+        "max_minutes": 2.1
+      },
+      "recent_runs": [
+        {
+          "id": 23040949476,
+          "conclusion": "success",
+          "duration_minutes": 1.9,
+          "date": "2026-03-13"
+        },
+        {
+          "id": 23039387505,
+          "conclusion": "success",
+          "duration_minutes": 0.9,
+          "date": "2026-03-13"
+        },
+        {
+          "id": 23037956620,
+          "conclusion": "success",
+          "duration_minutes": 2.1,
+          "date": "2026-03-13"
+        },
+        {
+          "id": 23037911887,
+          "conclusion": "success",
+          "duration_minutes": 1.1,
+          "date": "2026-03-13"
+        },
+        {
+          "id": 23036327624,
+          "conclusion": "success",
+          "duration_minutes": 1.2,
+          "date": "2026-03-13"
+        },
+        {
+          "id": 23005722062,
+          "conclusion": "success",
+          "duration_minutes": 0.8,
+          "date": "2026-03-12"
+        },
+        {
+          "id": 22994590584,
+          "conclusion": "success",
+          "duration_minutes": 1.5,
+          "date": "2026-03-12"
+        },
+        {
+          "id": 22993570290,
+          "conclusion": "success",
+          "duration_minutes": 0.9,
+          "date": "2026-03-12"
+        },
+        {
+          "id": 22989419002,
+          "conclusion": "success",
+          "duration_minutes": 1.1,
+          "date": "2026-03-12"
+        },
+        {
+          "id": 22985331409,
+          "conclusion": "success",
+          "duration_minutes": 1.2,
+          "date": "2026-03-12"
+        },
+        {
+          "id": 22984816669,
+          "conclusion": "success",
+          "duration_minutes": 1.4,
+          "date": "2026-03-12"
+        },
+        {
+          "id": 22956789766,
+          "conclusion": "success",
+          "duration_minutes": 0.9,
+          "date": "2026-03-11"
+        },
+        {
+          "id": 22956245705,
+          "conclusion": "success",
+          "duration_minutes": 1.3,
+          "date": "2026-03-11"
+        },
+        {
+          "id": 22896510733,
+          "conclusion": "success",
+          "duration_minutes": 1.2,
+          "date": "2026-03-10"
+        },
+        {
+          "id": 22896288391,
+          "conclusion": "success",
+          "duration_minutes": 1.2,
+          "date": "2026-03-10"
+        },
+        {
+          "id": 22896047247,
+          "conclusion": "success",
+          "duration_minutes": 1.1,
+          "date": "2026-03-10"
+        },
+        {
+          "id": 22895478492,
+          "conclusion": "success",
+          "duration_minutes": 1.4,
+          "date": "2026-03-10"
+        },
+        {
+          "id": 22895388660,
+          "conclusion": "success",
+          "duration_minutes": 1.3,
+          "date": "2026-03-10"
+        },
+        {
+          "id": 22893808597,
+          "conclusion": "success",
+          "duration_minutes": 0.9,
+          "date": "2026-03-10"
+        },
+        {
+          "id": 22893350553,
+          "conclusion": "success",
+          "duration_minutes": 1.3,
+          "date": "2026-03-10"
+        }
+      ],
+      "bottleneck_job": {
+        "name": "build-docs",
+        "duration_minutes": 0.6
+      }
+    },
     "Copilot code review": {
       "workflow_id": 201892494,
       "latest_run": {
-        "id": 22843329596,
+        "id": 22956277289,
         "conclusion": "success",
-        "duration_minutes": 6.2,
-        "started_at": "2026-03-09T07:43:40Z",
-        "html_url": "https://github.com/ROCm/mori/actions/runs/22843329596"
+        "duration_minutes": 5.2,
+        "started_at": "2026-03-11T13:58:35Z",
+        "html_url": "https://github.com/ROCm/mori/actions/runs/22956277289"
       },
       "stats": {
         "sample_size": 19,
-        "median_minutes": 5.6,
+        "median_minutes": 5.7,
         "p90_minutes": 9.5,
         "min_minutes": 2.5,
         "max_minutes": 16.9
       },
       "recent_runs": [
+        {
+          "id": 22956277289,
+          "conclusion": "success",
+          "duration_minutes": 5.2,
+          "date": "2026-03-11"
+        },
+        {
+          "id": 22854129615,
+          "conclusion": "success",
+          "duration_minutes": 5.9,
+          "date": "2026-03-09"
+        },
         {
           "id": 22843329596,
           "conclusion": "success",
@@ -125,23 +401,11 @@
           "conclusion": "success",
           "duration_minutes": 2.5,
           "date": "2025-11-05"
-        },
-        {
-          "id": 19031419374,
-          "conclusion": "success",
-          "duration_minutes": 2.5,
-          "date": "2025-11-03"
-        },
-        {
-          "id": 18900752521,
-          "conclusion": "success",
-          "duration_minutes": 2.8,
-          "date": "2025-10-29"
         }
       ],
       "bottleneck_job": {
         "name": "Agent",
-        "duration_minutes": 4.2
+        "duration_minutes": 3.1
       }
     }
   }

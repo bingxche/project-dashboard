@@ -1,25 +1,81 @@
 {
-  "collected_at": "2026-03-09T08:15:12Z",
+  "collected_at": "2026-03-13T08:13:58Z",
   "issues": [
     {
-      "number": 162,
-      "title": "MI350 Compute Bound kernel Boost mode",
-      "author": "ColinLi-SC",
+      "number": 206,
+      "title": "[Issue]: Dynamic if branch issue in flyc.kernel",
+      "author": "ruanjm",
       "state": "open",
-      "created_at": "2026-03-02T04:00:20Z",
-      "updated_at": "2026-03-02T04:00:20Z",
-      "html_url": "https://github.com/ROCm/FlyDSL/issues/162",
+      "created_at": "2026-03-13T06:34:11Z",
+      "updated_at": "2026-03-13T06:43:26Z",
+      "html_url": "https://github.com/ROCm/FlyDSL/issues/206",
+      "labels": [
+        "bug"
+      ]
+    },
+    {
+      "number": 189,
+      "title": "[Issue]: fx.printf fails",
+      "author": "rahulbatra85",
+      "state": "open",
+      "created_at": "2026-03-10T18:34:37Z",
+      "updated_at": "2026-03-12T12:57:44Z",
+      "html_url": "https://github.com/ROCm/FlyDSL/issues/189",
       "labels": []
     },
     {
-      "number": 142,
-      "title": "finish reconstruction of layout algebra",
+      "number": 190,
+      "title": "[Issue]: Cannot use range() in helper kernel functions.",
+      "author": "ruanjm",
+      "state": "open",
+      "created_at": "2026-03-11T03:07:05Z",
+      "updated_at": "2026-03-12T09:39:34Z",
+      "html_url": "https://github.com/ROCm/FlyDSL/issues/190",
+      "labels": [
+        "bug"
+      ]
+    },
+    {
+      "number": 188,
+      "title": "[Documentation]: What can be used inside jitted function vs outside?",
+      "author": "rahulbatra85",
+      "state": "open",
+      "created_at": "2026-03-10T17:53:10Z",
+      "updated_at": "2026-03-12T01:43:58Z",
+      "html_url": "https://github.com/ROCm/FlyDSL/issues/188",
+      "labels": []
+    },
+    {
+      "number": 187,
+      "title": "[Issue]: Rocprofv3 kernel trace bug",
+      "author": "fsx950223",
+      "state": "open",
+      "created_at": "2026-03-10T09:31:37Z",
+      "updated_at": "2026-03-11T07:48:42Z",
+      "html_url": "https://github.com/ROCm/FlyDSL/issues/187",
+      "labels": []
+    },
+    {
+      "number": 107,
+      "title": "mxfp4 gemm tuning",
       "author": "coderfeli",
       "state": "open",
-      "created_at": "2026-02-23T03:48:29Z",
-      "updated_at": "2026-02-23T03:48:29Z",
-      "html_url": "https://github.com/ROCm/FlyDSL/issues/142",
+      "created_at": "2026-02-08T14:31:03Z",
+      "updated_at": "2026-03-10T09:41:13Z",
+      "html_url": "https://github.com/ROCm/FlyDSL/issues/107",
       "labels": []
+    },
+    {
+      "number": 185,
+      "title": "[Issue]: Control flow is not supported bin flyc.jit",
+      "author": "ruanjm",
+      "state": "open",
+      "created_at": "2026-03-10T06:20:20Z",
+      "updated_at": "2026-03-10T09:40:33Z",
+      "html_url": "https://github.com/ROCm/FlyDSL/issues/185",
+      "labels": [
+        "bug"
+      ]
     },
     {
       "number": 114,
@@ -29,26 +85,6 @@
       "created_at": "2026-02-09T08:37:09Z",
       "updated_at": "2026-02-09T08:37:09Z",
       "html_url": "https://github.com/ROCm/FlyDSL/issues/114",
-      "labels": []
-    },
-    {
-      "number": 106,
-      "title": "mxfp4 moe tune for deepseek",
-      "author": "coderfeli",
-      "state": "open",
-      "created_at": "2026-02-08T14:30:31Z",
-      "updated_at": "2026-02-08T14:35:18Z",
-      "html_url": "https://github.com/ROCm/FlyDSL/issues/106",
-      "labels": []
-    },
-    {
-      "number": 107,
-      "title": "mxfp4 gemm tuning",
-      "author": "coderfeli",
-      "state": "open",
-      "created_at": "2026-02-08T14:31:03Z",
-      "updated_at": "2026-02-08T14:31:03Z",
-      "html_url": "https://github.com/ROCm/FlyDSL/issues/107",
       "labels": []
     },
     {
