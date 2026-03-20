@@ -54,3 +54,17 @@ jobs:
           git add data/ dashboards/ docs/_data/ README.md
           git diff --staged --quiet || git commit -m "daily update $(date -u +%Y-%m-%d)"
           git push
+
+      - name: Assemble site
+        run: |
+          mkdir -p _site
+          cp -r docs/* _site/
+          cp -r data/ _site/data/
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./_site
+          publish_branch: gh-pages
+          keep_files: true
