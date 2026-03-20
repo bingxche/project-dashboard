@@ -1,6 +1,62 @@
 {
-  "collected_at": "2026-03-19T08:14:54Z",
+  "collected_at": "2026-03-20T08:13:31Z",
   "issues": [
+    {
+      "number": 2370,
+      "title": "[Feature]: MI450 FAv3 fwd mxfp8 hd64 poc asm kernels",
+      "author": "shay-li77",
+      "state": "open",
+      "created_at": "2026-03-20T03:18:31Z",
+      "updated_at": "2026-03-20T03:28:42Z",
+      "html_url": "https://github.com/ROCm/aiter/issues/2370",
+      "labels": [
+        "KernelsCore"
+      ]
+    },
+    {
+      "number": 2371,
+      "title": "[Feature]: int4_w4a16 kernel support",
+      "author": "akao-amd",
+      "state": "open",
+      "created_at": "2026-03-20T03:20:45Z",
+      "updated_at": "2026-03-20T03:20:45Z",
+      "html_url": "https://github.com/ROCm/aiter/issues/2371",
+      "labels": []
+    },
+    {
+      "number": 2312,
+      "title": "CI: Run Triton tests on MI355",
+      "author": "gyohuangxin",
+      "state": "open",
+      "created_at": "2026-03-17T16:42:16Z",
+      "updated_at": "2026-03-20T03:14:47Z",
+      "html_url": "https://github.com/ROCm/aiter/issues/2312",
+      "labels": [
+        "frameworks-devops"
+      ]
+    },
+    {
+      "number": 2368,
+      "title": "[Feature]: Replace Custom AllReduce IPC with MORI Shmem & Enable Prefill AllReduce",
+      "author": "TennyWang1223",
+      "state": "open",
+      "created_at": "2026-03-20T02:52:33Z",
+      "updated_at": "2026-03-20T02:52:50Z",
+      "html_url": "https://github.com/ROCm/aiter/issues/2368",
+      "labels": []
+    },
+    {
+      "number": 2364,
+      "title": "[Feature]:  AITER MLA ps mode support for q/kv head ratio of 8, mtp=4 for MI355",
+      "author": "minmengdie",
+      "state": "open",
+      "created_at": "2026-03-20T02:08:05Z",
+      "updated_at": "2026-03-20T02:08:07Z",
+      "html_url": "https://github.com/ROCm/aiter/issues/2364",
+      "labels": [
+        "KernelsCore"
+      ]
+    },
     {
       "number": 2343,
       "title": "[Issue]: GPU memory access fault with AITER CK MoE FP4 kernel + Expert Parallelism on MI355X (Kimi-K2.5-MXFP4)",
@@ -23,18 +79,6 @@
       "updated_at": "2026-03-18T20:11:58Z",
       "html_url": "https://github.com/ROCm/aiter/issues/2336",
       "labels": []
-    },
-    {
-      "number": 2312,
-      "title": "CI: Run Triton tests on MI355",
-      "author": "gyohuangxin",
-      "state": "open",
-      "created_at": "2026-03-17T16:42:16Z",
-      "updated_at": "2026-03-18T12:02:17Z",
-      "html_url": "https://github.com/ROCm/aiter/issues/2312",
-      "labels": [
-        "frameworks-devops"
-      ]
     },
     {
       "number": 2229,

@@ -1,151 +1,157 @@
 {
-  "collected_at": "2026-03-19T08:17:07Z",
+  "collected_at": "2026-03-20T08:15:59Z",
   "workflows": {
     "Lint": {
       "workflow_id": 107896261,
       "latest_run": {
-        "id": 23285769181,
-        "conclusion": "failure",
-        "duration_minutes": 3.0,
-        "started_at": "2026-03-19T08:13:03Z",
-        "html_url": "https://github.com/sgl-project/sglang/actions/runs/23285769181"
+        "id": 23334474007,
+        "conclusion": "success",
+        "duration_minutes": 2.8,
+        "started_at": "2026-03-20T08:12:36Z",
+        "html_url": "https://github.com/sgl-project/sglang/actions/runs/23334474007"
       },
       "stats": {
-        "sample_size": 12,
-        "median_minutes": 3.0,
-        "p90_minutes": 3.1,
-        "min_minutes": 2.7,
-        "max_minutes": 3.1
+        "sample_size": 19,
+        "median_minutes": 2.9,
+        "p90_minutes": 3.0,
+        "min_minutes": 2.8,
+        "max_minutes": 3.0
       },
       "recent_runs": [
         {
-          "id": 23285769181,
-          "conclusion": "failure",
-          "duration_minutes": 3.0,
-          "date": "2026-03-19"
-        },
-        {
-          "id": 23285739577,
-          "conclusion": "failure",
-          "duration_minutes": 3.0,
-          "date": "2026-03-19"
-        },
-        {
-          "id": 23285648708,
-          "conclusion": "failure",
-          "duration_minutes": 2.9,
-          "date": "2026-03-19"
-        },
-        {
-          "id": 23285628206,
-          "conclusion": "success",
-          "duration_minutes": 2.9,
-          "date": "2026-03-19"
-        },
-        {
-          "id": 23285539188,
+          "id": 23334474007,
           "conclusion": "success",
           "duration_minutes": 2.8,
-          "date": "2026-03-19"
+          "date": "2026-03-20"
         },
         {
-          "id": 23285470803,
-          "conclusion": "success",
-          "duration_minutes": 3.0,
-          "date": "2026-03-19"
-        },
-        {
-          "id": 23285468653,
-          "conclusion": "failure",
-          "duration_minutes": 2.9,
-          "date": "2026-03-19"
-        },
-        {
-          "id": 23285248862,
-          "conclusion": "success",
-          "duration_minutes": 2.8,
-          "date": "2026-03-19"
-        },
-        {
-          "id": 23285093171,
-          "conclusion": "success",
-          "duration_minutes": 3.0,
-          "date": "2026-03-19"
-        },
-        {
-          "id": 23285060379,
-          "conclusion": "failure",
-          "duration_minutes": 3.0,
-          "date": "2026-03-19"
-        },
-        {
-          "id": 23284928191,
-          "conclusion": "failure",
-          "duration_minutes": 2.7,
-          "date": "2026-03-19"
-        },
-        {
-          "id": 23284742536,
-          "conclusion": "success",
-          "duration_minutes": 3.1,
-          "date": "2026-03-19"
-        },
-        {
-          "id": 23284478688,
-          "conclusion": "failure",
-          "duration_minutes": 3.5,
-          "date": "2026-03-19"
-        },
-        {
-          "id": 23284467389,
-          "conclusion": "success",
-          "duration_minutes": 2.8,
-          "date": "2026-03-19"
-        },
-        {
-          "id": 23283997777,
-          "conclusion": "success",
-          "duration_minutes": 2.7,
-          "date": "2026-03-19"
-        },
-        {
-          "id": 23283947869,
+          "id": 23334384490,
           "conclusion": "success",
           "duration_minutes": 2.9,
-          "date": "2026-03-19"
+          "date": "2026-03-20"
         },
         {
-          "id": 23283854627,
-          "conclusion": "success",
-          "duration_minutes": 3.1,
-          "date": "2026-03-19"
-        },
-        {
-          "id": 23283853022,
+          "id": 23334265858,
           "conclusion": "success",
           "duration_minutes": 3.0,
-          "date": "2026-03-19"
+          "date": "2026-03-20"
         },
         {
-          "id": 23283811734,
+          "id": 23334237061,
           "conclusion": "success",
           "duration_minutes": 3.0,
-          "date": "2026-03-19"
+          "date": "2026-03-20"
+        },
+        {
+          "id": 23333892267,
+          "conclusion": "success",
+          "duration_minutes": 3.0,
+          "date": "2026-03-20"
+        },
+        {
+          "id": 23333856963,
+          "conclusion": "success",
+          "duration_minutes": 3.0,
+          "date": "2026-03-20"
+        },
+        {
+          "id": 23333821064,
+          "conclusion": "success",
+          "duration_minutes": 2.9,
+          "date": "2026-03-20"
+        },
+        {
+          "id": 23333695751,
+          "conclusion": "success",
+          "duration_minutes": 2.9,
+          "date": "2026-03-20"
+        },
+        {
+          "id": 23333676151,
+          "conclusion": "failure",
+          "duration_minutes": 2.9,
+          "date": "2026-03-20"
+        },
+        {
+          "id": 23333658415,
+          "conclusion": "success",
+          "duration_minutes": 2.9,
+          "date": "2026-03-20"
+        },
+        {
+          "id": 23333532137,
+          "conclusion": "success",
+          "duration_minutes": 3.0,
+          "date": "2026-03-20"
+        },
+        {
+          "id": 23333370203,
+          "conclusion": "success",
+          "duration_minutes": 2.9,
+          "date": "2026-03-20"
+        },
+        {
+          "id": 23333363277,
+          "conclusion": "success",
+          "duration_minutes": 3.0,
+          "date": "2026-03-20"
+        },
+        {
+          "id": 23333340077,
+          "conclusion": "success",
+          "duration_minutes": 3.0,
+          "date": "2026-03-20"
+        },
+        {
+          "id": 23333208733,
+          "conclusion": "success",
+          "duration_minutes": 3.0,
+          "date": "2026-03-20"
+        },
+        {
+          "id": 23333206511,
+          "conclusion": "success",
+          "duration_minutes": 2.9,
+          "date": "2026-03-20"
+        },
+        {
+          "id": 23333161800,
+          "conclusion": "success",
+          "duration_minutes": 3.0,
+          "date": "2026-03-20"
+        },
+        {
+          "id": 23333157505,
+          "conclusion": "success",
+          "duration_minutes": 2.9,
+          "date": "2026-03-20"
+        },
+        {
+          "id": 23333157212,
+          "conclusion": "success",
+          "duration_minutes": 2.9,
+          "date": "2026-03-20"
+        },
+        {
+          "id": 23333116031,
+          "conclusion": "success",
+          "duration_minutes": 2.8,
+          "date": "2026-03-20"
         }
       ],
       "bottleneck_job": {
         "name": "lint",
-        "duration_minutes": 2.9
+        "duration_minutes": 2.7
       }
     },
     "Close Inactive Issues": {
       "workflow_id": 109110696,
       "latest_run": {
-        "id": 23273829721,
+        "id": 23323523760,
         "conclusion": "success",
-        "duration_minutes": 2.0,
-        "started_at": "2026-03-19T00:28:36Z",
-        "html_url": "https://github.com/sgl-project/sglang/actions/runs/23273829721"
+        "duration_minutes": 1.8,
+        "started_at": "2026-03-20T00:26:58Z",
+        "html_url": "https://github.com/sgl-project/sglang/actions/runs/23323523760"
       },
       "stats": {
         "sample_size": 20,
@@ -155,6 +161,12 @@
         "max_minutes": 3.5
       },
       "recent_runs": [
+        {
+          "id": 23323523760,
+          "conclusion": "success",
+          "duration_minutes": 1.8,
+          "date": "2026-03-20"
+        },
         {
           "id": 23273829721,
           "conclusion": "success",
@@ -268,17 +280,11 @@
           "conclusion": "success",
           "duration_minutes": 2.8,
           "date": "2026-03-01"
-        },
-        {
-          "id": 22509081956,
-          "conclusion": "success",
-          "duration_minutes": 1.8,
-          "date": "2026-02-28"
         }
       ],
       "bottleneck_job": {
         "name": "close-inactive-issues",
-        "duration_minutes": 1.9
+        "duration_minutes": 1.8
       }
     },
     "Release Docker Images": {

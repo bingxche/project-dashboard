@@ -1,6 +1,30 @@
 {
-  "collected_at": "2026-03-19T08:14:59Z",
+  "collected_at": "2026-03-20T08:13:37Z",
   "prs": [
+    {
+      "number": 206,
+      "title": "feat(umbp): segmented SSD log, pluggable storage IO (io_uring/posix), and copy pipeline",
+      "author": "maning00",
+      "state": "open",
+      "merged": false,
+      "created_at": "2026-03-20T03:20:35Z",
+      "updated_at": "2026-03-20T07:56:29Z",
+      "html_url": "https://github.com/ROCm/mori/pull/206",
+      "labels": [],
+      "draft": false
+    },
+    {
+      "number": 205,
+      "title": "Optimize XGMI `batch_write`/`batch_read` for discrete (non-contiguous) buffer transfers by reducing per-segment overhead.",
+      "author": "inkcherry",
+      "state": "open",
+      "merged": false,
+      "created_at": "2026-03-19T10:46:39Z",
+      "updated_at": "2026-03-19T11:01:13Z",
+      "html_url": "https://github.com/ROCm/mori/pull/205",
+      "labels": [],
+      "draft": true
+    },
     {
       "number": 180,
       "title": "[UMP] Feat: add control plane implementation for unified memory pool",
@@ -8,20 +32,8 @@
       "state": "open",
       "merged": false,
       "created_at": "2026-03-03T15:01:19Z",
-      "updated_at": "2026-03-19T08:00:15Z",
+      "updated_at": "2026-03-19T08:35:20Z",
       "html_url": "https://github.com/ROCm/mori/pull/180",
-      "labels": [],
-      "draft": false
-    },
-    {
-      "number": 203,
-      "title": "Refactor: CMake C++ integration & lazy imports for torch-free usage",
-      "author": "jhchouuu",
-      "state": "open",
-      "merged": false,
-      "created_at": "2026-03-19T06:52:34Z",
-      "updated_at": "2026-03-19T06:52:34Z",
-      "html_url": "https://github.com/ROCm/mori/pull/203",
       "labels": [],
       "draft": false
     },
@@ -58,18 +70,6 @@
       "created_at": "2026-03-12T06:24:22Z",
       "updated_at": "2026-03-16T12:36:21Z",
       "html_url": "https://github.com/ROCm/mori/pull/195",
-      "labels": [],
-      "draft": false
-    },
-    {
-      "number": 193,
-      "title": "Feat(shmem): implement GET (remote read) device API with blocking and non-blocking",
-      "author": "jhchouuu",
-      "state": "open",
-      "merged": false,
-      "created_at": "2026-03-10T08:32:12Z",
-      "updated_at": "2026-03-10T08:32:12Z",
-      "html_url": "https://github.com/ROCm/mori/pull/193",
       "labels": [],
       "draft": false
     },
@@ -134,6 +134,90 @@
       "draft": false
     },
     {
+      "number": 207,
+      "title": "Fix: remove unused #include <mpi.h> from shmem kernel headers",
+      "author": "jhchouuu",
+      "state": "closed",
+      "merged": true,
+      "created_at": "2026-03-20T04:02:50Z",
+      "updated_at": "2026-03-20T04:04:59Z",
+      "html_url": "https://github.com/ROCm/mori/pull/207",
+      "labels": [],
+      "draft": false
+    },
+    {
+      "number": 182,
+      "title": "Refactor: universal wheel with host/device separation, JIT with hardware auto-detection",
+      "author": "jhchouuu",
+      "state": "closed",
+      "merged": true,
+      "created_at": "2026-03-04T08:39:21Z",
+      "updated_at": "2026-03-20T02:14:34Z",
+      "html_url": "https://github.com/ROCm/mori/pull/182",
+      "labels": [],
+      "draft": false
+    },
+    {
+      "number": 196,
+      "title": "Fix: guard ShmemInit against double initialization",
+      "author": "jhchouuu",
+      "state": "closed",
+      "merged": true,
+      "created_at": "2026-03-12T08:43:49Z",
+      "updated_at": "2026-03-20T02:14:24Z",
+      "html_url": "https://github.com/ROCm/mori/pull/196",
+      "labels": [],
+      "draft": false
+    },
+    {
+      "number": 203,
+      "title": "Refactor: CMake C++ integration, lazy imports & optional MPI dependency",
+      "author": "jhchouuu",
+      "state": "closed",
+      "merged": true,
+      "created_at": "2026-03-19T06:52:34Z",
+      "updated_at": "2026-03-20T02:13:33Z",
+      "html_url": "https://github.com/ROCm/mori/pull/203",
+      "labels": [],
+      "draft": false
+    },
+    {
+      "number": 193,
+      "title": "Feat(shmem): implement GET (remote read) device API with blocking and non-blocking",
+      "author": "jhchouuu",
+      "state": "closed",
+      "merged": true,
+      "created_at": "2026-03-10T08:32:12Z",
+      "updated_at": "2026-03-20T01:54:35Z",
+      "html_url": "https://github.com/ROCm/mori/pull/193",
+      "labels": [],
+      "draft": false
+    },
+    {
+      "number": 199,
+      "title": "Fix: Fix example dispatch_combine test for fp8_direct_cast",
+      "author": "jhchouuu",
+      "state": "closed",
+      "merged": true,
+      "created_at": "2026-03-17T03:25:33Z",
+      "updated_at": "2026-03-19T10:09:29Z",
+      "html_url": "https://github.com/ROCm/mori/pull/199",
+      "labels": [],
+      "draft": false
+    },
+    {
+      "number": 204,
+      "title": "Feat(shmem): increase default static heap to 4GB and VMM heap to 16GB",
+      "author": "jhchouuu",
+      "state": "closed",
+      "merged": true,
+      "created_at": "2026-03-19T10:08:15Z",
+      "updated_at": "2026-03-19T10:09:22Z",
+      "html_url": "https://github.com/ROCm/mori/pull/204",
+      "labels": [],
+      "draft": false
+    },
+    {
       "number": 201,
       "title": "Fix: clear stale pointers in recv-only PrepareAndBuildArgs",
       "author": "maning00",
@@ -154,18 +238,6 @@
       "created_at": "2026-03-05T15:41:33Z",
       "updated_at": "2026-03-18T11:21:26Z",
       "html_url": "https://github.com/ROCm/mori/pull/185",
-      "labels": [],
-      "draft": false
-    },
-    {
-      "number": 199,
-      "title": "Fix: Fix example dispatch_combine test for fp8_direct_cast",
-      "author": "jhchouuu",
-      "state": "closed",
-      "merged": true,
-      "created_at": "2026-03-17T03:25:33Z",
-      "updated_at": "2026-03-17T03:26:29Z",
-      "html_url": "https://github.com/ROCm/mori/pull/199",
       "labels": [],
       "draft": false
     },
@@ -202,18 +274,6 @@
       "created_at": "2026-03-12T09:59:18Z",
       "updated_at": "2026-03-12T14:57:43Z",
       "html_url": "https://github.com/ROCm/mori/pull/197",
-      "labels": [],
-      "draft": false
-    },
-    {
-      "number": 196,
-      "title": "Fix: guard ShmemInit against double initialization",
-      "author": "jhchouuu",
-      "state": "closed",
-      "merged": true,
-      "created_at": "2026-03-12T08:43:49Z",
-      "updated_at": "2026-03-12T09:12:30Z",
-      "html_url": "https://github.com/ROCm/mori/pull/196",
       "labels": [],
       "draft": false
     },
@@ -334,18 +394,6 @@
       "created_at": "2026-03-06T06:03:04Z",
       "updated_at": "2026-03-06T06:58:53Z",
       "html_url": "https://github.com/ROCm/mori/pull/186",
-      "labels": [],
-      "draft": false
-    },
-    {
-      "number": 182,
-      "title": "Refactor: universal wheel with host/device separation, JIT with hardware auto-detection",
-      "author": "jhchouuu",
-      "state": "closed",
-      "merged": true,
-      "created_at": "2026-03-04T08:39:21Z",
-      "updated_at": "2026-03-06T03:34:50Z",
-      "html_url": "https://github.com/ROCm/mori/pull/182",
       "labels": [],
       "draft": false
     },
@@ -1114,54 +1162,6 @@
       "created_at": "2025-11-05T06:56:57Z",
       "updated_at": "2025-11-05T06:58:22Z",
       "html_url": "https://github.com/ROCm/mori/pull/103",
-      "labels": [],
-      "draft": false
-    },
-    {
-      "number": 102,
-      "title": "Feat: add compile option for gpu arch",
-      "author": "TianDi101",
-      "state": "closed",
-      "merged": true,
-      "created_at": "2025-11-05T03:57:28Z",
-      "updated_at": "2025-11-05T04:01:47Z",
-      "html_url": "https://github.com/ROCm/mori/pull/102",
-      "labels": [],
-      "draft": false
-    },
-    {
-      "number": 101,
-      "title": "Fix: epv1 hang & Feature: add support for dispatch with scales",
-      "author": "TianDi101",
-      "state": "closed",
-      "merged": true,
-      "created_at": "2025-10-31T07:26:05Z",
-      "updated_at": "2025-11-04T07:37:18Z",
-      "html_url": "https://github.com/ROCm/mori/pull/101",
-      "labels": [],
-      "draft": false
-    },
-    {
-      "number": 100,
-      "title": "Feat: add weight combine support in EPv1 kernel",
-      "author": "TianDi101",
-      "state": "closed",
-      "merged": true,
-      "created_at": "2025-10-29T07:15:59Z",
-      "updated_at": "2025-10-29T08:01:38Z",
-      "html_url": "https://github.com/ROCm/mori/pull/100",
-      "labels": [],
-      "draft": false
-    },
-    {
-      "number": 98,
-      "title": "Fix: compile bug introduced by EP fix",
-      "author": "TianDi101",
-      "state": "closed",
-      "merged": true,
-      "created_at": "2025-10-28T02:41:45Z",
-      "updated_at": "2025-10-28T02:42:42Z",
-      "html_url": "https://github.com/ROCm/mori/pull/98",
       "labels": [],
       "draft": false
     },

@@ -1,11 +1,11 @@
 {
-  "collected_at": "2026-03-19T08:15:15Z",
+  "collected_at": "2026-03-20T08:13:47Z",
   "source": "automated",
   "rocm": {
     "workflow_name": "Nightly Test (AMD)",
-    "run_id": 23273450445,
-    "run_url": "https://github.com/sgl-project/sglang/actions/runs/23273450445",
-    "run_date": "2026-03-19T03:52:27Z",
+    "run_id": 23308865484,
+    "run_url": "https://github.com/sgl-project/sglang/actions/runs/23308865484",
+    "run_date": "2026-03-20T02:34:30Z",
     "conclusion": "failure",
     "summary": {
       "total_jobs": 2,
@@ -37,9 +37,9 @@
   },
   "cuda": {
     "workflow_name": "PR Test",
-    "run_id": 23285769351,
-    "run_url": "https://github.com/sgl-project/sglang/actions/runs/23285769351",
-    "run_date": "2026-03-19T08:13:33Z",
+    "run_id": 23334384535,
+    "run_url": "https://github.com/sgl-project/sglang/actions/runs/23334384535",
+    "run_date": "2026-03-20T08:10:08Z",
     "conclusion": "failure",
     "summary": {
       "total_jobs": 22,
@@ -59,15 +59,6 @@
         "errors": null
       },
       {
-        "name": "jit-kernel-unit-test",
-        "conclusion": "skipped",
-        "tests": null,
-        "passed": null,
-        "failed": null,
-        "skipped": null,
-        "errors": null
-      },
-      {
         "name": "jit-kernel-benchmark-test",
         "conclusion": "skipped",
         "tests": null,
@@ -77,97 +68,7 @@
         "errors": null
       },
       {
-        "name": "pr-test-finish",
-        "conclusion": "failure",
-        "tests": null,
-        "passed": null,
-        "failed": null,
-        "skipped": null,
-        "errors": null
-      },
-      {
         "name": "stage-a-test-1",
-        "conclusion": "skipped",
-        "tests": null,
-        "passed": null,
-        "failed": null,
-        "skipped": null,
-        "errors": null
-      },
-      {
-        "name": "stage-b-test-large-1-gpu",
-        "conclusion": "skipped",
-        "tests": null,
-        "passed": null,
-        "failed": null,
-        "skipped": null,
-        "errors": null
-      },
-      {
-        "name": "sgl-kernel-benchmark-test",
-        "conclusion": "skipped",
-        "tests": null,
-        "passed": null,
-        "failed": null,
-        "skipped": null,
-        "errors": null
-      },
-      {
-        "name": "stage-b-test-small-1-gpu",
-        "conclusion": "skipped",
-        "tests": null,
-        "passed": null,
-        "failed": null,
-        "skipped": null,
-        "errors": null
-      },
-      {
-        "name": "sgl-kernel-unit-test",
-        "conclusion": "skipped",
-        "tests": null,
-        "passed": null,
-        "failed": null,
-        "skipped": null,
-        "errors": null
-      },
-      {
-        "name": "sgl-kernel-b200-test",
-        "conclusion": "skipped",
-        "tests": null,
-        "passed": null,
-        "failed": null,
-        "skipped": null,
-        "errors": null
-      },
-      {
-        "name": "stage-c-test-4-gpu-b200",
-        "conclusion": "skipped",
-        "tests": null,
-        "passed": null,
-        "failed": null,
-        "skipped": null,
-        "errors": null
-      },
-      {
-        "name": "multimodal-gen-test-1-gpu",
-        "conclusion": "skipped",
-        "tests": null,
-        "passed": null,
-        "failed": null,
-        "skipped": null,
-        "errors": null
-      },
-      {
-        "name": "stage-c-test-deepep-4-gpu",
-        "conclusion": "skipped",
-        "tests": null,
-        "passed": null,
-        "failed": null,
-        "skipped": null,
-        "errors": null
-      },
-      {
-        "name": "stage-c-test-deepep-8-gpu-h200",
         "conclusion": "skipped",
         "tests": null,
         "passed": null,
@@ -185,6 +86,15 @@
         "errors": null
       },
       {
+        "name": "jit-kernel-unit-test",
+        "conclusion": "skipped",
+        "tests": null,
+        "passed": null,
+        "failed": null,
+        "skipped": null,
+        "errors": null
+      },
+      {
         "name": "multimodal-gen-test-2-gpu",
         "conclusion": "skipped",
         "tests": null,
@@ -194,16 +104,7 @@
         "errors": null
       },
       {
-        "name": "stage-c-test-8-gpu-h200",
-        "conclusion": "skipped",
-        "tests": null,
-        "passed": null,
-        "failed": null,
-        "skipped": null,
-        "errors": null
-      },
-      {
-        "name": "stage-b-test-large-2-gpu",
+        "name": "stage-b-test-large-1-gpu",
         "conclusion": "skipped",
         "tests": null,
         "passed": null,
@@ -221,7 +122,52 @@
         "errors": null
       },
       {
-        "name": "stage-c-test-4-gpu-h100",
+        "name": "sgl-kernel-benchmark-test",
+        "conclusion": "skipped",
+        "tests": null,
+        "passed": null,
+        "failed": null,
+        "skipped": null,
+        "errors": null
+      },
+      {
+        "name": "sgl-kernel-unit-test",
+        "conclusion": "skipped",
+        "tests": null,
+        "passed": null,
+        "failed": null,
+        "skipped": null,
+        "errors": null
+      },
+      {
+        "name": "stage-b-test-large-2-gpu",
+        "conclusion": "skipped",
+        "tests": null,
+        "passed": null,
+        "failed": null,
+        "skipped": null,
+        "errors": null
+      },
+      {
+        "name": "stage-c-test-8-gpu-h200",
+        "conclusion": "skipped",
+        "tests": null,
+        "passed": null,
+        "failed": null,
+        "skipped": null,
+        "errors": null
+      },
+      {
+        "name": "multimodal-gen-test-1-gpu",
+        "conclusion": "skipped",
+        "tests": null,
+        "passed": null,
+        "failed": null,
+        "skipped": null,
+        "errors": null
+      },
+      {
+        "name": "stage-b-test-small-1-gpu",
         "conclusion": "skipped",
         "tests": null,
         "passed": null,
@@ -231,6 +177,60 @@
       },
       {
         "name": "multimodal-gen-unit-test",
+        "conclusion": "skipped",
+        "tests": null,
+        "passed": null,
+        "failed": null,
+        "skipped": null,
+        "errors": null
+      },
+      {
+        "name": "pr-test-finish",
+        "conclusion": "failure",
+        "tests": null,
+        "passed": null,
+        "failed": null,
+        "skipped": null,
+        "errors": null
+      },
+      {
+        "name": "stage-c-test-4-gpu-b200",
+        "conclusion": "skipped",
+        "tests": null,
+        "passed": null,
+        "failed": null,
+        "skipped": null,
+        "errors": null
+      },
+      {
+        "name": "stage-c-test-4-gpu-h100",
+        "conclusion": "skipped",
+        "tests": null,
+        "passed": null,
+        "failed": null,
+        "skipped": null,
+        "errors": null
+      },
+      {
+        "name": "sgl-kernel-b200-test",
+        "conclusion": "skipped",
+        "tests": null,
+        "passed": null,
+        "failed": null,
+        "skipped": null,
+        "errors": null
+      },
+      {
+        "name": "stage-c-test-deepep-8-gpu-h200",
+        "conclusion": "skipped",
+        "tests": null,
+        "passed": null,
+        "failed": null,
+        "skipped": null,
+        "errors": null
+      },
+      {
+        "name": "stage-c-test-deepep-4-gpu",
         "conclusion": "skipped",
         "tests": null,
         "passed": null,
