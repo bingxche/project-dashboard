@@ -1,290 +1,260 @@
 {
-  "collected_at": "2026-03-13T08:16:32Z",
+  "collected_at": "2026-03-20T22:08:03Z",
   "workflows": {
     "migraphx": {
       "workflow_id": 3843465,
       "latest_run": {
-        "id": 23034735614,
+        "id": 23352697262,
         "conclusion": "success",
-        "duration_minutes": 218.1,
-        "started_at": "2026-03-13T03:22:52Z",
-        "html_url": "https://github.com/ROCm/AMDMIGraphX/actions/runs/23034735614"
+        "duration_minutes": 199.0,
+        "started_at": "2026-03-20T16:37:00Z",
+        "html_url": "https://github.com/ROCm/AMDMIGraphX/actions/runs/23352697262"
       },
       "stats": {
-        "sample_size": 11,
-        "median_minutes": 210.9,
-        "p90_minutes": 213.9,
-        "min_minutes": 102.1,
-        "max_minutes": 218.1
+        "sample_size": 8,
+        "median_minutes": 214.2,
+        "p90_minutes": 219.7,
+        "min_minutes": 199.0,
+        "max_minutes": 219.7
       },
       "recent_runs": [
         {
-          "id": 23034735614,
+          "id": 23352697262,
           "conclusion": "success",
-          "duration_minutes": 218.1,
-          "date": "2026-03-13"
+          "duration_minutes": 199.0,
+          "date": "2026-03-20"
         },
         {
-          "id": 23029374509,
-          "conclusion": "success",
-          "duration_minutes": 105.1,
-          "date": "2026-03-12"
-        },
-        {
-          "id": 23029064118,
+          "id": 23351590753,
           "conclusion": "cancelled",
-          "duration_minutes": 12.0,
-          "date": "2026-03-12"
+          "duration_minutes": 27.9,
+          "date": "2026-03-20"
         },
         {
-          "id": 23029036185,
-          "conclusion": "success",
-          "duration_minutes": 213.8,
-          "date": "2026-03-12"
-        },
-        {
-          "id": 23029021012,
-          "conclusion": "success",
-          "duration_minutes": 213.9,
-          "date": "2026-03-12"
-        },
-        {
-          "id": 23027658542,
-          "conclusion": "failure",
-          "duration_minutes": 212.2,
-          "date": "2026-03-12"
-        },
-        {
-          "id": 23024766343,
-          "conclusion": "failure",
-          "duration_minutes": 210.2,
-          "date": "2026-03-12"
-        },
-        {
-          "id": 23021264471,
-          "conclusion": "failure",
-          "duration_minutes": 217.5,
-          "date": "2026-03-12"
-        },
-        {
-          "id": 23021175860,
+          "id": 23351524892,
           "conclusion": "cancelled",
-          "duration_minutes": 91.0,
-          "date": "2026-03-12"
+          "duration_minutes": 2.4,
+          "date": "2026-03-20"
         },
         {
-          "id": 23019273273,
+          "id": 23346489938,
           "conclusion": "success",
-          "duration_minutes": 104.0,
-          "date": "2026-03-12"
+          "duration_minutes": 214.4,
+          "date": "2026-03-20"
         },
         {
-          "id": 23018705273,
+          "id": 23343873151,
           "conclusion": "cancelled",
-          "duration_minutes": 15.2,
-          "date": "2026-03-12"
+          "duration_minutes": 68.8,
+          "date": "2026-03-20"
         },
         {
-          "id": 23018190177,
+          "id": 23341019709,
           "conclusion": "success",
-          "duration_minutes": 212.9,
-          "date": "2026-03-12"
+          "duration_minutes": 214.0,
+          "date": "2026-03-20"
         },
         {
-          "id": 23017538858,
-          "conclusion": "cancelled",
-          "duration_minutes": 30.0,
-          "date": "2026-03-12"
+          "id": 23341013338,
+          "conclusion": "success",
+          "duration_minutes": 219.7,
+          "date": "2026-03-20"
         },
         {
-          "id": 23017523047,
+          "id": 23340999125,
           "conclusion": "cancelled",
           "duration_minutes": 1.3,
-          "date": "2026-03-12"
+          "date": "2026-03-20"
         },
         {
-          "id": 23014759626,
+          "id": 23327188303,
           "conclusion": "success",
-          "duration_minutes": 103.7,
-          "date": "2026-03-12"
+          "duration_minutes": 215.6,
+          "date": "2026-03-20"
         },
         {
-          "id": 23014630578,
-          "conclusion": "success",
-          "duration_minutes": 213.3,
-          "date": "2026-03-12"
-        },
-        {
-          "id": 23012865380,
-          "conclusion": "success",
-          "duration_minutes": 104.0,
-          "date": "2026-03-12"
-        },
-        {
-          "id": 23012857330,
-          "conclusion": "success",
-          "duration_minutes": 210.9,
-          "date": "2026-03-12"
-        },
-        {
-          "id": 23012066563,
+          "id": 23323731973,
           "conclusion": "cancelled",
-          "duration_minutes": 18.5,
-          "date": "2026-03-12"
+          "duration_minutes": 146.8,
+          "date": "2026-03-20"
         },
         {
-          "id": 23010093247,
+          "id": 23319657132,
           "conclusion": "success",
-          "duration_minutes": 102.1,
-          "date": "2026-03-12"
+          "duration_minutes": 205.9,
+          "date": "2026-03-19"
+        },
+        {
+          "id": 23318452684,
+          "conclusion": "cancelled",
+          "duration_minutes": 35.0,
+          "date": "2026-03-19"
+        },
+        {
+          "id": 23318445235,
+          "conclusion": "cancelled",
+          "duration_minutes": 1.1,
+          "date": "2026-03-19"
+        },
+        {
+          "id": 23316664238,
+          "conclusion": "failure",
+          "duration_minutes": 213.2,
+          "date": "2026-03-19"
+        },
+        {
+          "id": 23316397821,
+          "conclusion": "success",
+          "duration_minutes": 215.8,
+          "date": "2026-03-19"
+        },
+        {
+          "id": 23316340454,
+          "conclusion": "cancelled",
+          "duration_minutes": 1.9,
+          "date": "2026-03-19"
+        },
+        {
+          "id": 23316267834,
+          "conclusion": "cancelled",
+          "duration_minutes": 2.8,
+          "date": "2026-03-19"
+        },
+        {
+          "id": 23316184848,
+          "conclusion": "cancelled",
+          "duration_minutes": 2.9,
+          "date": "2026-03-19"
+        },
+        {
+          "id": 23314869853,
+          "conclusion": "success",
+          "duration_minutes": 210.2,
+          "date": "2026-03-19"
+        },
+        {
+          "id": 23309421234,
+          "conclusion": "failure",
+          "duration_minutes": 223.9,
+          "date": "2026-03-19"
         }
       ],
       "bottleneck_job": {
-        "name": "linux (ubuntu-24.04, debug)",
-        "duration_minutes": 217.8
+        "name": "linux-fpga (ubuntu-24.04, debug)",
+        "duration_minutes": 198.9
       }
     },
     "MIGraphX Performance Tests": {
       "workflow_id": 30809142,
       "latest_run": {
-        "id": 23034735776,
-        "conclusion": "success",
-        "duration_minutes": 122.5,
-        "started_at": "2026-03-13T03:22:52Z",
-        "html_url": "https://github.com/ROCm/AMDMIGraphX/actions/runs/23034735776"
+        "id": 23351590986,
+        "conclusion": "cancelled",
+        "duration_minutes": 27.3,
+        "started_at": "2026-03-20T16:09:43Z",
+        "html_url": "https://github.com/ROCm/AMDMIGraphX/actions/runs/23351590986"
       },
       "stats": {
-        "sample_size": 10,
-        "median_minutes": 278.6,
-        "p90_minutes": 405.8,
-        "min_minutes": 45.2,
-        "max_minutes": 405.8
+        "sample_size": 1,
+        "median_minutes": 1347.6,
+        "p90_minutes": 1347.6,
+        "min_minutes": 1347.6,
+        "max_minutes": 1347.6
       },
       "recent_runs": [
         {
-          "id": 23034735776,
-          "conclusion": "success",
-          "duration_minutes": 122.5,
-          "date": "2026-03-13"
-        },
-        {
-          "id": 23029374425,
+          "id": 23351590986,
           "conclusion": "cancelled",
-          "duration_minutes": 212.9,
-          "date": "2026-03-12"
+          "duration_minutes": 27.3,
+          "date": "2026-03-20"
         },
         {
-          "id": 23029064090,
+          "id": 23351523785,
           "conclusion": "cancelled",
-          "duration_minutes": 11.2,
-          "date": "2026-03-12"
+          "duration_minutes": 1.7,
+          "date": "2026-03-20"
         },
         {
-          "id": 23029035625,
-          "conclusion": "success",
-          "duration_minutes": 405.8,
-          "date": "2026-03-12"
-        },
-        {
-          "id": 23029021112,
-          "conclusion": "success",
-          "duration_minutes": 202.5,
-          "date": "2026-03-12"
-        },
-        {
-          "id": 23027658745,
-          "conclusion": "success",
-          "duration_minutes": 393.2,
-          "date": "2026-03-12"
-        },
-        {
-          "id": 23024766024,
-          "conclusion": "success",
-          "duration_minutes": 331.1,
-          "date": "2026-03-12"
-        },
-        {
-          "id": 23021264629,
-          "conclusion": "success",
-          "duration_minutes": 393.8,
-          "date": "2026-03-12"
-        },
-        {
-          "id": 23021175288,
+          "id": 23341013622,
           "conclusion": "cancelled",
-          "duration_minutes": 90.4,
-          "date": "2026-03-12"
+          "duration_minutes": 274.2,
+          "date": "2026-03-20"
         },
         {
-          "id": 23019273287,
+          "id": 23340999076,
           "conclusion": "cancelled",
-          "duration_minutes": 268.4,
-          "date": "2026-03-12"
+          "duration_minutes": 0.5,
+          "date": "2026-03-20"
         },
         {
-          "id": 23018705266,
+          "id": 23327188351,
           "conclusion": "cancelled",
-          "duration_minutes": 14.5,
-          "date": "2026-03-12"
+          "duration_minutes": 598.3,
+          "date": "2026-03-20"
         },
         {
-          "id": 23018190182,
+          "id": 23323731790,
+          "conclusion": "cancelled",
+          "duration_minutes": 145.8,
+          "date": "2026-03-20"
+        },
+        {
+          "id": 23319656697,
+          "conclusion": "cancelled",
+          "duration_minutes": 946.6,
+          "date": "2026-03-19"
+        },
+        {
+          "id": 23318452551,
+          "conclusion": "cancelled",
+          "duration_minutes": 33.8,
+          "date": "2026-03-19"
+        },
+        {
+          "id": 23318445293,
+          "conclusion": "cancelled",
+          "duration_minutes": 0.2,
+          "date": "2026-03-19"
+        },
+        {
+          "id": 23316664515,
+          "conclusion": "cancelled",
+          "duration_minutes": 215.0,
+          "date": "2026-03-19"
+        },
+        {
+          "id": 23309421353,
+          "conclusion": "cancelled",
+          "duration_minutes": 225.3,
+          "date": "2026-03-19"
+        },
+        {
+          "id": 23308427591,
           "conclusion": "success",
-          "duration_minutes": 322.4,
-          "date": "2026-03-12"
+          "duration_minutes": 1347.6,
+          "date": "2026-03-19"
         },
         {
-          "id": 23017538799,
+          "id": 23308414616,
           "conclusion": "cancelled",
-          "duration_minutes": 29.1,
-          "date": "2026-03-12"
+          "duration_minutes": 0.3,
+          "date": "2026-03-19"
         },
         {
-          "id": 23017523144,
+          "id": 23308372016,
           "conclusion": "cancelled",
-          "duration_minutes": 0.4,
-          "date": "2026-03-12"
+          "duration_minutes": 23.9,
+          "date": "2026-03-19"
         },
         {
-          "id": 23014759656,
-          "conclusion": "success",
-          "duration_minutes": 234.9,
-          "date": "2026-03-12"
-        },
-        {
-          "id": 23014630811,
-          "conclusion": "success",
-          "duration_minutes": 233.0,
-          "date": "2026-03-12"
-        },
-        {
-          "id": 23012864930,
+          "id": 23301158965,
           "conclusion": "cancelled",
-          "duration_minutes": 109.5,
-          "date": "2026-03-12"
-        },
-        {
-          "id": 23012857747,
-          "conclusion": "success",
-          "duration_minutes": 45.2,
-          "date": "2026-03-12"
-        },
-        {
-          "id": 23012066513,
-          "conclusion": "cancelled",
-          "duration_minutes": 17.9,
-          "date": "2026-03-12"
-        },
-        {
-          "id": 23010093327,
-          "conclusion": "cancelled",
-          "duration_minutes": 106.1,
-          "date": "2026-03-12"
+          "duration_minutes": 160.1,
+          "date": "2026-03-19"
         }
       ],
       "bottleneck_job": {
-        "name": "call_reusable / MIGraphX Performance",
-        "duration_minutes": 0.2
+        "name": "get_config",
+        "duration_minutes": 0.1
       }
     }
   }

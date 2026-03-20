@@ -1,6 +1,39 @@
 {
-  "collected_at": "2026-03-13T08:13:52Z",
+  "collected_at": "2026-03-20T22:06:06Z",
   "issues": [
+    {
+      "number": 369,
+      "title": "[Perf Regression] 1 config(s) regressed @ 4db4f39e",
+      "author": "github-actions[bot]",
+      "state": "open",
+      "created_at": "2026-03-20T21:56:06Z",
+      "updated_at": "2026-03-20T21:56:06Z",
+      "html_url": "https://github.com/ROCm/ATOM/issues/369",
+      "labels": [
+        "performance",
+        "regression"
+      ]
+    },
+    {
+      "number": 221,
+      "title": "[Issue]: ATOM fails on Qwen3 model when the flag \"--enable_prefix_caching\" is enabled",
+      "author": "vecheruk-amd",
+      "state": "open",
+      "created_at": "2026-02-16T20:26:55Z",
+      "updated_at": "2026-03-20T08:04:24Z",
+      "html_url": "https://github.com/ROCm/ATOM/issues/221",
+      "labels": []
+    },
+    {
+      "number": 359,
+      "title": "[RFC] Introduce ATOM as out of tree backend of SGLang",
+      "author": "zhuyuhua-v",
+      "state": "open",
+      "created_at": "2026-03-19T08:53:13Z",
+      "updated_at": "2026-03-19T08:53:13Z",
+      "html_url": "https://github.com/ROCm/ATOM/issues/359",
+      "labels": []
+    },
     {
       "number": 295,
       "title": "[RFC] Introduce ATOM as model implementation backend of SGLang",
@@ -39,16 +72,6 @@
       "created_at": "2026-02-25T21:16:13Z",
       "updated_at": "2026-02-26T02:42:38Z",
       "html_url": "https://github.com/ROCm/ATOM/issues/238",
-      "labels": []
-    },
-    {
-      "number": 221,
-      "title": "[Issue]: ATOM fails on Qwen3 model when the flag \"--enable_prefix_caching\" is enabled",
-      "author": "vecheruk-amd",
-      "state": "open",
-      "created_at": "2026-02-16T20:26:55Z",
-      "updated_at": "2026-02-25T21:26:11Z",
-      "html_url": "https://github.com/ROCm/ATOM/issues/221",
       "labels": []
     },
     {

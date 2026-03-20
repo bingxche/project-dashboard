@@ -1,54 +1,21 @@
 {
-  "collected_at": "2026-03-13T08:14:22Z",
+  "collected_at": "2026-03-20T22:06:22Z",
   "source": "automated",
-  "rocm": {
-    "workflow_name": "CI ROCm",
-    "run_id": 23041299580,
-    "run_url": "https://github.com/openxla/xla/actions/runs/23041299580",
-    "run_date": "2026-03-13T07:50:26Z",
-    "conclusion": "failure",
-    "summary": {
-      "total_jobs": 1,
-      "passed": 0,
-      "failed": 1,
-      "skipped": 0,
-      "pass_rate": 0.0
-    },
-    "suites": [
-      {
-        "name": "execute-xla-ut",
-        "conclusion": "failure",
-        "tests": null,
-        "passed": null,
-        "failed": null,
-        "skipped": null,
-        "errors": null
-      }
-    ]
-  },
+  "rocm": null,
   "cuda": {
     "workflow_name": "CI",
-    "run_id": 23041299590,
-    "run_url": "https://github.com/openxla/xla/actions/runs/23041299590",
-    "run_date": "2026-03-13T07:58:51Z",
-    "conclusion": "success",
+    "run_id": 23363852789,
+    "run_url": "https://github.com/openxla/xla/actions/runs/23363852789",
+    "run_date": "2026-03-20T21:54:52Z",
+    "conclusion": "failure",
     "summary": {
       "total_jobs": 3,
-      "passed": 3,
-      "failed": 0,
+      "passed": 2,
+      "failed": 1,
       "skipped": 0,
-      "pass_rate": 100.0
+      "pass_rate": 66.67
     },
     "suites": [
-      {
-        "name": "JAX Linux x86 GPU L4",
-        "conclusion": "success",
-        "tests": null,
-        "passed": null,
-        "failed": null,
-        "skipped": null,
-        "errors": null
-      },
       {
         "name": "XLA Linux x86 GPU L4",
         "conclusion": "success",
@@ -60,6 +27,15 @@
       },
       {
         "name": "TensorFlow Linux x86 GPU L4",
+        "conclusion": "failure",
+        "tests": null,
+        "passed": null,
+        "failed": null,
+        "skipped": null,
+        "errors": null
+      },
+      {
+        "name": "JAX Linux x86 GPU L4",
         "conclusion": "success",
         "tests": null,
         "passed": null,

@@ -1,43 +1,43 @@
 {
-  "collected_at": "2026-03-13T08:15:59Z",
+  "collected_at": "2026-03-20T22:07:38Z",
   "project": "mori",
   "repo": "ROCm/mori",
   "pr_velocity": {
     "this_week": {
-      "opened": 11,
-      "merged": 10,
-      "closed": 2
+      "opened": 9,
+      "merged": 8,
+      "closed": 0
     },
     "last_week": {
-      "opened": 12,
-      "merged": 8,
-      "closed": 3
+      "opened": 10,
+      "merged": 9,
+      "closed": 2
     },
-    "median_time_to_merge_hours": 0.5,
-    "merge_count": 19,
+    "median_time_to_merge_hours": 2.9,
+    "merge_count": 22,
     "stale_prs": 2
   },
   "contributors": {
-    "active_this_week": 6,
-    "total_contributors": 10,
+    "active_this_week": 5,
+    "total_contributors": 12,
     "top_contributors": [
       {
-        "author": "TianDi101",
-        "prs_submitted": 25,
-        "prs_merged": 22,
-        "commits": 2
-      },
-      {
         "author": "jhchouuu",
-        "prs_submitted": 21,
-        "prs_merged": 18,
-        "commits": 10
+        "prs_submitted": 25,
+        "prs_merged": 23,
+        "commits": 14
       },
       {
         "author": "maning00",
+        "prs_submitted": 21,
+        "prs_merged": 19,
+        "commits": 8
+      },
+      {
+        "author": "TianDi101",
         "prs_submitted": 19,
         "prs_merged": 17,
-        "commits": 7
+        "commits": 2
       },
       {
         "author": "zhangfei829",
@@ -49,18 +49,18 @@
         "author": "isytwu",
         "prs_submitted": 7,
         "prs_merged": 7,
-        "commits": 4
-      },
-      {
-        "author": "dongmin-ra",
-        "prs_submitted": 3,
-        "prs_merged": 2,
-        "commits": 0
+        "commits": 3
       },
       {
         "author": "wuyl1",
         "prs_submitted": 3,
         "prs_merged": 3,
+        "commits": 0
+      },
+      {
+        "author": "amd-andycha",
+        "prs_submitted": 2,
+        "prs_merged": 0,
         "commits": 0
       },
       {
@@ -70,15 +70,15 @@
         "commits": 1
       },
       {
-        "author": "TennyWang1223",
+        "author": "inkcherry",
         "prs_submitted": 1,
-        "prs_merged": 1,
+        "prs_merged": 0,
         "commits": 0
       },
       {
-        "author": "Duyi-Wang",
+        "author": "dongmin-ra",
         "prs_submitted": 1,
-        "prs_merged": 1,
+        "prs_merged": 0,
         "commits": 0
       }
     ],
