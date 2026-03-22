@@ -96,7 +96,26 @@ function renderOpPerf(data) {
   html += summaryBox(allStats.amdWins, "AMD Wins");
   html += summaryBox(allStats.nvWins, "NV Wins");
   html += summaryBox(geoEqStr, "GeoMean (equal-weight)");
+  var geoInfStr = (s.geomean_inference || 0) > 0 ? s.geomean_inference.toFixed(3) + 'x' : 'N/A';
+  html += summaryBox(geoInfStr, "GeoMean (inference-weighted)");
   html += '</div>';
+
+  // Per-model breakdown
+  if (s.per_model && s.per_model.length > 0) {
+    html += '<div class="op-perf-models">';
+    html += '<h3>Per-Model Inference-Weighted GeoMean</h3>';
+    html += '<div class="op-model-grid">';
+    for (var mi = 0; mi < s.per_model.length; mi++) {
+      var m = s.per_model[mi];
+      var cls = m.geomean > 1.05 ? 'op-model-amd' : m.geomean < 0.95 ? 'op-model-nv' : 'op-model-tie';
+      html += '<div class="op-model-card ' + cls + '">';
+      html += '<div class="op-model-name">' + escapeHtml(m.model) + '</div>';
+      html += '<div class="op-model-type">' + escapeHtml(m.type) + '</div>';
+      html += '<div class="op-model-geo">' + m.geomean.toFixed(3) + 'x</div>';
+      html += '</div>';
+    }
+    html += '</div></div>';
+  }
 
   // Chart grid: win/loss bar + ratio line
   html += '<div class="op-perf-charts-grid">';
