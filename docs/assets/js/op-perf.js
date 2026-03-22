@@ -96,7 +96,6 @@ function renderOpPerf(data) {
   html += summaryBox(allStats.amdWins, "AMD Wins");
   html += summaryBox(allStats.nvWins, "NV Wins");
   html += summaryBox(geoEqStr, "GeoMean (equal-weight)");
-  html += summaryBox(geoCfgStr, "GeoMean (per-config)");
   html += '</div>';
 
   // Chart grid: win/loss bar + ratio line
