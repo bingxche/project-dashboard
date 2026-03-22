@@ -1,0 +1,19 @@
+{
+  "collected_at": "2026-03-21T08:07:40Z",
+  "prs": [
+    {
+      "number": 39595,
+      "title": "[ROCm] Remove the second timeout definition form rocm_jax_ut workflow",
+      "author": "nurmukhametov",
+      "state": "open",
+      "merged": false,
+      "created_at": "2026-03-20T22:44:56Z",
+      "updated_at": "2026-03-20T22:52:36Z",
+      "html_url": "https://github.com/openxla/xla/pull/39595",
+      "labels": [
+        "AMD-GPU"
+      ],
+      "draft": false
+    }
+  ]
+}
