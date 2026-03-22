@@ -40090,12 +40090,12 @@
     },
     {
       "id": "moe_fused",
-      "name": "Fused MoE (production precision)",
+      "name": "Fused MoE (AITER vs best NV)",
       "results": [
         {
           "model": "GPT-OSS-120B",
           "op": "fused_moe",
-          "label": "N=5760 K=2880",
+          "label": "BF16 N=5760 K=2880",
           "M": 1,
           "N": 5760,
           "K": 2880,
@@ -40110,7 +40110,7 @@
         {
           "model": "GPT-OSS-120B",
           "op": "fused_moe",
-          "label": "N=5760 K=2880",
+          "label": "BF16 N=5760 K=2880",
           "M": 4,
           "N": 5760,
           "K": 2880,
@@ -40125,7 +40125,7 @@
         {
           "model": "GPT-OSS-120B",
           "op": "fused_moe",
-          "label": "N=5760 K=2880",
+          "label": "BF16 N=5760 K=2880",
           "M": 16,
           "N": 5760,
           "K": 2880,
@@ -40140,7 +40140,7 @@
         {
           "model": "GPT-OSS-120B",
           "op": "fused_moe",
-          "label": "N=5760 K=2880",
+          "label": "BF16 N=5760 K=2880",
           "M": 64,
           "N": 5760,
           "K": 2880,
@@ -40155,7 +40155,7 @@
         {
           "model": "GPT-OSS-120B",
           "op": "fused_moe",
-          "label": "N=5760 K=2880",
+          "label": "BF16 N=5760 K=2880",
           "M": 256,
           "N": 5760,
           "K": 2880,
@@ -40170,7 +40170,7 @@
         {
           "model": "GPT-OSS-120B",
           "op": "fused_moe",
-          "label": "N=5760 K=2880",
+          "label": "BF16 N=5760 K=2880",
           "M": 1024,
           "N": 5760,
           "K": 2880,
@@ -40185,7 +40185,7 @@
         {
           "model": "GPT-OSS-120B",
           "op": "fused_moe",
-          "label": "N=5760 K=2880",
+          "label": "BF16 N=5760 K=2880",
           "M": 4096,
           "N": 5760,
           "K": 2880,
@@ -40200,7 +40200,7 @@
         {
           "model": "GPT-OSS-120B",
           "op": "fused_moe",
-          "label": "N=2880 K=5760",
+          "label": "BF16 N=2880 K=5760",
           "M": 1,
           "N": 2880,
           "K": 5760,
@@ -40215,7 +40215,7 @@
         {
           "model": "GPT-OSS-120B",
           "op": "fused_moe",
-          "label": "N=2880 K=5760",
+          "label": "BF16 N=2880 K=5760",
           "M": 4,
           "N": 2880,
           "K": 5760,
@@ -40230,7 +40230,7 @@
         {
           "model": "GPT-OSS-120B",
           "op": "fused_moe",
-          "label": "N=2880 K=5760",
+          "label": "BF16 N=2880 K=5760",
           "M": 16,
           "N": 2880,
           "K": 5760,
@@ -40245,7 +40245,7 @@
         {
           "model": "GPT-OSS-120B",
           "op": "fused_moe",
-          "label": "N=2880 K=5760",
+          "label": "BF16 N=2880 K=5760",
           "M": 64,
           "N": 2880,
           "K": 5760,
@@ -40260,7 +40260,7 @@
         {
           "model": "GPT-OSS-120B",
           "op": "fused_moe",
-          "label": "N=2880 K=5760",
+          "label": "BF16 N=2880 K=5760",
           "M": 256,
           "N": 2880,
           "K": 5760,
@@ -40275,7 +40275,7 @@
         {
           "model": "GPT-OSS-120B",
           "op": "fused_moe",
-          "label": "N=2880 K=5760",
+          "label": "BF16 N=2880 K=5760",
           "M": 1024,
           "N": 2880,
           "K": 5760,
@@ -40290,7 +40290,7 @@
         {
           "model": "GPT-OSS-120B",
           "op": "fused_moe",
-          "label": "N=2880 K=5760",
+          "label": "BF16 N=2880 K=5760",
           "M": 4096,
           "N": 2880,
           "K": 5760,
@@ -40305,7 +40305,7 @@
         {
           "model": "Kimi-K2.5",
           "op": "fused_moe",
-          "label": "N=2048 K=7168",
+          "label": "BF16 N=2048 K=7168",
           "M": 1,
           "N": 2048,
           "K": 7168,
@@ -40320,7 +40320,7 @@
         {
           "model": "Kimi-K2.5",
           "op": "fused_moe",
-          "label": "N=2048 K=7168",
+          "label": "BF16 N=2048 K=7168",
           "M": 4,
           "N": 2048,
           "K": 7168,
@@ -40335,7 +40335,7 @@
         {
           "model": "Kimi-K2.5",
           "op": "fused_moe",
-          "label": "N=2048 K=7168",
+          "label": "BF16 N=2048 K=7168",
           "M": 16,
           "N": 2048,
           "K": 7168,
@@ -40350,7 +40350,7 @@
         {
           "model": "Kimi-K2.5",
           "op": "fused_moe",
-          "label": "N=2048 K=7168",
+          "label": "BF16 N=2048 K=7168",
           "M": 64,
           "N": 2048,
           "K": 7168,
@@ -40365,7 +40365,7 @@
         {
           "model": "Kimi-K2.5",
           "op": "fused_moe",
-          "label": "N=2048 K=7168",
+          "label": "BF16 N=2048 K=7168",
           "M": 256,
           "N": 2048,
           "K": 7168,
@@ -40380,7 +40380,7 @@
         {
           "model": "Kimi-K2.5",
           "op": "fused_moe",
-          "label": "N=2048 K=7168",
+          "label": "BF16 N=2048 K=7168",
           "M": 1024,
           "N": 2048,
           "K": 7168,
@@ -40395,7 +40395,7 @@
         {
           "model": "Kimi-K2.5",
           "op": "fused_moe",
-          "label": "N=2048 K=7168",
+          "label": "BF16 N=2048 K=7168",
           "M": 4096,
           "N": 2048,
           "K": 7168,
@@ -40410,7 +40410,7 @@
         {
           "model": "Kimi-K2.5",
           "op": "fused_moe",
-          "label": "N=7168 K=2048",
+          "label": "BF16 N=7168 K=2048",
           "M": 1,
           "N": 7168,
           "K": 2048,
@@ -40425,7 +40425,7 @@
         {
           "model": "Kimi-K2.5",
           "op": "fused_moe",
-          "label": "N=7168 K=2048",
+          "label": "BF16 N=7168 K=2048",
           "M": 4,
           "N": 7168,
           "K": 2048,
@@ -40440,7 +40440,7 @@
         {
           "model": "Kimi-K2.5",
           "op": "fused_moe",
-          "label": "N=7168 K=2048",
+          "label": "BF16 N=7168 K=2048",
           "M": 16,
           "N": 7168,
           "K": 2048,
@@ -40455,7 +40455,7 @@
         {
           "model": "Kimi-K2.5",
           "op": "fused_moe",
-          "label": "N=7168 K=2048",
+          "label": "BF16 N=7168 K=2048",
           "M": 64,
           "N": 7168,
           "K": 2048,
@@ -40470,7 +40470,7 @@
         {
           "model": "Kimi-K2.5",
           "op": "fused_moe",
-          "label": "N=7168 K=2048",
+          "label": "BF16 N=7168 K=2048",
           "M": 256,
           "N": 7168,
           "K": 2048,
@@ -40485,7 +40485,7 @@
         {
           "model": "Kimi-K2.5",
           "op": "fused_moe",
-          "label": "N=7168 K=2048",
+          "label": "BF16 N=7168 K=2048",
           "M": 1024,
           "N": 7168,
           "K": 2048,
@@ -40500,7 +40500,7 @@
         {
           "model": "Kimi-K2.5",
           "op": "fused_moe",
-          "label": "N=7168 K=2048",
+          "label": "BF16 N=7168 K=2048",
           "M": 4096,
           "N": 7168,
           "K": 2048,
@@ -40515,7 +40515,7 @@
         {
           "model": "Mixtral-8x7B",
           "op": "fused_moe",
-          "label": "N=14336 K=4096",
+          "label": "BF16 N=14336 K=4096",
           "M": 1,
           "N": 14336,
           "K": 4096,
@@ -40530,7 +40530,7 @@
         {
           "model": "Mixtral-8x7B",
           "op": "fused_moe",
-          "label": "N=14336 K=4096",
+          "label": "BF16 N=14336 K=4096",
           "M": 4,
           "N": 14336,
           "K": 4096,
@@ -40545,7 +40545,7 @@
         {
           "model": "Mixtral-8x7B",
           "op": "fused_moe",
-          "label": "N=14336 K=4096",
+          "label": "BF16 N=14336 K=4096",
           "M": 16,
           "N": 14336,
           "K": 4096,
@@ -40560,7 +40560,7 @@
         {
           "model": "Mixtral-8x7B",
           "op": "fused_moe",
-          "label": "N=14336 K=4096",
+          "label": "BF16 N=14336 K=4096",
           "M": 64,
           "N": 14336,
           "K": 4096,
@@ -40575,7 +40575,7 @@
         {
           "model": "Mixtral-8x7B",
           "op": "fused_moe",
-          "label": "N=14336 K=4096",
+          "label": "BF16 N=14336 K=4096",
           "M": 256,
           "N": 14336,
           "K": 4096,
@@ -40590,7 +40590,7 @@
         {
           "model": "Mixtral-8x7B",
           "op": "fused_moe",
-          "label": "N=14336 K=4096",
+          "label": "BF16 N=14336 K=4096",
           "M": 1024,
           "N": 14336,
           "K": 4096,
@@ -40605,7 +40605,7 @@
         {
           "model": "Mixtral-8x7B",
           "op": "fused_moe",
-          "label": "N=14336 K=4096",
+          "label": "BF16 N=14336 K=4096",
           "M": 4096,
           "N": 14336,
           "K": 4096,
@@ -40620,7 +40620,7 @@
         {
           "model": "Mixtral-8x7B",
           "op": "fused_moe",
-          "label": "N=4096 K=14336",
+          "label": "BF16 N=4096 K=14336",
           "M": 1,
           "N": 4096,
           "K": 14336,
@@ -40635,7 +40635,7 @@
         {
           "model": "Mixtral-8x7B",
           "op": "fused_moe",
-          "label": "N=4096 K=14336",
+          "label": "BF16 N=4096 K=14336",
           "M": 4,
           "N": 4096,
           "K": 14336,
@@ -40650,7 +40650,7 @@
         {
           "model": "Mixtral-8x7B",
           "op": "fused_moe",
-          "label": "N=4096 K=14336",
+          "label": "BF16 N=4096 K=14336",
           "M": 16,
           "N": 4096,
           "K": 14336,
@@ -40665,7 +40665,7 @@
         {
           "model": "Mixtral-8x7B",
           "op": "fused_moe",
-          "label": "N=4096 K=14336",
+          "label": "BF16 N=4096 K=14336",
           "M": 64,
           "N": 4096,
           "K": 14336,
@@ -40680,7 +40680,7 @@
         {
           "model": "Mixtral-8x7B",
           "op": "fused_moe",
-          "label": "N=4096 K=14336",
+          "label": "BF16 N=4096 K=14336",
           "M": 256,
           "N": 4096,
           "K": 14336,
@@ -40695,7 +40695,7 @@
         {
           "model": "Mixtral-8x7B",
           "op": "fused_moe",
-          "label": "N=4096 K=14336",
+          "label": "BF16 N=4096 K=14336",
           "M": 1024,
           "N": 4096,
           "K": 14336,
@@ -40710,7 +40710,7 @@
         {
           "model": "Mixtral-8x7B",
           "op": "fused_moe",
-          "label": "N=4096 K=14336",
+          "label": "BF16 N=4096 K=14336",
           "M": 4096,
           "N": 4096,
           "K": 14336,
@@ -40725,7 +40725,7 @@
         {
           "model": "Mixtral-8x22B",
           "op": "fused_moe",
-          "label": "N=16384 K=6144",
+          "label": "BF16 N=16384 K=6144",
           "M": 1,
           "N": 16384,
           "K": 6144,
@@ -40740,7 +40740,7 @@
         {
           "model": "Mixtral-8x22B",
           "op": "fused_moe",
-          "label": "N=16384 K=6144",
+          "label": "BF16 N=16384 K=6144",
           "M": 4,
           "N": 16384,
           "K": 6144,
@@ -40755,7 +40755,7 @@
         {
           "model": "Mixtral-8x22B",
           "op": "fused_moe",
-          "label": "N=16384 K=6144",
+          "label": "BF16 N=16384 K=6144",
           "M": 16,
           "N": 16384,
           "K": 6144,
@@ -40770,7 +40770,7 @@
         {
           "model": "Mixtral-8x22B",
           "op": "fused_moe",
-          "label": "N=16384 K=6144",
+          "label": "BF16 N=16384 K=6144",
           "M": 64,
           "N": 16384,
           "K": 6144,
@@ -40785,7 +40785,7 @@
         {
           "model": "Mixtral-8x22B",
           "op": "fused_moe",
-          "label": "N=16384 K=6144",
+          "label": "BF16 N=16384 K=6144",
           "M": 256,
           "N": 16384,
           "K": 6144,
@@ -40800,7 +40800,7 @@
         {
           "model": "Mixtral-8x22B",
           "op": "fused_moe",
-          "label": "N=16384 K=6144",
+          "label": "BF16 N=16384 K=6144",
           "M": 1024,
           "N": 16384,
           "K": 6144,
@@ -40815,7 +40815,7 @@
         {
           "model": "Mixtral-8x22B",
           "op": "fused_moe",
-          "label": "N=16384 K=6144",
+          "label": "BF16 N=16384 K=6144",
           "M": 4096,
           "N": 16384,
           "K": 6144,
@@ -40830,7 +40830,7 @@
         {
           "model": "Mixtral-8x22B",
           "op": "fused_moe",
-          "label": "N=6144 K=16384",
+          "label": "BF16 N=6144 K=16384",
           "M": 1,
           "N": 6144,
           "K": 16384,
@@ -40845,7 +40845,7 @@
         {
           "model": "Mixtral-8x22B",
           "op": "fused_moe",
-          "label": "N=6144 K=16384",
+          "label": "BF16 N=6144 K=16384",
           "M": 4,
           "N": 6144,
           "K": 16384,
@@ -40860,7 +40860,7 @@
         {
           "model": "Mixtral-8x22B",
           "op": "fused_moe",
-          "label": "N=6144 K=16384",
+          "label": "BF16 N=6144 K=16384",
           "M": 16,
           "N": 6144,
           "K": 16384,
@@ -40875,7 +40875,7 @@
         {
           "model": "Mixtral-8x22B",
           "op": "fused_moe",
-          "label": "N=6144 K=16384",
+          "label": "BF16 N=6144 K=16384",
           "M": 64,
           "N": 6144,
           "K": 16384,
@@ -40890,7 +40890,7 @@
         {
           "model": "Mixtral-8x22B",
           "op": "fused_moe",
-          "label": "N=6144 K=16384",
+          "label": "BF16 N=6144 K=16384",
           "M": 256,
           "N": 6144,
           "K": 16384,
@@ -40905,7 +40905,7 @@
         {
           "model": "Mixtral-8x22B",
           "op": "fused_moe",
-          "label": "N=6144 K=16384",
+          "label": "BF16 N=6144 K=16384",
           "M": 1024,
           "N": 6144,
           "K": 16384,
@@ -40920,7 +40920,7 @@
         {
           "model": "Mixtral-8x22B",
           "op": "fused_moe",
-          "label": "N=6144 K=16384",
+          "label": "BF16 N=6144 K=16384",
           "M": 4096,
           "N": 6144,
           "K": 16384,
@@ -40935,7 +40935,7 @@
         {
           "model": "DeepSeek-R1",
           "op": "fused_moe_fp8",
-          "label": "FP8 N=18432 K=7168",
+          "label": "FP8 FP8 N=18432 K=7168",
           "M": 1,
           "N": 18432,
           "K": 7168,
@@ -40950,7 +40950,7 @@
         {
           "model": "DeepSeek-R1",
           "op": "fused_moe_fp8",
-          "label": "FP8 N=18432 K=7168",
+          "label": "FP8 FP8 N=18432 K=7168",
           "M": 4,
           "N": 18432,
           "K": 7168,
@@ -40965,7 +40965,7 @@
         {
           "model": "DeepSeek-R1",
           "op": "fused_moe_fp8",
-          "label": "FP8 N=18432 K=7168",
+          "label": "FP8 FP8 N=18432 K=7168",
           "M": 16,
           "N": 18432,
           "K": 7168,
@@ -40980,7 +40980,7 @@
         {
           "model": "DeepSeek-R1",
           "op": "fused_moe_fp8",
-          "label": "FP8 N=7168 K=9216",
+          "label": "FP8 FP8 N=7168 K=9216",
           "M": 1,
           "N": 7168,
           "K": 9216,
@@ -40995,7 +40995,7 @@
         {
           "model": "DeepSeek-R1",
           "op": "fused_moe_fp8",
-          "label": "FP8 N=7168 K=9216",
+          "label": "FP8 FP8 N=7168 K=9216",
           "M": 4,
           "N": 7168,
           "K": 9216,
@@ -41010,7 +41010,7 @@
         {
           "model": "DeepSeek-R1",
           "op": "fused_moe_fp8",
-          "label": "FP8 N=7168 K=9216",
+          "label": "FP8 FP8 N=7168 K=9216",
           "M": 16,
           "N": 7168,
           "K": 9216,
@@ -41025,7 +41025,7 @@
         {
           "model": "DeepSeek-R1",
           "op": "fused_moe_fp8",
-          "label": "FP8 N=7168 K=9216",
+          "label": "FP8 FP8 N=7168 K=9216",
           "M": 64,
           "N": 7168,
           "K": 9216,
@@ -41040,7 +41040,7 @@
         {
           "model": "DeepSeek-R1",
           "op": "fused_moe_fp8",
-          "label": "FP8 N=7168 K=9216",
+          "label": "FP8 FP8 N=7168 K=9216",
           "M": 256,
           "N": 7168,
           "K": 9216,
@@ -41055,7 +41055,7 @@
         {
           "model": "DeepSeek-R1",
           "op": "fused_moe_fp8",
-          "label": "FP8 N=7168 K=9216",
+          "label": "FP8 FP8 N=7168 K=9216",
           "M": 1024,
           "N": 7168,
           "K": 9216,
@@ -41070,7 +41070,7 @@
         {
           "model": "DeepSeek-R1",
           "op": "fused_moe_fp8",
-          "label": "FP8 N=7168 K=9216",
+          "label": "FP8 FP8 N=7168 K=9216",
           "M": 4096,
           "N": 7168,
           "K": 9216,
@@ -41085,7 +41085,7 @@
         {
           "model": "Qwen3-235B",
           "op": "fused_moe_fp8",
-          "label": "FP8 N=3072 K=4096",
+          "label": "FP8 FP8 N=3072 K=4096",
           "M": 1,
           "N": 3072,
           "K": 4096,
@@ -41100,7 +41100,7 @@
         {
           "model": "Qwen3-235B",
           "op": "fused_moe_fp8",
-          "label": "FP8 N=3072 K=4096",
+          "label": "FP8 FP8 N=3072 K=4096",
           "M": 4,
           "N": 3072,
           "K": 4096,
@@ -41115,7 +41115,7 @@
         {
           "model": "Qwen3-235B",
           "op": "fused_moe_fp8",
-          "label": "FP8 N=3072 K=4096",
+          "label": "FP8 FP8 N=3072 K=4096",
           "M": 16,
           "N": 3072,
           "K": 4096,
@@ -41130,7 +41130,7 @@
         {
           "model": "Qwen3-235B",
           "op": "fused_moe_fp8",
-          "label": "FP8 N=3072 K=4096",
+          "label": "FP8 FP8 N=3072 K=4096",
           "M": 64,
           "N": 3072,
           "K": 4096,
@@ -41145,7 +41145,7 @@
         {
           "model": "Qwen3-235B",
           "op": "fused_moe_fp8",
-          "label": "FP8 N=3072 K=4096",
+          "label": "FP8 FP8 N=3072 K=4096",
           "M": 256,
           "N": 3072,
           "K": 4096,
@@ -41160,7 +41160,7 @@
         {
           "model": "Qwen3-235B",
           "op": "fused_moe_fp8",
-          "label": "FP8 N=3072 K=4096",
+          "label": "FP8 FP8 N=3072 K=4096",
           "M": 1024,
           "N": 3072,
           "K": 4096,
@@ -41175,7 +41175,7 @@
         {
           "model": "Qwen3-235B",
           "op": "fused_moe_fp8",
-          "label": "FP8 N=3072 K=4096",
+          "label": "FP8 FP8 N=3072 K=4096",
           "M": 4096,
           "N": 3072,
           "K": 4096,
@@ -41190,7 +41190,7 @@
         {
           "model": "Qwen3-235B",
           "op": "fused_moe_fp8",
-          "label": "FP8 N=4096 K=3072",
+          "label": "FP8 FP8 N=4096 K=3072",
           "M": 1,
           "N": 4096,
           "K": 3072,
@@ -41205,7 +41205,7 @@
         {
           "model": "Qwen3-235B",
           "op": "fused_moe_fp8",
-          "label": "FP8 N=4096 K=3072",
+          "label": "FP8 FP8 N=4096 K=3072",
           "M": 4,
           "N": 4096,
           "K": 3072,
@@ -41220,7 +41220,7 @@
         {
           "model": "Qwen3-235B",
           "op": "fused_moe_fp8",
-          "label": "FP8 N=4096 K=3072",
+          "label": "FP8 FP8 N=4096 K=3072",
           "M": 16,
           "N": 4096,
           "K": 3072,
@@ -41235,7 +41235,7 @@
         {
           "model": "Qwen3-235B",
           "op": "fused_moe_fp8",
-          "label": "FP8 N=4096 K=3072",
+          "label": "FP8 FP8 N=4096 K=3072",
           "M": 64,
           "N": 4096,
           "K": 3072,
@@ -41250,7 +41250,7 @@
         {
           "model": "Qwen3-235B",
           "op": "fused_moe_fp8",
-          "label": "FP8 N=4096 K=3072",
+          "label": "FP8 FP8 N=4096 K=3072",
           "M": 256,
           "N": 4096,
           "K": 3072,
@@ -41265,7 +41265,7 @@
         {
           "model": "Qwen3-235B",
           "op": "fused_moe_fp8",
-          "label": "FP8 N=4096 K=3072",
+          "label": "FP8 FP8 N=4096 K=3072",
           "M": 1024,
           "N": 4096,
           "K": 3072,
@@ -41280,7 +41280,7 @@
         {
           "model": "Qwen3-235B",
           "op": "fused_moe_fp8",
-          "label": "FP8 N=4096 K=3072",
+          "label": "FP8 FP8 N=4096 K=3072",
           "M": 4096,
           "N": 4096,
           "K": 3072,
@@ -41295,7 +41295,7 @@
         {
           "model": "Qwen3.5-397B",
           "op": "fused_moe_fp8",
-          "label": "FP8 N=1024 K=4096",
+          "label": "FP8 FP8 N=1024 K=4096",
           "M": 1,
           "N": 1024,
           "K": 4096,
@@ -41310,7 +41310,7 @@
         {
           "model": "Qwen3.5-397B",
           "op": "fused_moe_fp8",
-          "label": "FP8 N=1024 K=4096",
+          "label": "FP8 FP8 N=1024 K=4096",
           "M": 4,
           "N": 1024,
           "K": 4096,
@@ -41325,7 +41325,7 @@
         {
           "model": "Qwen3.5-397B",
           "op": "fused_moe_fp8",
-          "label": "FP8 N=1024 K=4096",
+          "label": "FP8 FP8 N=1024 K=4096",
           "M": 16,
           "N": 1024,
           "K": 4096,
@@ -41340,7 +41340,7 @@
         {
           "model": "Qwen3.5-397B",
           "op": "fused_moe_fp8",
-          "label": "FP8 N=1024 K=4096",
+          "label": "FP8 FP8 N=1024 K=4096",
           "M": 64,
           "N": 1024,
           "K": 4096,
@@ -41355,7 +41355,7 @@
         {
           "model": "Qwen3.5-397B",
           "op": "fused_moe_fp8",
-          "label": "FP8 N=1024 K=4096",
+          "label": "FP8 FP8 N=1024 K=4096",
           "M": 256,
           "N": 1024,
           "K": 4096,
@@ -41370,7 +41370,7 @@
         {
           "model": "Qwen3.5-397B",
           "op": "fused_moe_fp8",
-          "label": "FP8 N=1024 K=4096",
+          "label": "FP8 FP8 N=1024 K=4096",
           "M": 1024,
           "N": 1024,
           "K": 4096,
@@ -41385,7 +41385,7 @@
         {
           "model": "Qwen3.5-397B",
           "op": "fused_moe_fp8",
-          "label": "FP8 N=1024 K=4096",
+          "label": "FP8 FP8 N=1024 K=4096",
           "M": 4096,
           "N": 1024,
           "K": 4096,
@@ -41400,7 +41400,7 @@
         {
           "model": "Qwen3.5-397B",
           "op": "fused_moe_fp8",
-          "label": "FP8 N=4096 K=1024",
+          "label": "FP8 FP8 N=4096 K=1024",
           "M": 1,
           "N": 4096,
           "K": 1024,
@@ -41415,7 +41415,7 @@
         {
           "model": "Qwen3.5-397B",
           "op": "fused_moe_fp8",
-          "label": "FP8 N=4096 K=1024",
+          "label": "FP8 FP8 N=4096 K=1024",
           "M": 4,
           "N": 4096,
           "K": 1024,
@@ -41430,7 +41430,7 @@
         {
           "model": "Qwen3.5-397B",
           "op": "fused_moe_fp8",
-          "label": "FP8 N=4096 K=1024",
+          "label": "FP8 FP8 N=4096 K=1024",
           "M": 16,
           "N": 4096,
           "K": 1024,
@@ -41445,7 +41445,7 @@
         {
           "model": "Qwen3.5-397B",
           "op": "fused_moe_fp8",
-          "label": "FP8 N=4096 K=1024",
+          "label": "FP8 FP8 N=4096 K=1024",
           "M": 64,
           "N": 4096,
           "K": 1024,
@@ -41460,7 +41460,7 @@
         {
           "model": "Qwen3.5-397B",
           "op": "fused_moe_fp8",
-          "label": "FP8 N=4096 K=1024",
+          "label": "FP8 FP8 N=4096 K=1024",
           "M": 256,
           "N": 4096,
           "K": 1024,
@@ -41475,7 +41475,7 @@
         {
           "model": "Qwen3.5-397B",
           "op": "fused_moe_fp8",
-          "label": "FP8 N=4096 K=1024",
+          "label": "FP8 FP8 N=4096 K=1024",
           "M": 1024,
           "N": 4096,
           "K": 1024,
@@ -41490,7 +41490,7 @@
         {
           "model": "Qwen3.5-397B",
           "op": "fused_moe_fp8",
-          "label": "FP8 N=4096 K=1024",
+          "label": "FP8 FP8 N=4096 K=1024",
           "M": 4096,
           "N": 4096,
           "K": 1024,
@@ -41505,7 +41505,7 @@
         {
           "model": "Llama4-Maverick",
           "op": "fused_moe_fp8",
-          "label": "FP8 N=16384 K=5120",
+          "label": "FP8 FP8 N=16384 K=5120",
           "M": 1,
           "N": 16384,
           "K": 5120,
@@ -41520,7 +41520,7 @@
         {
           "model": "Llama4-Maverick",
           "op": "fused_moe_fp8",
-          "label": "FP8 N=16384 K=5120",
+          "label": "FP8 FP8 N=16384 K=5120",
           "M": 4,
           "N": 16384,
           "K": 5120,
@@ -41535,7 +41535,7 @@
         {
           "model": "Llama4-Maverick",
           "op": "fused_moe_fp8",
-          "label": "FP8 N=16384 K=5120",
+          "label": "FP8 FP8 N=16384 K=5120",
           "M": 16,
           "N": 16384,
           "K": 5120,
@@ -41550,7 +41550,7 @@
         {
           "model": "Llama4-Maverick",
           "op": "fused_moe_fp8",
-          "label": "FP8 N=16384 K=5120",
+          "label": "FP8 FP8 N=16384 K=5120",
           "M": 64,
           "N": 16384,
           "K": 5120,
@@ -41565,7 +41565,7 @@
         {
           "model": "Llama4-Maverick",
           "op": "fused_moe_fp8",
-          "label": "FP8 N=16384 K=5120",
+          "label": "FP8 FP8 N=16384 K=5120",
           "M": 256,
           "N": 16384,
           "K": 5120,
@@ -41580,7 +41580,7 @@
         {
           "model": "Llama4-Maverick",
           "op": "fused_moe_fp8",
-          "label": "FP8 N=16384 K=5120",
+          "label": "FP8 FP8 N=16384 K=5120",
           "M": 1024,
           "N": 16384,
           "K": 5120,
@@ -41595,7 +41595,7 @@
         {
           "model": "Llama4-Maverick",
           "op": "fused_moe_fp8",
-          "label": "FP8 N=16384 K=5120",
+          "label": "FP8 FP8 N=16384 K=5120",
           "M": 4096,
           "N": 16384,
           "K": 5120,
@@ -41610,7 +41610,7 @@
         {
           "model": "Llama4-Maverick",
           "op": "fused_moe_fp8",
-          "label": "FP8 N=5120 K=16384",
+          "label": "FP8 FP8 N=5120 K=16384",
           "M": 1,
           "N": 5120,
           "K": 16384,
@@ -41625,7 +41625,7 @@
         {
           "model": "Llama4-Maverick",
           "op": "fused_moe_fp8",
-          "label": "FP8 N=5120 K=16384",
+          "label": "FP8 FP8 N=5120 K=16384",
           "M": 4,
           "N": 5120,
           "K": 16384,
@@ -41640,7 +41640,7 @@
         {
           "model": "Llama4-Maverick",
           "op": "fused_moe_fp8",
-          "label": "FP8 N=5120 K=16384",
+          "label": "FP8 FP8 N=5120 K=16384",
           "M": 16,
           "N": 5120,
           "K": 16384,
@@ -41655,7 +41655,7 @@
         {
           "model": "Llama4-Maverick",
           "op": "fused_moe_fp8",
-          "label": "FP8 N=5120 K=16384",
+          "label": "FP8 FP8 N=5120 K=16384",
           "M": 64,
           "N": 5120,
           "K": 16384,
@@ -41670,7 +41670,7 @@
         {
           "model": "Llama4-Maverick",
           "op": "fused_moe_fp8",
-          "label": "FP8 N=5120 K=16384",
+          "label": "FP8 FP8 N=5120 K=16384",
           "M": 256,
           "N": 5120,
           "K": 16384,
@@ -41685,7 +41685,7 @@
         {
           "model": "Llama4-Maverick",
           "op": "fused_moe_fp8",
-          "label": "FP8 N=5120 K=16384",
+          "label": "FP8 FP8 N=5120 K=16384",
           "M": 1024,
           "N": 5120,
           "K": 16384,
@@ -41700,7 +41700,7 @@
         {
           "model": "Llama4-Maverick",
           "op": "fused_moe_fp8",
-          "label": "FP8 N=5120 K=16384",
+          "label": "FP8 FP8 N=5120 K=16384",
           "M": 4096,
           "N": 5120,
           "K": 16384,
