@@ -127,3 +127,14 @@ Then GeoMean across all 15 models (each model counts equally).
 
 Source: OpenRouter production deployments, HuggingFace model cards, vLLM/SGLang defaults.
 Attention always uses BF16 (FP8 attention is experimental on both platforms).
+
+## FP8 MoE Availability (verified 2026-03-22)
+
+| Platform | FP8 Fused MoE | Status |
+|----------|--------------|--------|
+| AMD MI355X (AITER) | fused_moe fp8_w8a8 | **Available** — tested, 3.15x vs NV BF16 |
+| NVIDIA B300 (FlashInfer) | cutlass_fused_moe FP8 | **NOT AVAILABLE** — "FP8 block scaling not yet implemented for Blackwell" |
+| NVIDIA B300 (vLLM) | fused_experts FP8 | Not tested (vLLM not in SGLang container) |
+
+This means AITER FP8 MoE vs NV BF16 MoE reflects actual production reality.
+B300 Blackwell cannot run FP8 fused MoE as of March 2026.
