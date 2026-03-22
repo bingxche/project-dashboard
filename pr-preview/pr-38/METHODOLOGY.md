@@ -128,13 +128,45 @@ Then GeoMean across all 15 models (each model counts equally).
 Source: OpenRouter production deployments, HuggingFace model cards, vLLM/SGLang defaults.
 Attention always uses BF16 (FP8 attention is experimental on both platforms).
 
-## FP8 MoE Availability (verified 2026-03-22)
+## E2E Calibration (2026-03-22)
 
-| Platform | FP8 Fused MoE | Status |
-|----------|--------------|--------|
-| AMD MI355X (AITER) | fused_moe fp8_w8a8 | **Available** — tested, 3.15x vs NV BF16 |
-| NVIDIA B300 (FlashInfer) | cutlass_fused_moe FP8 | **NOT AVAILABLE** — "FP8 block scaling not yet implemented for Blackwell" |
-| NVIDIA B300 (vLLM) | fused_experts FP8 | Not tested (vLLM not in SGLang container) |
+SGLang single GPU, BF16, 32 prompts × 128 output tokens.
 
-This means AITER FP8 MoE vs NV BF16 MoE reflects actual production reality.
-B300 Blackwell cannot run FP8 fused MoE as of March 2026.
+| Model | Type | MI355X tok/s | B300 tok/s | E2E Ratio | Op Predicted | Gap |
+|-------|------|---:|---:|:---:|:---:|---|
+| Qwen2.5-7B | Dense | 5,775 | 6,324 | 0.91x | 0.82x | +11% |
+| Mistral-7B | Dense | 5,254 | 7,008 | 0.75x | 0.82x | -8% |
+| Llama3-8B | Dense | 4,598 | 7,167 | 0.64x | 0.82x | -22% |
+| Mixtral-8x7B | MoE | 3,307 | 2,194 | 1.51x | 1.19x | +27% |
+
+E2E GeoMean: 0.90x | Op GeoMean: 1.06x
+
+**Findings**:
+- Dense models: e2e worse for AMD than ops predict (CUDA graph / scheduling advantage on NV)
+- MoE models: e2e better for AMD than ops predict (AITER fused MoE advantage amplified)
+- Llama3-8B largest gap (-22%): needs profiling investigation
+
+## E2E Calibration Update (complete data)
+
+SGLang, BF16, 32 prompts × 128 output tokens.
+
+| Model | Type | TP | MI355X tok/s | B300 tok/s | E2E | Op Pred | Gap | Prefill | Decode |
+|-------|------|---:|---:|---:|:---:|:---:|---|---|---|
+| Qwen2.5-7B | Dense | 1 | 5,779 | 5,798 | **1.00x** | 0.88x | +13% | AMD 3.0x | NV 1.2x |
+| Mistral-7B | Dense | 1 | 5,302 | 6,351 | **0.83x** | 0.88x | -5% | AMD 2.6x | NV 1.2x |
+| Llama3-8B | Dense | 1 | 4,582 | 7,339 | **0.62x** | 0.88x | -29% | AMD 1.1x | NV 1.2x |
+| Mixtral-8x7B | MoE | 1 | 3,295 | 2,182 | **1.51x** | 1.28x | +18% | AMD 2.9x | NV 1.3x |
+| Qwen2.5-32B | Dense | 1 | N/A* | 2,234 | — | — | — | — | — |
+| Llama3-70B | Dense | 8 | N/A* | 2,297 | — | — | — | — | — |
+
+*MI355X container ran out of /tmp space during model download. Needs container restart with /data mount.
+
+**E2E GeoMean (4 models): 0.94x**
+
+### Key Findings
+
+1. **Prefill**: AMD consistently 1.1-3.0x faster (AITER compute kernels advantage)
+2. **Decode**: NV consistently 1.2-1.3x faster (HBM bandwidth: 8.0 vs 5.3 TB/s)
+3. **Overall**: depends on prefill/decode mix — decode-heavy workloads favor NV
+4. **MoE (Mixtral)**: AMD wins e2e 1.51x — fused MoE advantage amplified in production
+5. **Llama3-8B gap (-29%)**: biggest discrepancy, decode-dominated + B300 has better CUDA graph efficiency
