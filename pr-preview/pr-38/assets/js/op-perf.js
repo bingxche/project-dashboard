@@ -678,13 +678,27 @@ function renderD3Heatmap(catId, cat, gpus, filters) {
         var ttHtml = '<strong>' + escapeHtml(rowKey) + '</strong><br>M=' + (r.M || r.batch || col) + '<br>';
         if (_tpv.amd > 0) ttHtml += 'AMD: <span style="color:#58a6ff">' + _tpv.amd.toFixed(1) + ' ' + _tpv.unit + '</span><br>';
         if (_tpv.nv > 0) ttHtml += 'NV: <span style="color:#7ee787">' + _tpv.nv.toFixed(1) + ' ' + _tpv.unit + '</span><br>';
-        if (_tpv.amd > 0 && _tpv.nv > 0) ttHtml += 'Ratio: ' + ratio;
+        if (_tpv.amd > 0 && _tpv.nv > 0) ttHtml += 'Ratio: ' + ratio + '<br>';
+        ttHtml += '<span style="color:#8b949e;font-size:10px">Click to copy repro command</span>';
         tooltip.innerHTML = ttHtml;
         var rect = container.getBoundingClientRect();
         tooltip.style.left = (event.pageX - rect.left + 12) + 'px';
         tooltip.style.top = (event.pageY - rect.top - 60) + 'px';
       })
-      .on('mouseout', function() { tooltip.style.display = 'none'; });
+      .on('mouseout', function() { tooltip.style.display = 'none'; })
+      .on('click', function(event, col) {
+        var r = rowMap[rowKey] ? rowMap[rowKey][col] : null;
+        if (!r) return;
+        var cmd = generateReproCommand(catId, r);
+        if (navigator.clipboard) {
+          navigator.clipboard.writeText(cmd).then(function() {
+            tooltip.innerHTML = '<span style="color:#7ee787">Copied to clipboard!</span>';
+            setTimeout(function() { tooltip.style.display = 'none'; }, 1000);
+          });
+        } else {
+          prompt('Repro command:', cmd);
+        }
+      });
 
     // Cell text (ratio)
     d3.select(this).selectAll('.hm-text')
@@ -706,6 +720,54 @@ function renderD3Heatmap(catId, cat, gpus, filters) {
         return (_cpv.amd / _cpv.nv).toFixed(2) + 'x';
       });
   });
+}
+
+// ─── Repro command generator ───
+function generateReproCommand(catId, r) {
+  var M = r.M || r.batch || 0;
+  if (catId === 'gemm') {
+    var op = r.op || 'gemm_bf16';
+    if (op.indexOf('fp8') >= 0 && op.indexOf('block') < 0) {
+      return 'python3 -c "import torch; M,N,K=' + M + ',' + r.N + ',' + r.K +
+        '; A=torch.randn(M,K,dtype=torch.bfloat16,device=\'cuda\').to(torch.float8_e4m3fn)' +
+        '; B=torch.randn(N,K,dtype=torch.bfloat16,device=\'cuda\').to(torch.float8_e4m3fn)' +
+        '; s=torch.tensor(1.0,device=\'cuda\')' +
+        '; [torch._scaled_mm(A,B.t(),scale_a=s,scale_b=s,out_dtype=torch.bfloat16) for _ in range(100)]' +
+        '; torch.cuda.synchronize(); import time; t=time.time()' +
+        '; [torch._scaled_mm(A,B.t(),scale_a=s,scale_b=s,out_dtype=torch.bfloat16) for _ in range(100)]' +
+        '; torch.cuda.synchronize(); ms=(time.time()-t)/100*1000' +
+        '; print(f\'FP8 GEMM M={M} N={N} K={K}: {2*M*N*K/ms*1e-9:.1f} TFLOPS ({ms:.3f}ms)\')"';
+    } else {
+      return 'python3 -c "import torch; M,N,K=' + M + ',' + r.N + ',' + r.K +
+        '; A=torch.randn(M,K,dtype=torch.bfloat16,device=\'cuda\')' +
+        '; B=torch.randn(K,N,dtype=torch.bfloat16,device=\'cuda\')' +
+        '; [torch.matmul(A,B) for _ in range(100)]' +
+        '; torch.cuda.synchronize(); import time; t=time.time()' +
+        '; [torch.matmul(A,B) for _ in range(100)]' +
+        '; torch.cuda.synchronize(); ms=(time.time()-t)/100*1000' +
+        '; print(f\'BF16 GEMM M={M} N={N} K={K}: {2*M*N*K/ms*1e-9:.1f} TFLOPS ({ms:.3f}ms)\')"';
+    }
+  } else if (catId === 'attention') {
+    var hq = r.hq || 128, hk = r.hk || 8, hd = r.head_dim || 128;
+    var sq = r.seq_q || 4096, sk = r.seq_k || 4096;
+    var batch = r.batch || 1;
+    return 'python3 -c "import torch,torch.nn.functional as F; ' +
+      'q=torch.randn(' + batch + ',' + hq + ',' + sq + ',' + hd + ',dtype=torch.bfloat16,device=\'cuda\'); ' +
+      'k=torch.randn(' + batch + ',' + hk + ',' + sk + ',' + hd + ',dtype=torch.bfloat16,device=\'cuda\'); ' +
+      'v=k.clone(); ' +
+      (hk !== hq ? 'k=k.repeat_interleave(' + (hq/hk) + ',dim=1); v=v.repeat_interleave(' + (hq/hk) + ',dim=1); ' : '') +
+      '[F.scaled_dot_product_attention(q,k,v) for _ in range(30)]; ' +
+      'torch.cuda.synchronize(); import time; t=time.time(); ' +
+      '[F.scaled_dot_product_attention(q,k,v) for _ in range(30)]; ' +
+      'torch.cuda.synchronize(); ms=(time.time()-t)/30*1000; ' +
+      'print(f\'Attn B=' + batch + ' HQ=' + hq + ' S=' + sq + '/' + sk + ': {2*' + batch + '*' + hq + '*' + sq + '*' + sk + '*2*' + hd + '/ms*1e-9:.1f} TFLOPS ({ms:.3f}ms)\')"';
+  } else if (catId === 'moe_fused') {
+    return '# AMD: AITER fused_moe (run in MI355X container)\n' +
+      '# NV: vLLM fused_experts (run on B300)\n' +
+      '# See scripts/reproduce.py --op moe_fused --M ' + M + ' --N ' + r.N + ' --K ' + r.K + ' --E ' + r.E + ' --top-k ' + r.top_k;
+  } else {
+    return 'python3 scripts/reproduce.py --op ' + catId + ' --M ' + M + ' --N ' + (r.N || r.K || '') + ' --gpu both';
+  }
 }
 
 // ─── Event binding ───
