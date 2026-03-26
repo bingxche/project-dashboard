@@ -56584,153 +56584,200 @@
     "total_configs": 4321,
     "operators": 8,
     "comparable": 3392,
-    "geomean": 1.0315,
-    "geomean_inference": 1.139,
+    "geomean": 0.9392,
+    "geomean_inference": 1.2366,
     "per_model": [
-      {
-        "model": "DeepSeek-R1",
-        "type": "MoE",
-        "geomean": 0.8629
-      },
       {
         "model": "Qwen3.5-397B",
         "type": "MoE",
-        "geomean": 2.7487
-      },
-      {
-        "model": "Qwen3-235B",
-        "type": "MoE",
-        "geomean": 0.9148
-      },
-      {
-        "model": "Llama4-Maverick",
-        "type": "MoE",
-        "geomean": 0.8447
-      },
-      {
-        "model": "Mixtral-8x7B",
-        "type": "MoE",
-        "geomean": 0.8951
-      },
-      {
-        "model": "Mixtral-8x22B",
-        "type": "MoE",
-        "geomean": 0.8912
-      },
-      {
-        "model": "Kimi-K2.5",
-        "type": "MoE",
-        "geomean": 0.7484
-      },
-      {
-        "model": "GPT-OSS-120B",
-        "type": "MoE",
-        "geomean": 0.8377
-      },
-      {
-        "model": "Llama3-405B",
-        "type": "Dense",
-        "geomean": 0.9128
-      },
-      {
-        "model": "Llama3-70B",
-        "type": "Dense",
-        "geomean": 0.8596
-      },
-      {
-        "model": "Llama3-8B",
-        "type": "Dense",
-        "geomean": 0.8304
-      },
-      {
-        "model": "Gemma2-27B",
-        "type": "Dense",
-        "geomean": 0.8337
-      },
-      {
-        "model": "Gemma2-9B",
-        "type": "Dense",
-        "geomean": 0.7847
-      },
-      {
-        "model": "Command-R-Plus",
-        "type": "Dense",
-        "geomean": 0.9204
-      },
-      {
-        "model": "Mistral-7B",
-        "type": "Dense",
-        "geomean": 0.7858
-      },
-      {
-        "model": "Arcee-Trinity-Large",
-        "type": "MoE",
-        "geomean": 1.0556
-      },
-      {
-        "model": "GLM-5",
-        "type": "MoE",
-        "geomean": 1.0689
-      },
-      {
-        "model": "LFM-2-24B-A2B",
-        "type": "MoE",
-        "geomean": 0.9106
-      },
-      {
-        "model": "MiMo-V2-Flash",
-        "type": "MoE",
-        "geomean": 1.1905
-      },
-      {
-        "model": "MiniMax-M2.5",
-        "type": "MoE",
-        "geomean": 0.9262
-      },
-      {
-        "model": "Mistral-Small-4-119B",
-        "type": "MoE",
-        "geomean": 1.0296
-      },
-      {
-        "model": "Nemotron-3-Super-120B",
-        "type": "MoE",
-        "geomean": 0.9204
+        "geomean": 2.7487,
+        "geomean_equal": 2.7487
       },
       {
         "model": "Qwen3-Coder-480B",
         "type": "MoE",
-        "geomean": 1.2258
-      },
-      {
-        "model": "Qwen3-Next-80B-A3B",
-        "type": "MoE",
-        "geomean": 0.8849
-      },
-      {
-        "model": "Qwen3.5-122B-A10B",
-        "type": "MoE",
-        "geomean": 0.9138
-      },
-      {
-        "model": "Qwen3.5-27B",
-        "type": "Dense",
-        "geomean": 0.8594
-      },
-      {
-        "model": "Qwen3.5-35B-A3B",
-        "type": "MoE",
-        "geomean": 0.8384
-      },
-      {
-        "model": "Qwen3.5-9B",
-        "type": "Dense",
-        "geomean": 0.8564
+        "geomean": 1.8999,
+        "geomean_equal": 1.2258
       },
       {
         "model": "Step-3.5-Flash",
         "type": "MoE",
-        "geomean": 1.1339
+        "geomean": 1.7531,
+        "geomean_equal": 1.1339
+      },
+      {
+        "model": "DeepSeek-R1",
+        "type": "MoE",
+        "geomean": 1.7328,
+        "geomean_equal": 0.8629
+      },
+      {
+        "model": "MiMo-V2-Flash",
+        "type": "MoE",
+        "geomean": 1.6817,
+        "geomean_equal": 1.1905
+      },
+      {
+        "model": "Qwen3-235B",
+        "type": "MoE",
+        "geomean": 1.6164,
+        "geomean_equal": 0.9148
+      },
+      {
+        "model": "Llama4-Maverick",
+        "type": "MoE",
+        "geomean": 1.5664,
+        "geomean_equal": 0.8447
+      },
+      {
+        "model": "MiniMax-M2.5",
+        "type": "MoE",
+        "geomean": 1.4635,
+        "geomean_equal": 0.9262
+      },
+      {
+        "model": "Arcee-Trinity-Large",
+        "type": "MoE",
+        "geomean": 1.4303,
+        "geomean_equal": 1.0556
+      },
+      {
+        "model": "Mistral-Small-4-119B",
+        "type": "MoE",
+        "geomean": 1.4012,
+        "geomean_equal": 1.0296
+      },
+      {
+        "model": "Qwen3-Next-80B-A3B",
+        "type": "MoE",
+        "geomean": 1.3964,
+        "geomean_equal": 0.8849
+      },
+      {
+        "model": "GLM-5",
+        "type": "MoE",
+        "geomean": 1.3936,
+        "geomean_equal": 1.0689
+      },
+      {
+        "model": "Nemotron-3-Super-120B",
+        "type": "MoE",
+        "geomean": 1.3507,
+        "geomean_equal": 0.9204
+      },
+      {
+        "model": "Mixtral-8x22B",
+        "type": "MoE",
+        "geomean": 1.3489,
+        "geomean_equal": 0.8912
+      },
+      {
+        "model": "Mixtral-8x7B",
+        "type": "MoE",
+        "geomean": 1.3201,
+        "geomean_equal": 0.8951
+      },
+      {
+        "model": "Qwen3.5-35B-A3B",
+        "type": "MoE",
+        "geomean": 1.3171,
+        "geomean_equal": 0.8384
+      },
+      {
+        "model": "GPT-OSS-120B",
+        "type": "MoE",
+        "geomean": 1.2905,
+        "geomean_equal": 0.8377
+      },
+      {
+        "model": "Qwen3.5-122B-A10B",
+        "type": "MoE",
+        "geomean": 1.2517,
+        "geomean_equal": 0.9138
+      },
+      {
+        "model": "LFM-2-24B-A2B",
+        "type": "MoE",
+        "geomean": 1.1972,
+        "geomean_equal": 0.9106
+      },
+      {
+        "model": "Kimi-K2.5",
+        "type": "MoE",
+        "geomean": 1.1507,
+        "geomean_equal": 0.7484
+      },
+      {
+        "model": "Qwen3-30B-A3B",
+        "type": "MoE",
+        "geomean": 1.127,
+        "geomean_equal": 0.7617
+      },
+      {
+        "model": "AllReduce",
+        "type": "Dense",
+        "geomean": 1.0186,
+        "geomean_equal": 1.0186
+      },
+      {
+        "model": "Command-R-Plus",
+        "type": "Dense",
+        "geomean": 1.0101,
+        "geomean_equal": 0.9204
+      },
+      {
+        "model": "Llama3-405B",
+        "type": "Dense",
+        "geomean": 0.9374,
+        "geomean_equal": 0.9128
+      },
+      {
+        "model": "Qwen3.5-9B",
+        "type": "Dense",
+        "geomean": 0.9053,
+        "geomean_equal": 0.8564
+      },
+      {
+        "model": "Llama3-70B",
+        "type": "Dense",
+        "geomean": 0.8997,
+        "geomean_equal": 0.8596
+      },
+      {
+        "model": "Qwen3.5-27B",
+        "type": "Dense",
+        "geomean": 0.8799,
+        "geomean_equal": 0.8594
+      },
+      {
+        "model": "Gemma2-27B",
+        "type": "Dense",
+        "geomean": 0.8734,
+        "geomean_equal": 0.8337
+      },
+      {
+        "model": "Llama3-8B",
+        "type": "Dense",
+        "geomean": 0.868,
+        "geomean_equal": 0.8304
+      },
+      {
+        "model": "Mistral-7B",
+        "type": "Dense",
+        "geomean": 0.835,
+        "geomean_equal": 0.7858
+      },
+      {
+        "model": "Jamba-3B",
+        "type": "Dense",
+        "geomean": 0.8238,
+        "geomean_equal": 0.8238
+      },
+      {
+        "model": "Gemma2-9B",
+        "type": "Dense",
+        "geomean": 0.8091,
+        "geomean_equal": 0.7847
       }
     ],
     "num_models": 15,
