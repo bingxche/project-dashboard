@@ -1,5 +1,5 @@
 {
-  "collected_at": "2026-03-25T08:17:31Z",
+  "collected_at": "2026-03-26T08:20:09Z",
   "project": "xla",
   "repo": "openxla/xla",
   "pr_velocity": {
@@ -18,17 +18,11 @@
     "stale_prs": 0
   },
   "contributors": {
-    "active_this_week": 2,
-    "total_contributors": 2,
+    "active_this_week": 1,
+    "total_contributors": 1,
     "top_contributors": [
       {
         "author": "alekstheod",
-        "prs_submitted": 1,
-        "prs_merged": 0,
-        "commits": 0
-      },
-      {
-        "author": "leo-amd",
         "prs_submitted": 1,
         "prs_merged": 0,
         "commits": 0
@@ -39,37 +33,37 @@
   "issue_health": {
     "total_open": 0,
     "opened_this_week": 0,
-    "closed_this_week": 3,
+    "closed_this_week": 0,
     "unanswered": 0
   },
   "ci_health": {
     "rocm": {
       "total_runs": 20,
-      "succeeded": 2,
-      "failed": 0,
-      "success_rate": 10.0
+      "succeeded": 3,
+      "failed": 17,
+      "success_rate": 15.0
     },
     "cuda": {
       "total_runs": 20,
-      "succeeded": 1,
-      "failed": 1,
-      "success_rate": 5.0
+      "succeeded": 14,
+      "failed": 4,
+      "success_rate": 70.0
     }
   },
   "ci_signal_time": {
     "rocm": {
-      "sample_size": 2,
-      "median_minutes": 66.4,
-      "p90_minutes": 89.1,
-      "min_minutes": 43.8,
-      "max_minutes": 89.1
+      "sample_size": 20,
+      "median_minutes": 2.4,
+      "p90_minutes": 9.0,
+      "min_minutes": 1.9,
+      "max_minutes": 19.9
     },
     "cuda": {
-      "sample_size": 2,
-      "median_minutes": 74.1,
-      "p90_minutes": 93.5,
-      "min_minutes": 54.7,
-      "max_minutes": 93.5
+      "sample_size": 20,
+      "median_minutes": 12.1,
+      "p90_minutes": 27.4,
+      "min_minutes": 8.7,
+      "max_minutes": 44.0
     }
   },
   "release_cadence": {

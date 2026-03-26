@@ -1,49 +1,49 @@
 {
-  "collected_at": "2026-03-25T08:18:56Z",
+  "collected_at": "2026-03-26T08:21:25Z",
   "project": "flydsl",
   "repo": "ROCm/FlyDSL",
   "pr_velocity": {
     "this_week": {
       "opened": 42,
-      "merged": 29,
+      "merged": 27,
       "closed": 7
     },
     "last_week": {
-      "opened": 29,
-      "merged": 17,
-      "closed": 10
+      "opened": 33,
+      "merged": 20,
+      "closed": 9
     },
-    "median_time_to_merge_hours": 6.9,
+    "median_time_to_merge_hours": 9.1,
     "merge_count": 50,
     "stale_prs": 0
   },
   "contributors": {
     "active_this_week": 17,
-    "total_contributors": 22,
+    "total_contributors": 23,
     "top_contributors": [
       {
         "author": "coderfeli",
-        "prs_submitted": 25,
-        "prs_merged": 25,
+        "prs_submitted": 23,
+        "prs_merged": 23,
         "commits": 24
       },
       {
         "author": "sjfeng1999",
-        "prs_submitted": 10,
-        "prs_merged": 10,
-        "commits": 10
+        "prs_submitted": 11,
+        "prs_merged": 11,
+        "commits": 11
+      },
+      {
+        "author": "fsx950223",
+        "prs_submitted": 7,
+        "prs_merged": 4,
+        "commits": 4
       },
       {
         "author": "jli-melchior",
         "prs_submitted": 7,
         "prs_merged": 6,
         "commits": 3
-      },
-      {
-        "author": "fsx950223",
-        "prs_submitted": 6,
-        "prs_merged": 4,
-        "commits": 4
       },
       {
         "author": "xudoyuan",
@@ -56,6 +56,12 @@
         "prs_submitted": 5,
         "prs_merged": 4,
         "commits": 5
+      },
+      {
+        "author": "ruanjm",
+        "prs_submitted": 4,
+        "prs_merged": 3,
+        "commits": 3
       },
       {
         "author": "kiran-thumma",
@@ -72,22 +78,16 @@
       {
         "author": "vivienfanghuagood",
         "prs_submitted": 2,
-        "prs_merged": 1,
-        "commits": 1
-      },
-      {
-        "author": "ruanjm",
-        "prs_submitted": 2,
         "prs_merged": 2,
         "commits": 2
       }
     ],
-    "bus_factor": 2
+    "bus_factor": 3
   },
   "issue_health": {
-    "total_open": 18,
-    "opened_this_week": 6,
-    "closed_this_week": 6,
+    "total_open": 20,
+    "opened_this_week": 7,
+    "closed_this_week": 3,
     "unanswered": 6
   },
   "ci_health": null,

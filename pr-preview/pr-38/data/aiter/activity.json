@@ -1,31 +1,31 @@
 {
-  "collected_at": "2026-03-25T08:18:18Z",
+  "collected_at": "2026-03-26T08:20:52Z",
   "project": "aiter",
   "repo": "ROCm/aiter",
   "pr_velocity": {
     "this_week": {
       "opened": 109,
       "merged": 62,
-      "closed": 26
+      "closed": 27
     },
     "last_week": {
-      "opened": 73,
-      "merged": 34,
-      "closed": 56
+      "opened": 85,
+      "merged": 41,
+      "closed": 60
     },
-    "median_time_to_merge_hours": 22.9,
-    "merge_count": 99,
+    "median_time_to_merge_hours": 22.5,
+    "merge_count": 106,
     "stale_prs": 8
   },
   "contributors": {
     "active_this_week": 77,
-    "total_contributors": 138,
+    "total_contributors": 137,
     "top_contributors": [
       {
         "author": "gyohuangxin",
-        "prs_submitted": 9,
-        "prs_merged": 6,
-        "commits": 34
+        "prs_submitted": 11,
+        "prs_merged": 8,
+        "commits": 35
       },
       {
         "author": "yzhou103",
@@ -46,16 +46,16 @@
         "commits": 1
       },
       {
-        "author": "minmengdie",
+        "author": "Boss2002n",
         "prs_submitted": 6,
         "prs_merged": 1,
-        "commits": 7
+        "commits": 1
       },
       {
-        "author": "micmelesse",
-        "prs_submitted": 5,
-        "prs_merged": 1,
-        "commits": 6
+        "author": "minmengdie",
+        "prs_submitted": 6,
+        "prs_merged": 2,
+        "commits": 8
       },
       {
         "author": "juuso-oskari",
@@ -64,10 +64,10 @@
         "commits": 4
       },
       {
-        "author": "Boss2002n",
+        "author": "micmelesse",
         "prs_submitted": 5,
-        "prs_merged": 1,
-        "commits": 1
+        "prs_merged": 2,
+        "commits": 7
       },
       {
         "author": "amd-ruitang3",
@@ -78,22 +78,22 @@
       {
         "author": "JohnNikolay84",
         "prs_submitted": 4,
-        "prs_merged": 2,
+        "prs_merged": 1,
         "commits": 4
       }
     ],
-    "bus_factor": 12
+    "bus_factor": 11
   },
   "issue_health": {
-    "total_open": 131,
+    "total_open": 133,
     "opened_this_week": 20,
     "closed_this_week": 6,
-    "unanswered": 36
+    "unanswered": 31
   },
   "ci_health": null,
   "ci_signal_time": null,
   "release_cadence": {
-    "days_since_last": 92.2,
+    "days_since_last": 93.2,
     "avg_interval_days": 54.7,
     "total_releases": 5,
     "latest_tag": "v0.1.9"

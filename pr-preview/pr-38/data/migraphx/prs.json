@@ -1,5 +1,5 @@
 {
-  "collected_at": "2026-03-25T08:16:31Z",
+  "collected_at": "2026-03-26T08:19:18Z",
   "prs": [
     {
       "number": 4591,
@@ -8,10 +8,73 @@
       "state": "open",
       "merged": false,
       "created_at": "2026-02-04T06:02:46Z",
-      "updated_at": "2026-03-25T08:06:29Z",
+      "updated_at": "2026-03-26T08:05:58Z",
       "html_url": "https://github.com/ROCm/AMDMIGraphX/pull/4591",
       "labels": [],
       "draft": false
+    },
+    {
+      "number": 4699,
+      "title": "Nonmaxsuppression op support dynamic input",
+      "author": "klin2024",
+      "state": "open",
+      "merged": false,
+      "created_at": "2026-03-24T08:51:59Z",
+      "updated_at": "2026-03-26T07:35:00Z",
+      "html_url": "https://github.com/ROCm/AMDMIGraphX/pull/4699",
+      "labels": [],
+      "draft": true
+    },
+    {
+      "number": 4702,
+      "title": "[AIMIGRAPHX-835] integrate symbolic expression in dynamic_dimension",
+      "author": "shivadbhavsar",
+      "state": "open",
+      "merged": false,
+      "created_at": "2026-03-25T00:26:52Z",
+      "updated_at": "2026-03-26T06:34:22Z",
+      "html_url": "https://github.com/ROCm/AMDMIGraphX/pull/4702",
+      "labels": [],
+      "draft": true
+    },
+    {
+      "number": 4700,
+      "title": "[AIMIGRAPHX-886] [AIMIGRAPHX-834] custom symbolic expression lib",
+      "author": "shivadbhavsar",
+      "state": "open",
+      "merged": false,
+      "created_at": "2026-03-24T18:23:05Z",
+      "updated_at": "2026-03-26T06:16:18Z",
+      "html_url": "https://github.com/ROCm/AMDMIGraphX/pull/4700",
+      "labels": [],
+      "draft": false
+    },
+    {
+      "number": 4626,
+      "title": "Add debug symbols for parsed and compiler pass replaced instructions ",
+      "author": "CharlieL7",
+      "state": "open",
+      "merged": false,
+      "created_at": "2026-02-20T21:54:12Z",
+      "updated_at": "2026-03-26T05:42:59Z",
+      "html_url": "https://github.com/ROCm/AMDMIGraphX/pull/4626",
+      "labels": [
+        "enhancement",
+        "high priority"
+      ],
+      "draft": false
+    },
+    {
+      "number": 4704,
+      "title": "[AIMIGRAPHX-840] support symbolic shape prop through conv and pool",
+      "author": "shivadbhavsar",
+      "state": "open",
+      "merged": false,
+      "created_at": "2026-03-25T19:00:34Z",
+      "updated_at": "2026-03-26T05:14:49Z",
+      "html_url": "https://github.com/ROCm/AMDMIGraphX/pull/4704",
+      "labels": [],
+      "draft": true
     },
     {
       "number": 4521,
@@ -20,10 +83,72 @@
       "state": "open",
       "merged": false,
       "created_at": "2026-01-02T08:08:20Z",
-      "updated_at": "2026-03-25T06:06:26Z",
+      "updated_at": "2026-03-26T05:06:18Z",
       "html_url": "https://github.com/ROCm/AMDMIGraphX/pull/4521",
       "labels": [],
       "draft": false
+    },
+    {
+      "number": 4581,
+      "title": "[AIMIGRAPHX-408] Update intermediate ops to support dynamic shapes",
+      "author": "shivadbhavsar",
+      "state": "open",
+      "merged": false,
+      "created_at": "2026-01-29T20:48:55Z",
+      "updated_at": "2026-03-26T00:30:45Z",
+      "html_url": "https://github.com/ROCm/AMDMIGraphX/pull/4581",
+      "labels": [],
+      "draft": false
+    },
+    {
+      "number": 4706,
+      "title": "Bump requests from 2.32.4 to 2.33.0 in /docs/sphinx",
+      "author": "dependabot[bot]",
+      "state": "open",
+      "merged": false,
+      "created_at": "2026-03-25T23:55:05Z",
+      "updated_at": "2026-03-25T23:55:06Z",
+      "html_url": "https://github.com/ROCm/AMDMIGraphX/pull/4706",
+      "labels": [
+        "documentation"
+      ],
+      "draft": false
+    },
+    {
+      "number": 4703,
+      "title": "Adding past inputs to MultiHeadAttention parser for supporting new models",
+      "author": "urpetkov-amd",
+      "state": "open",
+      "merged": false,
+      "created_at": "2026-03-25T11:24:38Z",
+      "updated_at": "2026-03-25T18:37:05Z",
+      "html_url": "https://github.com/ROCm/AMDMIGraphX/pull/4703",
+      "labels": [],
+      "draft": false
+    },
+    {
+      "number": 4677,
+      "title": "Fix FP16 overflow in GQA attention and concat_past_present buffer overflow",
+      "author": "aditya-dl",
+      "state": "open",
+      "merged": false,
+      "created_at": "2026-03-16T19:27:40Z",
+      "updated_at": "2026-03-25T17:28:16Z",
+      "html_url": "https://github.com/ROCm/AMDMIGraphX/pull/4677",
+      "labels": [],
+      "draft": false
+    },
+    {
+      "number": 4697,
+      "title": "Add symbolic expression",
+      "author": "pfultz2",
+      "state": "open",
+      "merged": false,
+      "created_at": "2026-03-23T17:33:44Z",
+      "updated_at": "2026-03-25T16:35:47Z",
+      "html_url": "https://github.com/ROCm/AMDMIGraphX/pull/4697",
+      "labels": [],
+      "draft": true
     },
     {
       "number": 4701,
@@ -38,69 +163,6 @@
       "draft": true
     },
     {
-      "number": 4626,
-      "title": "Add debug symbols for parsed and compiler pass replaced instructions ",
-      "author": "CharlieL7",
-      "state": "open",
-      "merged": false,
-      "created_at": "2026-02-20T21:54:12Z",
-      "updated_at": "2026-03-25T04:05:53Z",
-      "html_url": "https://github.com/ROCm/AMDMIGraphX/pull/4626",
-      "labels": [
-        "enhancement",
-        "high priority"
-      ],
-      "draft": false
-    },
-    {
-      "number": 4700,
-      "title": "[AIMIGRAPHX-886] [AIMIGRAPHX-834] custom symbolic expression lib",
-      "author": "shivadbhavsar",
-      "state": "open",
-      "merged": false,
-      "created_at": "2026-03-24T18:23:05Z",
-      "updated_at": "2026-03-25T02:05:52Z",
-      "html_url": "https://github.com/ROCm/AMDMIGraphX/pull/4700",
-      "labels": [],
-      "draft": true
-    },
-    {
-      "number": 4697,
-      "title": "Add symbolic expression",
-      "author": "pfultz2",
-      "state": "open",
-      "merged": false,
-      "created_at": "2026-03-23T17:33:44Z",
-      "updated_at": "2026-03-25T01:52:11Z",
-      "html_url": "https://github.com/ROCm/AMDMIGraphX/pull/4697",
-      "labels": [],
-      "draft": true
-    },
-    {
-      "number": 4702,
-      "title": "[AIMIGRAPHX-835] integrate symbolic expression in dynamic_dimension",
-      "author": "shivadbhavsar",
-      "state": "open",
-      "merged": false,
-      "created_at": "2026-03-25T00:26:52Z",
-      "updated_at": "2026-03-25T00:50:22Z",
-      "html_url": "https://github.com/ROCm/AMDMIGraphX/pull/4702",
-      "labels": [],
-      "draft": true
-    },
-    {
-      "number": 4677,
-      "title": "Fix FP16 overflow in GQA attention and concat_past_present buffer overflow",
-      "author": "aditya-dl",
-      "state": "open",
-      "merged": false,
-      "created_at": "2026-03-16T19:27:40Z",
-      "updated_at": "2026-03-24T23:07:31Z",
-      "html_url": "https://github.com/ROCm/AMDMIGraphX/pull/4677",
-      "labels": [],
-      "draft": false
-    },
-    {
       "number": 4646,
       "title": "Use JIT Pooling by default and add tuning",
       "author": "pfultz2",
@@ -110,21 +172,6 @@
       "updated_at": "2026-03-24T22:39:27Z",
       "html_url": "https://github.com/ROCm/AMDMIGraphX/pull/4646",
       "labels": [],
-      "draft": false
-    },
-    {
-      "number": 4696,
-      "title": "find_nop_reshapes: Remove extra assignments/inserts",
-      "author": "TedThemistokleous",
-      "state": "open",
-      "merged": false,
-      "created_at": "2026-03-23T16:05:32Z",
-      "updated_at": "2026-03-24T21:48:17Z",
-      "html_url": "https://github.com/ROCm/AMDMIGraphX/pull/4696",
-      "labels": [
-        "simple",
-        "Perf Improve"
-      ],
       "draft": false
     },
     {
@@ -149,20 +196,6 @@
       "updated_at": "2026-03-24T18:18:06Z",
       "html_url": "https://github.com/ROCm/AMDMIGraphX/pull/4668",
       "labels": [],
-      "draft": false
-    },
-    {
-      "number": 4694,
-      "title": "AIMIGRAPHX-824 Set basic graph optimization for ONNX sessions in accuracy_checker.py",
-      "author": "kentqian",
-      "state": "open",
-      "merged": false,
-      "created_at": "2026-03-23T03:38:37Z",
-      "updated_at": "2026-03-24T16:00:25Z",
-      "html_url": "https://github.com/ROCm/AMDMIGraphX/pull/4694",
-      "labels": [
-        "Continous Integration"
-      ],
       "draft": false
     },
     {
@@ -200,18 +233,6 @@
       "created_at": "2026-02-12T07:05:25Z",
       "updated_at": "2026-03-24T13:54:15Z",
       "html_url": "https://github.com/ROCm/AMDMIGraphX/pull/4607",
-      "labels": [],
-      "draft": true
-    },
-    {
-      "number": 4699,
-      "title": "Nonmaxsuppression op support dynamic input",
-      "author": "klin2024",
-      "state": "open",
-      "merged": false,
-      "created_at": "2026-03-24T08:51:59Z",
-      "updated_at": "2026-03-24T13:46:43Z",
-      "html_url": "https://github.com/ROCm/AMDMIGraphX/pull/4699",
       "labels": [],
       "draft": true
     },
@@ -337,18 +358,6 @@
       "html_url": "https://github.com/ROCm/AMDMIGraphX/pull/4608",
       "labels": [],
       "draft": true
-    },
-    {
-      "number": 4581,
-      "title": "[AIMIGRAPHX-408] Update intermediate ops to support dynamic shapes",
-      "author": "shivadbhavsar",
-      "state": "open",
-      "merged": false,
-      "created_at": "2026-01-29T20:48:55Z",
-      "updated_at": "2026-03-13T22:48:10Z",
-      "html_url": "https://github.com/ROCm/AMDMIGraphX/pull/4581",
-      "labels": [],
-      "draft": false
     },
     {
       "number": 4613,
@@ -618,20 +627,6 @@
       "html_url": "https://github.com/ROCm/AMDMIGraphX/pull/4577",
       "labels": [],
       "draft": true
-    },
-    {
-      "number": 4178,
-      "title": "Create op. builders (3.) (MatMul)",
-      "author": "gchinora",
-      "state": "open",
-      "merged": false,
-      "created_at": "2025-07-29T08:47:10Z",
-      "updated_at": "2026-01-21T21:06:04Z",
-      "html_url": "https://github.com/ROCm/AMDMIGraphX/pull/4178",
-      "labels": [
-        "Operator Builders"
-      ],
-      "draft": false
     },
     {
       "number": 4554,
@@ -997,6 +992,47 @@
       "updated_at": "2024-10-21T22:48:16Z",
       "html_url": "https://github.com/ROCm/AMDMIGraphX/pull/3468",
       "labels": [],
+      "draft": false
+    },
+    {
+      "number": 4705,
+      "title": "Reset the Develop performance tests",
+      "author": "causten",
+      "state": "closed",
+      "merged": true,
+      "created_at": "2026-03-25T21:38:44Z",
+      "updated_at": "2026-03-25T23:53:15Z",
+      "html_url": "https://github.com/ROCm/AMDMIGraphX/pull/4705",
+      "labels": [],
+      "draft": false
+    },
+    {
+      "number": 4694,
+      "title": "AIMIGRAPHX-824 Set basic graph optimization for ONNX sessions in accuracy_checker.py",
+      "author": "kentqian",
+      "state": "closed",
+      "merged": true,
+      "created_at": "2026-03-23T03:38:37Z",
+      "updated_at": "2026-03-25T13:16:19Z",
+      "html_url": "https://github.com/ROCm/AMDMIGraphX/pull/4694",
+      "labels": [
+        "Continous Integration"
+      ],
+      "draft": false
+    },
+    {
+      "number": 4696,
+      "title": "find_nop_reshapes: Remove extra assignments/inserts",
+      "author": "TedThemistokleous",
+      "state": "closed",
+      "merged": true,
+      "created_at": "2026-03-23T16:05:32Z",
+      "updated_at": "2026-03-25T13:15:50Z",
+      "html_url": "https://github.com/ROCm/AMDMIGraphX/pull/4696",
+      "labels": [
+        "simple",
+        "Perf Improve"
+      ],
       "draft": false
     },
     {
@@ -1963,61 +1999,6 @@
       "updated_at": "2026-02-18T02:30:09Z",
       "html_url": "https://github.com/ROCm/AMDMIGraphX/pull/4362",
       "labels": [],
-      "draft": false
-    },
-    {
-      "number": 4443,
-      "title": "[AIMIGRAPHX-326] Fix \"reduce_sum: axes: value out of range\" error in simplify_reshapes",
-      "author": "pfultz2",
-      "state": "closed",
-      "merged": true,
-      "created_at": "2025-11-17T18:16:37Z",
-      "updated_at": "2026-02-17T18:01:06Z",
-      "html_url": "https://github.com/ROCm/AMDMIGraphX/pull/4443",
-      "labels": [
-        "roadmap",
-        "bugfix",
-        "Cleanup"
-      ],
-      "draft": false
-    },
-    {
-      "number": 4445,
-      "title": "Show attributes in onnx trace",
-      "author": "pfultz2",
-      "state": "closed",
-      "merged": true,
-      "created_at": "2025-11-19T00:41:02Z",
-      "updated_at": "2026-02-17T14:30:45Z",
-      "html_url": "https://github.com/ROCm/AMDMIGraphX/pull/4445",
-      "labels": [],
-      "draft": false
-    },
-    {
-      "number": 4393,
-      "title": "Flash decoding round 1; AIMIGRAPHX-242",
-      "author": "bdevorem",
-      "state": "closed",
-      "merged": true,
-      "created_at": "2025-10-17T07:52:10Z",
-      "updated_at": "2026-02-17T14:30:38Z",
-      "html_url": "https://github.com/ROCm/AMDMIGraphX/pull/4393",
-      "labels": [],
-      "draft": false
-    },
-    {
-      "number": 4396,
-      "title": "Refactor GroupQueryAttention",
-      "author": "turneram",
-      "state": "closed",
-      "merged": true,
-      "created_at": "2025-10-17T17:48:11Z",
-      "updated_at": "2026-02-17T04:30:09Z",
-      "html_url": "https://github.com/ROCm/AMDMIGraphX/pull/4396",
-      "labels": [
-        "enhancement",
-        "Cleanup"
-      ],
       "draft": false
     }
   ]
