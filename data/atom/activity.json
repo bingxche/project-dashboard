@@ -1,41 +1,41 @@
 {
-  "collected_at": "2026-03-25T08:18:46Z",
+  "collected_at": "2026-03-26T08:21:18Z",
   "project": "atom",
   "repo": "ROCm/ATOM",
   "pr_velocity": {
     "this_week": {
       "opened": 46,
-      "merged": 40,
-      "closed": 5
+      "merged": 37,
+      "closed": 4
     },
     "last_week": {
       "opened": 38,
-      "merged": 35,
-      "closed": 7
+      "merged": 29,
+      "closed": 8
     },
-    "median_time_to_merge_hours": 3.7,
-    "merge_count": 76,
+    "median_time_to_merge_hours": 3.8,
+    "merge_count": 67,
     "stale_prs": 0
   },
   "contributors": {
-    "active_this_week": 16,
-    "total_contributors": 25,
+    "active_this_week": 17,
+    "total_contributors": 26,
     "top_contributors": [
       {
         "author": "valarLip",
-        "prs_submitted": 26,
-        "prs_merged": 24,
-        "commits": 26
+        "prs_submitted": 27,
+        "prs_merged": 25,
+        "commits": 27
       },
       {
         "author": "gyohuangxin",
-        "prs_submitted": 20,
-        "prs_merged": 16,
+        "prs_submitted": 22,
+        "prs_merged": 18,
         "commits": 37
       },
       {
         "author": "zejunchen-zejun",
-        "prs_submitted": 10,
+        "prs_submitted": 12,
         "prs_merged": 7,
         "commits": 8
       },
@@ -47,8 +47,8 @@
       },
       {
         "author": "PerryZhang01",
-        "prs_submitted": 8,
-        "prs_merged": 5,
+        "prs_submitted": 7,
+        "prs_merged": 4,
         "commits": 7
       },
       {
@@ -64,29 +64,29 @@
         "commits": 6
       },
       {
-        "author": "ChuanLi1101",
-        "prs_submitted": 6,
-        "prs_merged": 1,
-        "commits": 10
-      },
-      {
         "author": "ganyi1996ppo",
         "prs_submitted": 5,
         "prs_merged": 4,
         "commits": 8
       },
       {
-        "author": "XiaobingSuper",
+        "author": "ChuanLi1101",
         "prs_submitted": 5,
-        "prs_merged": 5,
-        "commits": 5
+        "prs_merged": 0,
+        "commits": 10
+      },
+      {
+        "author": "sunway513",
+        "prs_submitted": 4,
+        "prs_merged": 0,
+        "commits": 3
       }
     ],
     "bus_factor": 3
   },
   "issue_health": {
-    "total_open": 20,
-    "opened_this_week": 6,
+    "total_open": 21,
+    "opened_this_week": 7,
     "closed_this_week": 7,
     "unanswered": 5
   },

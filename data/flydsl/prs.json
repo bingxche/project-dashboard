@@ -1,15 +1,63 @@
 {
-  "collected_at": "2026-03-25T08:16:52Z",
+  "collected_at": "2026-03-26T08:19:37Z",
   "prs": [
     {
-      "number": 250,
-      "title": "\u30102/N\u3011add support wmma kernels for RDNA4(GFX1201)",
-      "author": "vivienfanghuagood",
+      "number": 291,
+      "title": "Add immediate offset support to buffer_load and buffer_store ops",
+      "author": "ruanjm",
       "state": "open",
       "merged": false,
-      "created_at": "2026-03-20T03:25:04Z",
-      "updated_at": "2026-03-25T07:55:36Z",
-      "html_url": "https://github.com/ROCm/FlyDSL/pull/250",
+      "created_at": "2026-03-26T08:19:26Z",
+      "updated_at": "2026-03-26T08:19:27Z",
+      "html_url": "https://github.com/ROCm/FlyDSL/pull/291",
+      "labels": [],
+      "draft": false
+    },
+    {
+      "number": 290,
+      "title": "Remove redundant _create_i64_constant",
+      "author": "wangxunx",
+      "state": "open",
+      "merged": false,
+      "created_at": "2026-03-26T07:41:45Z",
+      "updated_at": "2026-03-26T07:57:08Z",
+      "html_url": "https://github.com/ROCm/FlyDSL/pull/290",
+      "labels": [],
+      "draft": false
+    },
+    {
+      "number": 288,
+      "title": "add(rocdl): Support pointer casts and bf16 16x16x16 MFMA",
+      "author": "fsx950223",
+      "state": "open",
+      "merged": false,
+      "created_at": "2026-03-26T05:20:19Z",
+      "updated_at": "2026-03-26T07:45:25Z",
+      "html_url": "https://github.com/ROCm/FlyDSL/pull/288",
+      "labels": [],
+      "draft": false
+    },
+    {
+      "number": 289,
+      "title": " feat(moe): Add MoE FP4 GEMM 2-stage kernel with benchmark and perf optimizations",
+      "author": "zhiding512",
+      "state": "open",
+      "merged": false,
+      "created_at": "2026-03-26T06:30:46Z",
+      "updated_at": "2026-03-26T06:48:50Z",
+      "html_url": "https://github.com/ROCm/FlyDSL/pull/289",
+      "labels": [],
+      "draft": false
+    },
+    {
+      "number": 277,
+      "title": "feat(runtime): implement device runtime layer (Python)",
+      "author": "Peter9606",
+      "state": "open",
+      "merged": false,
+      "created_at": "2026-03-24T05:36:46Z",
+      "updated_at": "2026-03-26T06:00:36Z",
+      "html_url": "https://github.com/ROCm/FlyDSL/pull/277",
       "labels": [],
       "draft": false
     },
@@ -20,8 +68,32 @@
       "state": "open",
       "merged": false,
       "created_at": "2026-03-24T06:35:41Z",
-      "updated_at": "2026-03-25T07:35:11Z",
+      "updated_at": "2026-03-25T14:36:34Z",
       "html_url": "https://github.com/ROCm/FlyDSL/pull/278",
+      "labels": [],
+      "draft": false
+    },
+    {
+      "number": 238,
+      "title": "Feat/if else values v2",
+      "author": "fsx950223",
+      "state": "open",
+      "merged": false,
+      "created_at": "2026-03-19T03:46:23Z",
+      "updated_at": "2026-03-25T12:55:19Z",
+      "html_url": "https://github.com/ROCm/FlyDSL/pull/238",
+      "labels": [],
+      "draft": false
+    },
+    {
+      "number": 259,
+      "title": " preshuffled gemm iglp",
+      "author": "yadaish",
+      "state": "open",
+      "merged": false,
+      "created_at": "2026-03-22T06:58:43Z",
+      "updated_at": "2026-03-25T09:30:39Z",
+      "html_url": "https://github.com/ROCm/FlyDSL/pull/259",
       "labels": [],
       "draft": false
     },
@@ -48,18 +120,6 @@
       "html_url": "https://github.com/ROCm/FlyDSL/pull/274",
       "labels": [],
       "draft": true
-    },
-    {
-      "number": 277,
-      "title": "feat(runtime): implement device runtime layer (Python)",
-      "author": "Peter9606",
-      "state": "open",
-      "merged": false,
-      "created_at": "2026-03-24T05:36:46Z",
-      "updated_at": "2026-03-25T05:32:57Z",
-      "html_url": "https://github.com/ROCm/FlyDSL/pull/277",
-      "labels": [],
-      "draft": false
     },
     {
       "number": 225,
@@ -94,42 +154,6 @@
       "created_at": "2026-03-23T16:50:12Z",
       "updated_at": "2026-03-24T16:11:55Z",
       "html_url": "https://github.com/ROCm/FlyDSL/pull/272",
-      "labels": [],
-      "draft": false
-    },
-    {
-      "number": 259,
-      "title": " preshuffled gemm iglp",
-      "author": "yadaish",
-      "state": "open",
-      "merged": false,
-      "created_at": "2026-03-22T06:58:43Z",
-      "updated_at": "2026-03-24T11:23:23Z",
-      "html_url": "https://github.com/ROCm/FlyDSL/pull/259",
-      "labels": [],
-      "draft": false
-    },
-    {
-      "number": 282,
-      "title": "feat(moe): enable FP4 A-scale and persist_m support for MoE GEMM kernels",
-      "author": "zhiding512",
-      "state": "open",
-      "merged": false,
-      "created_at": "2026-03-24T09:55:58Z",
-      "updated_at": "2026-03-24T10:02:52Z",
-      "html_url": "https://github.com/ROCm/FlyDSL/pull/282",
-      "labels": [],
-      "draft": false
-    },
-    {
-      "number": 238,
-      "title": "Feat/if else values v2",
-      "author": "fsx950223",
-      "state": "open",
-      "merged": false,
-      "created_at": "2026-03-19T03:46:23Z",
-      "updated_at": "2026-03-24T04:19:39Z",
-      "html_url": "https://github.com/ROCm/FlyDSL/pull/238",
       "labels": [],
       "draft": false
     },
@@ -180,6 +204,42 @@
       "html_url": "https://github.com/ROCm/FlyDSL/pull/192",
       "labels": [],
       "draft": true
+    },
+    {
+      "number": 284,
+      "title": "[Fix][DSL] Fix the semantic of MmaMakeFragment and apply cse on pure op",
+      "author": "sjfeng1999",
+      "state": "closed",
+      "merged": true,
+      "created_at": "2026-03-25T08:32:27Z",
+      "updated_at": "2026-03-26T03:24:00Z",
+      "html_url": "https://github.com/ROCm/FlyDSL/pull/284",
+      "labels": [],
+      "draft": false
+    },
+    {
+      "number": 250,
+      "title": "\u30102/N\u3011add support wmma kernels for RDNA4(GFX1201)",
+      "author": "vivienfanghuagood",
+      "state": "closed",
+      "merged": true,
+      "created_at": "2026-03-20T03:25:04Z",
+      "updated_at": "2026-03-26T00:29:26Z",
+      "html_url": "https://github.com/ROCm/FlyDSL/pull/250",
+      "labels": [],
+      "draft": false
+    },
+    {
+      "number": 285,
+      "title": "Register Python float to fx.Float32 and bool to fx.Boolean",
+      "author": "ruanjm",
+      "state": "closed",
+      "merged": true,
+      "created_at": "2026-03-25T09:21:37Z",
+      "updated_at": "2026-03-25T11:18:47Z",
+      "html_url": "https://github.com/ROCm/FlyDSL/pull/285",
+      "labels": [],
+      "draft": false
     },
     {
       "number": 273,
@@ -974,42 +1034,6 @@
       "created_at": "2026-03-09T13:38:59Z",
       "updated_at": "2026-03-09T14:19:43Z",
       "html_url": "https://github.com/ROCm/FlyDSL/pull/180",
-      "labels": [],
-      "draft": false
-    },
-    {
-      "number": 176,
-      "title": "[Docs] Add Sphinx documentation website with GitHub Actions deployment",
-      "author": "sunway513",
-      "state": "closed",
-      "merged": true,
-      "created_at": "2026-03-09T02:00:21Z",
-      "updated_at": "2026-03-09T14:19:42Z",
-      "html_url": "https://github.com/ROCm/FlyDSL/pull/176",
-      "labels": [],
-      "draft": false
-    },
-    {
-      "number": 179,
-      "title": "fix",
-      "author": "coderfeli",
-      "state": "closed",
-      "merged": true,
-      "created_at": "2026-03-09T12:09:19Z",
-      "updated_at": "2026-03-09T14:19:41Z",
-      "html_url": "https://github.com/ROCm/FlyDSL/pull/179",
-      "labels": [],
-      "draft": false
-    },
-    {
-      "number": 177,
-      "title": "Dev blockscale new api",
-      "author": "coderfeli",
-      "state": "closed",
-      "merged": true,
-      "created_at": "2026-03-09T06:33:22Z",
-      "updated_at": "2026-03-09T09:26:46Z",
-      "html_url": "https://github.com/ROCm/FlyDSL/pull/177",
       "labels": [],
       "draft": false
     }

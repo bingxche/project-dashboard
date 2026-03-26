@@ -1,284 +1,188 @@
 {
-  "collected_at": "2026-03-25T08:19:26Z",
+  "collected_at": "2026-03-26T08:21:50Z",
   "workflows": {
     "migraphx": {
       "workflow_id": 3843465,
       "latest_run": {
-        "id": 23521084643,
-        "conclusion": "failure",
-        "duration_minutes": 147.5,
-        "started_at": "2026-03-25T01:52:15Z",
-        "html_url": "https://github.com/ROCm/AMDMIGraphX/actions/runs/23521084643"
+        "id": 23579489696,
+        "conclusion": "cancelled",
+        "duration_minutes": 4.6,
+        "started_at": "2026-03-26T05:44:01Z",
+        "html_url": "https://github.com/ROCm/AMDMIGraphX/actions/runs/23579489696"
       },
       "stats": {
-        "sample_size": 4,
-        "median_minutes": 170.3,
-        "p90_minutes": 201.2,
-        "min_minutes": 156.6,
-        "max_minutes": 201.2
+        "sample_size": 2,
+        "median_minutes": 212.4,
+        "p90_minutes": 213.6,
+        "min_minutes": 211.2,
+        "max_minutes": 213.6
       },
       "recent_runs": [
         {
-          "id": 23521084643,
+          "id": 23579489696,
+          "conclusion": "cancelled",
+          "duration_minutes": 4.6,
+          "date": "2026-03-26"
+        },
+        {
+          "id": 23578698697,
           "conclusion": "failure",
-          "duration_minutes": 147.5,
-          "date": "2026-03-25"
+          "duration_minutes": 149.2,
+          "date": "2026-03-26"
         },
         {
-          "id": 23519961519,
+          "id": 23578385431,
           "conclusion": "cancelled",
-          "duration_minutes": 44.5,
-          "date": "2026-03-25"
+          "duration_minutes": 13.5,
+          "date": "2026-03-26"
         },
         {
-          "id": 23519887240,
-          "conclusion": "success",
-          "duration_minutes": 179.0,
-          "date": "2026-03-25"
-        },
-        {
-          "id": 23519702937,
+          "id": 23578272267,
           "conclusion": "cancelled",
-          "duration_minutes": 10.1,
-          "date": "2026-03-25"
+          "duration_minutes": 3.6,
+          "date": "2026-03-26"
         },
         {
-          "id": 23519481151,
+          "id": 23578254527,
+          "conclusion": "cancelled",
+          "duration_minutes": 47.8,
+          "date": "2026-03-26"
+        },
+        {
+          "id": 23577564929,
+          "conclusion": "cancelled",
+          "duration_minutes": 28.2,
+          "date": "2026-03-26"
+        },
+        {
+          "id": 23577524844,
+          "conclusion": "cancelled",
+          "duration_minutes": 30.8,
+          "date": "2026-03-26"
+        },
+        {
+          "id": 23577222407,
+          "conclusion": "cancelled",
+          "duration_minutes": 13.1,
+          "date": "2026-03-26"
+        },
+        {
+          "id": 23576841032,
+          "conclusion": "cancelled",
+          "duration_minutes": 15.3,
+          "date": "2026-03-26"
+        },
+        {
+          "id": 23575931840,
           "conclusion": "failure",
-          "duration_minutes": 146.2,
-          "date": "2026-03-25"
+          "duration_minutes": 199.8,
+          "date": "2026-03-26"
         },
         {
-          "id": 23519475212,
-          "conclusion": "success",
-          "duration_minutes": 201.2,
-          "date": "2026-03-25"
-        },
-        {
-          "id": 23519468031,
+          "id": 23575212985,
           "conclusion": "cancelled",
-          "duration_minutes": 1.8,
-          "date": "2026-03-25"
+          "duration_minutes": 28.3,
+          "date": "2026-03-26"
         },
         {
-          "id": 23519188890,
+          "id": 23574913716,
           "conclusion": "cancelled",
-          "duration_minutes": 11.3,
-          "date": "2026-03-25"
+          "duration_minutes": 106.0,
+          "date": "2026-03-26"
         },
         {
-          "id": 23519126046,
-          "conclusion": "cancelled",
-          "duration_minutes": 22.6,
-          "date": "2026-03-25"
-        },
-        {
-          "id": 23518925824,
-          "conclusion": "cancelled",
-          "duration_minutes": 8.3,
-          "date": "2026-03-25"
-        },
-        {
-          "id": 23518852088,
-          "conclusion": "cancelled",
-          "duration_minutes": 24.1,
-          "date": "2026-03-25"
-        },
-        {
-          "id": 23517503237,
-          "conclusion": "cancelled",
-          "duration_minutes": 52.1,
-          "date": "2026-03-24"
-        },
-        {
-          "id": 23517437229,
+          "id": 23573959932,
           "conclusion": "failure",
-          "duration_minutes": 186.3,
-          "date": "2026-03-24"
+          "duration_minutes": 147.7,
+          "date": "2026-03-26"
         },
         {
-          "id": 23517296943,
+          "id": 23573230855,
+          "conclusion": "cancelled",
+          "duration_minutes": 65.1,
+          "date": "2026-03-26"
+        },
+        {
+          "id": 23573220824,
+          "conclusion": "cancelled",
+          "duration_minutes": 0.8,
+          "date": "2026-03-26"
+        },
+        {
+          "id": 23571266752,
           "conclusion": "failure",
-          "duration_minutes": 186.3,
-          "date": "2026-03-24"
+          "duration_minutes": 212.2,
+          "date": "2026-03-26"
         },
         {
-          "id": 23517128160,
+          "id": 23570968946,
           "conclusion": "cancelled",
-          "duration_minutes": 7.0,
-          "date": "2026-03-24"
+          "duration_minutes": 10.9,
+          "date": "2026-03-26"
         },
         {
-          "id": 23515135487,
-          "conclusion": "cancelled",
-          "duration_minutes": 136.7,
-          "date": "2026-03-24"
+          "id": 23570240555,
+          "conclusion": "failure",
+          "duration_minutes": 220.0,
+          "date": "2026-03-25"
         },
         {
-          "id": 23514116918,
-          "conclusion": "cancelled",
-          "duration_minutes": 29.2,
-          "date": "2026-03-24"
-        },
-        {
-          "id": 23511745396,
+          "id": 23570168101,
           "conclusion": "success",
-          "duration_minutes": 156.6,
-          "date": "2026-03-24"
+          "duration_minutes": 213.6,
+          "date": "2026-03-25"
         },
         {
-          "id": 23509475442,
+          "id": 23570011584,
           "conclusion": "success",
-          "duration_minutes": 161.6,
-          "date": "2026-03-24"
-        },
-        {
-          "id": 23509248230,
-          "conclusion": "cancelled",
-          "duration_minutes": 1.9,
-          "date": "2026-03-24"
+          "duration_minutes": 211.2,
+          "date": "2026-03-25"
         }
       ],
       "bottleneck_job": {
-        "name": "cppcheck",
-        "duration_minutes": 140.5
+        "name": "linux-fpga (ubuntu-24.04, debug)",
+        "duration_minutes": 3.9
       }
     },
-    "MIGraphX Performance Tests": {
-      "workflow_id": 30809142,
+    "ROCM Docker image build": {
+      "workflow_id": 30918705,
       "latest_run": {
-        "id": 23529546387,
+        "id": 18077536619,
         "conclusion": "failure",
-        "duration_minutes": 1.5,
-        "started_at": "2026-03-25T07:19:20Z",
-        "html_url": "https://github.com/ROCm/AMDMIGraphX/actions/runs/23529546387"
+        "duration_minutes": 671.2,
+        "started_at": "2025-09-28T17:27:13Z",
+        "html_url": "https://github.com/ROCm/AMDMIGraphX/actions/runs/18077536619"
       },
-      "stats": null,
+      "stats": {
+        "sample_size": 1,
+        "median_minutes": 446.3,
+        "p90_minutes": 446.3,
+        "min_minutes": 446.3,
+        "max_minutes": 446.3
+      },
       "recent_runs": [
         {
-          "id": 23529546387,
+          "id": 18077536619,
           "conclusion": "failure",
-          "duration_minutes": 1.5,
-          "date": "2026-03-25"
+          "duration_minutes": 671.2,
+          "date": "2025-09-28"
         },
         {
-          "id": 23521084405,
+          "id": 16483435508,
+          "conclusion": "success",
+          "duration_minutes": 446.3,
+          "date": "2025-07-23"
+        },
+        {
+          "id": 14797483363,
           "conclusion": "failure",
-          "duration_minutes": 1.7,
-          "date": "2026-03-25"
-        },
-        {
-          "id": 23519960549,
-          "conclusion": "failure",
-          "duration_minutes": 1.8,
-          "date": "2026-03-25"
-        },
-        {
-          "id": 23519886490,
-          "conclusion": "failure",
-          "duration_minutes": 134.0,
-          "date": "2026-03-25"
-        },
-        {
-          "id": 23519702560,
-          "conclusion": "failure",
-          "duration_minutes": 2.1,
-          "date": "2026-03-25"
-        },
-        {
-          "id": 23519475420,
-          "conclusion": "failure",
-          "duration_minutes": 2.6,
-          "date": "2026-03-25"
-        },
-        {
-          "id": 23519188419,
-          "conclusion": "cancelled",
-          "duration_minutes": 11.2,
-          "date": "2026-03-25"
-        },
-        {
-          "id": 23519127531,
-          "conclusion": "failure",
-          "duration_minutes": 2.3,
-          "date": "2026-03-25"
-        },
-        {
-          "id": 23518925470,
-          "conclusion": "cancelled",
-          "duration_minutes": 7.7,
-          "date": "2026-03-25"
-        },
-        {
-          "id": 23517502850,
-          "conclusion": "failure",
-          "duration_minutes": 1.7,
-          "date": "2026-03-24"
-        },
-        {
-          "id": 23517436481,
-          "conclusion": "failure",
-          "duration_minutes": 1.6,
-          "date": "2026-03-24"
-        },
-        {
-          "id": 23517297030,
-          "conclusion": "failure",
-          "duration_minutes": 1.7,
-          "date": "2026-03-24"
-        },
-        {
-          "id": 23517128246,
-          "conclusion": "failure",
-          "duration_minutes": 1.9,
-          "date": "2026-03-24"
-        },
-        {
-          "id": 23515135445,
-          "conclusion": "failure",
-          "duration_minutes": 3.4,
-          "date": "2026-03-24"
-        },
-        {
-          "id": 23514116422,
-          "conclusion": "failure",
-          "duration_minutes": 2.3,
-          "date": "2026-03-24"
-        },
-        {
-          "id": 23511797848,
-          "conclusion": "failure",
-          "duration_minutes": 2.6,
-          "date": "2026-03-24"
-        },
-        {
-          "id": 23511745448,
-          "conclusion": "failure",
-          "duration_minutes": 2.6,
-          "date": "2026-03-24"
-        },
-        {
-          "id": 23509475610,
-          "conclusion": "failure",
-          "duration_minutes": 143.9,
-          "date": "2026-03-24"
-        },
-        {
-          "id": 23509248419,
-          "conclusion": "cancelled",
-          "duration_minutes": 0.3,
-          "date": "2026-03-24"
-        },
-        {
-          "id": 23507389774,
-          "conclusion": "failure",
-          "duration_minutes": 2.2,
-          "date": "2026-03-24"
+          "duration_minutes": 2.9,
+          "date": "2025-05-02"
         }
       ],
       "bottleneck_job": {
-        "name": "call_reusable / MIGraphX Performance",
-        "duration_minutes": 0.2
+        "name": "release / Build New Image",
+        "duration_minutes": 0.3
       }
     }
   }

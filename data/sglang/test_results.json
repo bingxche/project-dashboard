@@ -1,23 +1,23 @@
 {
-  "collected_at": "2026-03-25T08:17:09Z",
+  "collected_at": "2026-03-26T08:19:51Z",
   "source": "automated",
   "rocm": {
     "workflow_name": "Nightly Test (AMD)",
-    "run_id": 23475571643,
-    "run_url": "https://github.com/sgl-project/sglang/actions/runs/23475571643",
-    "run_date": "2026-03-24T06:14:40Z",
+    "run_id": 23562437362,
+    "run_url": "https://github.com/sgl-project/sglang/actions/runs/23562437362",
+    "run_date": "2026-03-25T20:48:18Z",
     "conclusion": "success",
     "summary": {
       "total_jobs": 2,
-      "passed": 0,
+      "passed": 1,
       "failed": 0,
-      "skipped": 2,
-      "pass_rate": null
+      "skipped": 1,
+      "pass_rate": 100.0
     },
     "suites": [
       {
         "name": "nightly-test-1-gpu-unit",
-        "conclusion": "skipped",
+        "conclusion": "success",
         "tests": null,
         "passed": null,
         "failed": null,
@@ -37,9 +37,9 @@
   },
   "cuda": {
     "workflow_name": "PR Test",
-    "run_id": 23531210084,
-    "run_url": "https://github.com/sgl-project/sglang/actions/runs/23531210084",
-    "run_date": "2026-03-25T08:11:36Z",
+    "run_id": 23584311482,
+    "run_url": "https://github.com/sgl-project/sglang/actions/runs/23584311482",
+    "run_date": "2026-03-26T08:18:21Z",
     "conclusion": "failure",
     "summary": {
       "total_jobs": 16,
@@ -59,33 +59,6 @@
         "errors": null
       },
       {
-        "name": "stage-a-test-cpu",
-        "conclusion": "skipped",
-        "tests": null,
-        "passed": null,
-        "failed": null,
-        "skipped": null,
-        "errors": null
-      },
-      {
-        "name": "stage-b-test-2-gpu-large",
-        "conclusion": "skipped",
-        "tests": null,
-        "passed": null,
-        "failed": null,
-        "skipped": null,
-        "errors": null
-      },
-      {
-        "name": "stage-a-test-1-gpu-small",
-        "conclusion": "skipped",
-        "tests": null,
-        "passed": null,
-        "failed": null,
-        "skipped": null,
-        "errors": null
-      },
-      {
         "name": "stage-b-test-1-gpu-large",
         "conclusion": "skipped",
         "tests": null,
@@ -95,7 +68,7 @@
         "errors": null
       },
       {
-        "name": "call-multimodal-gen-tests",
+        "name": "stage-a-test-cpu",
         "conclusion": "skipped",
         "tests": null,
         "passed": null,
@@ -113,25 +86,43 @@
         "errors": null
       },
       {
-        "name": "stage-c-test-4-gpu-h100",
-        "conclusion": "skipped",
-        "tests": null,
-        "passed": null,
-        "failed": null,
-        "skipped": null,
-        "errors": null
-      },
-      {
-        "name": "stage-c-test-deepep-8-gpu-h200",
-        "conclusion": "skipped",
-        "tests": null,
-        "passed": null,
-        "failed": null,
-        "skipped": null,
-        "errors": null
-      },
-      {
         "name": "call-sgl-kernel-tests",
+        "conclusion": "skipped",
+        "tests": null,
+        "passed": null,
+        "failed": null,
+        "skipped": null,
+        "errors": null
+      },
+      {
+        "name": "stage-a-test-1-gpu-small",
+        "conclusion": "skipped",
+        "tests": null,
+        "passed": null,
+        "failed": null,
+        "skipped": null,
+        "errors": null
+      },
+      {
+        "name": "call-multimodal-gen-tests",
+        "conclusion": "skipped",
+        "tests": null,
+        "passed": null,
+        "failed": null,
+        "skipped": null,
+        "errors": null
+      },
+      {
+        "name": "stage-c-test-deepep-4-gpu-h100",
+        "conclusion": "skipped",
+        "tests": null,
+        "passed": null,
+        "failed": null,
+        "skipped": null,
+        "errors": null
+      },
+      {
+        "name": "stage-c-test-4-gpu-b200",
         "conclusion": "skipped",
         "tests": null,
         "passed": null,
@@ -149,26 +140,17 @@
         "errors": null
       },
       {
-        "name": "pr-test-finish",
-        "conclusion": "failure",
-        "tests": null,
-        "passed": null,
-        "failed": null,
-        "skipped": null,
-        "errors": null
-      },
-      {
-        "name": "stage-c-test-deepep-4-gpu-h100",
-        "conclusion": "skipped",
-        "tests": null,
-        "passed": null,
-        "failed": null,
-        "skipped": null,
-        "errors": null
-      },
-      {
         "name": "stage-c-test-8-gpu-h20",
         "conclusion": "skipped",
+        "tests": null,
+        "passed": null,
+        "failed": null,
+        "skipped": null,
+        "errors": null
+      },
+      {
+        "name": "pr-test-finish",
+        "conclusion": "failure",
         "tests": null,
         "passed": null,
         "failed": null,
@@ -185,7 +167,25 @@
         "errors": null
       },
       {
-        "name": "stage-c-test-4-gpu-b200",
+        "name": "stage-c-test-4-gpu-h100",
+        "conclusion": "skipped",
+        "tests": null,
+        "passed": null,
+        "failed": null,
+        "skipped": null,
+        "errors": null
+      },
+      {
+        "name": "stage-b-test-2-gpu-large",
+        "conclusion": "skipped",
+        "tests": null,
+        "passed": null,
+        "failed": null,
+        "skipped": null,
+        "errors": null
+      },
+      {
+        "name": "stage-c-test-deepep-8-gpu-h200",
         "conclusion": "skipped",
         "tests": null,
         "passed": null,

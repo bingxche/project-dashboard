@@ -1,5 +1,5 @@
 {
-  "collected_at": "2026-03-25T08:15:50Z",
+  "collected_at": "2026-03-26T08:18:37Z",
   "prs": [
     {
       "number": 35534,
@@ -8,12 +8,27 @@
       "state": "open",
       "merged": false,
       "created_at": "2026-03-02T21:16:00Z",
-      "updated_at": "2026-03-24T23:10:06Z",
+      "updated_at": "2026-03-26T00:10:56Z",
       "html_url": "https://github.com/jax-ml/jax/pull/35534",
       "labels": [
         "enhancement",
         "performance",
         "jax.numpy",
+        "AMD GPU"
+      ],
+      "draft": false
+    },
+    {
+      "number": 35995,
+      "title": "[ROCm] Add lowering for ScaledMatmul, ScaledDot",
+      "author": "shurale-nkn",
+      "state": "closed",
+      "merged": true,
+      "created_at": "2026-03-18T13:41:17Z",
+      "updated_at": "2026-03-25T18:14:45Z",
+      "html_url": "https://github.com/jax-ml/jax/pull/35995",
+      "labels": [
+        "pull ready",
         "AMD GPU"
       ],
       "draft": false
@@ -59,20 +74,6 @@
       "html_url": "https://github.com/jax-ml/jax/pull/36103",
       "labels": [
         "pull ready"
-      ],
-      "draft": false
-    },
-    {
-      "number": 35995,
-      "title": "[ROCm] Add lowering for ScaledMatmul, ScaledDot",
-      "author": "shurale-nkn",
-      "state": "open",
-      "merged": false,
-      "created_at": "2026-03-18T13:41:17Z",
-      "updated_at": "2026-03-23T10:11:02Z",
-      "html_url": "https://github.com/jax-ml/jax/pull/35995",
-      "labels": [
-        "AMD GPU"
       ],
       "draft": false
     },
@@ -567,21 +568,6 @@
       "created_at": "2026-02-10T20:39:00Z",
       "updated_at": "2026-02-14T03:35:47Z",
       "html_url": "https://github.com/jax-ml/jax/pull/34966",
-      "labels": [
-        "kokoro:force-run",
-        "pull ready"
-      ],
-      "draft": false
-    },
-    {
-      "number": 34561,
-      "title": "[ROCm] Enable ToeplitzSymmetricConstruction and condition number tests",
-      "author": "tsrw2048",
-      "state": "closed",
-      "merged": true,
-      "created_at": "2026-01-22T16:47:47Z",
-      "updated_at": "2026-02-13T22:49:38Z",
-      "html_url": "https://github.com/jax-ml/jax/pull/34561",
       "labels": [
         "kokoro:force-run",
         "pull ready"

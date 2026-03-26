@@ -1,5 +1,5 @@
 {
-  "collected_at": "2026-03-25T08:19:18Z",
+  "collected_at": "2026-03-26T08:21:44Z",
   "workflows": {
     "Autorun CI for OpenXLA Public Members": {
       "workflow_id": 50831922,
@@ -93,33 +93,145 @@
     "Bazel Dependency Violations": {
       "workflow_id": 116752770,
       "latest_run": {
-        "id": 23530967322,
-        "conclusion": "action_required",
-        "duration_minutes": 0.0,
-        "started_at": "2026-03-25T08:04:06Z",
-        "html_url": "https://github.com/openxla/xla/actions/runs/23530967322"
+        "id": 23584045925,
+        "conclusion": "success",
+        "duration_minutes": 7.6,
+        "started_at": "2026-03-26T08:10:44Z",
+        "html_url": "https://github.com/openxla/xla/actions/runs/23584045925"
       },
       "stats": {
-        "sample_size": 2,
-        "median_minutes": 7.5,
-        "p90_minutes": 7.7,
-        "min_minutes": 7.2,
-        "max_minutes": 7.7
+        "sample_size": 20,
+        "median_minutes": 7.7,
+        "p90_minutes": 9.1,
+        "min_minutes": 5.6,
+        "max_minutes": 9.7
       },
       "recent_runs": [
         {
-          "id": 23528205284,
+          "id": 23584045925,
           "conclusion": "success",
-          "duration_minutes": 7.2,
-          "date": "2026-03-25"
+          "duration_minutes": 7.6,
+          "date": "2026-03-26"
         },
         {
-          "id": 23527999950,
+          "id": 23583872877,
+          "conclusion": "success",
+          "duration_minutes": 7.9,
+          "date": "2026-03-26"
+        },
+        {
+          "id": 23583647549,
+          "conclusion": "success",
+          "duration_minutes": 7.3,
+          "date": "2026-03-26"
+        },
+        {
+          "id": 23583267919,
+          "conclusion": "success",
+          "duration_minutes": 7.2,
+          "date": "2026-03-26"
+        },
+        {
+          "id": 23583219847,
+          "conclusion": "success",
+          "duration_minutes": 7.5,
+          "date": "2026-03-26"
+        },
+        {
+          "id": 23583219423,
+          "conclusion": "success",
+          "duration_minutes": 8.0,
+          "date": "2026-03-26"
+        },
+        {
+          "id": 23582934734,
+          "conclusion": "success",
+          "duration_minutes": 5.6,
+          "date": "2026-03-26"
+        },
+        {
+          "id": 23582813635,
+          "conclusion": "success",
+          "duration_minutes": 7.9,
+          "date": "2026-03-26"
+        },
+        {
+          "id": 23582796950,
+          "conclusion": "success",
+          "duration_minutes": 8.5,
+          "date": "2026-03-26"
+        },
+        {
+          "id": 23582735812,
+          "conclusion": "success",
+          "duration_minutes": 7.5,
+          "date": "2026-03-26"
+        },
+        {
+          "id": 23582722877,
           "conclusion": "success",
           "duration_minutes": 7.7,
-          "date": "2026-03-25"
+          "date": "2026-03-26"
+        },
+        {
+          "id": 23582517865,
+          "conclusion": "success",
+          "duration_minutes": 7.5,
+          "date": "2026-03-26"
+        },
+        {
+          "id": 23582452063,
+          "conclusion": "success",
+          "duration_minutes": 7.5,
+          "date": "2026-03-26"
+        },
+        {
+          "id": 23582436329,
+          "conclusion": "success",
+          "duration_minutes": 9.7,
+          "date": "2026-03-26"
+        },
+        {
+          "id": 23582400085,
+          "conclusion": "success",
+          "duration_minutes": 7.8,
+          "date": "2026-03-26"
+        },
+        {
+          "id": 23582383656,
+          "conclusion": "success",
+          "duration_minutes": 7.7,
+          "date": "2026-03-26"
+        },
+        {
+          "id": 23582383975,
+          "conclusion": "success",
+          "duration_minutes": 7.7,
+          "date": "2026-03-26"
+        },
+        {
+          "id": 23582089017,
+          "conclusion": "success",
+          "duration_minutes": 9.1,
+          "date": "2026-03-26"
+        },
+        {
+          "id": 23581930546,
+          "conclusion": "success",
+          "duration_minutes": 7.7,
+          "date": "2026-03-26"
+        },
+        {
+          "id": 23581930024,
+          "conclusion": "success",
+          "duration_minutes": 7.5,
+          "date": "2026-03-26"
         }
-      ]
+      ],
+      "bottleneck_job": {
+        "name": "no-rocm-only-targets-in-cpu-build",
+        "duration_minutes": 7.6
+      }
     }
   }
 }

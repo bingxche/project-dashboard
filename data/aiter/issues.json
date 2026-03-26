@@ -1,17 +1,157 @@
 {
-  "collected_at": "2026-03-25T08:16:42Z",
+  "collected_at": "2026-03-26T08:19:29Z",
   "issues": [
+    {
+      "number": 2484,
+      "title": "[Bug] Step-3.5-Flash-FP8 via vLLM fails on ROCm AITER MoE with missing swiglu FP8/per_1x128 CK 2-stage JIT module",
+      "author": "GoldenGrapeGentleman",
+      "state": "open",
+      "created_at": "2026-03-26T08:17:28Z",
+      "updated_at": "2026-03-26T08:17:28Z",
+      "html_url": "https://github.com/ROCm/aiter/issues/2484",
+      "labels": []
+    },
+    {
+      "number": 2470,
+      "title": "[Feature]: Update aiter/jit/utils/cpp_extension.py from pytorch",
+      "author": "astrelsky",
+      "state": "open",
+      "created_at": "2026-03-25T20:46:43Z",
+      "updated_at": "2026-03-25T20:47:47Z",
+      "html_url": "https://github.com/ROCm/aiter/issues/2470",
+      "labels": []
+    },
     {
       "number": 2312,
       "title": "CI: Run Triton tests on MI355",
       "author": "gyohuangxin",
       "state": "open",
       "created_at": "2026-03-17T16:42:16Z",
-      "updated_at": "2026-03-24T21:16:36Z",
+      "updated_at": "2026-03-25T16:28:06Z",
       "html_url": "https://github.com/ROCm/aiter/issues/2312",
       "labels": [
         "frameworks-devops"
       ]
+    },
+    {
+      "number": 1945,
+      "title": "[Issue]: Build Failing for MI250 on fused_attn",
+      "author": "zixianwang2022",
+      "state": "open",
+      "created_at": "2026-02-01T20:58:35Z",
+      "updated_at": "2026-03-25T10:29:45Z",
+      "html_url": "https://github.com/ROCm/aiter/issues/1945",
+      "labels": []
+    },
+    {
+      "number": 1802,
+      "title": "[KERNEL] AMDGPU@ROCM ramp up doc/link for kernel contributors",
+      "author": "carlushuang",
+      "state": "open",
+      "created_at": "2026-01-09T08:31:31Z",
+      "updated_at": "2026-03-25T10:29:42Z",
+      "html_url": "https://github.com/ROCm/aiter/issues/1802",
+      "labels": []
+    },
+    {
+      "number": 1766,
+      "title": "[Feature]: Per tensor act + Per channel weight int8 gemm",
+      "author": "ZhiweiYan-96",
+      "state": "open",
+      "created_at": "2026-01-05T02:15:38Z",
+      "updated_at": "2026-03-25T10:29:41Z",
+      "html_url": "https://github.com/ROCm/aiter/issues/1766",
+      "labels": []
+    },
+    {
+      "number": 1765,
+      "title": "[Issue]: Does gemm_a8w8 support per-tensor quant?",
+      "author": "byjiang1996",
+      "state": "open",
+      "created_at": "2026-01-03T19:05:28Z",
+      "updated_at": "2026-03-25T10:29:41Z",
+      "html_url": "https://github.com/ROCm/aiter/issues/1765",
+      "labels": []
+    },
+    {
+      "number": 1689,
+      "title": "fp4 gemm aiter.gemm_a4w4 API to handle missing heuristics",
+      "author": "hongxiayang",
+      "state": "open",
+      "created_at": "2025-12-19T01:12:14Z",
+      "updated_at": "2026-03-25T10:29:39Z",
+      "html_url": "https://github.com/ROCm/aiter/issues/1689",
+      "labels": []
+    },
+    {
+      "number": 1641,
+      "title": "[Feature]: Support pre-build multi arches for ck_gemm_moe_2stages_codegen",
+      "author": "yuguo68",
+      "state": "open",
+      "created_at": "2025-12-13T00:10:07Z",
+      "updated_at": "2026-03-25T10:29:39Z",
+      "html_url": "https://github.com/ROCm/aiter/issues/1641",
+      "labels": []
+    },
+    {
+      "number": 1549,
+      "title": "[Issue]: Deploy GLM-4.6 on MI300X failed. Error msg \"aiter : wrapper_mha_batch_prefill() Expected a value of type 'int'  for argument 'max_seqlen_k\u2018 but instead found type 'NoneType'",
+      "author": "naiveshen",
+      "state": "open",
+      "created_at": "2025-12-03T09:57:46Z",
+      "updated_at": "2026-03-25T10:29:38Z",
+      "html_url": "https://github.com/ROCm/aiter/issues/1549",
+      "labels": []
+    },
+    {
+      "number": 1533,
+      "title": "[Feature]: Add NN layout for gradlib",
+      "author": "DoubleRedX",
+      "state": "open",
+      "created_at": "2025-12-02T09:18:19Z",
+      "updated_at": "2026-03-25T10:29:37Z",
+      "html_url": "https://github.com/ROCm/aiter/issues/1533",
+      "labels": []
+    },
+    {
+      "number": 1436,
+      "title": "[Feature]: AITER path should allow for experimentation",
+      "author": "dimon777",
+      "state": "open",
+      "created_at": "2025-11-19T00:29:20Z",
+      "updated_at": "2026-03-25T10:29:36Z",
+      "html_url": "https://github.com/ROCm/aiter/issues/1436",
+      "labels": []
+    },
+    {
+      "number": 1395,
+      "title": "[Issue]: AttributeError: module 'torch._C' has no attribute '_PYBIND11_COMPILER_TYPE'",
+      "author": "fxmarty-amd",
+      "state": "open",
+      "created_at": "2025-11-12T15:36:27Z",
+      "updated_at": "2026-03-25T10:29:34Z",
+      "html_url": "https://github.com/ROCm/aiter/issues/1395",
+      "labels": []
+    },
+    {
+      "number": 1385,
+      "title": "-mllvm -amdgpu-coerce-illegal-types=1 is not supported by hipcc",
+      "author": "jinz2014",
+      "state": "open",
+      "created_at": "2025-11-11T15:30:49Z",
+      "updated_at": "2026-03-25T10:29:33Z",
+      "html_url": "https://github.com/ROCm/aiter/issues/1385",
+      "labels": []
+    },
+    {
+      "number": 1248,
+      "title": "[Feature]: Add more configuration options for MoE assembly kernels",
+      "author": "sumin-hong",
+      "state": "open",
+      "created_at": "2025-10-23T09:36:44Z",
+      "updated_at": "2026-03-25T10:29:32Z",
+      "html_url": "https://github.com/ROCm/aiter/issues/1248",
+      "labels": []
     },
     {
       "number": 2424,
@@ -569,16 +709,6 @@
       "labels": []
     },
     {
-      "number": 1945,
-      "title": "[Issue]: Build Failing for MI250 on fused_attn",
-      "author": "zixianwang2022",
-      "state": "open",
-      "created_at": "2026-02-01T20:58:35Z",
-      "updated_at": "2026-02-01T20:59:54Z",
-      "html_url": "https://github.com/ROCm/aiter/issues/1945",
-      "labels": []
-    },
-    {
       "number": 1934,
       "title": "[Feature]: [CI] Optimize the MI355 usage in Aiter CI",
       "author": "gyohuangxin",
@@ -631,16 +761,6 @@
       "labels": []
     },
     {
-      "number": 1802,
-      "title": "[KERNEL] AMDGPU@ROCM ramp up doc/link for kernel contributors",
-      "author": "carlushuang",
-      "state": "open",
-      "created_at": "2026-01-09T08:31:31Z",
-      "updated_at": "2026-01-09T08:31:31Z",
-      "html_url": "https://github.com/ROCm/aiter/issues/1802",
-      "labels": []
-    },
-    {
       "number": 1332,
       "title": "module_fmha_v3_fwd/blob/asm_fmha_fwd_v3_gfx942.cpp:141 fail to call hipModuleLaunchKernel",
       "author": "jinz2014",
@@ -648,26 +768,6 @@
       "created_at": "2025-11-04T21:52:07Z",
       "updated_at": "2026-01-06T08:12:22Z",
       "html_url": "https://github.com/ROCm/aiter/issues/1332",
-      "labels": []
-    },
-    {
-      "number": 1766,
-      "title": "[Feature]: Per tensor act + Per channel weight int8 gemm",
-      "author": "ZhiweiYan-96",
-      "state": "open",
-      "created_at": "2026-01-05T02:15:38Z",
-      "updated_at": "2026-01-05T05:38:22Z",
-      "html_url": "https://github.com/ROCm/aiter/issues/1766",
-      "labels": []
-    },
-    {
-      "number": 1765,
-      "title": "[Issue]: Does gemm_a8w8 support per-tensor quant?",
-      "author": "byjiang1996",
-      "state": "open",
-      "created_at": "2026-01-03T19:05:28Z",
-      "updated_at": "2026-01-03T19:05:28Z",
-      "html_url": "https://github.com/ROCm/aiter/issues/1765",
       "labels": []
     },
     {
@@ -691,16 +791,6 @@
       "labels": []
     },
     {
-      "number": 1689,
-      "title": "fp4 gemm aiter.gemm_a4w4 API to handle missing heuristics",
-      "author": "hongxiayang",
-      "state": "open",
-      "created_at": "2025-12-19T01:12:14Z",
-      "updated_at": "2025-12-19T06:04:27Z",
-      "html_url": "https://github.com/ROCm/aiter/issues/1689",
-      "labels": []
-    },
-    {
       "number": 1223,
       "title": "how to benchmark the triton kernels",
       "author": "simran-arora",
@@ -708,46 +798,6 @@
       "created_at": "2025-10-19T21:49:35Z",
       "updated_at": "2025-12-18T15:56:19Z",
       "html_url": "https://github.com/ROCm/aiter/issues/1223",
-      "labels": []
-    },
-    {
-      "number": 1641,
-      "title": "[Feature]: Support pre-build multi arches for ck_gemm_moe_2stages_codegen",
-      "author": "yuguo68",
-      "state": "open",
-      "created_at": "2025-12-13T00:10:07Z",
-      "updated_at": "2025-12-13T00:10:07Z",
-      "html_url": "https://github.com/ROCm/aiter/issues/1641",
-      "labels": []
-    },
-    {
-      "number": 1385,
-      "title": "-mllvm -amdgpu-coerce-illegal-types=1 is not supported by hipcc",
-      "author": "jinz2014",
-      "state": "open",
-      "created_at": "2025-11-11T15:30:49Z",
-      "updated_at": "2025-12-09T12:28:56Z",
-      "html_url": "https://github.com/ROCm/aiter/issues/1385",
-      "labels": []
-    },
-    {
-      "number": 1549,
-      "title": "[Issue]: Deploy GLM-4.6 on MI300X failed. Error msg \"aiter : wrapper_mha_batch_prefill() Expected a value of type 'int'  for argument 'max_seqlen_k\u2018 but instead found type 'NoneType'",
-      "author": "naiveshen",
-      "state": "open",
-      "created_at": "2025-12-03T09:57:46Z",
-      "updated_at": "2025-12-03T09:57:46Z",
-      "html_url": "https://github.com/ROCm/aiter/issues/1549",
-      "labels": []
-    },
-    {
-      "number": 1533,
-      "title": "[Feature]: Add NN layout for gradlib",
-      "author": "DoubleRedX",
-      "state": "open",
-      "created_at": "2025-12-02T09:18:19Z",
-      "updated_at": "2025-12-02T09:18:19Z",
-      "html_url": "https://github.com/ROCm/aiter/issues/1533",
       "labels": []
     },
     {
@@ -781,16 +831,6 @@
       "labels": []
     },
     {
-      "number": 1436,
-      "title": "[Feature]: AITER path should allow for experimentation",
-      "author": "dimon777",
-      "state": "open",
-      "created_at": "2025-11-19T00:29:20Z",
-      "updated_at": "2025-11-21T07:37:41Z",
-      "html_url": "https://github.com/ROCm/aiter/issues/1436",
-      "labels": []
-    },
-    {
       "number": 1391,
       "title": "[Issue]: Dead code in FmoeTuner.get_1stage_fmoe_func: unreachable `elif` branch and incorrect logical operator.",
       "author": "antsaukk",
@@ -810,26 +850,6 @@
       "created_at": "2025-04-28T13:59:00Z",
       "updated_at": "2025-11-19T08:49:14Z",
       "html_url": "https://github.com/ROCm/aiter/issues/351",
-      "labels": []
-    },
-    {
-      "number": 1395,
-      "title": "[Issue]: AttributeError: module 'torch._C' has no attribute '_PYBIND11_COMPILER_TYPE'",
-      "author": "fxmarty-amd",
-      "state": "open",
-      "created_at": "2025-11-12T15:36:27Z",
-      "updated_at": "2025-11-17T19:03:05Z",
-      "html_url": "https://github.com/ROCm/aiter/issues/1395",
-      "labels": []
-    },
-    {
-      "number": 1248,
-      "title": "[Feature]: Add more configuration options for MoE assembly kernels",
-      "author": "sumin-hong",
-      "state": "open",
-      "created_at": "2025-10-23T09:36:44Z",
-      "updated_at": "2025-11-04T05:06:40Z",
-      "html_url": "https://github.com/ROCm/aiter/issues/1248",
       "labels": []
     },
     {
