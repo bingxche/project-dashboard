@@ -37506,21 +37506,6 @@
         },
         {
           "model": "GPT-OSS-120B",
-          "op": "mha_decode",
-          "batch": 1,
-          "hq": 64,
-          "hk": 8,
-          "seq_q": 1,
-          "seq_k": 32768,
-          "head_dim": 64,
-          "tp": 1,
-          "amd_tflops": 0.57,
-          "nv_tflops": 4.09,
-          "amd_ms": 0.9436,
-          "nv_ms": 0.1311
-        },
-        {
-          "model": "GPT-OSS-120B",
           "op": "mha_prefill",
           "batch": 4,
           "hq": 64,
@@ -38571,21 +38556,6 @@
         },
         {
           "model": "Gemma2-27B",
-          "op": "mha_decode",
-          "batch": 1,
-          "hq": 32,
-          "hk": 16,
-          "seq_q": 1,
-          "seq_k": 8192,
-          "head_dim": 128,
-          "tp": 1,
-          "amd_tflops": 0.46,
-          "nv_tflops": 3.23,
-          "amd_ms": 0.2948,
-          "nv_ms": 0.0415
-        },
-        {
-          "model": "Gemma2-27B",
           "op": "mha_prefill",
           "batch": 4,
           "hq": 32,
@@ -39051,21 +39021,6 @@
         },
         {
           "model": "Gemma2-9B",
-          "op": "mha_decode",
-          "batch": 1,
-          "hq": 16,
-          "hk": 8,
-          "seq_q": 1,
-          "seq_k": 4096,
-          "head_dim": 256,
-          "tp": 1,
-          "amd_tflops": 0.32,
-          "nv_tflops": 2.19,
-          "amd_ms": 0.2124,
-          "nv_ms": 0.0306
-        },
-        {
-          "model": "Gemma2-9B",
           "op": "mha_prefill",
           "batch": 4,
           "hq": 16,
@@ -39528,36 +39483,6 @@
           "nv_tflops": 1.14,
           "amd_ms": 0.0959,
           "nv_ms": 0.0258
-        },
-        {
-          "model": "Kimi-K2.5",
-          "op": "mha_decode",
-          "batch": 1,
-          "hq": 64,
-          "hk": 64,
-          "seq_q": 1,
-          "seq_k": 4096,
-          "head_dim": 112,
-          "tp": 1,
-          "amd_tflops": 0.33,
-          "nv_tflops": 2.46,
-          "amd_ms": 0.3516,
-          "nv_ms": 0.0478
-        },
-        {
-          "model": "Kimi-K2.5",
-          "op": "mha_decode",
-          "batch": 1,
-          "hq": 64,
-          "hk": 64,
-          "seq_q": 1,
-          "seq_k": 8192,
-          "head_dim": 112,
-          "tp": 1,
-          "amd_tflops": 0.34,
-          "nv_tflops": 2.92,
-          "amd_ms": 0.6908,
-          "nv_ms": 0.0805
         },
         {
           "model": "Kimi-K2.5",
@@ -40071,21 +39996,6 @@
         },
         {
           "model": "Llama3-8B",
-          "op": "mha_decode",
-          "batch": 1,
-          "hq": 32,
-          "hk": 8,
-          "seq_q": 1,
-          "seq_k": 8192,
-          "head_dim": 128,
-          "tp": 1,
-          "amd_tflops": 0.46,
-          "nv_tflops": 3.23,
-          "amd_ms": 0.2948,
-          "nv_ms": 0.0415
-        },
-        {
-          "model": "Llama3-8B",
           "op": "mha_prefill",
           "batch": 4,
           "hq": 32,
@@ -40566,21 +40476,6 @@
         },
         {
           "model": "Mistral-7B",
-          "op": "mha_decode",
-          "batch": 1,
-          "hq": 32,
-          "hk": 8,
-          "seq_q": 1,
-          "seq_k": 8192,
-          "head_dim": 128,
-          "tp": 1,
-          "amd_tflops": 0.45,
-          "nv_tflops": 3.24,
-          "amd_ms": 0.2959,
-          "nv_ms": 0.0414
-        },
-        {
-          "model": "Mistral-7B",
           "op": "mha_prefill",
           "batch": 4,
           "hq": 32,
@@ -41058,21 +40953,6 @@
           "nv_tflops": 2.28,
           "amd_ms": 0.1511,
           "nv_ms": 0.0295
-        },
-        {
-          "model": "Mixtral-8x7B",
-          "op": "mha_decode",
-          "batch": 1,
-          "hq": 32,
-          "hk": 8,
-          "seq_q": 1,
-          "seq_k": 8192,
-          "head_dim": 128,
-          "tp": 1,
-          "amd_tflops": 0.45,
-          "nv_tflops": 3.23,
-          "amd_ms": 0.2958,
-          "nv_ms": 0.0416
         },
         {
           "model": "Mixtral-8x7B",
@@ -41967,22 +41847,6 @@
           "head_dim": 128,
           "batch": 1,
           "seq_q": 1,
-          "seq_k": 1024,
-          "tp": 1,
-          "label": "GQA decode (SOL-ExecBench)",
-          "amd_tflops": 18.48,
-          "nv_tflops": 1.31,
-          "amd_ms": 0.029,
-          "nv_ms": 0.0128
-        },
-        {
-          "model": "Llama3-8B",
-          "mode": "decode",
-          "hq": 32,
-          "hk": 8,
-          "head_dim": 128,
-          "batch": 1,
-          "seq_q": 1,
           "seq_k": 4096,
           "tp": 1,
           "label": "GQA decode (SOL-ExecBench)",
@@ -42063,22 +41927,6 @@
           "head_dim": 128,
           "batch": 16,
           "seq_q": 1,
-          "seq_k": 1024,
-          "tp": 1,
-          "label": "GQA decode (SOL-ExecBench)",
-          "amd_tflops": 22.85,
-          "nv_tflops": 2.48,
-          "amd_ms": 0.376,
-          "nv_ms": 0.1082
-        },
-        {
-          "model": "Llama3-8B",
-          "mode": "decode",
-          "hq": 32,
-          "hk": 8,
-          "head_dim": 128,
-          "batch": 16,
-          "seq_q": 1,
           "seq_k": 4096,
           "tp": 1,
           "label": "GQA decode (SOL-ExecBench)",
@@ -42111,22 +41959,6 @@
           "head_dim": 128,
           "batch": 64,
           "seq_q": 1,
-          "seq_k": 1024,
-          "tp": 1,
-          "label": "GQA decode (SOL-ExecBench)",
-          "amd_tflops": 21.58,
-          "nv_tflops": 2.97,
-          "amd_ms": 1.5922,
-          "nv_ms": 0.362
-        },
-        {
-          "model": "Llama3-8B",
-          "mode": "decode",
-          "hq": 32,
-          "hk": 8,
-          "head_dim": 128,
-          "batch": 64,
-          "seq_q": 1,
           "seq_k": 4096,
           "tp": 1,
           "label": "GQA decode (SOL-ExecBench)",
@@ -42150,22 +41982,6 @@
           "nv_tflops": 15.14,
           "amd_ms": 0.3732,
           "nv_ms": 0.5675
-        },
-        {
-          "model": "Qwen3-30B-A3B",
-          "mode": "decode",
-          "hq": 32,
-          "hk": 4,
-          "head_dim": 128,
-          "batch": 1,
-          "seq_q": 1,
-          "seq_k": 1024,
-          "tp": 1,
-          "label": "GQA decode (SOL-ExecBench)",
-          "amd_tflops": 22.38,
-          "nv_tflops": 1.31,
-          "amd_ms": 0.024,
-          "nv_ms": 0.0128
         },
         {
           "model": "Qwen3-30B-A3B",
@@ -42255,22 +42071,6 @@
           "head_dim": 128,
           "batch": 16,
           "seq_q": 1,
-          "seq_k": 1024,
-          "tp": 1,
-          "label": "GQA decode (SOL-ExecBench)",
-          "amd_tflops": 38.96,
-          "nv_tflops": 2.48,
-          "amd_ms": 0.2205,
-          "nv_ms": 0.1081
-        },
-        {
-          "model": "Qwen3-30B-A3B",
-          "mode": "decode",
-          "hq": 32,
-          "hk": 4,
-          "head_dim": 128,
-          "batch": 16,
-          "seq_q": 1,
           "seq_k": 4096,
           "tp": 1,
           "label": "GQA decode (SOL-ExecBench)",
@@ -42294,22 +42094,6 @@
           "nv_tflops": 16.27,
           "amd_ms": 0.0465,
           "nv_ms": 0.132
-        },
-        {
-          "model": "Qwen3-30B-A3B",
-          "mode": "decode",
-          "hq": 32,
-          "hk": 4,
-          "head_dim": 128,
-          "batch": 64,
-          "seq_q": 1,
-          "seq_k": 1024,
-          "tp": 1,
-          "label": "GQA decode (SOL-ExecBench)",
-          "amd_tflops": 38.72,
-          "nv_tflops": 2.97,
-          "amd_ms": 0.8873,
-          "nv_ms": 0.362
         },
         {
           "model": "Qwen3-30B-A3B",
@@ -53869,17 +53653,6 @@
         {
           "model": "All Models",
           "op": "all_gather",
-          "label": "64KB",
-          "M": 65536,
-          "tp": 8,
-          "amd_bw": 0.4,
-          "nv_bw": 3.2,
-          "amd_ms": 0.1343,
-          "nv_ms": 0.0179
-        },
-        {
-          "model": "All Models",
-          "op": "all_gather",
           "label": "72KB",
           "M": 73728,
           "tp": 8,
@@ -53887,17 +53660,6 @@
           "nv_bw": 2.8,
           "amd_ms": 0.0478,
           "nv_ms": 0.0229
-        },
-        {
-          "model": "All Models",
-          "op": "all_gather",
-          "label": "80KB",
-          "M": 81920,
-          "tp": 8,
-          "amd_bw": 0.4,
-          "nv_bw": 3.7,
-          "amd_ms": 0.1796,
-          "nv_ms": 0.0191
         },
         {
           "model": "All Models",
@@ -53946,17 +53708,6 @@
         {
           "model": "All Models",
           "op": "all_gather",
-          "label": "256KB",
-          "M": 262144,
-          "tp": 8,
-          "amd_bw": 1.0,
-          "nv_bw": 12.4,
-          "amd_ms": 0.2243,
-          "nv_ms": 0.0186
-        },
-        {
-          "model": "All Models",
-          "op": "all_gather",
           "label": "360KB",
           "M": 368640,
           "tp": 8,
@@ -53964,17 +53715,6 @@
           "nv_bw": 16.0,
           "amd_ms": 0.0506,
           "nv_ms": 0.0202
-        },
-        {
-          "model": "All Models",
-          "op": "all_gather",
-          "label": "384KB",
-          "M": 393216,
-          "tp": 8,
-          "amd_bw": 2.3,
-          "nv_bw": 18.0,
-          "amd_ms": 0.1498,
-          "nv_ms": 0.0191
         },
         {
           "model": "All Models",
@@ -54107,17 +53847,6 @@
           "nv_bw": 88.1,
           "amd_ms": 0.0486,
           "nv_ms": 0.0234
-        },
-        {
-          "model": "All Models",
-          "op": "all_gather",
-          "label": "2.5MB",
-          "M": 2621440,
-          "tp": 8,
-          "amd_bw": 11.1,
-          "nv_bw": 97.0,
-          "amd_ms": 0.2063,
-          "nv_ms": 0.0236
         },
         {
           "model": "All Models",
@@ -55387,17 +55116,6 @@
         {
           "model": "All Models",
           "op": "reduce_scatter",
-          "label": "96KB",
-          "M": 98304,
-          "tp": 8,
-          "amd_bw": 0.5,
-          "nv_bw": 4.8,
-          "amd_ms": 0.1664,
-          "nv_ms": 0.0179
-        },
-        {
-          "model": "All Models",
-          "op": "reduce_scatter",
           "label": "112KB",
           "M": 114688,
           "tp": 8,
@@ -55416,17 +55134,6 @@
           "nv_bw": 6.4,
           "amd_ms": 0.0268,
           "nv_ms": 0.0178
-        },
-        {
-          "model": "All Models",
-          "op": "reduce_scatter",
-          "label": "192KB",
-          "M": 196608,
-          "tp": 8,
-          "amd_bw": 0.9,
-          "nv_bw": 9.4,
-          "amd_ms": 0.1834,
-          "nv_ms": 0.0184
         },
         {
           "model": "All Models",
@@ -55596,17 +55303,6 @@
         {
           "model": "All Models",
           "op": "reduce_scatter",
-          "label": "2.5MB",
-          "M": 2621440,
-          "tp": 8,
-          "amd_bw": 7.8,
-          "nv_bw": 100.6,
-          "amd_ms": 0.2945,
-          "nv_ms": 0.0228
-        },
-        {
-          "model": "All Models",
-          "op": "reduce_scatter",
           "label": "3.0MB",
           "M": 3145728,
           "tp": 8,
@@ -55614,17 +55310,6 @@
           "nv_bw": 116.8,
           "amd_ms": 0.035,
           "nv_ms": 0.0236
-        },
-        {
-          "model": "All Models",
-          "op": "reduce_scatter",
-          "label": "3.5MB",
-          "M": 3670016,
-          "tp": 8,
-          "amd_bw": 11.8,
-          "nv_bw": 122.4,
-          "amd_ms": 0.2729,
-          "nv_ms": 0.0262
         },
         {
           "model": "All Models",
@@ -56581,11 +56266,11 @@
     }
   ],
   "summary": {
-    "total_configs": 4321,
+    "total_configs": 4298,
     "operators": 8,
     "comparable": 3392,
-    "geomean": 0.9123,
-    "geomean_inference": 1.2319,
+    "geomean": 0.8969,
+    "geomean_inference": 1.1997,
     "per_model": [
       {
         "model": "Qwen3-Coder-480B",
@@ -56668,8 +56353,8 @@
       {
         "model": "Mixtral-8x7B",
         "type": "MoE",
-        "geomean": 1.3201,
-        "geomean_equal": 0.8951
+        "geomean": 1.339,
+        "geomean_equal": 0.9022
       },
       {
         "model": "Qwen3.5-35B-A3B",
@@ -56680,8 +56365,8 @@
       {
         "model": "GPT-OSS-120B",
         "type": "MoE",
-        "geomean": 1.2905,
-        "geomean_equal": 0.8377
+        "geomean": 1.3076,
+        "geomean_equal": 0.8474
       },
       {
         "model": "Qwen3.5-122B-A10B",
@@ -56698,8 +56383,8 @@
       {
         "model": "Kimi-K2.5",
         "type": "MoE",
-        "geomean": 1.1507,
-        "geomean_equal": 0.7484
+        "geomean": 1.1728,
+        "geomean_equal": 0.7598
       },
       {
         "model": "Command-R-Plus",
@@ -56726,34 +56411,40 @@
         "geomean_equal": 0.8596
       },
       {
+        "model": "Gemma2-27B",
+        "type": "Dense",
+        "geomean": 0.8886,
+        "geomean_equal": 0.8403
+      },
+      {
         "model": "Qwen3.5-27B",
         "type": "Dense",
         "geomean": 0.8799,
         "geomean_equal": 0.8594
       },
       {
-        "model": "Gemma2-27B",
+        "model": "Mistral-7B",
         "type": "Dense",
-        "geomean": 0.8734,
-        "geomean_equal": 0.8337
+        "geomean": 0.8497,
+        "geomean_equal": 0.792
       },
       {
         "model": "Llama3-8B",
         "type": "Dense",
-        "geomean": 0.868,
-        "geomean_equal": 0.8304
-      },
-      {
-        "model": "Mistral-7B",
-        "type": "Dense",
-        "geomean": 0.835,
-        "geomean_equal": 0.7858
+        "geomean": 0.8379,
+        "geomean_equal": 0.8116
       },
       {
         "model": "Gemma2-9B",
         "type": "Dense",
-        "geomean": 0.8091,
-        "geomean_equal": 0.7847
+        "geomean": 0.8221,
+        "geomean_equal": 0.7907
+      },
+      {
+        "model": "All Models",
+        "type": "Dense",
+        "geomean": 0.5375,
+        "geomean_equal": 0.5375
       }
     ],
     "num_models": 15,
