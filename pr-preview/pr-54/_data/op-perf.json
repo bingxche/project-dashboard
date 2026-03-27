@@ -16431,47 +16431,6 @@
           "model": "Gemma2-9B",
           "op": "gemm_bf16",
           "label": "gate_up_proj",
-          "M": 256,
-          "N": 57344,
-          "K": 3584,
-          "tp": 1,
-          "amd_tflops": 955.1,
-          "nv_tflops": 1123.77,
-          "amd_ms": 0.1134,
-          "nv_ms": 0.0936,
-          "amd_tflops_hipblaslt": 928.31,
-          "amd_backend": "asm"
-        },
-        {
-          "model": "Gemma2-9B",
-          "op": "gemm_fp8",
-          "label": "gate_up_proj",
-          "M": 256,
-          "N": 57344,
-          "K": 3584,
-          "tp": 1,
-          "amd_tflops": 1981.35,
-          "nv_tflops": 1959.35,
-          "amd_ms": 0.0531,
-          "nv_ms": 0.0537
-        },
-        {
-          "model": "Gemma2-9B",
-          "op": "gemm_fp8_blockscale",
-          "label": "gate_up_proj",
-          "M": 256,
-          "N": 57344,
-          "K": 3584,
-          "tp": 1,
-          "amd_tflops": 2138.58,
-          "nv_tflops": 1945.54,
-          "amd_ms": 0.0492,
-          "nv_ms": 0.0541
-        },
-        {
-          "model": "Gemma2-9B",
-          "op": "gemm_bf16",
-          "label": "gate_up_proj",
           "M": 1024,
           "N": 57344,
           "K": 3584,
@@ -16721,32 +16680,6 @@
         },
         {
           "model": "Gemma2-9B",
-          "op": "gemm_fp8",
-          "label": "gate_up_proj",
-          "M": 256,
-          "N": 7168,
-          "K": 3584,
-          "tp": 8,
-          "amd_tflops": 632.75,
-          "nv_tflops": 958.77,
-          "amd_ms": 0.0208,
-          "nv_ms": 0.0137
-        },
-        {
-          "model": "Gemma2-9B",
-          "op": "gemm_fp8_blockscale",
-          "label": "gate_up_proj",
-          "M": 256,
-          "N": 7168,
-          "K": 3584,
-          "tp": 8,
-          "amd_tflops": 598.91,
-          "nv_tflops": 950.04,
-          "amd_ms": 0.022,
-          "nv_ms": 0.0138
-        },
-        {
-          "model": "Gemma2-9B",
           "op": "gemm_bf16",
           "label": "gate_up_proj",
           "M": 1024,
@@ -16986,47 +16919,6 @@
           "nv_tflops": 485.96,
           "amd_ms": 0.031,
           "nv_ms": 0.0271
-        },
-        {
-          "model": "Gemma2-9B",
-          "op": "gemm_bf16",
-          "label": "down_proj",
-          "M": 256,
-          "N": 3584,
-          "K": 28672,
-          "tp": 1,
-          "amd_tflops": 636.61,
-          "nv_tflops": 980.37,
-          "amd_ms": 0.0788,
-          "nv_ms": 0.0537,
-          "amd_tflops_hipblaslt": 667.26,
-          "amd_backend": "hipblaslt"
-        },
-        {
-          "model": "Gemma2-9B",
-          "op": "gemm_fp8",
-          "label": "down_proj",
-          "M": 256,
-          "N": 3584,
-          "K": 28672,
-          "tp": 1,
-          "amd_tflops": 1141.39,
-          "nv_tflops": 1688.08,
-          "amd_ms": 0.0461,
-          "nv_ms": 0.0312
-        },
-        {
-          "model": "Gemma2-9B",
-          "op": "gemm_fp8_blockscale",
-          "label": "down_proj",
-          "M": 256,
-          "N": 3584,
-          "K": 28672,
-          "tp": 1,
-          "amd_tflops": 1149.4,
-          "nv_tflops": 1688.41,
-          "amd_ms": 0.0458,
-          "nv_ms": 0.0312
         },
         {
           "model": "Gemma2-9B",
@@ -17559,47 +17451,6 @@
           "amd_tflops": 135.23,
           "nv_tflops": 198.39,
           "amd_ms": 0.0208,
-          "nv_ms": 0.0142
-        },
-        {
-          "model": "Gemma2-9B",
-          "op": "gemm_bf16",
-          "label": "qkv_proj",
-          "M": 256,
-          "N": 6144,
-          "K": 3584,
-          "tp": 1,
-          "amd_tflops": 57.8,
-          "nv_tflops": 703.39,
-          "amd_ms": 0.0324,
-          "nv_ms": 0.016,
-          "amd_tflops_hipblaslt": 347.67,
-          "amd_backend": "hipblaslt"
-        },
-        {
-          "model": "Gemma2-9B",
-          "op": "gemm_fp8",
-          "label": "qkv_proj",
-          "M": 256,
-          "N": 6144,
-          "K": 3584,
-          "tp": 1,
-          "amd_tflops": 543.89,
-          "nv_tflops": 795.45,
-          "amd_ms": 0.0207,
-          "nv_ms": 0.0142
-        },
-        {
-          "model": "Gemma2-9B",
-          "op": "gemm_fp8_blockscale",
-          "label": "qkv_proj",
-          "M": 256,
-          "N": 6144,
-          "K": 3584,
-          "tp": 1,
-          "amd_tflops": 533.66,
-          "nv_tflops": 792.68,
-          "amd_ms": 0.0211,
           "nv_ms": 0.0142
         },
         {
@@ -53384,17 +53235,6 @@
         {
           "model": "",
           "op": "all_gather",
-          "label": "2.0MB",
-          "M": 2097152,
-          "tp": 8,
-          "amd_bw": 13.3,
-          "nv_bw": 84.7,
-          "amd_ms": 0.1376,
-          "nv_ms": 0.0217
-        },
-        {
-          "model": "",
-          "op": "all_gather",
           "label": "2.2MB",
           "M": 2359296,
           "tp": 8,
@@ -53967,17 +53807,6 @@
         {
           "model": "",
           "op": "allreduce",
-          "label": "360KB",
-          "M": 368640,
-          "tp": 8,
-          "amd_bw": 4.2,
-          "nv_bw": 21.8,
-          "amd_ms": 0.1544,
-          "nv_ms": 0.0297
-        },
-        {
-          "model": "",
-          "op": "allreduce",
           "label": "384KB",
           "M": 393216,
           "tp": 8,
@@ -54007,17 +53836,6 @@
           "nv_bw": 31.9,
           "amd_ms": 0.1043,
           "nv_ms": 0.0288
-        },
-        {
-          "model": "",
-          "op": "allreduce",
-          "label": "576KB",
-          "M": 589824,
-          "tp": 8,
-          "amd_bw": 5.9,
-          "nv_bw": 35.7,
-          "amd_ms": 0.1748,
-          "nv_ms": 0.0289
         },
         {
           "model": "",
@@ -54770,17 +54588,6 @@
         {
           "model": "",
           "op": "reduce_scatter",
-          "label": "768KB",
-          "M": 786432,
-          "tp": 8,
-          "amd_bw": 25.3,
-          "nv_bw": 3.7,
-          "amd_ms": 0.0272,
-          "nv_ms": 0.1855
-        },
-        {
-          "model": "",
-          "op": "reduce_scatter",
           "label": "896KB",
           "M": 917504,
           "tp": 8,
@@ -54799,17 +54606,6 @@
           "nv_bw": 49.1,
           "amd_ms": 0.0286,
           "nv_ms": 0.0187
-        },
-        {
-          "model": "",
-          "op": "reduce_scatter",
-          "label": "1.4MB",
-          "M": 1474560,
-          "tp": 8,
-          "amd_bw": 45.4,
-          "nv_bw": 6.6,
-          "amd_ms": 0.0284,
-          "nv_ms": 0.1943
         },
         {
           "model": "",
@@ -59485,17 +59281,47 @@
     }
   ],
   "summary": {
-    "total_configs": 4527,
+    "total_configs": 4511,
     "operators": 13,
     "comparable": 3392,
-    "geomean": 0.9397,
-    "geomean_inference": 1.2658,
+    "geomean": 1.0391,
+    "geomean_inference": 1.3362,
     "per_model": [
+      {
+        "model": "Wan2.1-14B",
+        "type": "Dense",
+        "geomean": 2.3547,
+        "geomean_equal": 1.8441
+      },
+      {
+        "model": "HunyuanVideo",
+        "type": "Dense",
+        "geomean": 2.3208,
+        "geomean_equal": 1.9104
+      },
       {
         "model": "Qwen3-Coder-480B",
         "type": "MoE",
         "geomean": 1.8999,
         "geomean_equal": 1.2258
+      },
+      {
+        "model": "Sana-1.6B",
+        "type": "Dense",
+        "geomean": 1.8714,
+        "geomean_equal": 1.7762
+      },
+      {
+        "model": "FLUX.1-dev",
+        "type": "Dense",
+        "geomean": 1.8198,
+        "geomean_equal": 1.5906
+      },
+      {
+        "model": "CogVideoX-5B",
+        "type": "Dense",
+        "geomean": 1.7881,
+        "geomean_equal": 1.7707
       },
       {
         "model": "DeepSeek-R1",
@@ -59526,6 +59352,12 @@
         "type": "MoE",
         "geomean": 1.6351,
         "geomean_equal": 0.8675
+      },
+      {
+        "model": "SD3.5-Large",
+        "type": "Dense",
+        "geomean": 1.5735,
+        "geomean_equal": 1.5491
       },
       {
         "model": "MiniMax-M2.5",
@@ -59594,16 +59426,34 @@
         "geomean_equal": 0.9562
       },
       {
+        "model": "PixArt-Sigma",
+        "type": "Dense",
+        "geomean": 1.2557,
+        "geomean_equal": 0.9581
+      },
+      {
         "model": "LFM-2-24B-A2B",
         "type": "MoE",
         "geomean": 1.2053,
         "geomean_equal": 0.9295
       },
       {
+        "model": "Whisper-large-v3",
+        "type": "Dense",
+        "geomean": 1.1906,
+        "geomean_equal": 1.1906
+      },
+      {
         "model": "Kimi-K2.5",
         "type": "MoE",
         "geomean": 1.1697,
         "geomean_equal": 0.7948
+      },
+      {
+        "model": "Qwen3-30B-A3B",
+        "type": "MoE",
+        "geomean": 1.0898,
+        "geomean_equal": 0.7708
       },
       {
         "model": "Command-R-Plus",
@@ -59616,6 +59466,12 @@
         "type": "Dense",
         "geomean": 0.9853,
         "geomean_equal": 0.9304
+      },
+      {
+        "model": "SDXL",
+        "type": "Dense",
+        "geomean": 0.9614,
+        "geomean_equal": 1.0042
       },
       {
         "model": "Llama3-70B",
@@ -59656,8 +59512,8 @@
       {
         "model": "Gemma2-9B",
         "type": "Dense",
-        "geomean": 0.8618,
-        "geomean_equal": 0.812
+        "geomean": 0.8688,
+        "geomean_equal": 0.8245
       }
     ],
     "num_models": 15,
