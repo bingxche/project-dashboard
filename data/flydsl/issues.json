@@ -1,14 +1,66 @@
 {
-  "collected_at": "2026-03-27T08:17:22Z",
+  "collected_at": "2026-03-28T08:12:46Z",
   "issues": [
     {
-      "number": 287,
-      "title": "[Feature]: Do we have general support for llvm.inline_asm",
-      "author": "gangliao",
+      "number": 304,
+      "title": "[Feature]: Move benchmark/perf test from test folder to FlyDSL python source",
+      "author": "rahulbatra85",
       "state": "open",
-      "created_at": "2026-03-25T17:31:19Z",
-      "updated_at": "2026-03-25T17:31:19Z",
-      "html_url": "https://github.com/ROCm/FlyDSL/issues/287",
+      "created_at": "2026-03-27T23:17:10Z",
+      "updated_at": "2026-03-27T23:19:02Z",
+      "html_url": "https://github.com/ROCm/FlyDSL/issues/304",
+      "labels": []
+    },
+    {
+      "number": 303,
+      "title": "[Feature]: Add support for missing MLIR math dialect ops",
+      "author": "rahulbatra85",
+      "state": "open",
+      "created_at": "2026-03-27T22:21:21Z",
+      "updated_at": "2026-03-27T22:21:29Z",
+      "html_url": "https://github.com/ROCm/FlyDSL/issues/303",
+      "labels": []
+    },
+    {
+      "number": 302,
+      "title": "[Issue]: Code bug in tiledCopy.py in examples folder",
+      "author": "rahulbatra85",
+      "state": "open",
+      "created_at": "2026-03-27T22:18:52Z",
+      "updated_at": "2026-03-27T22:19:22Z",
+      "html_url": "https://github.com/ROCm/FlyDSL/issues/302",
+      "labels": []
+    },
+    {
+      "number": 301,
+      "title": "[Issue]: fx.memref_load fails compilation when used with 2D indices.",
+      "author": "rahulbatra85",
+      "state": "open",
+      "created_at": "2026-03-27T22:14:18Z",
+      "updated_at": "2026-03-27T22:16:04Z",
+      "html_url": "https://github.com/ROCm/FlyDSL/issues/301",
+      "labels": []
+    },
+    {
+      "number": 206,
+      "title": "[Issue]: Dynamic if branch issue in flyc.kernel",
+      "author": "ruanjm",
+      "state": "open",
+      "created_at": "2026-03-13T06:34:11Z",
+      "updated_at": "2026-03-27T09:41:07Z",
+      "html_url": "https://github.com/ROCm/FlyDSL/issues/206",
+      "labels": [
+        "bug"
+      ]
+    },
+    {
+      "number": 104,
+      "title": "[Issue]: symbols may conflict, need to hide llvm and mlir related to co work with other mlir lib",
+      "author": "coderfeli",
+      "state": "open",
+      "created_at": "2026-02-08T14:26:18Z",
+      "updated_at": "2026-03-27T09:40:42Z",
+      "html_url": "https://github.com/ROCm/FlyDSL/issues/104",
       "labels": []
     },
     {
@@ -114,26 +166,6 @@
       ]
     },
     {
-      "number": 213,
-      "title": "[Issue]: LLVM/MLIR build step isn't working",
-      "author": "brunomazzottiamd",
-      "state": "open",
-      "created_at": "2026-03-13T15:33:41Z",
-      "updated_at": "2026-03-16T21:26:59Z",
-      "html_url": "https://github.com/ROCm/FlyDSL/issues/213",
-      "labels": []
-    },
-    {
-      "number": 188,
-      "title": "[Documentation]: What can be used inside jitted function vs outside?",
-      "author": "rahulbatra85",
-      "state": "open",
-      "created_at": "2026-03-10T17:53:10Z",
-      "updated_at": "2026-03-16T12:54:51Z",
-      "html_url": "https://github.com/ROCm/FlyDSL/issues/188",
-      "labels": []
-    },
-    {
       "number": 211,
       "title": "[Issue]: While loop counter update issue",
       "author": "ruanjm",
@@ -141,18 +173,6 @@
       "created_at": "2026-03-13T10:51:05Z",
       "updated_at": "2026-03-16T04:09:10Z",
       "html_url": "https://github.com/ROCm/FlyDSL/issues/211",
-      "labels": [
-        "bug"
-      ]
-    },
-    {
-      "number": 206,
-      "title": "[Issue]: Dynamic if branch issue in flyc.kernel",
-      "author": "ruanjm",
-      "state": "open",
-      "created_at": "2026-03-13T06:34:11Z",
-      "updated_at": "2026-03-16T00:46:02Z",
-      "html_url": "https://github.com/ROCm/FlyDSL/issues/206",
       "labels": [
         "bug"
       ]
@@ -180,36 +200,6 @@
       "labels": [
         "bug"
       ]
-    },
-    {
-      "number": 187,
-      "title": "[Issue]: Rocprofv3 kernel trace bug",
-      "author": "fsx950223",
-      "state": "open",
-      "created_at": "2026-03-10T09:31:37Z",
-      "updated_at": "2026-03-13T09:55:04Z",
-      "html_url": "https://github.com/ROCm/FlyDSL/issues/187",
-      "labels": []
-    },
-    {
-      "number": 104,
-      "title": "[Issue]: symbols may conflict, need to hide llvm and mlir related to co work with other mlir lib",
-      "author": "coderfeli",
-      "state": "open",
-      "created_at": "2026-02-08T14:26:18Z",
-      "updated_at": "2026-02-08T14:26:18Z",
-      "html_url": "https://github.com/ROCm/FlyDSL/issues/104",
-      "labels": []
-    },
-    {
-      "number": 81,
-      "title": "MFMA codes need reconstruct",
-      "author": "coderfeli",
-      "state": "open",
-      "created_at": "2026-02-02T08:50:51Z",
-      "updated_at": "2026-02-02T08:50:51Z",
-      "html_url": "https://github.com/ROCm/FlyDSL/issues/81",
-      "labels": []
     }
   ]
 }

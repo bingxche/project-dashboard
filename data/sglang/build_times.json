@@ -1,136 +1,142 @@
 {
-  "collected_at": "2026-03-27T08:19:08Z",
+  "collected_at": "2026-03-28T08:14:33Z",
   "workflows": {
     "Lint": {
       "workflow_id": 107896261,
       "latest_run": {
-        "id": 23637267705,
+        "id": 23680981933,
         "conclusion": "failure",
         "duration_minutes": 2.9,
-        "started_at": "2026-03-27T08:13:53Z",
-        "html_url": "https://github.com/sgl-project/sglang/actions/runs/23637267705"
+        "started_at": "2026-03-28T08:07:58Z",
+        "html_url": "https://github.com/sgl-project/sglang/actions/runs/23680981933"
       },
       "stats": {
-        "sample_size": 16,
-        "median_minutes": 3.1,
-        "p90_minutes": 3.2,
-        "min_minutes": 2.8,
-        "max_minutes": 3.2
+        "sample_size": 9,
+        "median_minutes": 3.0,
+        "p90_minutes": 3.4,
+        "min_minutes": 2.9,
+        "max_minutes": 3.4
       },
       "recent_runs": [
         {
-          "id": 23637267705,
+          "id": 23680981933,
           "conclusion": "failure",
           "duration_minutes": 2.9,
-          "date": "2026-03-27"
+          "date": "2026-03-28"
         },
         {
-          "id": 23637171035,
-          "conclusion": "success",
-          "duration_minutes": 3.2,
-          "date": "2026-03-27"
-        },
-        {
-          "id": 23637130438,
-          "conclusion": "success",
-          "duration_minutes": 2.8,
-          "date": "2026-03-27"
-        },
-        {
-          "id": 23637043040,
-          "conclusion": "success",
+          "id": 23680929159,
+          "conclusion": "failure",
           "duration_minutes": 3.1,
-          "date": "2026-03-27"
+          "date": "2026-03-28"
         },
         {
-          "id": 23637032462,
-          "conclusion": "success",
-          "duration_minutes": 3.2,
-          "date": "2026-03-27"
-        },
-        {
-          "id": 23636884831,
-          "conclusion": "success",
-          "duration_minutes": 3.0,
-          "date": "2026-03-27"
-        },
-        {
-          "id": 23636815370,
-          "conclusion": "success",
-          "duration_minutes": 3.1,
-          "date": "2026-03-27"
-        },
-        {
-          "id": 23636780511,
+          "id": 23680918247,
           "conclusion": "failure",
           "duration_minutes": 3.0,
-          "date": "2026-03-27"
+          "date": "2026-03-28"
         },
         {
-          "id": 23636703404,
-          "conclusion": "success",
-          "duration_minutes": 3.0,
-          "date": "2026-03-27"
-        },
-        {
-          "id": 23636380152,
-          "conclusion": "success",
-          "duration_minutes": 3.0,
-          "date": "2026-03-27"
-        },
-        {
-          "id": 23636350950,
-          "conclusion": "success",
-          "duration_minutes": 3.2,
-          "date": "2026-03-27"
-        },
-        {
-          "id": 23636228898,
-          "conclusion": "success",
-          "duration_minutes": 3.0,
-          "date": "2026-03-27"
-        },
-        {
-          "id": 23636156692,
-          "conclusion": "success",
-          "duration_minutes": 3.2,
-          "date": "2026-03-27"
-        },
-        {
-          "id": 23636144936,
-          "conclusion": "success",
-          "duration_minutes": 3.2,
-          "date": "2026-03-27"
-        },
-        {
-          "id": 23635822827,
-          "conclusion": "success",
-          "duration_minutes": 3.1,
-          "date": "2026-03-27"
-        },
-        {
-          "id": 23635538143,
+          "id": 23680732170,
           "conclusion": "failure",
+          "duration_minutes": 3.2,
+          "date": "2026-03-28"
+        },
+        {
+          "id": 23680729677,
+          "conclusion": "failure",
+          "duration_minutes": 3.0,
+          "date": "2026-03-28"
+        },
+        {
+          "id": 23680472543,
+          "conclusion": "failure",
+          "duration_minutes": 3.1,
+          "date": "2026-03-28"
+        },
+        {
+          "id": 23680461704,
+          "conclusion": "failure",
+          "duration_minutes": 3.0,
+          "date": "2026-03-28"
+        },
+        {
+          "id": 23680451118,
+          "conclusion": "failure",
+          "duration_minutes": 3.2,
+          "date": "2026-03-28"
+        },
+        {
+          "id": 23680431535,
+          "conclusion": "failure",
+          "duration_minutes": 3.0,
+          "date": "2026-03-28"
+        },
+        {
+          "id": 23680423339,
+          "conclusion": "failure",
+          "duration_minutes": 3.0,
+          "date": "2026-03-28"
+        },
+        {
+          "id": 23680333531,
+          "conclusion": "failure",
+          "duration_minutes": 3.1,
+          "date": "2026-03-28"
+        },
+        {
+          "id": 23680188815,
+          "conclusion": "success",
+          "duration_minutes": 3.2,
+          "date": "2026-03-28"
+        },
+        {
+          "id": 23680141454,
+          "conclusion": "success",
+          "duration_minutes": 3.0,
+          "date": "2026-03-28"
+        },
+        {
+          "id": 23680134965,
+          "conclusion": "success",
+          "duration_minutes": 3.0,
+          "date": "2026-03-28"
+        },
+        {
+          "id": 23680095052,
+          "conclusion": "success",
+          "duration_minutes": 3.0,
+          "date": "2026-03-28"
+        },
+        {
+          "id": 23680069856,
+          "conclusion": "success",
+          "duration_minutes": 3.4,
+          "date": "2026-03-28"
+        },
+        {
+          "id": 23680023900,
+          "conclusion": "success",
+          "duration_minutes": 3.0,
+          "date": "2026-03-28"
+        },
+        {
+          "id": 23679951844,
+          "conclusion": "success",
+          "duration_minutes": 3.0,
+          "date": "2026-03-28"
+        },
+        {
+          "id": 23679887383,
+          "conclusion": "success",
+          "duration_minutes": 3.2,
+          "date": "2026-03-28"
+        },
+        {
+          "id": 23679865114,
+          "conclusion": "success",
           "duration_minutes": 2.9,
-          "date": "2026-03-27"
-        },
-        {
-          "id": 23635478624,
-          "conclusion": "success",
-          "duration_minutes": 3.1,
-          "date": "2026-03-27"
-        },
-        {
-          "id": 23635477777,
-          "conclusion": "success",
-          "duration_minutes": 3.1,
-          "date": "2026-03-27"
-        },
-        {
-          "id": 23635473000,
-          "conclusion": "success",
-          "duration_minutes": 3.0,
-          "date": "2026-03-27"
+          "date": "2026-03-28"
         }
       ],
       "bottleneck_job": {
@@ -141,20 +147,26 @@
     "Close Inactive Issues": {
       "workflow_id": 109110696,
       "latest_run": {
-        "id": 23624924686,
+        "id": 23673184800,
         "conclusion": "success",
         "duration_minutes": 2.6,
-        "started_at": "2026-03-27T00:29:45Z",
-        "html_url": "https://github.com/sgl-project/sglang/actions/runs/23624924686"
+        "started_at": "2026-03-28T00:27:32Z",
+        "html_url": "https://github.com/sgl-project/sglang/actions/runs/23673184800"
       },
       "stats": {
         "sample_size": 20,
-        "median_minutes": 2.1,
+        "median_minutes": 2.2,
         "p90_minutes": 3.1,
         "min_minutes": 1.8,
         "max_minutes": 3.5
       },
       "recent_runs": [
+        {
+          "id": 23673184800,
+          "conclusion": "success",
+          "duration_minutes": 2.6,
+          "date": "2026-03-28"
+        },
         {
           "id": 23624924686,
           "conclusion": "success",
@@ -268,36 +280,54 @@
           "conclusion": "success",
           "duration_minutes": 1.9,
           "date": "2026-03-09"
-        },
-        {
-          "id": 22810382985,
-          "conclusion": "success",
-          "duration_minutes": 1.9,
-          "date": "2026-03-08"
         }
       ],
       "bottleneck_job": {
         "name": "close-inactive-issues",
-        "duration_minutes": 2.5
+        "duration_minutes": 2.6
       }
     },
     "Release Docker Images": {
       "workflow_id": 110281173,
       "latest_run": {
-        "id": 22297872705,
+        "id": 23675169784,
         "conclusion": "success",
-        "duration_minutes": 165.2,
-        "started_at": "2026-02-23T11:56:58Z",
-        "html_url": "https://github.com/sgl-project/sglang/actions/runs/22297872705"
+        "duration_minutes": 146.1,
+        "started_at": "2026-03-28T02:10:11Z",
+        "html_url": "https://github.com/sgl-project/sglang/actions/runs/23675169784"
       },
       "stats": {
-        "sample_size": 20,
-        "median_minutes": 60.2,
+        "sample_size": 17,
+        "median_minutes": 56.2,
         "p90_minutes": 165.2,
         "min_minutes": 27.6,
         "max_minutes": 175.6
       },
       "recent_runs": [
+        {
+          "id": 23675169784,
+          "conclusion": "success",
+          "duration_minutes": 146.1,
+          "date": "2026-03-28"
+        },
+        {
+          "id": 23672239074,
+          "conclusion": "failure",
+          "duration_minutes": 92.5,
+          "date": "2026-03-27"
+        },
+        {
+          "id": 23669533805,
+          "conclusion": "cancelled",
+          "duration_minutes": 92.5,
+          "date": "2026-03-27"
+        },
+        {
+          "id": 23636666505,
+          "conclusion": "failure",
+          "duration_minutes": 155.0,
+          "date": "2026-03-27"
+        },
         {
           "id": 22297872705,
           "conclusion": "success",
@@ -393,35 +423,11 @@
           "conclusion": "success",
           "duration_minutes": 62.8,
           "date": "2025-10-16"
-        },
-        {
-          "id": 18545817727,
-          "conclusion": "success",
-          "duration_minutes": 64.3,
-          "date": "2025-10-15"
-        },
-        {
-          "id": 18390650074,
-          "conclusion": "success",
-          "duration_minutes": 76.0,
-          "date": "2025-10-09"
-        },
-        {
-          "id": 18280274759,
-          "conclusion": "success",
-          "duration_minutes": 67.0,
-          "date": "2025-10-06"
-        },
-        {
-          "id": 18274352276,
-          "conclusion": "success",
-          "duration_minutes": 65.1,
-          "date": "2025-10-06"
         }
       ],
       "bottleneck_job": {
         "name": "publish-x86 (12.9.1, all, 0)",
-        "duration_minutes": 164.2
+        "duration_minutes": 91.2
       }
     }
   }

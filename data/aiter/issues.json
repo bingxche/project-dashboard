@@ -1,17 +1,69 @@
 {
-  "collected_at": "2026-03-27T08:17:14Z",
+  "collected_at": "2026-03-28T08:12:39Z",
   "issues": [
+    {
+      "number": 2516,
+      "title": "Triton RMSNorm 5-10x slower than FlashInfer at batch<=1024 on MI355X",
+      "author": "sunway513",
+      "state": "open",
+      "created_at": "2026-03-28T04:58:29Z",
+      "updated_at": "2026-03-28T04:58:29Z",
+      "html_url": "https://github.com/ROCm/aiter/issues/2516",
+      "labels": []
+    },
+    {
+      "number": 2515,
+      "title": "GemmTuner fails on 76/92 BF16 shapes on gfx950 \u2014 ASM tile constraints and grid overflow",
+      "author": "sunway513",
+      "state": "open",
+      "created_at": "2026-03-28T01:04:43Z",
+      "updated_at": "2026-03-28T01:04:43Z",
+      "html_url": "https://github.com/ROCm/aiter/issues/2515",
+      "labels": []
+    },
+    {
+      "number": 2470,
+      "title": "[Feature]: Update aiter/jit/utils/cpp_extension.py from pytorch for Windows support",
+      "author": "astrelsky",
+      "state": "open",
+      "created_at": "2026-03-25T20:46:43Z",
+      "updated_at": "2026-03-27T12:44:53Z",
+      "html_url": "https://github.com/ROCm/aiter/issues/2470",
+      "labels": []
+    },
     {
       "number": 2312,
       "title": "CI: Run Triton tests on MI355",
       "author": "gyohuangxin",
       "state": "open",
       "created_at": "2026-03-17T16:42:16Z",
-      "updated_at": "2026-03-27T05:48:23Z",
+      "updated_at": "2026-03-27T12:13:08Z",
       "html_url": "https://github.com/ROCm/aiter/issues/2312",
       "labels": [
         "frameworks-devops"
       ]
+    },
+    {
+      "number": 2174,
+      "title": "[Issue]: Index Mismatch Between Main PA Kernel _paged_attention_kernel and Reduce Kernel _paged_attention_ll4mi_reduce_kernel",
+      "author": "gronsti-amd",
+      "state": "open",
+      "created_at": "2026-03-04T10:23:57Z",
+      "updated_at": "2026-03-27T08:58:19Z",
+      "html_url": "https://github.com/ROCm/aiter/issues/2174",
+      "labels": [
+        "bug"
+      ]
+    },
+    {
+      "number": 2484,
+      "title": "[Bug] Step-3.5-Flash-FP8 via vLLM fails on ROCm AITER MoE with missing swiglustep",
+      "author": "GoldenGrapeGentleman",
+      "state": "open",
+      "created_at": "2026-03-26T08:17:28Z",
+      "updated_at": "2026-03-27T08:57:42Z",
+      "html_url": "https://github.com/ROCm/aiter/issues/2484",
+      "labels": []
     },
     {
       "number": 2495,
@@ -31,26 +83,6 @@
       "created_at": "2026-03-26T23:29:33Z",
       "updated_at": "2026-03-26T23:29:33Z",
       "html_url": "https://github.com/ROCm/aiter/issues/2493",
-      "labels": []
-    },
-    {
-      "number": 2470,
-      "title": "[Feature]: Update aiter/jit/utils/cpp_extension.py from pytorch",
-      "author": "astrelsky",
-      "state": "open",
-      "created_at": "2026-03-25T20:46:43Z",
-      "updated_at": "2026-03-26T20:14:19Z",
-      "html_url": "https://github.com/ROCm/aiter/issues/2470",
-      "labels": []
-    },
-    {
-      "number": 2484,
-      "title": "[Bug] Step-3.5-Flash-FP8 via vLLM fails on ROCm AITER MoE with missing swiglu FP8/per_1x128 CK 2-stage JIT module",
-      "author": "GoldenGrapeGentleman",
-      "state": "open",
-      "created_at": "2026-03-26T08:17:28Z",
-      "updated_at": "2026-03-26T08:55:24Z",
-      "html_url": "https://github.com/ROCm/aiter/issues/2484",
       "labels": []
     },
     {
@@ -409,18 +441,6 @@
       "updated_at": "2026-03-18T05:42:51Z",
       "html_url": "https://github.com/ROCm/aiter/issues/2229",
       "labels": []
-    },
-    {
-      "number": 2174,
-      "title": "[Issue]: Index Mismatch Between Main PA Kernel _paged_attention_kernel and Reduce Kernel _paged_attention_ll4mi_reduce_kernel",
-      "author": "gronsti-amd",
-      "state": "open",
-      "created_at": "2026-03-04T10:23:57Z",
-      "updated_at": "2026-03-17T10:12:03Z",
-      "html_url": "https://github.com/ROCm/aiter/issues/2174",
-      "labels": [
-        "bug"
-      ]
     },
     {
       "number": 2299,

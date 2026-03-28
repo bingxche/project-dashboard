@@ -1,16 +1,75 @@
 {
-  "collected_at": "2026-03-27T08:17:04Z",
+  "collected_at": "2026-03-28T08:12:29Z",
   "prs": [
     {
-      "number": 4591,
-      "title": "Support dynamic input values for range op",
-      "author": "klin2024",
+      "number": 4714,
+      "title": "AIMIGRAPHX-585 Update MIGraphX build/package scripts for TheRock 7.12 compatibility",
+      "author": "kentqian",
       "state": "open",
       "merged": false,
-      "created_at": "2026-02-04T06:02:46Z",
-      "updated_at": "2026-03-27T08:16:49Z",
-      "html_url": "https://github.com/ROCm/AMDMIGraphX/pull/4591",
+      "created_at": "2026-03-27T16:25:04Z",
+      "updated_at": "2026-03-28T04:22:58Z",
+      "html_url": "https://github.com/ROCm/AMDMIGraphX/pull/4714",
       "labels": [],
+      "draft": false
+    },
+    {
+      "number": 4701,
+      "title": "Netron output update - use protobuff, API integration, debug symbols",
+      "author": "CharlieL7",
+      "state": "open",
+      "merged": false,
+      "created_at": "2026-03-24T23:36:52Z",
+      "updated_at": "2026-03-28T01:41:16Z",
+      "html_url": "https://github.com/ROCm/AMDMIGraphX/pull/4701",
+      "labels": [],
+      "draft": true
+    },
+    {
+      "number": 4626,
+      "title": "Add debug symbols for parsed and compiler pass replaced instructions ",
+      "author": "CharlieL7",
+      "state": "open",
+      "merged": false,
+      "created_at": "2026-02-20T21:54:12Z",
+      "updated_at": "2026-03-27T23:53:32Z",
+      "html_url": "https://github.com/ROCm/AMDMIGraphX/pull/4626",
+      "labels": [
+        "enhancement",
+        "high priority"
+      ],
+      "draft": false
+    },
+    {
+      "number": 4713,
+      "title": "Fix bug in rewrite_resize with nhwc",
+      "author": "pfultz2",
+      "state": "open",
+      "merged": false,
+      "created_at": "2026-03-27T14:56:00Z",
+      "updated_at": "2026-03-27T23:46:31Z",
+      "html_url": "https://github.com/ROCm/AMDMIGraphX/pull/4713",
+      "labels": [
+        "bugfix",
+        "high priority"
+      ],
+      "draft": false
+    },
+    {
+      "number": 4715,
+      "title": "Onnxruntime Weekly Sync 2026-03-27",
+      "author": "github-actions[bot]",
+      "state": "open",
+      "merged": false,
+      "created_at": "2026-03-27T17:27:16Z",
+      "updated_at": "2026-03-27T18:06:05Z",
+      "html_url": "https://github.com/ROCm/AMDMIGraphX/pull/4715",
+      "labels": [
+        "onnxruntime",
+        "dependencies",
+        "skip bot checks",
+        "automated"
+      ],
       "draft": false
     },
     {
@@ -20,8 +79,20 @@
       "state": "open",
       "merged": false,
       "created_at": "2026-03-26T13:41:36Z",
-      "updated_at": "2026-03-27T04:52:38Z",
+      "updated_at": "2026-03-27T17:40:28Z",
       "html_url": "https://github.com/ROCm/AMDMIGraphX/pull/4710",
+      "labels": [],
+      "draft": false
+    },
+    {
+      "number": 4709,
+      "title": "Tune GPU scheduling, return copies, and pointwise launch bounds",
+      "author": "Rolaand-Jayz",
+      "state": "open",
+      "merged": false,
+      "created_at": "2026-03-26T13:41:34Z",
+      "updated_at": "2026-03-27T17:40:06Z",
+      "html_url": "https://github.com/ROCm/AMDMIGraphX/pull/4709",
       "labels": [],
       "draft": false
     },
@@ -32,10 +103,58 @@
       "state": "open",
       "merged": false,
       "created_at": "2026-03-25T11:24:38Z",
-      "updated_at": "2026-03-27T04:41:12Z",
+      "updated_at": "2026-03-27T17:33:48Z",
       "html_url": "https://github.com/ROCm/AMDMIGraphX/pull/4703",
       "labels": [],
       "draft": false
+    },
+    {
+      "number": 4708,
+      "title": "Cache repeated HIP compilation and MIOpen solution lookups",
+      "author": "Rolaand-Jayz",
+      "state": "open",
+      "merged": false,
+      "created_at": "2026-03-26T13:41:31Z",
+      "updated_at": "2026-03-27T17:14:14Z",
+      "html_url": "https://github.com/ROCm/AMDMIGraphX/pull/4708",
+      "labels": [],
+      "draft": false
+    },
+    {
+      "number": 4707,
+      "title": "Improve adaptive GPU defaults and device feature caching",
+      "author": "Rolaand-Jayz",
+      "state": "open",
+      "merged": false,
+      "created_at": "2026-03-26T13:41:29Z",
+      "updated_at": "2026-03-27T17:13:59Z",
+      "html_url": "https://github.com/ROCm/AMDMIGraphX/pull/4707",
+      "labels": [],
+      "draft": false
+    },
+    {
+      "number": 4581,
+      "title": "[AIMIGRAPHX-408] Update intermediate ops to support dynamic shapes",
+      "author": "shivadbhavsar",
+      "state": "open",
+      "merged": false,
+      "created_at": "2026-01-29T20:48:55Z",
+      "updated_at": "2026-03-27T17:05:50Z",
+      "html_url": "https://github.com/ROCm/AMDMIGraphX/pull/4581",
+      "labels": [],
+      "draft": false
+    },
+    {
+      "number": 4607,
+      "title": "Optimize 1x1 and Depthwise Convolution for Small Shapes",
+      "author": "klin2024",
+      "state": "open",
+      "merged": false,
+      "created_at": "2026-02-12T07:05:25Z",
+      "updated_at": "2026-03-27T08:25:14Z",
+      "html_url": "https://github.com/ROCm/AMDMIGraphX/pull/4607",
+      "labels": [],
+      "draft": true
     },
     {
       "number": 4582,
@@ -47,45 +166,6 @@
       "updated_at": "2026-03-27T04:17:40Z",
       "html_url": "https://github.com/ROCm/AMDMIGraphX/pull/4582",
       "labels": [],
-      "draft": false
-    },
-    {
-      "number": 4607,
-      "title": "Optimize 1x1 and Depthwise Convolution for Small Shapes",
-      "author": "klin2024",
-      "state": "open",
-      "merged": false,
-      "created_at": "2026-02-12T07:05:25Z",
-      "updated_at": "2026-03-27T04:13:37Z",
-      "html_url": "https://github.com/ROCm/AMDMIGraphX/pull/4607",
-      "labels": [],
-      "draft": true
-    },
-    {
-      "number": 4711,
-      "title": "Revert quick-tune lists",
-      "author": "mirza-halilcevic",
-      "state": "open",
-      "merged": false,
-      "created_at": "2026-03-26T20:51:50Z",
-      "updated_at": "2026-03-27T00:29:12Z",
-      "html_url": "https://github.com/ROCm/AMDMIGraphX/pull/4711",
-      "labels": [],
-      "draft": false
-    },
-    {
-      "number": 4626,
-      "title": "Add debug symbols for parsed and compiler pass replaced instructions ",
-      "author": "CharlieL7",
-      "state": "open",
-      "merged": false,
-      "created_at": "2026-02-20T21:54:12Z",
-      "updated_at": "2026-03-26T23:17:02Z",
-      "html_url": "https://github.com/ROCm/AMDMIGraphX/pull/4626",
-      "labels": [
-        "enhancement",
-        "high priority"
-      ],
       "draft": false
     },
     {
@@ -137,42 +217,6 @@
       "draft": true
     },
     {
-      "number": 4709,
-      "title": "Tune GPU scheduling, return copies, and pointwise launch bounds",
-      "author": "Rolaand-Jayz",
-      "state": "open",
-      "merged": false,
-      "created_at": "2026-03-26T13:41:34Z",
-      "updated_at": "2026-03-26T16:35:47Z",
-      "html_url": "https://github.com/ROCm/AMDMIGraphX/pull/4709",
-      "labels": [],
-      "draft": false
-    },
-    {
-      "number": 4708,
-      "title": "Cache repeated HIP compilation and MIOpen solution lookups",
-      "author": "Rolaand-Jayz",
-      "state": "open",
-      "merged": false,
-      "created_at": "2026-03-26T13:41:31Z",
-      "updated_at": "2026-03-26T15:29:17Z",
-      "html_url": "https://github.com/ROCm/AMDMIGraphX/pull/4708",
-      "labels": [],
-      "draft": false
-    },
-    {
-      "number": 4707,
-      "title": "Improve adaptive GPU defaults and device feature caching",
-      "author": "Rolaand-Jayz",
-      "state": "open",
-      "merged": false,
-      "created_at": "2026-03-26T13:41:29Z",
-      "updated_at": "2026-03-26T14:06:47Z",
-      "html_url": "https://github.com/ROCm/AMDMIGraphX/pull/4707",
-      "labels": [],
-      "draft": false
-    },
-    {
       "number": 4704,
       "title": "[AIMIGRAPHX-840] support symbolic shape prop through conv and pool",
       "author": "shivadbhavsar",
@@ -197,32 +241,6 @@
       "draft": false
     },
     {
-      "number": 4581,
-      "title": "[AIMIGRAPHX-408] Update intermediate ops to support dynamic shapes",
-      "author": "shivadbhavsar",
-      "state": "open",
-      "merged": false,
-      "created_at": "2026-01-29T20:48:55Z",
-      "updated_at": "2026-03-26T00:30:45Z",
-      "html_url": "https://github.com/ROCm/AMDMIGraphX/pull/4581",
-      "labels": [],
-      "draft": false
-    },
-    {
-      "number": 4706,
-      "title": "Bump requests from 2.32.4 to 2.33.0 in /docs/sphinx",
-      "author": "dependabot[bot]",
-      "state": "open",
-      "merged": false,
-      "created_at": "2026-03-25T23:55:05Z",
-      "updated_at": "2026-03-25T23:55:06Z",
-      "html_url": "https://github.com/ROCm/AMDMIGraphX/pull/4706",
-      "labels": [
-        "documentation"
-      ],
-      "draft": false
-    },
-    {
       "number": 4677,
       "title": "Fix FP16 overflow in GQA attention and concat_past_present buffer overflow",
       "author": "aditya-dl",
@@ -243,18 +261,6 @@
       "created_at": "2026-03-23T17:33:44Z",
       "updated_at": "2026-03-25T16:35:47Z",
       "html_url": "https://github.com/ROCm/AMDMIGraphX/pull/4697",
-      "labels": [],
-      "draft": true
-    },
-    {
-      "number": 4701,
-      "title": "Netron output update - use protobuff, API integration, debug symbols",
-      "author": "CharlieL7",
-      "state": "open",
-      "merged": false,
-      "created_at": "2026-03-24T23:36:52Z",
-      "updated_at": "2026-03-25T04:21:48Z",
-      "html_url": "https://github.com/ROCm/AMDMIGraphX/pull/4701",
       "labels": [],
       "draft": true
     },
@@ -1051,6 +1057,44 @@
       "created_at": "2024-09-22T22:28:36Z",
       "updated_at": "2024-10-21T22:48:16Z",
       "html_url": "https://github.com/ROCm/AMDMIGraphX/pull/3468",
+      "labels": [],
+      "draft": false
+    },
+    {
+      "number": 4706,
+      "title": "Bump requests from 2.32.4 to 2.33.0 in /docs/sphinx",
+      "author": "dependabot[bot]",
+      "state": "closed",
+      "merged": true,
+      "created_at": "2026-03-25T23:55:05Z",
+      "updated_at": "2026-03-27T15:08:05Z",
+      "html_url": "https://github.com/ROCm/AMDMIGraphX/pull/4706",
+      "labels": [
+        "documentation"
+      ],
+      "draft": false
+    },
+    {
+      "number": 4591,
+      "title": "Support dynamic input values for range op",
+      "author": "klin2024",
+      "state": "closed",
+      "merged": true,
+      "created_at": "2026-02-04T06:02:46Z",
+      "updated_at": "2026-03-27T14:46:46Z",
+      "html_url": "https://github.com/ROCm/AMDMIGraphX/pull/4591",
+      "labels": [],
+      "draft": false
+    },
+    {
+      "number": 4711,
+      "title": "Revert quick-tune lists",
+      "author": "mirza-halilcevic",
+      "state": "closed",
+      "merged": true,
+      "created_at": "2026-03-26T20:51:50Z",
+      "updated_at": "2026-03-27T12:45:40Z",
+      "html_url": "https://github.com/ROCm/AMDMIGraphX/pull/4711",
       "labels": [],
       "draft": false
     },
@@ -2030,22 +2074,6 @@
         "bugfix",
         "simple",
         "Windows"
-      ],
-      "draft": false
-    },
-    {
-      "number": 4615,
-      "title": "rocMLIR Weekly Sync 2026-02-15",
-      "author": "github-actions[bot]",
-      "state": "closed",
-      "merged": true,
-      "created_at": "2026-02-15T07:18:29Z",
-      "updated_at": "2026-02-18T06:02:40Z",
-      "html_url": "https://github.com/ROCm/AMDMIGraphX/pull/4615",
-      "labels": [
-        "dependencies",
-        "automated",
-        "rocMLIR"
       ],
       "draft": false
     }
