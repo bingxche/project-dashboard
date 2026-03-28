@@ -1,6 +1,54 @@
 {
-  "collected_at": "2026-03-27T08:16:31Z",
+  "collected_at": "2026-03-28T08:11:56Z",
   "prs": [
+    {
+      "number": 36304,
+      "title": "[ROCm] update with command_buffer off for pallas tests",
+      "author": "cj401-amd",
+      "state": "open",
+      "merged": false,
+      "created_at": "2026-03-27T22:57:55Z",
+      "updated_at": "2026-03-27T23:00:32Z",
+      "html_url": "https://github.com/jax-ml/jax/pull/36304",
+      "labels": [
+        "bug",
+        "CI",
+        "AMD GPU",
+        "pallas"
+      ],
+      "draft": false
+    },
+    {
+      "number": 35534,
+      "title": "[ROCm] bring gesdd for computing SVD on ROCm",
+      "author": "cj401-amd",
+      "state": "open",
+      "merged": false,
+      "created_at": "2026-03-02T21:16:00Z",
+      "updated_at": "2026-03-27T22:16:54Z",
+      "html_url": "https://github.com/jax-ml/jax/pull/35534",
+      "labels": [
+        "enhancement",
+        "performance",
+        "jax.numpy",
+        "AMD GPU"
+      ],
+      "draft": false
+    },
+    {
+      "number": 36244,
+      "title": "[ROCm] Skipped tests on ROCm that are flaky and sometimes cause CI failures",
+      "author": "tsrw2048",
+      "state": "closed",
+      "merged": false,
+      "created_at": "2026-03-26T14:17:48Z",
+      "updated_at": "2026-03-27T21:28:34Z",
+      "html_url": "https://github.com/jax-ml/jax/pull/36244",
+      "labels": [
+        "AMD GPU"
+      ],
+      "draft": false
+    },
     {
       "number": 34971,
       "title": "[ROCm] fix the performance issue when n=1 or 2",
@@ -44,37 +92,6 @@
       "updated_at": "2026-03-26T22:45:28Z",
       "html_url": "https://github.com/jax-ml/jax/pull/36267",
       "labels": [],
-      "draft": false
-    },
-    {
-      "number": 35534,
-      "title": "[ROCm] bring gesdd for computing SVD on ROCm",
-      "author": "cj401-amd",
-      "state": "open",
-      "merged": false,
-      "created_at": "2026-03-02T21:16:00Z",
-      "updated_at": "2026-03-26T21:57:08Z",
-      "html_url": "https://github.com/jax-ml/jax/pull/35534",
-      "labels": [
-        "enhancement",
-        "performance",
-        "jax.numpy",
-        "AMD GPU"
-      ],
-      "draft": false
-    },
-    {
-      "number": 36244,
-      "title": "[ROCm] Skipped tests on ROCm that are flaky and sometimes cause CI failures",
-      "author": "tsrw2048",
-      "state": "open",
-      "merged": false,
-      "created_at": "2026-03-26T14:17:48Z",
-      "updated_at": "2026-03-26T15:02:55Z",
-      "html_url": "https://github.com/jax-ml/jax/pull/36244",
-      "labels": [
-        "AMD GPU"
-      ],
       "draft": false
     },
     {

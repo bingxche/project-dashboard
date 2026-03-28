@@ -1,15 +1,39 @@
 {
-  "collected_at": "2026-03-27T08:17:19Z",
+  "collected_at": "2026-03-28T08:12:43Z",
   "prs": [
     {
-      "number": 236,
-      "title": "Build mori as a pip package",
-      "author": "QizhouZhang97",
+      "number": 226,
+      "title": "Feat: JAX integration via XLA FFI custom calls ",
+      "author": "pemeliya",
       "state": "open",
       "merged": false,
-      "created_at": "2026-03-27T07:50:42Z",
-      "updated_at": "2026-03-27T07:50:42Z",
-      "html_url": "https://github.com/ROCm/mori/pull/236",
+      "created_at": "2026-03-25T11:09:55Z",
+      "updated_at": "2026-03-27T13:29:04Z",
+      "html_url": "https://github.com/ROCm/mori/pull/226",
+      "labels": [],
+      "draft": false
+    },
+    {
+      "number": 235,
+      "title": "Sdma ccl",
+      "author": "wuyl1",
+      "state": "open",
+      "merged": false,
+      "created_at": "2026-03-27T05:58:16Z",
+      "updated_at": "2026-03-27T12:55:24Z",
+      "html_url": "https://github.com/ROCm/mori/pull/235",
+      "labels": [],
+      "draft": false
+    },
+    {
+      "number": 237,
+      "title": "refactor(rdma): dlopen vendor dv libraries at runtime instead of compile-time linking",
+      "author": "jhchouuu",
+      "state": "open",
+      "merged": false,
+      "created_at": "2026-03-27T09:32:51Z",
+      "updated_at": "2026-03-27T10:30:24Z",
+      "html_url": "https://github.com/ROCm/mori/pull/237",
       "labels": [],
       "draft": false
     },
@@ -22,30 +46,6 @@
       "created_at": "2026-03-22T14:28:30Z",
       "updated_at": "2026-03-27T07:16:50Z",
       "html_url": "https://github.com/ROCm/mori/pull/209",
-      "labels": [],
-      "draft": false
-    },
-    {
-      "number": 235,
-      "title": "Sdma ccl",
-      "author": "wuyl1",
-      "state": "open",
-      "merged": false,
-      "created_at": "2026-03-27T05:58:16Z",
-      "updated_at": "2026-03-27T06:19:00Z",
-      "html_url": "https://github.com/ROCm/mori/pull/235",
-      "labels": [],
-      "draft": false
-    },
-    {
-      "number": 226,
-      "title": "Feat: JAX integration via XLA FFI custom calls ",
-      "author": "pemeliya",
-      "state": "open",
-      "merged": false,
-      "created_at": "2026-03-25T11:09:55Z",
-      "updated_at": "2026-03-26T13:27:53Z",
-      "html_url": "https://github.com/ROCm/mori/pull/226",
       "labels": [],
       "draft": false
     },
@@ -154,6 +154,18 @@
       "created_at": "2025-10-28T06:17:21Z",
       "updated_at": "2026-01-08T09:18:21Z",
       "html_url": "https://github.com/ROCm/mori/pull/99",
+      "labels": [],
+      "draft": false
+    },
+    {
+      "number": 236,
+      "title": "Build mori as a pip package",
+      "author": "QizhouZhang97",
+      "state": "closed",
+      "merged": true,
+      "created_at": "2026-03-27T07:50:42Z",
+      "updated_at": "2026-03-27T10:37:06Z",
+      "html_url": "https://github.com/ROCm/mori/pull/236",
       "labels": [],
       "draft": false
     },
@@ -1210,18 +1222,6 @@
       "created_at": "2026-01-07T10:05:47Z",
       "updated_at": "2026-01-12T06:03:58Z",
       "html_url": "https://github.com/ROCm/mori/pull/126",
-      "labels": [],
-      "draft": false
-    },
-    {
-      "number": 131,
-      "title": "fix the compilation compatibility issues across different image version",
-      "author": "zhangfei829",
-      "state": "closed",
-      "merged": true,
-      "created_at": "2026-01-09T03:03:06Z",
-      "updated_at": "2026-01-09T03:07:46Z",
-      "html_url": "https://github.com/ROCm/mori/pull/131",
       "labels": [],
       "draft": false
     }

@@ -1,6 +1,13 @@
 {
-  "collected_at": "2026-03-27T08:16:55Z",
+  "collected_at": "2026-03-28T08:12:21Z",
   "releases": [
+    {
+      "tag_name": "v0.5.10rc0",
+      "name": "v0.5.10rc0",
+      "published_at": "2026-03-28T05:58:32Z",
+      "html_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.10rc0",
+      "prerelease": true
+    },
     {
       "tag_name": "v0.5.9",
       "name": "v0.5.9",
@@ -27,13 +34,6 @@
       "name": "v0.5.7",
       "published_at": "2026-01-01T10:01:57Z",
       "html_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.7",
-      "prerelease": false
-    },
-    {
-      "tag_name": "gateway-v0.3.0",
-      "name": "Release Gateway-v0.3.0",
-      "published_at": "2025-12-24T22:00:56Z",
-      "html_url": "https://github.com/sgl-project/sglang/releases/tag/gateway-v0.3.0",
       "prerelease": false
     }
   ]

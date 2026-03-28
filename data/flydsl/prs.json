@@ -1,6 +1,78 @@
 {
-  "collected_at": "2026-03-27T08:17:21Z",
+  "collected_at": "2026-03-28T08:12:46Z",
   "prs": [
+    {
+      "number": 289,
+      "title": " feat(moe): Add MoE FP4 GEMM 2-stage kernel with benchmark and perf optimizations",
+      "author": "zhiding512",
+      "state": "open",
+      "merged": false,
+      "created_at": "2026-03-26T06:30:46Z",
+      "updated_at": "2026-03-28T04:13:13Z",
+      "html_url": "https://github.com/ROCm/FlyDSL/pull/289",
+      "labels": [],
+      "draft": false
+    },
+    {
+      "number": 277,
+      "title": "feat(runtime): implement device runtime layer (Python)",
+      "author": "Peter9606",
+      "state": "open",
+      "merged": false,
+      "created_at": "2026-03-24T05:36:46Z",
+      "updated_at": "2026-03-28T01:53:43Z",
+      "html_url": "https://github.com/ROCm/FlyDSL/pull/277",
+      "labels": [],
+      "draft": false
+    },
+    {
+      "number": 271,
+      "title": "feat: python versions update",
+      "author": "kiran-thumma",
+      "state": "open",
+      "merged": false,
+      "created_at": "2026-03-23T16:40:35Z",
+      "updated_at": "2026-03-27T14:45:13Z",
+      "html_url": "https://github.com/ROCm/FlyDSL/pull/271",
+      "labels": [],
+      "draft": true
+    },
+    {
+      "number": 300,
+      "title": "[FlyDSL] fused RoPE kernel with layout APIs ",
+      "author": "amd-weisun",
+      "state": "open",
+      "merged": false,
+      "created_at": "2026-03-27T11:31:59Z",
+      "updated_at": "2026-03-27T14:19:57Z",
+      "html_url": "https://github.com/ROCm/FlyDSL/pull/300",
+      "labels": [],
+      "draft": true
+    },
+    {
+      "number": 259,
+      "title": " preshuffled gemm iglp",
+      "author": "yadaish",
+      "state": "open",
+      "merged": false,
+      "created_at": "2026-03-22T06:58:43Z",
+      "updated_at": "2026-03-27T12:54:53Z",
+      "html_url": "https://github.com/ROCm/FlyDSL/pull/259",
+      "labels": [],
+      "draft": false
+    },
+    {
+      "number": 278,
+      "title": "[Compiler][Kernel][MI450]Rebase gfx1250 WMMA/mcast/mxfp4 support onto main",
+      "author": "jli-melchior",
+      "state": "open",
+      "merged": false,
+      "created_at": "2026-03-24T06:35:41Z",
+      "updated_at": "2026-03-27T10:13:00Z",
+      "html_url": "https://github.com/ROCm/FlyDSL/pull/278",
+      "labels": [],
+      "draft": false
+    },
     {
       "number": 297,
       "title": "[FEAT] Add ir.Value caster for dsl types",
@@ -10,30 +82,6 @@
       "created_at": "2026-03-27T07:06:44Z",
       "updated_at": "2026-03-27T07:43:34Z",
       "html_url": "https://github.com/ROCm/FlyDSL/pull/297",
-      "labels": [],
-      "draft": false
-    },
-    {
-      "number": 296,
-      "title": "feat(debug): dump LLVM IR when FLYDSL_DUMP_IR=1",
-      "author": "fsx950223",
-      "state": "open",
-      "merged": false,
-      "created_at": "2026-03-27T05:55:54Z",
-      "updated_at": "2026-03-27T07:07:53Z",
-      "html_url": "https://github.com/ROCm/FlyDSL/pull/296",
-      "labels": [],
-      "draft": false
-    },
-    {
-      "number": 289,
-      "title": " feat(moe): Add MoE FP4 GEMM 2-stage kernel with benchmark and perf optimizations",
-      "author": "zhiding512",
-      "state": "open",
-      "merged": false,
-      "created_at": "2026-03-26T06:30:46Z",
-      "updated_at": "2026-03-27T06:53:40Z",
-      "html_url": "https://github.com/ROCm/FlyDSL/pull/289",
       "labels": [],
       "draft": false
     },
@@ -50,18 +98,6 @@
       "draft": false
     },
     {
-      "number": 277,
-      "title": "feat(runtime): implement device runtime layer (Python)",
-      "author": "Peter9606",
-      "state": "open",
-      "merged": false,
-      "created_at": "2026-03-24T05:36:46Z",
-      "updated_at": "2026-03-27T05:37:08Z",
-      "html_url": "https://github.com/ROCm/FlyDSL/pull/277",
-      "labels": [],
-      "draft": false
-    },
-    {
       "number": 238,
       "title": "Feat/if else values v2",
       "author": "fsx950223",
@@ -72,42 +108,6 @@
       "html_url": "https://github.com/ROCm/FlyDSL/pull/238",
       "labels": [],
       "draft": true
-    },
-    {
-      "number": 272,
-      "title": "Add fused RoPE kernel ",
-      "author": "amd-weisun",
-      "state": "open",
-      "merged": false,
-      "created_at": "2026-03-23T16:50:12Z",
-      "updated_at": "2026-03-26T11:02:54Z",
-      "html_url": "https://github.com/ROCm/FlyDSL/pull/272",
-      "labels": [],
-      "draft": true
-    },
-    {
-      "number": 278,
-      "title": "[Compiler][Kernel][MI450]Rebase gfx1250 WMMA/mcast/mxfp4 support onto main",
-      "author": "jli-melchior",
-      "state": "open",
-      "merged": false,
-      "created_at": "2026-03-24T06:35:41Z",
-      "updated_at": "2026-03-26T10:37:19Z",
-      "html_url": "https://github.com/ROCm/FlyDSL/pull/278",
-      "labels": [],
-      "draft": false
-    },
-    {
-      "number": 259,
-      "title": " preshuffled gemm iglp",
-      "author": "yadaish",
-      "state": "open",
-      "merged": false,
-      "created_at": "2026-03-22T06:58:43Z",
-      "updated_at": "2026-03-25T09:30:39Z",
-      "html_url": "https://github.com/ROCm/FlyDSL/pull/259",
-      "labels": [],
-      "draft": false
     },
     {
       "number": 274,
@@ -146,18 +146,6 @@
       "draft": false
     },
     {
-      "number": 271,
-      "title": "feat: python versions update",
-      "author": "kiran-thumma",
-      "state": "open",
-      "merged": false,
-      "created_at": "2026-03-23T16:40:35Z",
-      "updated_at": "2026-03-23T17:40:11Z",
-      "html_url": "https://github.com/ROCm/FlyDSL/pull/271",
-      "labels": [],
-      "draft": true
-    },
-    {
       "number": 266,
       "title": "feat(jit): two-phase compilation for autotuning compile_hints",
       "author": "fsx950223",
@@ -170,16 +158,28 @@
       "draft": false
     },
     {
-      "number": 192,
-      "title": "Fused GDR decode ksplit2 implementation",
-      "author": "huizzhan",
-      "state": "open",
-      "merged": false,
-      "created_at": "2026-03-11T03:51:47Z",
-      "updated_at": "2026-03-11T09:33:32Z",
-      "html_url": "https://github.com/ROCm/FlyDSL/pull/192",
+      "number": 298,
+      "title": "[Fix] fix the type of value in the adaptor may differ with IntAttr.wi\u2026",
+      "author": "sjfeng1999",
+      "state": "closed",
+      "merged": true,
+      "created_at": "2026-03-27T08:52:09Z",
+      "updated_at": "2026-03-27T11:57:29Z",
+      "html_url": "https://github.com/ROCm/FlyDSL/pull/298",
       "labels": [],
-      "draft": true
+      "draft": false
+    },
+    {
+      "number": 299,
+      "title": "add flyc.compile to optimize launch",
+      "author": "coderfeli",
+      "state": "closed",
+      "merged": true,
+      "created_at": "2026-03-27T09:12:56Z",
+      "updated_at": "2026-03-27T11:56:45Z",
+      "html_url": "https://github.com/ROCm/FlyDSL/pull/299",
+      "labels": [],
+      "draft": false
     },
     {
       "number": 294,
@@ -930,18 +930,6 @@
       "draft": false
     },
     {
-      "number": 148,
-      "title": "update: publish artifacts nightlies",
-      "author": "kiran-thumma",
-      "state": "closed",
-      "merged": true,
-      "created_at": "2026-02-25T00:07:59Z",
-      "updated_at": "2026-03-09T14:23:23Z",
-      "html_url": "https://github.com/ROCm/FlyDSL/pull/148",
-      "labels": [],
-      "draft": false
-    },
-    {
       "number": 173,
       "title": "[FLYDSL]: add product test",
       "author": "xudoyuan",
@@ -954,6 +942,18 @@
       "draft": false
     },
     {
+      "number": 148,
+      "title": "update: publish artifacts nightlies",
+      "author": "kiran-thumma",
+      "state": "closed",
+      "merged": true,
+      "created_at": "2026-02-25T00:07:59Z",
+      "updated_at": "2026-03-09T14:23:23Z",
+      "html_url": "https://github.com/ROCm/FlyDSL/pull/148",
+      "labels": [],
+      "draft": false
+    },
+    {
       "number": 174,
       "title": "Add runner label \u2192 GPU hardware mapping configuration for FlyDSL",
       "author": "gyohuangxin",
@@ -962,66 +962,6 @@
       "created_at": "2026-03-05T03:14:11Z",
       "updated_at": "2026-03-09T14:23:22Z",
       "html_url": "https://github.com/ROCm/FlyDSL/pull/174",
-      "labels": [],
-      "draft": false
-    },
-    {
-      "number": 175,
-      "title": "[FLYDSL]: add logical_divide 2D by-mode mlir tests",
-      "author": "xudoyuan",
-      "state": "closed",
-      "merged": true,
-      "created_at": "2026-03-05T08:37:46Z",
-      "updated_at": "2026-03-09T14:23:21Z",
-      "html_url": "https://github.com/ROCm/FlyDSL/pull/175",
-      "labels": [],
-      "draft": false
-    },
-    {
-      "number": 156,
-      "title": "Add CI on pre_v0.1 branch",
-      "author": "gyohuangxin",
-      "state": "closed",
-      "merged": true,
-      "created_at": "2026-02-28T04:42:40Z",
-      "updated_at": "2026-03-09T14:21:13Z",
-      "html_url": "https://github.com/ROCm/FlyDSL/pull/156",
-      "labels": [],
-      "draft": false
-    },
-    {
-      "number": 167,
-      "title": "So/a8w8 bpreshuffle",
-      "author": "solinzby1",
-      "state": "closed",
-      "merged": true,
-      "created_at": "2026-03-03T05:33:18Z",
-      "updated_at": "2026-03-09T14:21:05Z",
-      "html_url": "https://github.com/ROCm/FlyDSL/pull/167",
-      "labels": [],
-      "draft": false
-    },
-    {
-      "number": 168,
-      "title": "[Compiler][CacheKey] improve JIT cache key to hash entire compiler to\u2026",
-      "author": "jli-melchior",
-      "state": "closed",
-      "merged": true,
-      "created_at": "2026-03-03T07:18:46Z",
-      "updated_at": "2026-03-09T14:21:02Z",
-      "html_url": "https://github.com/ROCm/FlyDSL/pull/168",
-      "labels": [],
-      "draft": false
-    },
-    {
-      "number": 170,
-      "title": "[FLYDSL]: Bug fixes for algebra not being the simplest",
-      "author": "xudoyuan",
-      "state": "closed",
-      "merged": true,
-      "created_at": "2026-03-03T09:56:48Z",
-      "updated_at": "2026-03-09T14:21:00Z",
-      "html_url": "https://github.com/ROCm/FlyDSL/pull/170",
       "labels": [],
       "draft": false
     }
