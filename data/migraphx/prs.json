@@ -1,6 +1,32 @@
 {
-  "collected_at": "2026-03-28T08:12:29Z",
+  "collected_at": "2026-03-29T08:13:00Z",
   "prs": [
+    {
+      "number": 4707,
+      "title": "Improve adaptive GPU defaults and device feature caching",
+      "author": "Rolaand-Jayz",
+      "state": "open",
+      "merged": false,
+      "created_at": "2026-03-26T13:41:29Z",
+      "updated_at": "2026-03-29T04:58:02Z",
+      "html_url": "https://github.com/ROCm/AMDMIGraphX/pull/4707",
+      "labels": [],
+      "draft": false
+    },
+    {
+      "number": 4717,
+      "title": "Bump cryptography from 46.0.5 to 46.0.6 in /docs/sphinx",
+      "author": "dependabot[bot]",
+      "state": "open",
+      "merged": false,
+      "created_at": "2026-03-29T04:30:58Z",
+      "updated_at": "2026-03-29T04:30:59Z",
+      "html_url": "https://github.com/ROCm/AMDMIGraphX/pull/4717",
+      "labels": [
+        "documentation"
+      ],
+      "draft": false
+    },
     {
       "number": 4714,
       "title": "AIMIGRAPHX-585 Update MIGraphX build/package scripts for TheRock 7.12 compatibility",
@@ -117,18 +143,6 @@
       "created_at": "2026-03-26T13:41:31Z",
       "updated_at": "2026-03-27T17:14:14Z",
       "html_url": "https://github.com/ROCm/AMDMIGraphX/pull/4708",
-      "labels": [],
-      "draft": false
-    },
-    {
-      "number": 4707,
-      "title": "Improve adaptive GPU defaults and device feature caching",
-      "author": "Rolaand-Jayz",
-      "state": "open",
-      "merged": false,
-      "created_at": "2026-03-26T13:41:29Z",
-      "updated_at": "2026-03-27T17:13:59Z",
-      "html_url": "https://github.com/ROCm/AMDMIGraphX/pull/4707",
       "labels": [],
       "draft": false
     },

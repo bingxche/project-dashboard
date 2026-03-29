@@ -1,5 +1,5 @@
 {
-  "collected_at": "2026-03-28T08:12:26Z",
+  "collected_at": "2026-03-29T08:12:55Z",
   "prs": [
     {
       "number": 39950,
@@ -8,7 +8,7 @@
       "state": "open",
       "merged": false,
       "created_at": "2026-03-26T23:05:00Z",
-      "updated_at": "2026-03-27T22:33:09Z",
+      "updated_at": "2026-03-28T22:04:51Z",
       "html_url": "https://github.com/openxla/xla/pull/39950",
       "labels": [
         "bug",
@@ -17,6 +17,20 @@
         "ci-improvement"
       ],
       "draft": false
+    },
+    {
+      "number": 39854,
+      "title": "[ROCm] Use hermetic clang for rocm",
+      "author": "alekstheod",
+      "state": "open",
+      "merged": false,
+      "created_at": "2026-03-25T13:28:44Z",
+      "updated_at": "2026-03-28T21:42:49Z",
+      "html_url": "https://github.com/openxla/xla/pull/39854",
+      "labels": [
+        "AMD-GPU"
+      ],
+      "draft": true
     }
   ]
 }

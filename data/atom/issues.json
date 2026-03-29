@@ -1,6 +1,19 @@
 {
-  "collected_at": "2026-03-28T08:12:41Z",
+  "collected_at": "2026-03-29T08:13:14Z",
   "issues": [
+    {
+      "number": 440,
+      "title": "[Perf Regression] 17 config(s) regressed @ f70484dc",
+      "author": "github-actions[bot]",
+      "state": "open",
+      "created_at": "2026-03-28T22:59:10Z",
+      "updated_at": "2026-03-28T22:59:10Z",
+      "html_url": "https://github.com/ROCm/ATOM/issues/440",
+      "labels": [
+        "performance",
+        "regression"
+      ]
+    },
     {
       "number": 431,
       "title": "[Perf Regression] 11 config(s) regressed @ e99709c3",

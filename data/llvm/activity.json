@@ -1,36 +1,42 @@
 {
-  "collected_at": "2026-03-28T08:13:06Z",
+  "collected_at": "2026-03-29T08:13:50Z",
   "project": "llvm",
   "repo": "llvm/llvm-project",
   "pr_velocity": {
     "this_week": {
-      "opened": 39,
+      "opened": 36,
       "merged": 30,
       "closed": 0
     },
     "last_week": {
-      "opened": 9,
+      "opened": 6,
       "merged": 0,
       "closed": 0
     },
-    "median_time_to_merge_hours": 54.9,
+    "median_time_to_merge_hours": 92.6,
     "merge_count": 39,
     "stale_prs": 0
   },
   "contributors": {
-    "active_this_week": 27,
-    "total_contributors": 34,
+    "active_this_week": 24,
+    "total_contributors": 32,
     "top_contributors": [
       {
+        "author": "arsenm",
+        "prs_submitted": 12,
+        "prs_merged": 8,
+        "commits": 0
+      },
+      {
         "author": "vangthao95",
-        "prs_submitted": 13,
+        "prs_submitted": 12,
         "prs_merged": 3,
         "commits": 0
       },
       {
-        "author": "arsenm",
-        "prs_submitted": 11,
-        "prs_merged": 8,
+        "author": "tgymnich",
+        "prs_submitted": 6,
+        "prs_merged": 6,
         "commits": 0
       },
       {
@@ -46,15 +52,9 @@
         "commits": 0
       },
       {
-        "author": "gandhi56",
-        "prs_submitted": 3,
-        "prs_merged": 3,
-        "commits": 0
-      },
-      {
-        "author": "jayfoad",
-        "prs_submitted": 3,
-        "prs_merged": 3,
+        "author": "addmisol",
+        "prs_submitted": 2,
+        "prs_merged": 0,
         "commits": 0
       },
       {
@@ -64,9 +64,9 @@
         "commits": 0
       },
       {
-        "author": "addmisol",
+        "author": "gandhi56",
         "prs_submitted": 2,
-        "prs_merged": 0,
+        "prs_merged": 2,
         "commits": 0
       },
       {
@@ -76,24 +76,24 @@
         "commits": 0
       },
       {
-        "author": "taoyafan",
+        "author": "yxsamliu",
         "prs_submitted": 1,
         "prs_merged": 0,
         "commits": 0
       }
     ],
-    "bus_factor": 6
+    "bus_factor": 5
   },
   "issue_health": {
     "total_open": 30,
     "opened_this_week": 3,
-    "closed_this_week": 199,
+    "closed_this_week": 202,
     "unanswered": 9
   },
   "ci_health": null,
   "ci_signal_time": null,
   "release_cadence": {
-    "days_since_last": 3.5,
+    "days_since_last": 4.5,
     "avg_interval_days": 14.1,
     "total_releases": 5,
     "latest_tag": "llvmorg-22.1.2"

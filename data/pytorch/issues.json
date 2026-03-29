@@ -1,6 +1,52 @@
 {
-  "collected_at": "2026-03-28T08:11:54Z",
+  "collected_at": "2026-03-29T08:12:11Z",
   "issues": [
+    {
+      "number": 178709,
+      "title": "[MPS] In-place `self.add_(other, alpha)` `RuntimeError`s with type promotion",
+      "author": "hvaara",
+      "state": "open",
+      "created_at": "2026-03-29T04:05:30Z",
+      "updated_at": "2026-03-29T06:57:35Z",
+      "html_url": "https://github.com/pytorch/pytorch/issues/178709",
+      "labels": [
+        "triage review",
+        "module: regression",
+        "module: mps",
+        "bot-triaged"
+      ]
+    },
+    {
+      "number": 178697,
+      "title": "`torch.nn.functional.linear` produces incorrect results on MPS with AMD RDNA2 GPUs (RX 6000 series)",
+      "author": "wildfang",
+      "state": "open",
+      "created_at": "2026-03-28T20:38:42Z",
+      "updated_at": "2026-03-28T20:40:32Z",
+      "html_url": "https://github.com/pytorch/pytorch/issues/178697",
+      "labels": [
+        "triage review",
+        "has workaround",
+        "module: mps",
+        "bot-triaged"
+      ]
+    },
+    {
+      "number": 178687,
+      "title": "Wrong ROCM code execution in in `ScaledBlas.cpp` at `check_swizzle_lengths()`",
+      "author": "benediktjohannes",
+      "state": "open",
+      "created_at": "2026-03-28T17:11:15Z",
+      "updated_at": "2026-03-28T17:13:24Z",
+      "html_url": "https://github.com/pytorch/pytorch/issues/178687",
+      "labels": [
+        "module: performance",
+        "module: cpp",
+        "module: rocm",
+        "triaged",
+        "bot-triaged"
+      ]
+    },
     {
       "number": 174288,
       "title": "[distributed] Batched isend/irecv with NCCL backend hangs on high load",
@@ -800,34 +846,6 @@
         "module: aotdispatch",
         "module: pt2-dispatcher",
         "bot-triaged"
-      ]
-    },
-    {
-      "number": 176025,
-      "title": "amp + flex_attention_backward results in NoValidChoicesError",
-      "author": "mauriceweiler",
-      "state": "open",
-      "created_at": "2026-02-27T23:01:37Z",
-      "updated_at": "2026-03-21T16:46:57Z",
-      "html_url": "https://github.com/pytorch/pytorch/issues/176025",
-      "labels": [
-        "triaged",
-        "oncall: pt2",
-        "module: flex attention"
-      ]
-    },
-    {
-      "number": 150168,
-      "title": "[ROCm] PyTorch slow on TTS",
-      "author": "winstonma",
-      "state": "open",
-      "created_at": "2025-03-28T07:38:47Z",
-      "updated_at": "2026-03-21T08:49:15Z",
-      "html_url": "https://github.com/pytorch/pytorch/issues/150168",
-      "labels": [
-        "module: rocm",
-        "triaged",
-        "topic: performance"
       ]
     }
   ]

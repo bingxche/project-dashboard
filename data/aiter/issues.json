@@ -1,6 +1,26 @@
 {
-  "collected_at": "2026-03-28T08:12:39Z",
+  "collected_at": "2026-03-29T08:13:11Z",
   "issues": [
+    {
+      "number": 2519,
+      "title": "gfx1250: asm_gemm_a16w16 crashes with 'get_heuristic_kernel not find kernel for bf16gemm'",
+      "author": "sunway513",
+      "state": "open",
+      "created_at": "2026-03-29T04:23:41Z",
+      "updated_at": "2026-03-29T04:23:41Z",
+      "html_url": "https://github.com/ROCm/aiter/issues/2519",
+      "labels": []
+    },
+    {
+      "number": 2517,
+      "title": "[Bug] mha_batch_prefill returns all-zeros when KV cache > 8.4M pages (int32 overflow in CK element_space_size)",
+      "author": "ChangyiYang",
+      "state": "open",
+      "created_at": "2026-03-28T21:00:51Z",
+      "updated_at": "2026-03-28T21:00:51Z",
+      "html_url": "https://github.com/ROCm/aiter/issues/2517",
+      "labels": []
+    },
     {
       "number": 2516,
       "title": "Triton RMSNorm 5-10x slower than FlashInfer at batch<=1024 on MI355X",

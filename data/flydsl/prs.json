@@ -1,15 +1,15 @@
 {
-  "collected_at": "2026-03-28T08:12:46Z",
+  "collected_at": "2026-03-29T08:13:20Z",
   "prs": [
     {
-      "number": 289,
-      "title": " feat(moe): Add MoE FP4 GEMM 2-stage kernel with benchmark and perf optimizations",
-      "author": "zhiding512",
+      "number": 278,
+      "title": "[Compiler][Kernel][MI450]Rebase gfx1250 WMMA/mcast/mxfp4 support onto main",
+      "author": "jli-melchior",
       "state": "open",
       "merged": false,
-      "created_at": "2026-03-26T06:30:46Z",
-      "updated_at": "2026-03-28T04:13:13Z",
-      "html_url": "https://github.com/ROCm/FlyDSL/pull/289",
+      "created_at": "2026-03-24T06:35:41Z",
+      "updated_at": "2026-03-29T03:30:55Z",
+      "html_url": "https://github.com/ROCm/FlyDSL/pull/278",
       "labels": [],
       "draft": false
     },
@@ -20,8 +20,56 @@
       "state": "open",
       "merged": false,
       "created_at": "2026-03-24T05:36:46Z",
-      "updated_at": "2026-03-28T01:53:43Z",
+      "updated_at": "2026-03-29T03:24:02Z",
       "html_url": "https://github.com/ROCm/FlyDSL/pull/277",
+      "labels": [],
+      "draft": false
+    },
+    {
+      "number": 306,
+      "title": "blockscale optimize for 355",
+      "author": "yadaish",
+      "state": "open",
+      "merged": false,
+      "created_at": "2026-03-28T16:19:44Z",
+      "updated_at": "2026-03-29T03:04:30Z",
+      "html_url": "https://github.com/ROCm/FlyDSL/pull/306",
+      "labels": [],
+      "draft": true
+    },
+    {
+      "number": 307,
+      "title": "add llir dump",
+      "author": "coderfeli",
+      "state": "open",
+      "merged": false,
+      "created_at": "2026-03-29T01:51:42Z",
+      "updated_at": "2026-03-29T03:00:01Z",
+      "html_url": "https://github.com/ROCm/FlyDSL/pull/307",
+      "labels": [],
+      "draft": false
+    },
+    {
+      "number": 297,
+      "title": "[FEAT] Add ir.Value caster for dsl types",
+      "author": "sjfeng1999",
+      "state": "open",
+      "merged": false,
+      "created_at": "2026-03-27T07:06:44Z",
+      "updated_at": "2026-03-28T10:03:30Z",
+      "html_url": "https://github.com/ROCm/FlyDSL/pull/297",
+      "labels": [],
+      "draft": true
+    },
+    {
+      "number": 289,
+      "title": " feat(moe): Add MoE FP4 GEMM 2-stage kernel with benchmark and perf optimizations",
+      "author": "zhiding512",
+      "state": "open",
+      "merged": false,
+      "created_at": "2026-03-26T06:30:46Z",
+      "updated_at": "2026-03-28T04:13:13Z",
+      "html_url": "https://github.com/ROCm/FlyDSL/pull/289",
       "labels": [],
       "draft": false
     },
@@ -58,30 +106,6 @@
       "created_at": "2026-03-22T06:58:43Z",
       "updated_at": "2026-03-27T12:54:53Z",
       "html_url": "https://github.com/ROCm/FlyDSL/pull/259",
-      "labels": [],
-      "draft": false
-    },
-    {
-      "number": 278,
-      "title": "[Compiler][Kernel][MI450]Rebase gfx1250 WMMA/mcast/mxfp4 support onto main",
-      "author": "jli-melchior",
-      "state": "open",
-      "merged": false,
-      "created_at": "2026-03-24T06:35:41Z",
-      "updated_at": "2026-03-27T10:13:00Z",
-      "html_url": "https://github.com/ROCm/FlyDSL/pull/278",
-      "labels": [],
-      "draft": false
-    },
-    {
-      "number": 297,
-      "title": "[FEAT] Add ir.Value caster for dsl types",
-      "author": "sjfeng1999",
-      "state": "open",
-      "merged": false,
-      "created_at": "2026-03-27T07:06:44Z",
-      "updated_at": "2026-03-27T07:43:34Z",
-      "html_url": "https://github.com/ROCm/FlyDSL/pull/297",
       "labels": [],
       "draft": false
     },
@@ -158,13 +182,25 @@
       "draft": false
     },
     {
+      "number": 305,
+      "title": "[Refactor] align Fly dialect modules with upstream naming",
+      "author": "sjfeng1999",
+      "state": "closed",
+      "merged": true,
+      "created_at": "2026-03-28T13:34:29Z",
+      "updated_at": "2026-03-29T01:20:12Z",
+      "html_url": "https://github.com/ROCm/FlyDSL/pull/305",
+      "labels": [],
+      "draft": false
+    },
+    {
       "number": 298,
       "title": "[Fix] fix the type of value in the adaptor may differ with IntAttr.wi\u2026",
       "author": "sjfeng1999",
       "state": "closed",
       "merged": true,
       "created_at": "2026-03-27T08:52:09Z",
-      "updated_at": "2026-03-27T11:57:29Z",
+      "updated_at": "2026-03-28T14:52:06Z",
       "html_url": "https://github.com/ROCm/FlyDSL/pull/298",
       "labels": [],
       "draft": false
@@ -930,18 +966,6 @@
       "draft": false
     },
     {
-      "number": 173,
-      "title": "[FLYDSL]: add product test",
-      "author": "xudoyuan",
-      "state": "closed",
-      "merged": true,
-      "created_at": "2026-03-04T07:30:50Z",
-      "updated_at": "2026-03-09T14:23:23Z",
-      "html_url": "https://github.com/ROCm/FlyDSL/pull/173",
-      "labels": [],
-      "draft": false
-    },
-    {
       "number": 148,
       "title": "update: publish artifacts nightlies",
       "author": "kiran-thumma",
@@ -954,14 +978,14 @@
       "draft": false
     },
     {
-      "number": 174,
-      "title": "Add runner label \u2192 GPU hardware mapping configuration for FlyDSL",
-      "author": "gyohuangxin",
+      "number": 173,
+      "title": "[FLYDSL]: add product test",
+      "author": "xudoyuan",
       "state": "closed",
       "merged": true,
-      "created_at": "2026-03-05T03:14:11Z",
-      "updated_at": "2026-03-09T14:23:22Z",
-      "html_url": "https://github.com/ROCm/FlyDSL/pull/174",
+      "created_at": "2026-03-04T07:30:50Z",
+      "updated_at": "2026-03-09T14:23:23Z",
+      "html_url": "https://github.com/ROCm/FlyDSL/pull/173",
       "labels": [],
       "draft": false
     }
