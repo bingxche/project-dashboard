@@ -1,5 +1,5 @@
 {
-  "collected_at": "2026-03-29T08:13:22Z",
+  "collected_at": "2026-03-30T08:34:32Z",
   "source": "automated",
   "rocm": {
     "workflow_name": "rocm-mi300",
@@ -4340,14 +4340,14 @@
   },
   "cuda": {
     "workflow_name": "trunk",
-    "run_id": 23699865870,
-    "run_url": "https://github.com/pytorch/pytorch/actions/runs/23699865870",
-    "run_date": "2026-03-29T04:40:55Z",
+    "run_id": 23729431055,
+    "run_url": "https://github.com/pytorch/pytorch/actions/runs/23729431055",
+    "run_date": "2026-03-30T07:08:55Z",
     "conclusion": "success",
     "summary": {
       "total_jobs": 38,
-      "total_tests": 15447,
-      "passed": 14745,
+      "total_tests": 15442,
+      "passed": 14740,
       "failed": 4,
       "skipped": 698,
       "pass_rate": 99.97
@@ -5675,8 +5675,8 @@
       },
       {
         "name": "dynamo.test_streams",
-        "tests": 61,
-        "passed": 57,
+        "tests": 56,
+        "passed": 52,
         "failed": 0,
         "skipped": 4,
         "errors": 0
@@ -5988,9 +5988,9 @@
     ]
   },
   "cuda_parity": {
-    "ratio": 1404.4,
+    "ratio": 1404.9,
     "rocm_count": 207135,
-    "cuda_count": 14749,
+    "cuda_count": 14744,
     "level": "test"
   }
 }

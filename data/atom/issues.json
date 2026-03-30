@@ -1,6 +1,29 @@
 {
-  "collected_at": "2026-03-29T08:13:14Z",
+  "collected_at": "2026-03-30T08:34:24Z",
   "issues": [
+    {
+      "number": 443,
+      "title": "[Perf Regression] 17 config(s) regressed @ 0079204e",
+      "author": "github-actions[bot]",
+      "state": "open",
+      "created_at": "2026-03-29T22:26:21Z",
+      "updated_at": "2026-03-29T22:26:21Z",
+      "html_url": "https://github.com/ROCm/ATOM/issues/443",
+      "labels": [
+        "performance",
+        "regression"
+      ]
+    },
+    {
+      "number": 442,
+      "title": "FP8 MoE block_n=128 alignment error for models with small intermediate_size (MiniMax M2.5, Qwen3-235B)",
+      "author": "sunway513",
+      "state": "open",
+      "created_at": "2026-03-29T18:16:07Z",
+      "updated_at": "2026-03-29T18:16:07Z",
+      "html_url": "https://github.com/ROCm/ATOM/issues/442",
+      "labels": []
+    },
     {
       "number": 440,
       "title": "[Perf Regression] 17 config(s) regressed @ f70484dc",

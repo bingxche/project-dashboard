@@ -1,30 +1,16 @@
 {
-  "collected_at": "2026-03-29T08:13:00Z",
+  "collected_at": "2026-03-30T08:34:09Z",
   "prs": [
     {
-      "number": 4707,
-      "title": "Improve adaptive GPU defaults and device feature caching",
-      "author": "Rolaand-Jayz",
+      "number": 4699,
+      "title": "Support dynamic input shapes for NonMaxSuppression op with runtime validation",
+      "author": "klin2024",
       "state": "open",
       "merged": false,
-      "created_at": "2026-03-26T13:41:29Z",
-      "updated_at": "2026-03-29T04:58:02Z",
-      "html_url": "https://github.com/ROCm/AMDMIGraphX/pull/4707",
+      "created_at": "2026-03-24T08:51:59Z",
+      "updated_at": "2026-03-30T06:22:06Z",
+      "html_url": "https://github.com/ROCm/AMDMIGraphX/pull/4699",
       "labels": [],
-      "draft": false
-    },
-    {
-      "number": 4717,
-      "title": "Bump cryptography from 46.0.5 to 46.0.6 in /docs/sphinx",
-      "author": "dependabot[bot]",
-      "state": "open",
-      "merged": false,
-      "created_at": "2026-03-29T04:30:58Z",
-      "updated_at": "2026-03-29T04:30:59Z",
-      "html_url": "https://github.com/ROCm/AMDMIGraphX/pull/4717",
-      "labels": [
-        "documentation"
-      ],
       "draft": false
     },
     {
@@ -34,8 +20,20 @@
       "state": "open",
       "merged": false,
       "created_at": "2026-03-27T16:25:04Z",
-      "updated_at": "2026-03-28T04:22:58Z",
+      "updated_at": "2026-03-29T20:07:38Z",
       "html_url": "https://github.com/ROCm/AMDMIGraphX/pull/4714",
+      "labels": [],
+      "draft": false
+    },
+    {
+      "number": 4707,
+      "title": "Improve adaptive GPU defaults and device feature caching",
+      "author": "Rolaand-Jayz",
+      "state": "open",
+      "merged": false,
+      "created_at": "2026-03-26T13:41:29Z",
+      "updated_at": "2026-03-29T04:58:02Z",
+      "html_url": "https://github.com/ROCm/AMDMIGraphX/pull/4707",
       "labels": [],
       "draft": false
     },
@@ -63,38 +61,6 @@
       "labels": [
         "enhancement",
         "high priority"
-      ],
-      "draft": false
-    },
-    {
-      "number": 4713,
-      "title": "Fix bug in rewrite_resize with nhwc",
-      "author": "pfultz2",
-      "state": "open",
-      "merged": false,
-      "created_at": "2026-03-27T14:56:00Z",
-      "updated_at": "2026-03-27T23:46:31Z",
-      "html_url": "https://github.com/ROCm/AMDMIGraphX/pull/4713",
-      "labels": [
-        "bugfix",
-        "high priority"
-      ],
-      "draft": false
-    },
-    {
-      "number": 4715,
-      "title": "Onnxruntime Weekly Sync 2026-03-27",
-      "author": "github-actions[bot]",
-      "state": "open",
-      "merged": false,
-      "created_at": "2026-03-27T17:27:16Z",
-      "updated_at": "2026-03-27T18:06:05Z",
-      "html_url": "https://github.com/ROCm/AMDMIGraphX/pull/4715",
-      "labels": [
-        "onnxruntime",
-        "dependencies",
-        "skip bot checks",
-        "automated"
       ],
       "draft": false
     },
@@ -203,18 +169,6 @@
       "created_at": "2026-03-24T18:23:05Z",
       "updated_at": "2026-03-26T21:53:18Z",
       "html_url": "https://github.com/ROCm/AMDMIGraphX/pull/4700",
-      "labels": [],
-      "draft": false
-    },
-    {
-      "number": 4699,
-      "title": "Support dynamic input shapes for NonMaxSuppression op with runtime validation",
-      "author": "klin2024",
-      "state": "open",
-      "merged": false,
-      "created_at": "2026-03-24T08:51:59Z",
-      "updated_at": "2026-03-26T18:51:47Z",
-      "html_url": "https://github.com/ROCm/AMDMIGraphX/pull/4699",
       "labels": [],
       "draft": false
     },
@@ -1072,6 +1026,52 @@
       "updated_at": "2024-10-21T22:48:16Z",
       "html_url": "https://github.com/ROCm/AMDMIGraphX/pull/3468",
       "labels": [],
+      "draft": false
+    },
+    {
+      "number": 4713,
+      "title": "Fix bug in rewrite_resize with nhwc",
+      "author": "pfultz2",
+      "state": "closed",
+      "merged": true,
+      "created_at": "2026-03-27T14:56:00Z",
+      "updated_at": "2026-03-29T19:30:56Z",
+      "html_url": "https://github.com/ROCm/AMDMIGraphX/pull/4713",
+      "labels": [
+        "bugfix",
+        "high priority"
+      ],
+      "draft": false
+    },
+    {
+      "number": 4717,
+      "title": "Bump cryptography from 46.0.5 to 46.0.6 in /docs/sphinx",
+      "author": "dependabot[bot]",
+      "state": "closed",
+      "merged": true,
+      "created_at": "2026-03-29T04:30:58Z",
+      "updated_at": "2026-03-29T19:27:03Z",
+      "html_url": "https://github.com/ROCm/AMDMIGraphX/pull/4717",
+      "labels": [
+        "documentation"
+      ],
+      "draft": false
+    },
+    {
+      "number": 4715,
+      "title": "Onnxruntime Weekly Sync 2026-03-27",
+      "author": "github-actions[bot]",
+      "state": "closed",
+      "merged": true,
+      "created_at": "2026-03-27T17:27:16Z",
+      "updated_at": "2026-03-29T19:26:09Z",
+      "html_url": "https://github.com/ROCm/AMDMIGraphX/pull/4715",
+      "labels": [
+        "onnxruntime",
+        "dependencies",
+        "skip bot checks",
+        "automated"
+      ],
       "draft": false
     },
     {
@@ -2044,51 +2044,6 @@
       "updated_at": "2026-02-19T14:29:22Z",
       "html_url": "https://github.com/ROCm/AMDMIGraphX/pull/4609",
       "labels": [],
-      "draft": false
-    },
-    {
-      "number": 4621,
-      "title": "[AIMIGRAPHX-571] Rewrite convolutions to GEMMs for constant broadcasted inputs",
-      "author": "eddieliao",
-      "state": "closed",
-      "merged": true,
-      "created_at": "2026-02-19T00:04:27Z",
-      "updated_at": "2026-02-19T14:28:16Z",
-      "html_url": "https://github.com/ROCm/AMDMIGraphX/pull/4621",
-      "labels": [
-        "Matchers",
-        "Changelog: Optimized"
-      ],
-      "draft": false
-    },
-    {
-      "number": 4410,
-      "title": "clamping the scale",
-      "author": "aarushjain29",
-      "state": "closed",
-      "merged": true,
-      "created_at": "2025-10-28T17:59:50Z",
-      "updated_at": "2026-02-18T20:30:48Z",
-      "html_url": "https://github.com/ROCm/AMDMIGraphX/pull/4410",
-      "labels": [
-        "bugfix"
-      ],
-      "draft": false
-    },
-    {
-      "number": 4510,
-      "title": "[BugFix] - Fix tile byte size overflow for LDS memory when planning number of tiles",
-      "author": "ivarusic-amd",
-      "state": "closed",
-      "merged": true,
-      "created_at": "2025-12-17T14:16:47Z",
-      "updated_at": "2026-02-18T18:01:31Z",
-      "html_url": "https://github.com/ROCm/AMDMIGraphX/pull/4510",
-      "labels": [
-        "bugfix",
-        "simple",
-        "Windows"
-      ],
       "draft": false
     }
   ]

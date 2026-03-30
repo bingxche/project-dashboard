@@ -1,5 +1,5 @@
 {
-  "collected_at": "2026-03-29T08:15:32Z",
+  "collected_at": "2026-03-30T08:36:45Z",
   "workflows": {
     "Clang Tests": {
       "workflow_id": 1013963,
@@ -10,13 +10,7 @@
         "started_at": "2025-12-02T01:20:08Z",
         "html_url": "https://github.com/llvm/llvm-project/actions/runs/19843358097"
       },
-      "stats": {
-        "sample_size": 3,
-        "median_minutes": 577445.2,
-        "p90_minutes": 577729.6,
-        "min_minutes": 577423.6,
-        "max_minutes": 577729.6
-      },
+      "stats": null,
       "recent_runs": [
         {
           "id": 19843358097,
@@ -53,24 +47,6 @@
           "conclusion": "cancelled",
           "duration_minutes": 292.2,
           "date": "2025-10-31"
-        },
-        {
-          "id": 13055155553,
-          "conclusion": "success",
-          "duration_minutes": 577423.6,
-          "date": "2025-01-30"
-        },
-        {
-          "id": 13051372675,
-          "conclusion": "success",
-          "duration_minutes": 577445.2,
-          "date": "2025-01-30"
-        },
-        {
-          "id": 13031270843,
-          "conclusion": "success",
-          "duration_minutes": 577729.6,
-          "date": "2025-01-29"
         }
       ],
       "bottleneck_job": {

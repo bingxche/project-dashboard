@@ -1,16 +1,16 @@
 {
-  "collected_at": "2026-03-29T08:13:50Z",
+  "collected_at": "2026-03-30T08:35:01Z",
   "project": "pytorch",
   "repo": "pytorch/pytorch",
   "pr_velocity": {
     "this_week": {
-      "opened": 22,
-      "merged": 4,
+      "opened": 21,
+      "merged": 3,
       "closed": 1
     },
     "last_week": {
       "opened": 9,
-      "merged": 7,
+      "merged": 8,
       "closed": 0
     },
     "median_time_to_merge_hours": 750.4,
@@ -18,8 +18,8 @@
     "stale_prs": 0
   },
   "contributors": {
-    "active_this_week": 42,
-    "total_contributors": 50,
+    "active_this_week": 38,
+    "total_contributors": 46,
     "top_contributors": [
       {
         "author": "atalman",
@@ -40,19 +40,31 @@
         "commits": 0
       },
       {
+        "author": "haoyuz",
+        "prs_submitted": 3,
+        "prs_merged": 0,
+        "commits": 0
+      },
+      {
         "author": "umechand-amd",
         "prs_submitted": 3,
         "prs_merged": 0,
         "commits": 0
       },
       {
+        "author": "laithsakka",
+        "prs_submitted": 2,
+        "prs_merged": 0,
+        "commits": 0
+      },
+      {
         "author": "malfet",
-        "prs_submitted": 3,
+        "prs_submitted": 2,
         "prs_merged": 1,
         "commits": 0
       },
       {
-        "author": "haoyuz",
+        "author": "CalebisGross",
         "prs_submitted": 2,
         "prs_merged": 0,
         "commits": 0
@@ -68,60 +80,48 @@
         "prs_submitted": 2,
         "prs_merged": 0,
         "commits": 0
-      },
-      {
-        "author": "jeffdaily",
-        "prs_submitted": 2,
-        "prs_merged": 2,
-        "commits": 0
-      },
-      {
-        "author": "Camyll",
-        "prs_submitted": 2,
-        "prs_merged": 2,
-        "commits": 0
       }
     ],
     "bus_factor": 2
   },
   "issue_health": {
     "total_open": 51,
-    "opened_this_week": 28,
-    "closed_this_week": 135,
+    "opened_this_week": 26,
+    "closed_this_week": 121,
     "unanswered": 0
   },
   "ci_health": {
     "rocm": {
       "total_runs": 20,
-      "succeeded": 9,
-      "failed": 3,
-      "success_rate": 45.0
+      "succeeded": 2,
+      "failed": 1,
+      "success_rate": 10.0
     },
     "cuda": {
       "total_runs": 20,
-      "succeeded": 10,
-      "failed": 7,
-      "success_rate": 50.0
+      "succeeded": 7,
+      "failed": 9,
+      "success_rate": 35.0
     }
   },
   "ci_signal_time": {
     "rocm": {
-      "sample_size": 15,
-      "median_minutes": 206.1,
-      "p90_minutes": 247.6,
+      "sample_size": 7,
+      "median_minutes": 0.0,
+      "p90_minutes": 425.3,
       "min_minutes": 0.0,
       "max_minutes": 425.3
     },
     "cuda": {
       "sample_size": 20,
-      "median_minutes": 120.0,
-      "p90_minutes": 396.9,
-      "min_minutes": 11.9,
-      "max_minutes": 399.1
+      "median_minutes": 154.8,
+      "p90_minutes": 310.4,
+      "min_minutes": 2.7,
+      "max_minutes": 311.0
     }
   },
   "release_cadence": {
-    "days_since_last": 5.6,
+    "days_since_last": 6.6,
     "avg_interval_days": 57.3,
     "total_releases": 5,
     "latest_tag": "v2.11.0"

@@ -1,14 +1,14 @@
 {
-  "collected_at": "2026-03-29T08:15:48Z",
+  "collected_at": "2026-03-30T08:37:04Z",
   "workflows": {
     "Documentation": {
       "workflow_id": 11689091,
       "latest_run": {
-        "id": 23698307734,
+        "id": 23723639876,
         "conclusion": "cancelled",
-        "duration_minutes": 30.3,
-        "started_at": "2026-03-29T01:08:18Z",
-        "html_url": "https://github.com/triton-lang/triton/actions/runs/23698307734"
+        "duration_minutes": 47.4,
+        "started_at": "2026-03-30T01:09:19Z",
+        "html_url": "https://github.com/triton-lang/triton/actions/runs/23723639876"
       },
       "stats": {
         "sample_size": 6,
@@ -18,6 +18,12 @@
         "max_minutes": 33.9
       },
       "recent_runs": [
+        {
+          "id": 23723639876,
+          "conclusion": "cancelled",
+          "duration_minutes": 47.4,
+          "date": "2026-03-30"
+        },
         {
           "id": 23698307734,
           "conclusion": "cancelled",
@@ -131,12 +137,6 @@
           "conclusion": "success",
           "duration_minutes": 31.7,
           "date": "2026-03-11"
-        },
-        {
-          "id": 22881912579,
-          "conclusion": "cancelled",
-          "duration_minutes": 43.6,
-          "date": "2026-03-10"
         }
       ],
       "bottleneck_job": {
@@ -147,11 +147,11 @@
     "Wheels": {
       "workflow_id": 11689092,
       "latest_run": {
-        "id": 23681232555,
-        "conclusion": "success",
-        "duration_minutes": 130.3,
-        "started_at": "2026-03-28T08:23:34Z",
-        "html_url": "https://github.com/triton-lang/triton/actions/runs/23681232555"
+        "id": 23705022207,
+        "conclusion": "failure",
+        "duration_minutes": 137.3,
+        "started_at": "2026-03-29T08:25:29Z",
+        "html_url": "https://github.com/triton-lang/triton/actions/runs/23705022207"
       },
       "stats": {
         "sample_size": 7,
@@ -161,6 +161,12 @@
         "max_minutes": 192.4
       },
       "recent_runs": [
+        {
+          "id": 23705022207,
+          "conclusion": "failure",
+          "duration_minutes": 137.3,
+          "date": "2026-03-29"
+        },
         {
           "id": 23681232555,
           "conclusion": "success",
@@ -274,17 +280,11 @@
           "conclusion": "failure",
           "duration_minutes": 139.0,
           "date": "2026-03-11"
-        },
-        {
-          "id": 22893564773,
-          "conclusion": "failure",
-          "duration_minutes": 143.2,
-          "date": "2026-03-10"
         }
       ],
       "bottleneck_job": {
         "name": "Build-Wheels (ubuntu-22.04-arm, aarch64)",
-        "duration_minutes": 130.2
+        "duration_minutes": 137.3
       }
     },
     "pages-build-deployment": {

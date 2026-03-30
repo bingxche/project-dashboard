@@ -1,23 +1,23 @@
 {
-  "collected_at": "2026-03-29T08:13:45Z",
+  "collected_at": "2026-03-30T08:34:54Z",
   "source": "automated",
   "rocm": {
     "workflow_name": "CI - Bazel ROCm tests",
-    "run_id": 23680934034,
-    "run_url": "https://github.com/jax-ml/jax/actions/runs/23680934034",
-    "run_date": "2026-03-28T08:33:43Z",
-    "conclusion": "failure",
+    "run_id": 23734415057,
+    "run_url": "https://github.com/jax-ml/jax/actions/runs/23734415057",
+    "run_date": "2026-03-30T08:18:31Z",
+    "conclusion": "success",
     "summary": {
       "total_jobs": 2,
-      "passed": 1,
-      "failed": 1,
+      "passed": 2,
+      "failed": 0,
       "skipped": 0,
-      "pass_rate": 50.0
+      "pass_rate": 100.0
     },
     "suites": [
       {
-        "name": "Bazel single accelerator ROCm tests / linux x86, jaxlib=head, ROCM=7, Python=3.14, x64=1, build_jax=true, build_jaxlib=wheel",
-        "conclusion": "failure",
+        "name": "Bazel single accelerator ROCm tests / linux x86, jaxlib=pypi_latest, ROCM=7, Python=3.14, x64=1, build_jax=true, build_jaxlib=false",
+        "conclusion": "success",
         "tests": null,
         "passed": null,
         "failed": null,
@@ -25,7 +25,7 @@
         "errors": null
       },
       {
-        "name": "Bazel single accelerator ROCm tests / linux x86, jaxlib=pypi_latest, ROCM=7, Python=3.14, x64=1, build_jax=true, build_jaxlib=false",
+        "name": "Bazel single accelerator ROCm tests / linux x86, jaxlib=head, ROCM=7, Python=3.14, x64=1, build_jax=true, build_jaxlib=wheel",
         "conclusion": "success",
         "tests": null,
         "passed": null,
@@ -37,9 +37,9 @@
   },
   "cuda": {
     "workflow_name": "CI - Bazel H100 and B200 CUDA tests",
-    "run_id": 23703227375,
-    "run_url": "https://github.com/jax-ml/jax/actions/runs/23703227375",
-    "run_date": "2026-03-29T06:42:59Z",
+    "run_id": 23731608401,
+    "run_url": "https://github.com/jax-ml/jax/actions/runs/23731608401",
+    "run_date": "2026-03-30T06:58:47Z",
     "conclusion": "failure",
     "summary": {
       "total_jobs": 2,

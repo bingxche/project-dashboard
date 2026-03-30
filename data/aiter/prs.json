@@ -1,16 +1,275 @@
 {
-  "collected_at": "2026-03-29T08:13:08Z",
+  "collected_at": "2026-03-30T08:34:18Z",
   "prs": [
     {
-      "number": 2518,
-      "title": "[Misc][Bugfix][Perf] Remove redundant bpreshuffle tuner, fix type hints warnings, add GLM-5 tuned configs",
-      "author": "valarLip",
+      "number": 2375,
+      "title": "Add run_config and compare in tuner",
+      "author": "yzhou103",
       "state": "open",
       "merged": false,
-      "created_at": "2026-03-29T04:17:23Z",
-      "updated_at": "2026-03-29T04:35:25Z",
-      "html_url": "https://github.com/ROCm/aiter/pull/2518",
+      "created_at": "2026-03-20T05:58:06Z",
+      "updated_at": "2026-03-30T08:26:36Z",
+      "html_url": "https://github.com/ROCm/aiter/pull/2375",
       "labels": [],
+      "draft": false
+    },
+    {
+      "number": 2498,
+      "title": "Add ctypes C-ABI error bridging to prevent worker crashes during kern\u2026",
+      "author": "yzhou103",
+      "state": "open",
+      "merged": false,
+      "created_at": "2026-03-27T02:44:30Z",
+      "updated_at": "2026-03-30T08:23:14Z",
+      "html_url": "https://github.com/ROCm/aiter/pull/2498",
+      "labels": [],
+      "draft": false
+    },
+    {
+      "number": 2530,
+      "title": "CI: test switch MI35x runners to DPX labels",
+      "author": "gyohuangxin",
+      "state": "open",
+      "merged": false,
+      "created_at": "2026-03-30T08:14:51Z",
+      "updated_at": "2026-03-30T08:18:34Z",
+      "html_url": "https://github.com/ROCm/aiter/pull/2530",
+      "labels": [],
+      "draft": false
+    },
+    {
+      "number": 2505,
+      "title": "[Triton] Add sliding window support for sink attention",
+      "author": "kyle-256",
+      "state": "open",
+      "merged": false,
+      "created_at": "2026-03-27T09:00:50Z",
+      "updated_at": "2026-03-30T08:01:59Z",
+      "html_url": "https://github.com/ROCm/aiter/pull/2505",
+      "labels": [
+        "enhancement",
+        "triton"
+      ],
+      "draft": false
+    },
+    {
+      "number": 2522,
+      "title": "Update gfx942 PA PS kernels and wire stride_scale_blk in asm_pa",
+      "author": "fangche123",
+      "state": "open",
+      "merged": false,
+      "created_at": "2026-03-30T02:28:03Z",
+      "updated_at": "2026-03-30T07:52:19Z",
+      "html_url": "https://github.com/ROCm/aiter/pull/2522",
+      "labels": [],
+      "draft": false
+    },
+    {
+      "number": 2529,
+      "title": "Update pa kernel for case when all unused kv are filled with nan",
+      "author": "ZhangLirong-amd",
+      "state": "open",
+      "merged": false,
+      "created_at": "2026-03-30T07:40:34Z",
+      "updated_at": "2026-03-30T07:41:24Z",
+      "html_url": "https://github.com/ROCm/aiter/pull/2529",
+      "labels": [],
+      "draft": false
+    },
+    {
+      "number": 2499,
+      "title": "Fuse gated rmsnorm + group_quant for qwen3next and qwen3.5",
+      "author": "ganyi1996ppo",
+      "state": "open",
+      "merged": false,
+      "created_at": "2026-03-27T03:30:52Z",
+      "updated_at": "2026-03-30T07:21:52Z",
+      "html_url": "https://github.com/ROCm/aiter/pull/2499",
+      "labels": [],
+      "draft": false
+    },
+    {
+      "number": 2527,
+      "title": "add fused_qk_norm_group_quant kernel",
+      "author": "yzhou103",
+      "state": "open",
+      "merged": false,
+      "created_at": "2026-03-30T06:53:49Z",
+      "updated_at": "2026-03-30T07:06:57Z",
+      "html_url": "https://github.com/ROCm/aiter/pull/2527",
+      "labels": [],
+      "draft": false
+    },
+    {
+      "number": 2525,
+      "title": "add WARP_SIZE define in csrc/include/aiter_hip_common.h  for host and device  &&   rm hip_compat.h",
+      "author": "junhaha666",
+      "state": "open",
+      "merged": false,
+      "created_at": "2026-03-30T06:15:20Z",
+      "updated_at": "2026-03-30T06:46:15Z",
+      "html_url": "https://github.com/ROCm/aiter/pull/2525",
+      "labels": [],
+      "draft": false
+    },
+    {
+      "number": 2352,
+      "title": "[gfx1201] Enable RMSNorm support for gfx1201",
+      "author": "vllmellm",
+      "state": "open",
+      "merged": false,
+      "created_at": "2026-03-19T08:53:34Z",
+      "updated_at": "2026-03-30T06:38:31Z",
+      "html_url": "https://github.com/ROCm/aiter/pull/2352",
+      "labels": [],
+      "draft": false
+    },
+    {
+      "number": 2520,
+      "title": "[BUG] Fix ck-tile blockscale GEMM to use the current HIP stream",
+      "author": "zyzshishui",
+      "state": "open",
+      "merged": false,
+      "created_at": "2026-03-30T01:28:59Z",
+      "updated_at": "2026-03-30T06:34:22Z",
+      "html_url": "https://github.com/ROCm/aiter/pull/2520",
+      "labels": [],
+      "draft": false
+    },
+    {
+      "number": 2526,
+      "title": "[FIX] fix a8w8 asm kernel  ks>1 mismatch",
+      "author": "junxiaguo",
+      "state": "open",
+      "merged": false,
+      "created_at": "2026-03-30T06:20:24Z",
+      "updated_at": "2026-03-30T06:22:35Z",
+      "html_url": "https://github.com/ROCm/aiter/pull/2526",
+      "labels": [],
+      "draft": false
+    },
+    {
+      "number": 2523,
+      "title": "fix tensor_address_log",
+      "author": "yzhou103",
+      "state": "open",
+      "merged": false,
+      "created_at": "2026-03-30T06:01:03Z",
+      "updated_at": "2026-03-30T06:05:07Z",
+      "html_url": "https://github.com/ROCm/aiter/pull/2523",
+      "labels": [],
+      "draft": false
+    },
+    {
+      "number": 2462,
+      "title": "fix ck moe fp8 several bugs.",
+      "author": "lalala-sh",
+      "state": "open",
+      "merged": false,
+      "created_at": "2026-03-25T08:51:48Z",
+      "updated_at": "2026-03-30T05:51:20Z",
+      "html_url": "https://github.com/ROCm/aiter/pull/2462",
+      "labels": [],
+      "draft": false
+    },
+    {
+      "number": 2483,
+      "title": "[ROCM] Add support with Infinity Cache (LLC) awareness for performance improvement",
+      "author": "tianwyan",
+      "state": "open",
+      "merged": false,
+      "created_at": "2026-03-26T08:16:48Z",
+      "updated_at": "2026-03-30T05:32:52Z",
+      "html_url": "https://github.com/ROCm/aiter/pull/2483",
+      "labels": [],
+      "draft": false
+    },
+    {
+      "number": 2503,
+      "title": "assert when found duplicated shape",
+      "author": "yzhou103",
+      "state": "open",
+      "merged": false,
+      "created_at": "2026-03-27T07:11:30Z",
+      "updated_at": "2026-03-30T05:09:56Z",
+      "html_url": "https://github.com/ROCm/aiter/pull/2503",
+      "labels": [
+        "ci:atom"
+      ],
+      "draft": false
+    },
+    {
+      "number": 2521,
+      "title": "[Opt] Fused car+rms for gpt-oss and ensure to use 1-stage kernel",
+      "author": "kkHuang-amd",
+      "state": "open",
+      "merged": false,
+      "created_at": "2026-03-30T02:24:28Z",
+      "updated_at": "2026-03-30T02:27:51Z",
+      "html_url": "https://github.com/ROCm/aiter/pull/2521",
+      "labels": [],
+      "draft": false
+    },
+    {
+      "number": 2434,
+      "title": "Fix GEMM test failures and retune with latest triton",
+      "author": "azaidy",
+      "state": "open",
+      "merged": false,
+      "created_at": "2026-03-23T18:02:01Z",
+      "updated_at": "2026-03-30T02:13:56Z",
+      "html_url": "https://github.com/ROCm/aiter/pull/2434",
+      "labels": [],
+      "draft": true
+    },
+    {
+      "number": 2501,
+      "title": "Remove torch dependency in MHA shared lib build",
+      "author": "slippedJim",
+      "state": "open",
+      "merged": false,
+      "created_at": "2026-03-27T03:44:55Z",
+      "updated_at": "2026-03-30T02:03:52Z",
+      "html_url": "https://github.com/ROCm/aiter/pull/2501",
+      "labels": [],
+      "draft": false
+    },
+    {
+      "number": 2225,
+      "title": "Fix error checking in aiter_hip_common.h",
+      "author": "draganmladjenovic",
+      "state": "open",
+      "merged": false,
+      "created_at": "2026-03-09T17:57:19Z",
+      "updated_at": "2026-03-30T00:33:55Z",
+      "html_url": "https://github.com/ROCm/aiter/pull/2225",
+      "labels": [],
+      "draft": false
+    },
+    {
+      "number": 2432,
+      "title": "Shared/triton gfx12",
+      "author": "Boss2002n",
+      "state": "open",
+      "merged": false,
+      "created_at": "2026-03-23T15:41:09Z",
+      "updated_at": "2026-03-29T19:39:41Z",
+      "html_url": "https://github.com/ROCm/aiter/pull/2432",
+      "labels": [],
+      "draft": true
+    },
+    {
+      "number": 2453,
+      "title": "Refactor allreduce for supporting prefill case",
+      "author": "TennyWang1223",
+      "state": "open",
+      "merged": false,
+      "created_at": "2026-03-24T10:12:55Z",
+      "updated_at": "2026-03-29T18:04:26Z",
+      "html_url": "https://github.com/ROCm/aiter/pull/2453",
+      "labels": [
+        "ci:all"
+      ],
       "draft": false
     },
     {
@@ -38,18 +297,6 @@
       "draft": true
     },
     {
-      "number": 2434,
-      "title": "Fix GEMM test failures and retune with latest triton",
-      "author": "azaidy",
-      "state": "open",
-      "merged": false,
-      "created_at": "2026-03-23T18:02:01Z",
-      "updated_at": "2026-03-28T16:32:59Z",
-      "html_url": "https://github.com/ROCm/aiter/pull/2434",
-      "labels": [],
-      "draft": true
-    },
-    {
       "number": 2494,
       "title": "[TRITON] Moe a8w4 on gfx1250",
       "author": "lburzawa",
@@ -59,20 +306,6 @@
       "updated_at": "2026-03-28T05:46:55Z",
       "html_url": "https://github.com/ROCm/aiter/pull/2494",
       "labels": [],
-      "draft": false
-    },
-    {
-      "number": 2503,
-      "title": "assert when found duplicated shape",
-      "author": "yzhou103",
-      "state": "open",
-      "merged": false,
-      "created_at": "2026-03-27T07:11:30Z",
-      "updated_at": "2026-03-28T05:10:20Z",
-      "html_url": "https://github.com/ROCm/aiter/pull/2503",
-      "labels": [
-        "ci:atom"
-      ],
       "draft": false
     },
     {
@@ -108,18 +341,6 @@
       "created_at": "2026-03-22T02:24:27Z",
       "updated_at": "2026-03-28T02:13:31Z",
       "html_url": "https://github.com/ROCm/aiter/pull/2406",
-      "labels": [],
-      "draft": false
-    },
-    {
-      "number": 2507,
-      "title": "Fix data overwrite problem in asm fmoe 1stage kernels for mi350",
-      "author": "JohnNikolay84",
-      "state": "open",
-      "merged": false,
-      "created_at": "2026-03-27T16:07:42Z",
-      "updated_at": "2026-03-28T00:59:48Z",
-      "html_url": "https://github.com/ROCm/aiter/pull/2507",
       "labels": [],
       "draft": false
     },
@@ -256,21 +477,6 @@
       "draft": false
     },
     {
-      "number": 2505,
-      "title": "[Triton] Add sliding window support for sink attention",
-      "author": "kyle-256",
-      "state": "open",
-      "merged": false,
-      "created_at": "2026-03-27T09:00:50Z",
-      "updated_at": "2026-03-27T16:29:03Z",
-      "html_url": "https://github.com/ROCm/aiter/pull/2505",
-      "labels": [
-        "enhancement",
-        "triton"
-      ],
-      "draft": false
-    },
-    {
       "number": 2478,
       "title": "Fix GPU memory access fault in CK MoE FP4 kernel with Expert Parallelism",
       "author": "M4jupitercannon",
@@ -284,30 +490,6 @@
         "ci:vllm"
       ],
       "draft": false
-    },
-    {
-      "number": 2446,
-      "title": "[HIP] Refine split fused GDR decode test",
-      "author": "huizzhan",
-      "state": "open",
-      "merged": false,
-      "created_at": "2026-03-24T07:39:40Z",
-      "updated_at": "2026-03-27T15:08:27Z",
-      "html_url": "https://github.com/ROCm/aiter/pull/2446",
-      "labels": [],
-      "draft": false
-    },
-    {
-      "number": 2432,
-      "title": "Shared/triton gfx12",
-      "author": "Boss2002n",
-      "state": "open",
-      "merged": false,
-      "created_at": "2026-03-23T15:41:09Z",
-      "updated_at": "2026-03-27T15:07:24Z",
-      "html_url": "https://github.com/ROCm/aiter/pull/2432",
-      "labels": [],
-      "draft": true
     },
     {
       "number": 2340,
@@ -334,32 +516,6 @@
       "draft": false
     },
     {
-      "number": 2479,
-      "title": "mhc\uff1aadd mhc_post hip kernel",
-      "author": "junhaha666",
-      "state": "open",
-      "merged": false,
-      "created_at": "2026-03-26T07:21:51Z",
-      "updated_at": "2026-03-27T10:41:30Z",
-      "html_url": "https://github.com/ROCm/aiter/pull/2479",
-      "labels": [],
-      "draft": false
-    },
-    {
-      "number": 2453,
-      "title": "Refactor allreduce for supporting prefill case",
-      "author": "TennyWang1223",
-      "state": "open",
-      "merged": false,
-      "created_at": "2026-03-24T10:12:55Z",
-      "updated_at": "2026-03-27T10:39:59Z",
-      "html_url": "https://github.com/ROCm/aiter/pull/2453",
-      "labels": [
-        "ci:all"
-      ],
-      "draft": false
-    },
-    {
       "number": 2461,
       "title": "MI350 mla ps mode support nhead=8 mtp=4 feature",
       "author": "minmengdie",
@@ -368,32 +524,6 @@
       "created_at": "2026-03-25T05:36:12Z",
       "updated_at": "2026-03-27T09:56:00Z",
       "html_url": "https://github.com/ROCm/aiter/pull/2461",
-      "labels": [],
-      "draft": false
-    },
-    {
-      "number": 2467,
-      "title": "CI: DO NOT MERGE - test replace MI355 runner labels with MI350",
-      "author": "gyohuangxin",
-      "state": "open",
-      "merged": false,
-      "created_at": "2026-03-25T15:33:04Z",
-      "updated_at": "2026-03-27T09:55:24Z",
-      "html_url": "https://github.com/ROCm/aiter/pull/2467",
-      "labels": [
-        "ci:triton-355"
-      ],
-      "draft": false
-    },
-    {
-      "number": 2499,
-      "title": "Fuse gated rmsnorm + group_quant for qwen3next and qwen3.5",
-      "author": "ganyi1996ppo",
-      "state": "open",
-      "merged": false,
-      "created_at": "2026-03-27T03:30:52Z",
-      "updated_at": "2026-03-27T09:28:10Z",
-      "html_url": "https://github.com/ROCm/aiter/pull/2499",
       "labels": [],
       "draft": false
     },
@@ -410,18 +540,6 @@
       "draft": false
     },
     {
-      "number": 2498,
-      "title": "Add ctypes C-ABI error bridging to prevent worker crashes during kern\u2026",
-      "author": "yzhou103",
-      "state": "open",
-      "merged": false,
-      "created_at": "2026-03-27T02:44:30Z",
-      "updated_at": "2026-03-27T08:45:04Z",
-      "html_url": "https://github.com/ROCm/aiter/pull/2498",
-      "labels": [],
-      "draft": false
-    },
-    {
       "number": 1940,
       "title": "Add CODEOWNERS file",
       "author": "azaidy",
@@ -430,18 +548,6 @@
       "created_at": "2026-01-31T19:18:13Z",
       "updated_at": "2026-03-27T08:36:02Z",
       "html_url": "https://github.com/ROCm/aiter/pull/1940",
-      "labels": [],
-      "draft": false
-    },
-    {
-      "number": 2334,
-      "title": "[CI][CK_TILE] Update CK and fix fmha_fwd arg init",
-      "author": "hyoon1",
-      "state": "open",
-      "merged": false,
-      "created_at": "2026-03-18T17:26:12Z",
-      "updated_at": "2026-03-27T08:34:01Z",
-      "html_url": "https://github.com/ROCm/aiter/pull/2334",
       "labels": [],
       "draft": false
     },
@@ -458,18 +564,6 @@
       "draft": false
     },
     {
-      "number": 2501,
-      "title": "Remove torch dependency in MHA shared lib build",
-      "author": "slippedJim",
-      "state": "open",
-      "merged": false,
-      "created_at": "2026-03-27T03:44:55Z",
-      "updated_at": "2026-03-27T03:51:34Z",
-      "html_url": "https://github.com/ROCm/aiter/pull/2501",
-      "labels": [],
-      "draft": false
-    },
-    {
       "number": 2441,
       "title": "[Triton MoE]: Add optimized Gluon kernel for AMD CDNA3 with K-dimension unrolling",
       "author": "jwu10003",
@@ -478,18 +572,6 @@
       "created_at": "2026-03-24T06:55:59Z",
       "updated_at": "2026-03-27T03:41:14Z",
       "html_url": "https://github.com/ROCm/aiter/pull/2441",
-      "labels": [],
-      "draft": false
-    },
-    {
-      "number": 2483,
-      "title": "[ROCM] Add support with Infinity Cache (LLC) awareness for performance improvement",
-      "author": "tianwyan",
-      "state": "open",
-      "merged": false,
-      "created_at": "2026-03-26T08:16:48Z",
-      "updated_at": "2026-03-27T02:05:07Z",
-      "html_url": "https://github.com/ROCm/aiter/pull/2483",
       "labels": [],
       "draft": false
     },
@@ -528,18 +610,6 @@
       "html_url": "https://github.com/ROCm/aiter/pull/2472",
       "labels": [],
       "draft": true
-    },
-    {
-      "number": 2225,
-      "title": "Fix error checking in aiter_hip_common.h",
-      "author": "draganmladjenovic",
-      "state": "open",
-      "merged": false,
-      "created_at": "2026-03-09T17:57:19Z",
-      "updated_at": "2026-03-26T18:39:22Z",
-      "html_url": "https://github.com/ROCm/aiter/pull/2225",
-      "labels": [],
-      "draft": false
     },
     {
       "number": 2489,
@@ -664,18 +734,6 @@
       "draft": false
     },
     {
-      "number": 2462,
-      "title": "fix ck moe fp8 several bugs.",
-      "author": "lalala-sh",
-      "state": "open",
-      "merged": false,
-      "created_at": "2026-03-25T08:51:48Z",
-      "updated_at": "2026-03-25T09:23:07Z",
-      "html_url": "https://github.com/ROCm/aiter/pull/2462",
-      "labels": [],
-      "draft": false
-    },
-    {
       "number": 2344,
       "title": "Fuse qk norm group quant",
       "author": "yzhou103",
@@ -686,30 +744,6 @@
       "html_url": "https://github.com/ROCm/aiter/pull/2344",
       "labels": [],
       "draft": true
-    },
-    {
-      "number": 2375,
-      "title": "Add run_config and compare in tuner",
-      "author": "yzhou103",
-      "state": "open",
-      "merged": false,
-      "created_at": "2026-03-20T05:58:06Z",
-      "updated_at": "2026-03-25T08:18:02Z",
-      "html_url": "https://github.com/ROCm/aiter/pull/2375",
-      "labels": [],
-      "draft": false
-    },
-    {
-      "number": 2459,
-      "title": "CI: auto-update split test FILE_TIMES",
-      "author": "github-actions[bot]",
-      "state": "open",
-      "merged": false,
-      "created_at": "2026-03-25T03:11:00Z",
-      "updated_at": "2026-03-25T03:11:01Z",
-      "html_url": "https://github.com/ROCm/aiter/pull/2459",
-      "labels": [],
-      "draft": false
     },
     {
       "number": 2426,
@@ -894,18 +928,6 @@
       "created_at": "2026-03-22T04:11:46Z",
       "updated_at": "2026-03-22T04:17:01Z",
       "html_url": "https://github.com/ROCm/aiter/pull/2409",
-      "labels": [],
-      "draft": false
-    },
-    {
-      "number": 2352,
-      "title": "[gfx1201] Enable RMSNorm support for gfx1201",
-      "author": "vllmellm",
-      "state": "open",
-      "merged": false,
-      "created_at": "2026-03-19T08:53:34Z",
-      "updated_at": "2026-03-20T15:29:01Z",
-      "html_url": "https://github.com/ROCm/aiter/pull/2352",
       "labels": [],
       "draft": false
     },
@@ -2254,6 +2276,104 @@
       "draft": false
     },
     {
+      "number": 2528,
+      "title": "CI: add docker password secret selector for aiter release workflow",
+      "author": "gyohuangxin",
+      "state": "closed",
+      "merged": true,
+      "created_at": "2026-03-30T07:35:27Z",
+      "updated_at": "2026-03-30T07:38:56Z",
+      "html_url": "https://github.com/ROCm/aiter/pull/2528",
+      "labels": [],
+      "draft": false
+    },
+    {
+      "number": 2507,
+      "title": "Fix data overwrite problem in asm fmoe 1stage kernels for mi350",
+      "author": "JohnNikolay84",
+      "state": "closed",
+      "merged": true,
+      "created_at": "2026-03-27T16:07:42Z",
+      "updated_at": "2026-03-30T07:06:06Z",
+      "html_url": "https://github.com/ROCm/aiter/pull/2507",
+      "labels": [],
+      "draft": false
+    },
+    {
+      "number": 2479,
+      "title": "mhc\uff1aadd mhc_post hip kernel",
+      "author": "junhaha666",
+      "state": "closed",
+      "merged": true,
+      "created_at": "2026-03-26T07:21:51Z",
+      "updated_at": "2026-03-30T06:21:26Z",
+      "html_url": "https://github.com/ROCm/aiter/pull/2479",
+      "labels": [],
+      "draft": false
+    },
+    {
+      "number": 2467,
+      "title": "CI: replace MI355 runner labels with MI35X",
+      "author": "gyohuangxin",
+      "state": "closed",
+      "merged": true,
+      "created_at": "2026-03-25T15:33:04Z",
+      "updated_at": "2026-03-30T04:57:29Z",
+      "html_url": "https://github.com/ROCm/aiter/pull/2467",
+      "labels": [
+        "ci:triton-355"
+      ],
+      "draft": false
+    },
+    {
+      "number": 2459,
+      "title": "CI: auto-update split test FILE_TIMES",
+      "author": "github-actions[bot]",
+      "state": "closed",
+      "merged": true,
+      "created_at": "2026-03-25T03:11:00Z",
+      "updated_at": "2026-03-30T04:50:07Z",
+      "html_url": "https://github.com/ROCm/aiter/pull/2459",
+      "labels": [],
+      "draft": false
+    },
+    {
+      "number": 2334,
+      "title": "[CI][CK_TILE] Update CK and fix fmha_fwd arg init",
+      "author": "hyoon1",
+      "state": "closed",
+      "merged": true,
+      "created_at": "2026-03-18T17:26:12Z",
+      "updated_at": "2026-03-30T03:50:37Z",
+      "html_url": "https://github.com/ROCm/aiter/pull/2334",
+      "labels": [],
+      "draft": false
+    },
+    {
+      "number": 2446,
+      "title": "[HIP] Refine split fused GDR decode test",
+      "author": "huizzhan",
+      "state": "closed",
+      "merged": true,
+      "created_at": "2026-03-24T07:39:40Z",
+      "updated_at": "2026-03-30T02:06:05Z",
+      "html_url": "https://github.com/ROCm/aiter/pull/2446",
+      "labels": [],
+      "draft": false
+    },
+    {
+      "number": 2518,
+      "title": "[Misc][Bugfix][Perf] Remove redundant bpreshuffle tuner, fix type hints warnings, add GLM-5 tuned configs",
+      "author": "valarLip",
+      "state": "closed",
+      "merged": true,
+      "created_at": "2026-03-29T04:17:23Z",
+      "updated_at": "2026-03-29T09:24:47Z",
+      "html_url": "https://github.com/ROCm/aiter/pull/2518",
+      "labels": [],
+      "draft": false
+    },
+    {
       "number": 2486,
       "title": "support_int64_ctypes",
       "author": "amd-ruitang3",
@@ -3041,93 +3161,6 @@
       "labels": [
         "ci:atom"
       ],
-      "draft": false
-    },
-    {
-      "number": 2395,
-      "title": "refactor(pa): use ctypes binding for pa_fwd and pa_ps_fwd",
-      "author": "sijyang",
-      "state": "closed",
-      "merged": true,
-      "created_at": "2026-03-20T11:45:57Z",
-      "updated_at": "2026-03-23T02:47:41Z",
-      "html_url": "https://github.com/ROCm/aiter/pull/2395",
-      "labels": [],
-      "draft": false
-    },
-    {
-      "number": 2356,
-      "title": "enable topk_softmax with share expert scoring function",
-      "author": "ganyi1996ppo",
-      "state": "closed",
-      "merged": true,
-      "created_at": "2026-03-19T14:09:29Z",
-      "updated_at": "2026-03-23T02:47:19Z",
-      "html_url": "https://github.com/ROCm/aiter/pull/2356",
-      "labels": [],
-      "draft": false
-    },
-    {
-      "number": 2414,
-      "title": "perf: optimize _moe_mxfp4_sort_kernel \u2014 reduce recompilation and improve throughput",
-      "author": "valarLip",
-      "state": "closed",
-      "merged": true,
-      "created_at": "2026-03-22T15:02:04Z",
-      "updated_at": "2026-03-22T16:02:15Z",
-      "html_url": "https://github.com/ROCm/aiter/pull/2414",
-      "labels": [],
-      "draft": false
-    },
-    {
-      "number": 2394,
-      "title": "[OPUS] enable gfx1250 support for OPUS tests",
-      "author": "carlushuang",
-      "state": "closed",
-      "merged": true,
-      "created_at": "2026-03-20T10:58:11Z",
-      "updated_at": "2026-03-22T12:51:51Z",
-      "html_url": "https://github.com/ROCm/aiter/pull/2394",
-      "labels": [],
-      "draft": false
-    },
-    {
-      "number": 2302,
-      "title": "Improve batch prefill test coverage",
-      "author": "poyenc",
-      "state": "closed",
-      "merged": true,
-      "created_at": "2026-03-16T15:51:29Z",
-      "updated_at": "2026-03-20T23:14:49Z",
-      "html_url": "https://github.com/ROCm/aiter/pull/2302",
-      "labels": [],
-      "draft": false
-    },
-    {
-      "number": 2199,
-      "title": "Enhance fused_qk_norm_rope_cache_quant functions by adding rotary_dim",
-      "author": "zhentaocc",
-      "state": "closed",
-      "merged": true,
-      "created_at": "2026-03-06T03:19:44Z",
-      "updated_at": "2026-03-20T21:03:53Z",
-      "html_url": "https://github.com/ROCm/aiter/pull/2199",
-      "labels": [
-        "enhancement",
-        "ci:atom"
-      ],
-      "draft": false
-    },
-    {
-      "number": 2511,
-      "title": "test: add profiler regression guard for HIP graph replay",
-      "author": "sunway513",
-      "state": "closed",
-      "merged": false,
-      "created_at": "2026-03-27T17:51:29Z",
-      "updated_at": "2026-03-28T02:04:15Z",
-      "html_url": "https://github.com/ROCm/aiter/pull/2511",
-      "labels": [],
       "draft": false
     }
   ]

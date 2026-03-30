@@ -1,33 +1,94 @@
 {
-  "collected_at": "2026-03-29T08:14:04Z",
+  "collected_at": "2026-03-30T08:35:17Z",
   "project": "triton",
   "repo": "triton-lang/triton",
   "pr_velocity": {
     "this_week": {
-      "opened": 0,
-      "merged": 0,
+      "opened": 14,
+      "merged": 20,
       "closed": 0
     },
     "last_week": {
-      "opened": 0,
-      "merged": 0,
+      "opened": 14,
+      "merged": 10,
       "closed": 0
     },
-    "median_time_to_merge_hours": null,
-    "merge_count": 0,
+    "median_time_to_merge_hours": 20.7,
+    "merge_count": 30,
     "stale_prs": 0
   },
   "contributors": {
-    "active_this_week": 0,
-    "total_contributors": 0,
-    "top_contributors": [],
-    "bus_factor": null
+    "active_this_week": 13,
+    "total_contributors": 16,
+    "top_contributors": [
+      {
+        "author": "AlexAUT",
+        "prs_submitted": 5,
+        "prs_merged": 5,
+        "commits": 0
+      },
+      {
+        "author": "borontion",
+        "prs_submitted": 3,
+        "prs_merged": 3,
+        "commits": 0
+      },
+      {
+        "author": "PMylon",
+        "prs_submitted": 3,
+        "prs_merged": 3,
+        "commits": 0
+      },
+      {
+        "author": "alefimov-amd",
+        "prs_submitted": 2,
+        "prs_merged": 2,
+        "commits": 0
+      },
+      {
+        "author": "knwng",
+        "prs_submitted": 2,
+        "prs_merged": 2,
+        "commits": 0
+      },
+      {
+        "author": "ravil-mobile",
+        "prs_submitted": 2,
+        "prs_merged": 2,
+        "commits": 0
+      },
+      {
+        "author": "patrick-toulme",
+        "prs_submitted": 2,
+        "prs_merged": 2,
+        "commits": 0
+      },
+      {
+        "author": "roberteg16",
+        "prs_submitted": 2,
+        "prs_merged": 2,
+        "commits": 0
+      },
+      {
+        "author": "jerryyin",
+        "prs_submitted": 2,
+        "prs_merged": 2,
+        "commits": 0
+      },
+      {
+        "author": "plognjen",
+        "prs_submitted": 1,
+        "prs_merged": 1,
+        "commits": 0
+      }
+    ],
+    "bus_factor": 5
   },
   "issue_health": {
-    "total_open": 0,
+    "total_open": 13,
     "opened_this_week": 0,
     "closed_this_week": 1,
-    "unanswered": 0
+    "unanswered": 4
   },
   "ci_health": {
     "rocm": null,
@@ -38,7 +99,7 @@
     "cuda": null
   },
   "release_cadence": {
-    "days_since_last": 66.4,
+    "days_since_last": 67.4,
     "avg_interval_days": 58.4,
     "total_releases": 4,
     "latest_tag": "v3.6.0"

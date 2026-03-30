@@ -1,37 +1,37 @@
 {
-  "collected_at": "2026-03-29T08:15:24Z",
+  "collected_at": "2026-03-30T08:36:37Z",
   "project": "flydsl",
   "repo": "ROCm/FlyDSL",
   "pr_velocity": {
     "this_week": {
-      "opened": 39,
-      "merged": 24,
-      "closed": 12
+      "opened": 33,
+      "merged": 23,
+      "closed": 11
     },
     "last_week": {
-      "opened": 33,
-      "merged": 21,
-      "closed": 8
+      "opened": 40,
+      "merged": 27,
+      "closed": 9
     },
-    "median_time_to_merge_hours": 8.1,
-    "merge_count": 46,
+    "median_time_to_merge_hours": 9.9,
+    "merge_count": 51,
     "stale_prs": 0
   },
   "contributors": {
-    "active_this_week": 17,
-    "total_contributors": 21,
+    "active_this_week": 18,
+    "total_contributors": 22,
     "top_contributors": [
       {
         "author": "coderfeli",
         "prs_submitted": 25,
-        "prs_merged": 24,
-        "commits": 26
+        "prs_merged": 25,
+        "commits": 27
       },
       {
         "author": "sjfeng1999",
-        "prs_submitted": 16,
-        "prs_merged": 15,
-        "commits": 15
+        "prs_submitted": 17,
+        "prs_merged": 16,
+        "commits": 16
       },
       {
         "author": "fsx950223",
@@ -40,22 +40,22 @@
         "commits": 5
       },
       {
-        "author": "jli-melchior",
-        "prs_submitted": 5,
-        "prs_merged": 4,
-        "commits": 3
-      },
-      {
         "author": "yadaish",
         "prs_submitted": 5,
-        "prs_merged": 3,
+        "prs_merged": 4,
+        "commits": 5
+      },
+      {
+        "author": "jli-melchior",
+        "prs_submitted": 4,
+        "prs_merged": 4,
         "commits": 4
       },
       {
-        "author": "kiran-thumma",
-        "prs_submitted": 4,
-        "prs_merged": 3,
-        "commits": 3
+        "author": "xudoyuan",
+        "prs_submitted": 3,
+        "prs_merged": 2,
+        "commits": 2
       },
       {
         "author": "ruanjm",
@@ -64,10 +64,10 @@
         "commits": 3
       },
       {
-        "author": "xudoyuan",
-        "prs_submitted": 3,
-        "prs_merged": 3,
-        "commits": 2
+        "author": "kiran-thumma",
+        "prs_submitted": 2,
+        "prs_merged": 1,
+        "commits": 3
       },
       {
         "author": "vivienfanghuagood",
@@ -76,7 +76,7 @@
         "commits": 2
       },
       {
-        "author": "Peter9606",
+        "author": "zhiding512",
         "prs_submitted": 1,
         "prs_merged": 0,
         "commits": 0
