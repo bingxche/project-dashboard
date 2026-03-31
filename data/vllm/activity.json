@@ -1,46 +1,46 @@
 {
-  "collected_at": "2026-03-30T08:35:07Z",
+  "collected_at": "2026-03-31T08:25:48Z",
   "project": "vllm",
   "repo": "vllm-project/vllm",
   "pr_velocity": {
     "this_week": {
-      "opened": 51,
-      "merged": 47,
-      "closed": 2
+      "opened": 53,
+      "merged": 50,
+      "closed": 3
     },
     "last_week": {
-      "opened": 17,
-      "merged": 7,
+      "opened": 18,
+      "merged": 5,
       "closed": 0
     },
-    "median_time_to_merge_hours": 184.1,
+    "median_time_to_merge_hours": 180.3,
     "merge_count": 74,
-    "stale_prs": 1
+    "stale_prs": 0
   },
   "contributors": {
-    "active_this_week": 68,
-    "total_contributors": 90,
+    "active_this_week": 62,
+    "total_contributors": 81,
     "top_contributors": [
       {
         "author": "AndreasKaratzas",
         "prs_submitted": 29,
-        "prs_merged": 19,
+        "prs_merged": 18,
         "commits": 0
       },
       {
-        "author": "tjtanaa",
+        "author": "gshtras",
         "prs_submitted": 4,
         "prs_merged": 3,
         "commits": 0
       },
       {
-        "author": "JartX",
+        "author": "tjtanaa",
         "prs_submitted": 4,
-        "prs_merged": 2,
+        "prs_merged": 4,
         "commits": 0
       },
       {
-        "author": "khluu",
+        "author": "JartX",
         "prs_submitted": 3,
         "prs_merged": 2,
         "commits": 0
@@ -52,21 +52,27 @@
         "commits": 0
       },
       {
-        "author": "vllmellm",
+        "author": "mikaylagawarecki",
+        "prs_submitted": 3,
+        "prs_merged": 2,
+        "commits": 0
+      },
+      {
+        "author": "fxmarty-amd",
         "prs_submitted": 3,
         "prs_merged": 0,
         "commits": 0
       },
       {
-        "author": "mikaylagawarecki",
+        "author": "rjrock",
         "prs_submitted": 3,
-        "prs_merged": 1,
+        "prs_merged": 2,
         "commits": 0
       },
       {
         "author": "hongxiayang",
         "prs_submitted": 3,
-        "prs_merged": 1,
+        "prs_merged": 2,
         "commits": 0
       },
       {
@@ -74,28 +80,22 @@
         "prs_submitted": 3,
         "prs_merged": 0,
         "commits": 0
-      },
-      {
-        "author": "gshtras",
-        "prs_submitted": 3,
-        "prs_merged": 3,
-        "commits": 0
       }
     ],
     "bus_factor": 9
   },
   "issue_health": {
-    "total_open": 54,
-    "opened_this_week": 18,
-    "closed_this_week": 115,
+    "total_open": 51,
+    "opened_this_week": 14,
+    "closed_this_week": 114,
     "unanswered": 0
   },
   "ci_health": null,
   "ci_signal_time": null,
   "release_cadence": {
-    "days_since_last": 9.5,
-    "avg_interval_days": 11.0,
+    "days_since_last": 0.3,
+    "avg_interval_days": 8.3,
     "total_releases": 5,
-    "latest_tag": "v0.18.0"
+    "latest_tag": "v0.18.1"
   }
 }

@@ -1,6 +1,18 @@
 {
-  "collected_at": "2026-03-30T08:33:07Z",
+  "collected_at": "2026-03-31T08:24:10Z",
   "issues": [
+    {
+      "number": 59899,
+      "title": "[AMDGPU] dissasembling v_fma_mix_f32 with literals and opsel shows incorrect constant",
+      "author": "DadSchoorse",
+      "state": "open",
+      "created_at": "2023-01-09T16:17:37Z",
+      "updated_at": "2026-03-31T08:17:47Z",
+      "html_url": "https://github.com/llvm/llvm-project/issues/59899",
+      "labels": [
+        "backend:AMDGPU"
+      ]
+    },
     {
       "number": 186878,
       "title": "[AMDGPU] asyncmark/wait.asyncmark intrinsics produce incorrect code for 3-stage software-pipelined loops",
@@ -368,19 +380,6 @@
       "labels": [
         "enhancement",
         "backend:AMDGPU"
-      ]
-    },
-    {
-      "number": 175985,
-      "title": "[AMDGPU][CodeGen] Reg. Coalescer doesn't update live info when replacing COPY by IMPLICIT_DEF with subreg operand without live info",
-      "author": "kezada94",
-      "state": "open",
-      "created_at": "2026-01-14T16:31:19Z",
-      "updated_at": "2026-01-14T16:39:51Z",
-      "html_url": "https://github.com/llvm/llvm-project/issues/175985",
-      "labels": [
-        "backend:AMDGPU",
-        "llvm:regalloc"
       ]
     }
   ]

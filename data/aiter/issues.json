@@ -1,13 +1,45 @@
 {
-  "collected_at": "2026-03-30T08:34:21Z",
+  "collected_at": "2026-03-31T08:25:14Z",
   "issues": [
+    {
+      "number": 2312,
+      "title": "CI: Run Triton tests on MI355",
+      "author": "gyohuangxin",
+      "state": "open",
+      "created_at": "2026-03-17T16:42:16Z",
+      "updated_at": "2026-03-31T06:34:13Z",
+      "html_url": "https://github.com/ROCm/aiter/issues/2312",
+      "labels": [
+        "frameworks-devops"
+      ]
+    },
+    {
+      "number": 2548,
+      "title": "[Bug] ctypes ffi_type modules fail to load: undefined symbol _ZTVN5torch8autograd12AutogradMetaE",
+      "author": "bingxche",
+      "state": "open",
+      "created_at": "2026-03-31T06:20:05Z",
+      "updated_at": "2026-03-31T06:28:14Z",
+      "html_url": "https://github.com/ROCm/aiter/issues/2548",
+      "labels": []
+    },
+    {
+      "number": 2543,
+      "title": "gemm_afp4wfp4 Triton kernel produces inf/garbage on gfx1250",
+      "author": "sunway513",
+      "state": "open",
+      "created_at": "2026-03-31T01:48:05Z",
+      "updated_at": "2026-03-31T02:38:02Z",
+      "html_url": "https://github.com/ROCm/aiter/issues/2543",
+      "labels": []
+    },
     {
       "number": 2517,
       "title": "[Bug] mha_batch_prefill returns all-zeros when KV cache > 8.4M pages (int32 overflow in CK element_space_size)",
       "author": "ChangyiYang",
       "state": "open",
       "created_at": "2026-03-28T21:00:51Z",
-      "updated_at": "2026-03-30T07:12:42Z",
+      "updated_at": "2026-03-30T18:21:22Z",
       "html_url": "https://github.com/ROCm/aiter/issues/2517",
       "labels": []
     },
@@ -17,7 +49,7 @@
       "author": "AndreasKaratzas",
       "state": "open",
       "created_at": "2026-03-30T06:12:09Z",
-      "updated_at": "2026-03-30T06:13:33Z",
+      "updated_at": "2026-03-30T09:02:58Z",
       "html_url": "https://github.com/ROCm/aiter/issues/2524",
       "labels": []
     },
@@ -73,18 +105,6 @@
       "updated_at": "2026-03-27T12:44:53Z",
       "html_url": "https://github.com/ROCm/aiter/issues/2470",
       "labels": []
-    },
-    {
-      "number": 2312,
-      "title": "CI: Run Triton tests on MI355",
-      "author": "gyohuangxin",
-      "state": "open",
-      "created_at": "2026-03-17T16:42:16Z",
-      "updated_at": "2026-03-27T12:13:08Z",
-      "html_url": "https://github.com/ROCm/aiter/issues/2312",
-      "labels": [
-        "frameworks-devops"
-      ]
     },
     {
       "number": 2174,
