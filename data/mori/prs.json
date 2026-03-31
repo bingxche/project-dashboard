@@ -1,15 +1,15 @@
 {
-  "collected_at": "2026-03-30T08:34:27Z",
+  "collected_at": "2026-03-31T08:25:18Z",
   "prs": [
     {
-      "number": 209,
-      "title": "Feat: UMBP Distributed integration",
-      "author": "TianDi101",
+      "number": 242,
+      "title": "feat(ep): add tuning config system for dispatch/combine",
+      "author": "isytwu",
       "state": "open",
       "merged": false,
-      "created_at": "2026-03-22T14:28:30Z",
-      "updated_at": "2026-03-30T02:41:38Z",
-      "html_url": "https://github.com/ROCm/mori/pull/209",
+      "created_at": "2026-03-31T04:57:31Z",
+      "updated_at": "2026-03-31T06:26:02Z",
+      "html_url": "https://github.com/ROCm/mori/pull/242",
       "labels": [],
       "draft": false
     },
@@ -20,8 +20,32 @@
       "state": "open",
       "merged": false,
       "created_at": "2026-03-25T11:09:55Z",
-      "updated_at": "2026-03-27T13:29:04Z",
+      "updated_at": "2026-03-30T16:45:53Z",
       "html_url": "https://github.com/ROCm/mori/pull/226",
+      "labels": [],
+      "draft": false
+    },
+    {
+      "number": 240,
+      "title": "Fix: modify mori-io bench arg, use non-contiguous buffer as default",
+      "author": "TianDi101",
+      "state": "open",
+      "merged": false,
+      "created_at": "2026-03-30T10:11:35Z",
+      "updated_at": "2026-03-30T10:11:35Z",
+      "html_url": "https://github.com/ROCm/mori/pull/240",
+      "labels": [],
+      "draft": false
+    },
+    {
+      "number": 209,
+      "title": "Feat: UMBP Distributed integration",
+      "author": "TianDi101",
+      "state": "open",
+      "merged": false,
+      "created_at": "2026-03-22T14:28:30Z",
+      "updated_at": "2026-03-30T02:41:38Z",
+      "html_url": "https://github.com/ROCm/mori/pull/209",
       "labels": [],
       "draft": false
     },
@@ -142,6 +166,18 @@
       "created_at": "2025-10-28T06:17:21Z",
       "updated_at": "2026-01-08T09:18:21Z",
       "html_url": "https://github.com/ROCm/mori/pull/99",
+      "labels": [],
+      "draft": false
+    },
+    {
+      "number": 241,
+      "title": "fix(io): harden RDMA CQE handling and tighten packaging/CI",
+      "author": "maning00",
+      "state": "closed",
+      "merged": true,
+      "created_at": "2026-03-30T11:01:34Z",
+      "updated_at": "2026-03-31T05:44:37Z",
+      "html_url": "https://github.com/ROCm/mori/pull/241",
       "labels": [],
       "draft": false
     },
@@ -1198,18 +1234,6 @@
       "created_at": "2026-01-12T13:43:07Z",
       "updated_at": "2026-01-12T14:13:33Z",
       "html_url": "https://github.com/ROCm/mori/pull/135",
-      "labels": [],
-      "draft": false
-    },
-    {
-      "number": 132,
-      "title": "test: add test_low_latency.py adapted from DeepEP for performance benchmarking",
-      "author": "isytwu",
-      "state": "closed",
-      "merged": true,
-      "created_at": "2026-01-12T07:18:28Z",
-      "updated_at": "2026-01-12T10:27:46Z",
-      "html_url": "https://github.com/ROCm/mori/pull/132",
       "labels": [],
       "draft": false
     }

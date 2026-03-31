@@ -1,96 +1,106 @@
 {
-  "collected_at": "2026-03-30T08:36:47Z",
+  "collected_at": "2026-03-31T08:27:27Z",
   "workflows": {
     "pull": {
       "workflow_id": 16521569,
       "latest_run": {
-        "id": 23735198692,
-        "conclusion": "action_required",
-        "duration_minutes": 0.0,
-        "started_at": "2026-03-30T08:26:07Z",
-        "html_url": "https://github.com/pytorch/pytorch/actions/runs/23735198692"
+        "id": 23787535322,
+        "conclusion": "cancelled",
+        "duration_minutes": 4.2,
+        "started_at": "2026-03-31T08:18:34Z",
+        "html_url": "https://github.com/pytorch/pytorch/actions/runs/23787535322"
       },
-      "stats": null,
+      "stats": {
+        "sample_size": 4,
+        "median_minutes": 71.4,
+        "p90_minutes": 92.5,
+        "min_minutes": 41.1,
+        "max_minutes": 92.5
+      },
       "recent_runs": [
         {
-          "id": 23734531270,
+          "id": 23787535322,
           "conclusion": "cancelled",
-          "duration_minutes": 16.9,
-          "date": "2026-03-30"
+          "duration_minutes": 4.2,
+          "date": "2026-03-31"
         },
         {
-          "id": 23734055080,
+          "id": 23787342955,
           "conclusion": "cancelled",
-          "duration_minutes": 15.6,
-          "date": "2026-03-30"
+          "duration_minutes": 10.8,
+          "date": "2026-03-31"
         },
         {
-          "id": 23734054731,
-          "conclusion": "cancelled",
-          "duration_minutes": 17.2,
-          "date": "2026-03-30"
-        },
-        {
-          "id": 23733634361,
-          "conclusion": "cancelled",
-          "duration_minutes": 15.9,
-          "date": "2026-03-30"
-        },
-        {
-          "id": 23733352620,
-          "conclusion": "cancelled",
-          "duration_minutes": 14.9,
-          "date": "2026-03-30"
-        },
-        {
-          "id": 23733344880,
-          "conclusion": "cancelled",
-          "duration_minutes": 14.8,
-          "date": "2026-03-30"
-        },
-        {
-          "id": 23733340484,
-          "conclusion": "cancelled",
-          "duration_minutes": 14.8,
-          "date": "2026-03-30"
-        },
-        {
-          "id": 23733335482,
+          "id": 23786915837,
           "conclusion": "cancelled",
           "duration_minutes": 17.9,
-          "date": "2026-03-30"
+          "date": "2026-03-31"
         },
         {
-          "id": 23733330825,
+          "id": 23786913272,
           "conclusion": "cancelled",
-          "duration_minutes": 19.6,
-          "date": "2026-03-30"
+          "duration_minutes": 18.0,
+          "date": "2026-03-31"
         },
         {
-          "id": 23733326603,
+          "id": 23785089613,
           "conclusion": "cancelled",
-          "duration_minutes": 19.3,
-          "date": "2026-03-30"
+          "duration_minutes": 10.6,
+          "date": "2026-03-31"
         },
         {
-          "id": 23733322303,
+          "id": 23784253391,
           "conclusion": "cancelled",
-          "duration_minutes": 19.9,
-          "date": "2026-03-30"
+          "duration_minutes": 30.1,
+          "date": "2026-03-31"
         },
         {
-          "id": 23733316850,
-          "conclusion": "cancelled",
-          "duration_minutes": 20.1,
-          "date": "2026-03-30"
+          "id": 23784226168,
+          "conclusion": "success",
+          "duration_minutes": 64.8,
+          "date": "2026-03-31"
         },
         {
-          "id": 23732605320,
+          "id": 23784225183,
+          "conclusion": "success",
+          "duration_minutes": 92.5,
+          "date": "2026-03-31"
+        },
+        {
+          "id": 23783943940,
           "conclusion": "cancelled",
-          "duration_minutes": 30.4,
-          "date": "2026-03-30"
+          "duration_minutes": 104.3,
+          "date": "2026-03-31"
+        },
+        {
+          "id": 23783944254,
+          "conclusion": "cancelled",
+          "duration_minutes": 104.3,
+          "date": "2026-03-31"
+        },
+        {
+          "id": 23783943920,
+          "conclusion": "success",
+          "duration_minutes": 41.1,
+          "date": "2026-03-31"
+        },
+        {
+          "id": 23783842047,
+          "conclusion": "success",
+          "duration_minutes": 78.1,
+          "date": "2026-03-31"
+        },
+        {
+          "id": 23782964243,
+          "conclusion": "cancelled",
+          "duration_minutes": 31.1,
+          "date": "2026-03-31"
         }
-      ]
+      ],
+      "bottleneck_job": {
+        "name": "before-test / llm-retrieval",
+        "duration_minutes": 3.8
+      }
     }
   }
 }

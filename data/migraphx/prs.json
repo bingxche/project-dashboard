@@ -1,5 +1,5 @@
 {
-  "collected_at": "2026-03-30T08:34:09Z",
+  "collected_at": "2026-03-31T08:25:03Z",
   "prs": [
     {
       "number": 4699,
@@ -8,9 +8,137 @@
       "state": "open",
       "merged": false,
       "created_at": "2026-03-24T08:51:59Z",
-      "updated_at": "2026-03-30T06:22:06Z",
+      "updated_at": "2026-03-31T07:31:40Z",
       "html_url": "https://github.com/ROCm/AMDMIGraphX/pull/4699",
       "labels": [],
+      "draft": false
+    },
+    {
+      "number": 3815,
+      "title": "Use fill_argument for literals that have the same value",
+      "author": "pfultz2",
+      "state": "open",
+      "merged": false,
+      "created_at": "2025-02-14T17:15:19Z",
+      "updated_at": "2026-03-31T05:14:46Z",
+      "html_url": "https://github.com/ROCm/AMDMIGraphX/pull/3815",
+      "labels": [
+        "Cleanup"
+      ],
+      "draft": false
+    },
+    {
+      "number": 4710,
+      "title": "Fix GPU MLIR-off builds and extend MLIR pointwise support",
+      "author": "Rolaand-Jayz",
+      "state": "open",
+      "merged": false,
+      "created_at": "2026-03-26T13:41:36Z",
+      "updated_at": "2026-03-31T04:29:05Z",
+      "html_url": "https://github.com/ROCm/AMDMIGraphX/pull/4710",
+      "labels": [],
+      "draft": false
+    },
+    {
+      "number": 4721,
+      "title": "JIT implementation for multinomial",
+      "author": "bdevorem",
+      "state": "open",
+      "merged": false,
+      "created_at": "2026-03-30T20:46:49Z",
+      "updated_at": "2026-03-31T04:23:55Z",
+      "html_url": "https://github.com/ROCm/AMDMIGraphX/pull/4721",
+      "labels": [],
+      "draft": false
+    },
+    {
+      "number": 4702,
+      "title": "[AIMIGRAPHX-835] integrate symbolic expression in dynamic_dimension",
+      "author": "shivadbhavsar",
+      "state": "open",
+      "merged": false,
+      "created_at": "2026-03-25T00:26:52Z",
+      "updated_at": "2026-03-31T02:02:16Z",
+      "html_url": "https://github.com/ROCm/AMDMIGraphX/pull/4702",
+      "labels": [],
+      "draft": true
+    },
+    {
+      "number": 4720,
+      "title": "JIT implementations for scan lib, and nonzero & prefix_scan_sum ops",
+      "author": "bdevorem",
+      "state": "open",
+      "merged": false,
+      "created_at": "2026-03-30T17:59:17Z",
+      "updated_at": "2026-03-31T01:56:21Z",
+      "html_url": "https://github.com/ROCm/AMDMIGraphX/pull/4720",
+      "labels": [],
+      "draft": true
+    },
+    {
+      "number": 4700,
+      "title": "[AIMIGRAPHX-886] [AIMIGRAPHX-834] custom symbolic expression lib",
+      "author": "shivadbhavsar",
+      "state": "open",
+      "merged": false,
+      "created_at": "2026-03-24T18:23:05Z",
+      "updated_at": "2026-03-31T00:55:42Z",
+      "html_url": "https://github.com/ROCm/AMDMIGraphX/pull/4700",
+      "labels": [],
+      "draft": false
+    },
+    {
+      "number": 4704,
+      "title": "[AIMIGRAPHX-840] support symbolic shape prop through conv and pool",
+      "author": "shivadbhavsar",
+      "state": "open",
+      "merged": false,
+      "created_at": "2026-03-25T19:00:34Z",
+      "updated_at": "2026-03-31T00:31:34Z",
+      "html_url": "https://github.com/ROCm/AMDMIGraphX/pull/4704",
+      "labels": [],
+      "draft": true
+    },
+    {
+      "number": 4718,
+      "title": "Fuse avg pooling with convolution",
+      "author": "pfultz2",
+      "state": "open",
+      "merged": false,
+      "created_at": "2026-03-30T16:58:47Z",
+      "updated_at": "2026-03-30T23:44:53Z",
+      "html_url": "https://github.com/ROCm/AMDMIGraphX/pull/4718",
+      "labels": [],
+      "draft": true
+    },
+    {
+      "number": 4626,
+      "title": "Add debug symbols for parsed and compiler pass replaced instructions ",
+      "author": "CharlieL7",
+      "state": "open",
+      "merged": false,
+      "created_at": "2026-02-20T21:54:12Z",
+      "updated_at": "2026-03-30T21:01:57Z",
+      "html_url": "https://github.com/ROCm/AMDMIGraphX/pull/4626",
+      "labels": [
+        "enhancement",
+        "high priority"
+      ],
+      "draft": false
+    },
+    {
+      "number": 4582,
+      "title": "Adjust allocation even when a fill is used on the allocation",
+      "author": "pfultz2",
+      "state": "open",
+      "merged": false,
+      "created_at": "2026-01-30T01:26:52Z",
+      "updated_at": "2026-03-30T20:01:14Z",
+      "html_url": "https://github.com/ROCm/AMDMIGraphX/pull/4582",
+      "labels": [
+        "bugfix",
+        "simple"
+      ],
       "draft": false
     },
     {
@@ -20,8 +148,20 @@
       "state": "open",
       "merged": false,
       "created_at": "2026-03-27T16:25:04Z",
-      "updated_at": "2026-03-29T20:07:38Z",
+      "updated_at": "2026-03-30T17:17:46Z",
       "html_url": "https://github.com/ROCm/AMDMIGraphX/pull/4714",
+      "labels": [],
+      "draft": false
+    },
+    {
+      "number": 4691,
+      "title": "add Dockerfile for ubuntu 24.04",
+      "author": "kahmed10",
+      "state": "open",
+      "merged": false,
+      "created_at": "2026-03-21T15:44:21Z",
+      "updated_at": "2026-03-30T16:59:02Z",
+      "html_url": "https://github.com/ROCm/AMDMIGraphX/pull/4691",
       "labels": [],
       "draft": false
     },
@@ -48,33 +188,6 @@
       "html_url": "https://github.com/ROCm/AMDMIGraphX/pull/4701",
       "labels": [],
       "draft": true
-    },
-    {
-      "number": 4626,
-      "title": "Add debug symbols for parsed and compiler pass replaced instructions ",
-      "author": "CharlieL7",
-      "state": "open",
-      "merged": false,
-      "created_at": "2026-02-20T21:54:12Z",
-      "updated_at": "2026-03-27T23:53:32Z",
-      "html_url": "https://github.com/ROCm/AMDMIGraphX/pull/4626",
-      "labels": [
-        "enhancement",
-        "high priority"
-      ],
-      "draft": false
-    },
-    {
-      "number": 4710,
-      "title": "Fix GPU MLIR-off builds and extend MLIR pointwise support",
-      "author": "Rolaand-Jayz",
-      "state": "open",
-      "merged": false,
-      "created_at": "2026-03-26T13:41:36Z",
-      "updated_at": "2026-03-27T17:40:28Z",
-      "html_url": "https://github.com/ROCm/AMDMIGraphX/pull/4710",
-      "labels": [],
-      "draft": false
     },
     {
       "number": 4709,
@@ -137,18 +250,6 @@
       "draft": true
     },
     {
-      "number": 4582,
-      "title": "Adjust allocation even when a fill is used on the allocation",
-      "author": "pfultz2",
-      "state": "open",
-      "merged": false,
-      "created_at": "2026-01-30T01:26:52Z",
-      "updated_at": "2026-03-27T04:17:40Z",
-      "html_url": "https://github.com/ROCm/AMDMIGraphX/pull/4582",
-      "labels": [],
-      "draft": false
-    },
-    {
       "number": 4712,
       "title": "Output debug symbols",
       "author": "CharlieL7",
@@ -157,42 +258,6 @@
       "created_at": "2026-03-26T22:10:40Z",
       "updated_at": "2026-03-26T22:10:40Z",
       "html_url": "https://github.com/ROCm/AMDMIGraphX/pull/4712",
-      "labels": [],
-      "draft": true
-    },
-    {
-      "number": 4700,
-      "title": "[AIMIGRAPHX-886] [AIMIGRAPHX-834] custom symbolic expression lib",
-      "author": "shivadbhavsar",
-      "state": "open",
-      "merged": false,
-      "created_at": "2026-03-24T18:23:05Z",
-      "updated_at": "2026-03-26T21:53:18Z",
-      "html_url": "https://github.com/ROCm/AMDMIGraphX/pull/4700",
-      "labels": [],
-      "draft": false
-    },
-    {
-      "number": 4702,
-      "title": "[AIMIGRAPHX-835] integrate symbolic expression in dynamic_dimension",
-      "author": "shivadbhavsar",
-      "state": "open",
-      "merged": false,
-      "created_at": "2026-03-25T00:26:52Z",
-      "updated_at": "2026-03-26T18:06:35Z",
-      "html_url": "https://github.com/ROCm/AMDMIGraphX/pull/4702",
-      "labels": [],
-      "draft": true
-    },
-    {
-      "number": 4704,
-      "title": "[AIMIGRAPHX-840] support symbolic shape prop through conv and pool",
-      "author": "shivadbhavsar",
-      "state": "open",
-      "merged": false,
-      "created_at": "2026-03-25T19:00:34Z",
-      "updated_at": "2026-03-26T05:14:49Z",
-      "html_url": "https://github.com/ROCm/AMDMIGraphX/pull/4704",
       "labels": [],
       "draft": true
     },
@@ -257,18 +322,6 @@
       "draft": false
     },
     {
-      "number": 4653,
-      "title": "[AIMIGRAPHX-580] [AIMIGRAPHX-623] jit implementation for nonzero and scan lib",
-      "author": "bdevorem",
-      "state": "open",
-      "merged": false,
-      "created_at": "2026-03-06T17:20:59Z",
-      "updated_at": "2026-03-24T15:09:04Z",
-      "html_url": "https://github.com/ROCm/AMDMIGraphX/pull/4653",
-      "labels": [],
-      "draft": true
-    },
-    {
       "number": 4648,
       "title": "Add flag to strip context",
       "author": "pfultz2",
@@ -308,18 +361,6 @@
       "html_url": "https://github.com/ROCm/AMDMIGraphX/pull/4647",
       "labels": [],
       "draft": false
-    },
-    {
-      "number": 4691,
-      "title": "add Dockerfile for ubuntu 24.04",
-      "author": "kahmed10",
-      "state": "open",
-      "merged": false,
-      "created_at": "2026-03-21T15:44:21Z",
-      "updated_at": "2026-03-23T15:09:55Z",
-      "html_url": "https://github.com/ROCm/AMDMIGraphX/pull/4691",
-      "labels": [],
-      "draft": true
     },
     {
       "number": 4571,
@@ -634,20 +675,6 @@
       "updated_at": "2026-02-06T01:20:19Z",
       "html_url": "https://github.com/ROCm/AMDMIGraphX/pull/4049",
       "labels": [],
-      "draft": false
-    },
-    {
-      "number": 3815,
-      "title": "Use fill_argument for literals that have the same value",
-      "author": "pfultz2",
-      "state": "open",
-      "merged": false,
-      "created_at": "2025-02-14T17:15:19Z",
-      "updated_at": "2026-02-03T23:37:21Z",
-      "html_url": "https://github.com/ROCm/AMDMIGraphX/pull/3815",
-      "labels": [
-        "Cleanup"
-      ],
       "draft": false
     },
     {
@@ -1026,6 +1053,20 @@
       "updated_at": "2024-10-21T22:48:16Z",
       "html_url": "https://github.com/ROCm/AMDMIGraphX/pull/3468",
       "labels": [],
+      "draft": false
+    },
+    {
+      "number": 4719,
+      "title": "Bump pygments from 2.18.0 to 2.20.0 in /docs/sphinx",
+      "author": "dependabot[bot]",
+      "state": "closed",
+      "merged": true,
+      "created_at": "2026-03-30T17:39:33Z",
+      "updated_at": "2026-03-30T19:35:55Z",
+      "html_url": "https://github.com/ROCm/AMDMIGraphX/pull/4719",
+      "labels": [
+        "documentation"
+      ],
       "draft": false
     },
     {
@@ -2032,18 +2073,6 @@
       "labels": [
         "documentation"
       ],
-      "draft": false
-    },
-    {
-      "number": 4609,
-      "title": "Propagate constant optimization",
-      "author": "pnikolic-amd",
-      "state": "closed",
-      "merged": true,
-      "created_at": "2026-02-12T16:36:27Z",
-      "updated_at": "2026-02-19T14:29:22Z",
-      "html_url": "https://github.com/ROCm/AMDMIGraphX/pull/4609",
-      "labels": [],
       "draft": false
     }
   ]
