@@ -1,4 +1,12 @@
 {
-  "collected_at": "2026-03-27T08:17:19Z",
-  "releases": []
+  "collected_at": "2026-04-01T08:30:05Z",
+  "releases": [
+    {
+      "tag_name": "v0.1.0",
+      "name": "release v0.1.0",
+      "published_at": "2026-03-30T06:26:09Z",
+      "html_url": "https://github.com/ROCm/mori/releases/tag/v0.1.0",
+      "prerelease": false
+    }
+  ]
 }

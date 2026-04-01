@@ -1,6 +1,82 @@
 {
-  "collected_at": "2026-03-27T08:16:31Z",
+  "collected_at": "2026-04-01T08:28:53Z",
   "prs": [
+    {
+      "number": 36355,
+      "title": "[ROCm] fix: wire up clone_main_xla for ROCm builds and tests",
+      "author": "mminutoli",
+      "state": "open",
+      "merged": false,
+      "created_at": "2026-03-31T00:40:34Z",
+      "updated_at": "2026-03-31T18:09:58Z",
+      "html_url": "https://github.com/jax-ml/jax/pull/36355",
+      "labels": [],
+      "draft": true
+    },
+    {
+      "number": 35534,
+      "title": "[ROCm] bring gesdd for computing SVD on ROCm",
+      "author": "cj401-amd",
+      "state": "closed",
+      "merged": true,
+      "created_at": "2026-03-02T21:16:00Z",
+      "updated_at": "2026-03-30T16:28:23Z",
+      "html_url": "https://github.com/jax-ml/jax/pull/35534",
+      "labels": [
+        "enhancement",
+        "performance",
+        "kokoro:force-run",
+        "pull ready",
+        "jax.numpy",
+        "AMD GPU"
+      ],
+      "draft": false
+    },
+    {
+      "number": 31381,
+      "title": "Remove old ROCm build code",
+      "author": "charleshofer",
+      "state": "open",
+      "merged": false,
+      "created_at": "2025-08-27T17:29:04Z",
+      "updated_at": "2026-03-30T14:19:50Z",
+      "html_url": "https://github.com/jax-ml/jax/pull/31381",
+      "labels": [
+        "kokoro:force-run",
+        "pull ready"
+      ],
+      "draft": false
+    },
+    {
+      "number": 34491,
+      "title": "Enable ROCm testing for threefry_partitionable PRNG tests",
+      "author": "hrideymarwah15",
+      "state": "open",
+      "merged": false,
+      "created_at": "2026-01-20T20:16:04Z",
+      "updated_at": "2026-03-30T14:19:43Z",
+      "html_url": "https://github.com/jax-ml/jax/pull/34491",
+      "labels": [
+        "kokoro:force-run",
+        "pull ready"
+      ],
+      "draft": false
+    },
+    {
+      "number": 35785,
+      "title": "[ROCm] Fix and simplify jax rocm plugin init script",
+      "author": "alekstheod",
+      "state": "open",
+      "merged": false,
+      "created_at": "2026-03-10T21:06:53Z",
+      "updated_at": "2026-03-30T14:18:07Z",
+      "html_url": "https://github.com/jax-ml/jax/pull/35785",
+      "labels": [
+        "pull ready",
+        "AMD GPU"
+      ],
+      "draft": false
+    },
     {
       "number": 34971,
       "title": "[ROCm] fix the performance issue when n=1 or 2",
@@ -47,37 +123,6 @@
       "draft": false
     },
     {
-      "number": 35534,
-      "title": "[ROCm] bring gesdd for computing SVD on ROCm",
-      "author": "cj401-amd",
-      "state": "open",
-      "merged": false,
-      "created_at": "2026-03-02T21:16:00Z",
-      "updated_at": "2026-03-26T21:57:08Z",
-      "html_url": "https://github.com/jax-ml/jax/pull/35534",
-      "labels": [
-        "enhancement",
-        "performance",
-        "jax.numpy",
-        "AMD GPU"
-      ],
-      "draft": false
-    },
-    {
-      "number": 36244,
-      "title": "[ROCm] Skipped tests on ROCm that are flaky and sometimes cause CI failures",
-      "author": "tsrw2048",
-      "state": "open",
-      "merged": false,
-      "created_at": "2026-03-26T14:17:48Z",
-      "updated_at": "2026-03-26T15:02:55Z",
-      "html_url": "https://github.com/jax-ml/jax/pull/36244",
-      "labels": [
-        "AMD GPU"
-      ],
-      "draft": false
-    },
-    {
       "number": 35995,
       "title": "[ROCm] Add lowering for ScaledMatmul, ScaledDot",
       "author": "shurale-nkn",
@@ -101,21 +146,6 @@
       "created_at": "2026-03-19T19:02:57Z",
       "updated_at": "2026-03-23T21:24:15Z",
       "html_url": "https://github.com/jax-ml/jax/pull/36055",
-      "labels": [
-        "pull ready",
-        "AMD GPU"
-      ],
-      "draft": false
-    },
-    {
-      "number": 35785,
-      "title": "[ROCm] Fix and simplify jax rocm plugin init script",
-      "author": "alekstheod",
-      "state": "open",
-      "merged": false,
-      "created_at": "2026-03-10T21:06:53Z",
-      "updated_at": "2026-03-23T21:19:08Z",
-      "html_url": "https://github.com/jax-ml/jax/pull/35785",
       "labels": [
         "pull ready",
         "AMD GPU"
@@ -175,21 +205,6 @@
       "updated_at": "2026-03-19T16:35:57Z",
       "html_url": "https://github.com/jax-ml/jax/pull/36044",
       "labels": [
-        "pull ready"
-      ],
-      "draft": false
-    },
-    {
-      "number": 31381,
-      "title": "Remove old ROCm build code",
-      "author": "charleshofer",
-      "state": "open",
-      "merged": false,
-      "created_at": "2025-08-27T17:29:04Z",
-      "updated_at": "2026-03-19T15:45:03Z",
-      "html_url": "https://github.com/jax-ml/jax/pull/31381",
-      "labels": [
-        "kokoro:force-run",
         "pull ready"
       ],
       "draft": false
@@ -479,21 +494,6 @@
       "draft": false
     },
     {
-      "number": 34491,
-      "title": "Enable ROCm testing for threefry_partitionable PRNG tests",
-      "author": "hrideymarwah15",
-      "state": "open",
-      "merged": false,
-      "created_at": "2026-01-20T20:16:04Z",
-      "updated_at": "2026-03-03T18:56:20Z",
-      "html_url": "https://github.com/jax-ml/jax/pull/34491",
-      "labels": [
-        "kokoro:force-run",
-        "pull ready"
-      ],
-      "draft": false
-    },
-    {
       "number": 35102,
       "title": "[ROCm] Set release rpaths to rocm so targets",
       "author": "alekstheod",
@@ -537,21 +537,6 @@
         "kokoro:force-run",
         "pull ready",
         "AMD GPU"
-      ],
-      "draft": false
-    },
-    {
-      "number": 35115,
-      "title": "[ROCm] Add hip_threefry2x32_ffi to stable custom call targets",
-      "author": "AratiGanesh",
-      "state": "closed",
-      "merged": true,
-      "created_at": "2026-02-16T20:01:30Z",
-      "updated_at": "2026-02-19T07:48:42Z",
-      "html_url": "https://github.com/jax-ml/jax/pull/35115",
-      "labels": [
-        "kokoro:force-run",
-        "pull ready"
       ],
       "draft": false
     }

@@ -1,13 +1,37 @@
 {
-  "collected_at": "2026-03-27T08:16:22Z",
+  "collected_at": "2026-04-01T08:28:43Z",
   "issues": [
+    {
+      "number": 59899,
+      "title": "[AMDGPU] dissasembling v_fma_mix_f32 with literals and opsel shows incorrect constant",
+      "author": "DadSchoorse",
+      "state": "open",
+      "created_at": "2023-01-09T16:17:37Z",
+      "updated_at": "2026-03-31T15:56:39Z",
+      "html_url": "https://github.com/llvm/llvm-project/issues/59899",
+      "labels": [
+        "backend:AMDGPU"
+      ]
+    },
+    {
+      "number": 189677,
+      "title": "[AMDGPU] HIP miscompilation bug triggered by si-fold-operands",
+      "author": "mgcarrasco",
+      "state": "open",
+      "created_at": "2026-03-31T14:16:55Z",
+      "updated_at": "2026-03-31T15:09:21Z",
+      "html_url": "https://github.com/llvm/llvm-project/issues/189677",
+      "labels": [
+        "backend:AMDGPU"
+      ]
+    },
     {
       "number": 186878,
       "title": "[AMDGPU] asyncmark/wait.asyncmark intrinsics produce incorrect code for 3-stage software-pipelined loops",
       "author": "jerryyin",
       "state": "open",
       "created_at": "2026-03-16T20:17:13Z",
-      "updated_at": "2026-03-24T23:48:31Z",
+      "updated_at": "2026-03-31T11:20:27Z",
       "html_url": "https://github.com/llvm/llvm-project/issues/186878",
       "labels": [
         "backend:AMDGPU"
@@ -355,32 +379,6 @@
       "html_url": "https://github.com/llvm/llvm-project/issues/62651",
       "labels": [
         "backend:AMDGPU"
-      ]
-    },
-    {
-      "number": 176406,
-      "title": "[AMDGPU] Make better use of v_perm_b32 for transpose-like operations on multiple dwords",
-      "author": "jayfoad",
-      "state": "open",
-      "created_at": "2026-01-16T15:29:30Z",
-      "updated_at": "2026-01-16T15:29:53Z",
-      "html_url": "https://github.com/llvm/llvm-project/issues/176406",
-      "labels": [
-        "enhancement",
-        "backend:AMDGPU"
-      ]
-    },
-    {
-      "number": 175985,
-      "title": "[AMDGPU][CodeGen] Reg. Coalescer doesn't update live info when replacing COPY by IMPLICIT_DEF with subreg operand without live info",
-      "author": "kezada94",
-      "state": "open",
-      "created_at": "2026-01-14T16:31:19Z",
-      "updated_at": "2026-01-14T16:39:51Z",
-      "html_url": "https://github.com/llvm/llvm-project/issues/175985",
-      "labels": [
-        "backend:AMDGPU",
-        "llvm:regalloc"
       ]
     }
   ]

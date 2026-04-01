@@ -1291,3 +1291,334 @@ a.oc-be-link .oc-be:hover { filter: brightness(1.3); }
   margin-top: 16px;
   text-align: right;
 }
+
+/* ── Op Performance Tab ───────────────────────────────── */
+
+.op-model-group-header {
+  margin: 20px 0 8px 0;
+  font-size: 16px;
+  padding: 8px 12px;
+  border-radius: 6px;
+  background: #21262d;
+  border-left: 3px solid #8b949e;
+}
+.op-model-group-header.op-group-amd { border-left-color: #1f6feb; }
+.op-model-group-header.op-group-nv { border-left-color: #76b900; }
+.op-group-geo {
+  font-size: 13px;
+  font-weight: normal;
+  color: #8b949e;
+}
+
+.op-perf-subtitle {
+  color: var(--text-muted);
+  margin-bottom: 16px;
+  font-size: 14px;
+}
+
+.op-badge-amd, .op-badge-nv, .op-badge-ratio {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.op-badge-amd {
+  background: rgba(31, 111, 235, 0.2);
+  color: #58a6ff;
+}
+
+.op-badge-nv {
+  background: rgba(118, 185, 0, 0.2);
+  color: #7ee787;
+}
+
+.op-badge-ratio {
+  background: rgba(139, 148, 158, 0.15);
+  color: var(--text-muted);
+}
+
+/* Chart grid */
+.op-perf-charts-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin: 16px 0;
+}
+
+.op-chart-card {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 16px;
+}
+
+.op-chart-card h3 {
+  font-size: 14px;
+  color: var(--text);
+  margin-bottom: 12px;
+}
+
+.op-chart-full {
+  margin: 16px 0;
+}
+
+.op-chart-wrap {
+  position: relative;
+  height: 320px;
+}
+
+.op-chart-tall {
+  height: 380px;
+}
+
+.op-perf-chart-filters {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 8px;
+}
+
+/* Filters */
+.op-perf-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 12px 0;
+  padding: 12px;
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+}
+
+.op-perf-filter {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  color: var(--text-muted);
+}
+
+.op-filter-select, .op-chart-filter {
+  background: var(--bg);
+  color: var(--text);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 4px 8px;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.op-filter-select:hover, .op-chart-filter:hover {
+  border-color: var(--accent-blue);
+}
+
+/* Per-model cards */
+.op-perf-models {
+  margin: 16px 0;
+}
+
+.op-perf-models h3 {
+  font-size: 14px;
+  color: var(--text);
+  margin-bottom: 12px;
+}
+
+.op-model-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 10px;
+}
+
+.op-model-card {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 12px;
+  text-align: center;
+  border-top: 3px solid var(--border);
+}
+
+.op-model-amd { border-top-color: #1f6feb; }
+.op-model-nv { border-top-color: #238636; }
+.op-model-tie { border-top-color: #8b949e; }
+
+.op-model-group-header {
+  font-size: 13px;
+  color: var(--text-muted);
+  margin: 12px 0 8px;
+  padding-bottom: 4px;
+  border-bottom: 1px solid var(--border);
+}
+
+.op-model-name {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.op-model-type {
+  font-size: 11px;
+  color: var(--text-muted);
+  margin: 2px 0 6px;
+}
+
+.op-model-geo {
+  font-size: 20px;
+  font-weight: 700;
+  font-family: "SFMono-Regular", Consolas, monospace;
+}
+
+.op-model-amd .op-model-geo { color: #58a6ff; }
+.op-model-nv .op-model-geo { color: #7ee787; }
+.op-model-tie .op-model-geo { color: var(--text); }
+
+.op-model-card {
+  cursor: pointer;
+  position: relative;
+}
+
+.op-model-card:hover {
+  border-color: var(--link);
+}
+
+.op-model-tooltip {
+  display: none;
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 10px 14px;
+  font-size: 11px;
+  color: var(--text);
+  white-space: pre-line;
+  z-index: 100;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.5);
+  min-width: 220px;
+  pointer-events: none;
+  margin-bottom: 8px;
+  font-family: "SFMono-Regular", Consolas, monospace;
+  line-height: 1.6;
+}
+
+.op-model-card:hover .op-model-tooltip {
+  display: block;
+}
+
+/* D3 Heatmap */
+.d3-heatmap-container {
+  overflow-x: auto;
+  margin: 12px 0;
+  padding: 8px 0;
+  position: relative;
+}
+
+.d3-heatmap-cell {
+  stroke: var(--bg);
+  stroke-width: 1;
+  cursor: pointer;
+  transition: opacity 0.15s;
+}
+
+.d3-heatmap-cell:hover {
+  stroke: var(--text);
+  stroke-width: 2;
+  opacity: 0.85;
+}
+
+.d3-tooltip {
+  position: absolute;
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 10px 14px;
+  font-size: 12px;
+  color: var(--text);
+  pointer-events: none;
+  z-index: 100;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.5);
+  line-height: 1.6;
+  max-width: 400px;
+}
+
+/* Notes */
+.op-perf-notes {
+  margin-top: 24px;
+  padding: 16px;
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  font-size: 13px;
+}
+
+.op-exec-summary {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-left: 4px solid var(--accent-blue);
+  border-radius: 6px;
+  padding: 12px 16px;
+  margin-bottom: 16px;
+  font-size: 14px;
+  color: var(--text);
+  font-weight: 500;
+}
+
+.op-perf-links {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 12px;
+  flex-wrap: wrap;
+}
+
+.op-doc-link {
+  display: inline-block;
+  padding: 6px 14px;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  color: var(--link);
+  font-size: 13px;
+  text-decoration: none;
+  transition: border-color 0.15s;
+}
+
+.op-doc-link:hover {
+  border-color: var(--accent-blue);
+}
+
+.op-perf-notes code {
+  background: var(--bg);
+  padding: 2px 6px;
+  border-radius: 3px;
+  font-size: 12px;
+}
+
+.op-perf-notes h3 {
+  font-size: 14px;
+  margin-bottom: 8px;
+  color: var(--text);
+}
+
+.op-perf-notes ul {
+  padding-left: 20px;
+  color: var(--text-muted);
+}
+
+.op-perf-notes li {
+  margin-bottom: 4px;
+}
+
+@media (max-width: 768px) {
+  .op-perf-charts-grid {
+    grid-template-columns: 1fr;
+  }
+  .op-perf-filters {
+    flex-direction: column;
+  }
+  .op-chart-wrap {
+    height: 220px;
+  }
+}

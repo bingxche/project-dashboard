@@ -1,157 +1,151 @@
 {
-  "collected_at": "2026-03-27T08:19:22Z",
+  "collected_at": "2026-04-01T08:32:34Z",
   "workflows": {
     "MoRI CI test": {
       "workflow_id": 196573763,
       "latest_run": {
-        "id": 23636566151,
-        "conclusion": "success",
-        "duration_minutes": 20.4,
-        "started_at": "2026-03-27T07:50:47Z",
-        "html_url": "https://github.com/ROCm/mori/actions/runs/23636566151"
+        "id": 23839270601,
+        "conclusion": "failure",
+        "duration_minutes": 0.6,
+        "started_at": "2026-04-01T08:29:14Z",
+        "html_url": "https://github.com/ROCm/mori/actions/runs/23839270601"
       },
       "stats": {
-        "sample_size": 10,
-        "median_minutes": 21.0,
-        "p90_minutes": 36.9,
-        "min_minutes": 16.0,
-        "max_minutes": 36.9
+        "sample_size": 9,
+        "median_minutes": 19.0,
+        "p90_minutes": 71.5,
+        "min_minutes": 18.0,
+        "max_minutes": 71.5
       },
       "recent_runs": [
         {
-          "id": 23636566151,
-          "conclusion": "success",
-          "duration_minutes": 20.4,
-          "date": "2026-03-27"
-        },
-        {
-          "id": 23635571150,
-          "conclusion": "success",
-          "duration_minutes": 16.5,
-          "date": "2026-03-27"
-        },
-        {
-          "id": 23634786680,
-          "conclusion": "success",
-          "duration_minutes": 21.7,
-          "date": "2026-03-27"
-        },
-        {
-          "id": 23633990169,
+          "id": 23839270601,
           "conclusion": "failure",
-          "duration_minutes": 8.3,
-          "date": "2026-03-27"
+          "duration_minutes": 0.6,
+          "date": "2026-04-01"
         },
         {
-          "id": 23633561966,
-          "conclusion": "success",
-          "duration_minutes": 19.1,
-          "date": "2026-03-27"
-        },
-        {
-          "id": 23633418738,
+          "id": 23838752007,
           "conclusion": "failure",
-          "duration_minutes": 8.3,
-          "date": "2026-03-27"
+          "duration_minutes": 2.5,
+          "date": "2026-04-01"
         },
         {
-          "id": 23630004911,
+          "id": 23838529357,
           "conclusion": "success",
-          "duration_minutes": 32.8,
-          "date": "2026-03-27"
+          "duration_minutes": 19.0,
+          "date": "2026-04-01"
         },
         {
-          "id": 23629987709,
+          "id": 23838474099,
           "conclusion": "failure",
-          "duration_minutes": 18.4,
-          "date": "2026-03-27"
+          "duration_minutes": 0.8,
+          "date": "2026-04-01"
         },
         {
-          "id": 23629419791,
-          "conclusion": "success",
-          "duration_minutes": 36.9,
-          "date": "2026-03-27"
-        },
-        {
-          "id": 23629382963,
-          "conclusion": "success",
-          "duration_minutes": 29.8,
-          "date": "2026-03-27"
-        },
-        {
-          "id": 23629090898,
-          "conclusion": "success",
-          "duration_minutes": 25.4,
-          "date": "2026-03-27"
-        },
-        {
-          "id": 23628914420,
-          "conclusion": "cancelled",
-          "duration_minutes": 6.8,
-          "date": "2026-03-27"
-        },
-        {
-          "id": 23628681338,
-          "conclusion": "cancelled",
-          "duration_minutes": 9.4,
-          "date": "2026-03-27"
-        },
-        {
-          "id": 23628541455,
-          "conclusion": "cancelled",
-          "duration_minutes": 5.4,
-          "date": "2026-03-27"
-        },
-        {
-          "id": 23627320966,
-          "conclusion": "success",
-          "duration_minutes": 16.0,
-          "date": "2026-03-27"
-        },
-        {
-          "id": 23601761801,
-          "conclusion": "success",
-          "duration_minutes": 17.0,
-          "date": "2026-03-26"
-        },
-        {
-          "id": 23601617538,
-          "conclusion": "cancelled",
-          "duration_minutes": 3.7,
-          "date": "2026-03-26"
-        },
-        {
-          "id": 23601235351,
-          "conclusion": "cancelled",
-          "duration_minutes": 8.4,
-          "date": "2026-03-26"
-        },
-        {
-          "id": 23601192067,
+          "id": 23838273798,
           "conclusion": "failure",
+          "duration_minutes": 0.9,
+          "date": "2026-04-01"
+        },
+        {
+          "id": 23838205604,
+          "conclusion": "cancelled",
+          "duration_minutes": 2.0,
+          "date": "2026-04-01"
+        },
+        {
+          "id": 23836579730,
+          "conclusion": "success",
+          "duration_minutes": 19.0,
+          "date": "2026-04-01"
+        },
+        {
+          "id": 23833906684,
+          "conclusion": "success",
+          "duration_minutes": 18.7,
+          "date": "2026-04-01"
+        },
+        {
+          "id": 23833516265,
+          "conclusion": "success",
+          "duration_minutes": 48.8,
+          "date": "2026-04-01"
+        },
+        {
+          "id": 23833394532,
+          "conclusion": "success",
+          "duration_minutes": 37.4,
+          "date": "2026-04-01"
+        },
+        {
+          "id": 23833378445,
+          "conclusion": "cancelled",
           "duration_minutes": 0.7,
-          "date": "2026-03-26"
+          "date": "2026-04-01"
         },
         {
-          "id": 23601142820,
+          "id": 23833278297,
+          "conclusion": "failure",
+          "duration_minutes": 2.6,
+          "date": "2026-04-01"
+        },
+        {
+          "id": 23833197334,
+          "conclusion": "failure",
+          "duration_minutes": 2.2,
+          "date": "2026-04-01"
+        },
+        {
+          "id": 23832952523,
+          "conclusion": "failure",
+          "duration_minutes": 0.1,
+          "date": "2026-04-01"
+        },
+        {
+          "id": 23832655334,
+          "conclusion": "success",
+          "duration_minutes": 18.0,
+          "date": "2026-04-01"
+        },
+        {
+          "id": 23831610484,
+          "conclusion": "success",
+          "duration_minutes": 18.1,
+          "date": "2026-04-01"
+        },
+        {
+          "id": 23830066595,
+          "conclusion": "success",
+          "duration_minutes": 18.3,
+          "date": "2026-04-01"
+        },
+        {
+          "id": 23828198743,
+          "conclusion": "success",
+          "duration_minutes": 71.5,
+          "date": "2026-04-01"
+        },
+        {
+          "id": 23803145149,
           "conclusion": "cancelled",
-          "duration_minutes": 1.9,
-          "date": "2026-03-26"
+          "duration_minutes": 17.8,
+          "date": "2026-04-01"
         }
       ],
       "bottleneck_job": {
-        "name": "mori internode test (platform:MI325X+Thor2)",
-        "duration_minutes": 8.3
+        "name": "mori build (platform:MI325X+Thor2)",
+        "duration_minutes": 0.3
       }
     },
     "Build and Deploy Documentation": {
       "workflow_id": 243910332,
       "latest_run": {
-        "id": 23637220198,
+        "id": 23839270578,
         "conclusion": "success",
-        "duration_minutes": 1.4,
-        "started_at": "2026-03-27T08:12:26Z",
-        "html_url": "https://github.com/ROCm/mori/actions/runs/23637220198"
+        "duration_minutes": 1.0,
+        "started_at": "2026-04-01T08:25:27Z",
+        "html_url": "https://github.com/ROCm/mori/actions/runs/23839270578"
       },
       "stats": {
         "sample_size": 20,
@@ -162,124 +156,124 @@
       },
       "recent_runs": [
         {
-          "id": 23637220198,
-          "conclusion": "success",
-          "duration_minutes": 1.4,
-          "date": "2026-03-27"
-        },
-        {
-          "id": 23636566150,
-          "conclusion": "success",
-          "duration_minutes": 1.1,
-          "date": "2026-03-27"
-        },
-        {
-          "id": 23635571175,
-          "conclusion": "success",
-          "duration_minutes": 0.9,
-          "date": "2026-03-27"
-        },
-        {
-          "id": 23634786677,
-          "conclusion": "success",
-          "duration_minutes": 0.9,
-          "date": "2026-03-27"
-        },
-        {
-          "id": 23633990178,
+          "id": 23839270578,
           "conclusion": "success",
           "duration_minutes": 1.0,
-          "date": "2026-03-27"
+          "date": "2026-04-01"
         },
         {
-          "id": 23633561954,
+          "id": 23838751991,
           "conclusion": "success",
-          "duration_minutes": 1.1,
-          "date": "2026-03-27"
+          "duration_minutes": 0.9,
+          "date": "2026-04-01"
         },
         {
-          "id": 23633418735,
+          "id": 23838529303,
           "conclusion": "success",
-          "duration_minutes": 1.6,
-          "date": "2026-03-27"
+          "duration_minutes": 1.2,
+          "date": "2026-04-01"
         },
         {
-          "id": 23630004940,
-          "conclusion": "success",
-          "duration_minutes": 1.6,
-          "date": "2026-03-27"
-        },
-        {
-          "id": 23629987711,
-          "conclusion": "success",
-          "duration_minutes": 1.4,
-          "date": "2026-03-27"
-        },
-        {
-          "id": 23629419778,
-          "conclusion": "success",
-          "duration_minutes": 1.1,
-          "date": "2026-03-27"
-        },
-        {
-          "id": 23629382990,
-          "conclusion": "success",
-          "duration_minutes": 1.4,
-          "date": "2026-03-27"
-        },
-        {
-          "id": 23629090934,
-          "conclusion": "success",
-          "duration_minutes": 1.1,
-          "date": "2026-03-27"
-        },
-        {
-          "id": 23628914418,
-          "conclusion": "success",
-          "duration_minutes": 1.0,
-          "date": "2026-03-27"
-        },
-        {
-          "id": 23628681342,
-          "conclusion": "success",
-          "duration_minutes": 1.6,
-          "date": "2026-03-27"
-        },
-        {
-          "id": 23628541453,
-          "conclusion": "success",
-          "duration_minutes": 0.8,
-          "date": "2026-03-27"
-        },
-        {
-          "id": 23627320960,
-          "conclusion": "success",
-          "duration_minutes": 1.6,
-          "date": "2026-03-27"
-        },
-        {
-          "id": 23601761777,
+          "id": 23838474003,
           "conclusion": "success",
           "duration_minutes": 1.3,
-          "date": "2026-03-26"
+          "date": "2026-04-01"
         },
         {
-          "id": 23601617586,
+          "id": 23838273786,
           "conclusion": "success",
-          "duration_minutes": 1.4,
-          "date": "2026-03-26"
+          "duration_minutes": 1.5,
+          "date": "2026-04-01"
         },
         {
-          "id": 23601235452,
+          "id": 23838205599,
           "conclusion": "success",
-          "duration_minutes": 0.8,
-          "date": "2026-03-26"
+          "duration_minutes": 1.1,
+          "date": "2026-04-01"
         },
         {
-          "id": 23601192325,
+          "id": 23836579744,
           "conclusion": "success",
           "duration_minutes": 1.0,
-          "date": "2026-03-26"
+          "date": "2026-04-01"
+        },
+        {
+          "id": 23833906695,
+          "conclusion": "success",
+          "duration_minutes": 1.5,
+          "date": "2026-04-01"
+        },
+        {
+          "id": 23833516276,
+          "conclusion": "success",
+          "duration_minutes": 0.9,
+          "date": "2026-04-01"
+        },
+        {
+          "id": 23833394542,
+          "conclusion": "success",
+          "duration_minutes": 1.2,
+          "date": "2026-04-01"
+        },
+        {
+          "id": 23833378414,
+          "conclusion": "success",
+          "duration_minutes": 1.1,
+          "date": "2026-04-01"
+        },
+        {
+          "id": 23833278300,
+          "conclusion": "success",
+          "duration_minutes": 1.4,
+          "date": "2026-04-01"
+        },
+        {
+          "id": 23833197324,
+          "conclusion": "success",
+          "duration_minutes": 1.0,
+          "date": "2026-04-01"
+        },
+        {
+          "id": 23832952527,
+          "conclusion": "success",
+          "duration_minutes": 0.9,
+          "date": "2026-04-01"
+        },
+        {
+          "id": 23832746311,
+          "conclusion": "success",
+          "duration_minutes": 1.1,
+          "date": "2026-04-01"
+        },
+        {
+          "id": 23832655339,
+          "conclusion": "success",
+          "duration_minutes": 1.4,
+          "date": "2026-04-01"
+        },
+        {
+          "id": 23831610509,
+          "conclusion": "success",
+          "duration_minutes": 0.8,
+          "date": "2026-04-01"
+        },
+        {
+          "id": 23830066608,
+          "conclusion": "success",
+          "duration_minutes": 1.4,
+          "date": "2026-04-01"
+        },
+        {
+          "id": 23828198744,
+          "conclusion": "success",
+          "duration_minutes": 1.6,
+          "date": "2026-04-01"
+        },
+        {
+          "id": 23803144875,
+          "conclusion": "success",
+          "duration_minutes": 1.6,
+          "date": "2026-03-31"
         }
       ],
       "bottleneck_job": {
@@ -290,144 +284,144 @@
     "pre-commit": {
       "workflow_id": 250788659,
       "latest_run": {
-        "id": 23636566165,
+        "id": 23838751990,
         "conclusion": "success",
-        "duration_minutes": 0.9,
-        "started_at": "2026-03-27T07:50:47Z",
-        "html_url": "https://github.com/ROCm/mori/actions/runs/23636566165"
+        "duration_minutes": 0.4,
+        "started_at": "2026-04-01T08:11:38Z",
+        "html_url": "https://github.com/ROCm/mori/actions/runs/23838751990"
       },
       "stats": {
-        "sample_size": 11,
-        "median_minutes": 0.8,
-        "p90_minutes": 1.2,
-        "min_minutes": 0.6,
+        "sample_size": 15,
+        "median_minutes": 0.9,
+        "p90_minutes": 1.3,
+        "min_minutes": 0.3,
         "max_minutes": 1.6
       },
       "recent_runs": [
         {
-          "id": 23636566165,
+          "id": 23838751990,
           "conclusion": "success",
-          "duration_minutes": 0.9,
-          "date": "2026-03-27"
+          "duration_minutes": 0.4,
+          "date": "2026-04-01"
         },
         {
-          "id": 23635571162,
-          "conclusion": "failure",
+          "id": 23838529301,
+          "conclusion": "success",
           "duration_minutes": 0.7,
-          "date": "2026-03-27"
+          "date": "2026-04-01"
         },
         {
-          "id": 23634786684,
+          "id": 23838474016,
+          "conclusion": "success",
+          "duration_minutes": 1.1,
+          "date": "2026-04-01"
+        },
+        {
+          "id": 23838273804,
           "conclusion": "failure",
+          "duration_minutes": 1.2,
+          "date": "2026-04-01"
+        },
+        {
+          "id": 23838205600,
+          "conclusion": "failure",
+          "duration_minutes": 1.2,
+          "date": "2026-04-01"
+        },
+        {
+          "id": 23836579770,
+          "conclusion": "success",
+          "duration_minutes": 0.5,
+          "date": "2026-04-01"
+        },
+        {
+          "id": 23833906682,
+          "conclusion": "success",
+          "duration_minutes": 1.0,
+          "date": "2026-04-01"
+        },
+        {
+          "id": 23833516264,
+          "conclusion": "success",
+          "duration_minutes": 0.4,
+          "date": "2026-04-01"
+        },
+        {
+          "id": 23833394531,
+          "conclusion": "success",
           "duration_minutes": 0.7,
-          "date": "2026-03-27"
+          "date": "2026-04-01"
         },
         {
-          "id": 23633990175,
+          "id": 23833378440,
           "conclusion": "success",
-          "duration_minutes": 0.9,
-          "date": "2026-03-27"
+          "duration_minutes": 0.7,
+          "date": "2026-04-01"
         },
         {
-          "id": 23633418753,
-          "conclusion": "failure",
-          "duration_minutes": 1.5,
-          "date": "2026-03-27"
-        },
-        {
-          "id": 23630004955,
+          "id": 23833278305,
           "conclusion": "success",
-          "duration_minutes": 1.6,
-          "date": "2026-03-27"
-        },
-        {
-          "id": 23629987716,
-          "conclusion": "failure",
           "duration_minutes": 1.3,
-          "date": "2026-03-27"
+          "date": "2026-04-01"
         },
         {
-          "id": 23629382992,
+          "id": 23833197354,
+          "conclusion": "failure",
+          "duration_minutes": 0.8,
+          "date": "2026-04-01"
+        },
+        {
+          "id": 23832952522,
+          "conclusion": "success",
+          "duration_minutes": 0.9,
+          "date": "2026-04-01"
+        },
+        {
+          "id": 23832746334,
+          "conclusion": "failure",
+          "duration_minutes": 0.9,
+          "date": "2026-04-01"
+        },
+        {
+          "id": 23832655332,
+          "conclusion": "success",
+          "duration_minutes": 1.0,
+          "date": "2026-04-01"
+        },
+        {
+          "id": 23831610490,
+          "conclusion": "success",
+          "duration_minutes": 0.3,
+          "date": "2026-04-01"
+        },
+        {
+          "id": 23828198779,
+          "conclusion": "success",
+          "duration_minutes": 1.3,
+          "date": "2026-04-01"
+        },
+        {
+          "id": 23803144898,
           "conclusion": "success",
           "duration_minutes": 1.2,
-          "date": "2026-03-27"
+          "date": "2026-03-31"
         },
         {
-          "id": 23629090895,
+          "id": 23802769224,
           "conclusion": "success",
-          "duration_minutes": 0.6,
-          "date": "2026-03-27"
+          "duration_minutes": 1.6,
+          "date": "2026-03-31"
         },
         {
-          "id": 23628914421,
-          "conclusion": "success",
-          "duration_minutes": 0.8,
-          "date": "2026-03-27"
-        },
-        {
-          "id": 23628681356,
+          "id": 23802494152,
           "conclusion": "failure",
-          "duration_minutes": 1.4,
-          "date": "2026-03-27"
-        },
-        {
-          "id": 23628541452,
-          "conclusion": "failure",
-          "duration_minutes": 0.7,
-          "date": "2026-03-27"
-        },
-        {
-          "id": 23601761741,
-          "conclusion": "success",
-          "duration_minutes": 0.8,
-          "date": "2026-03-26"
-        },
-        {
-          "id": 23601617603,
-          "conclusion": "success",
-          "duration_minutes": 0.8,
-          "date": "2026-03-26"
-        },
-        {
-          "id": 23601235361,
-          "conclusion": "failure",
-          "duration_minutes": 0.3,
-          "date": "2026-03-26"
-        },
-        {
-          "id": 23601192046,
-          "conclusion": "success",
-          "duration_minutes": 0.8,
-          "date": "2026-03-26"
-        },
-        {
-          "id": 23601142815,
-          "conclusion": "success",
-          "duration_minutes": 0.6,
-          "date": "2026-03-26"
-        },
-        {
-          "id": 23600992532,
-          "conclusion": "failure",
-          "duration_minutes": 0.6,
-          "date": "2026-03-26"
-        },
-        {
-          "id": 23600891272,
-          "conclusion": "success",
-          "duration_minutes": 0.7,
-          "date": "2026-03-26"
-        },
-        {
-          "id": 23598677863,
-          "conclusion": "failure",
-          "duration_minutes": 1.1,
-          "date": "2026-03-26"
+          "duration_minutes": 0.9,
+          "date": "2026-03-31"
         }
       ],
       "bottleneck_job": {
         "name": "pre-commit",
-        "duration_minutes": 0.6
+        "duration_minutes": 0.2
       }
     }
   }
