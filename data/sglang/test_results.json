@@ -1,23 +1,293 @@
 {
-  "collected_at": "2026-03-31T08:25:27Z",
+  "collected_at": "2026-04-03T09:19:20Z",
   "source": "automated",
   "rocm": {
     "workflow_name": "Nightly Test (AMD)",
-    "run_id": 23784141110,
-    "run_url": "https://github.com/sgl-project/sglang/actions/runs/23784141110",
-    "run_date": "2026-03-31T06:54:28Z",
-    "conclusion": "success",
+    "run_id": 23914039993,
+    "run_url": "https://github.com/sgl-project/sglang/actions/runs/23914039993",
+    "run_date": "2026-04-03T02:31:06Z",
+    "conclusion": "failure",
     "summary": {
-      "total_jobs": 2,
-      "passed": 0,
-      "failed": 0,
-      "skipped": 2,
-      "pass_rate": null
+      "total_jobs": 35,
+      "passed": 29,
+      "failed": 6,
+      "skipped": 0,
+      "pass_rate": 82.86
     },
     "suites": [
       {
+        "name": "nightly-accuracy-2-gpu-vlm",
+        "conclusion": "failure",
+        "tests": null,
+        "passed": null,
+        "failed": null,
+        "skipped": null,
+        "errors": null
+      },
+      {
+        "name": "nightly-accuracy-2-gpu",
+        "conclusion": "failure",
+        "tests": null,
+        "passed": null,
+        "failed": null,
+        "skipped": null,
+        "errors": null
+      },
+      {
+        "name": "nightly-8-gpu-grok1-int4",
+        "conclusion": "success",
+        "tests": null,
+        "passed": null,
+        "failed": null,
+        "skipped": null,
+        "errors": null
+      },
+      {
+        "name": "nightly-accuracy-8-gpu",
+        "conclusion": "success",
+        "tests": null,
+        "passed": null,
+        "failed": null,
+        "skipped": null,
+        "errors": null
+      },
+      {
+        "name": "nightly-perf-2-gpu-text",
+        "conclusion": "success",
+        "tests": null,
+        "passed": null,
+        "failed": null,
+        "skipped": null,
+        "errors": null
+      },
+      {
+        "name": "nightly-4-gpu",
+        "conclusion": "success",
+        "tests": null,
+        "passed": null,
+        "failed": null,
+        "skipped": null,
+        "errors": null
+      },
+      {
+        "name": "nightly-perf-2-gpu-vlm",
+        "conclusion": "success",
+        "tests": null,
+        "passed": null,
+        "failed": null,
+        "skipped": null,
+        "errors": null
+      },
+      {
         "name": "nightly-test-1-gpu-unit",
-        "conclusion": "skipped",
+        "conclusion": "failure",
+        "tests": null,
+        "passed": null,
+        "failed": null,
+        "skipped": null,
+        "errors": null
+      },
+      {
+        "name": "nightly-8-gpu-kimi-k25",
+        "conclusion": "success",
+        "tests": null,
+        "passed": null,
+        "failed": null,
+        "skipped": null,
+        "errors": null
+      },
+      {
+        "name": "nightly-8-gpu-deepseek-v3-kv-fp8",
+        "conclusion": "failure",
+        "tests": null,
+        "passed": null,
+        "failed": null,
+        "skipped": null,
+        "errors": null
+      },
+      {
+        "name": "nightly-8-gpu-mi35x-deepseek-r1-mxfp4-kv-fp8",
+        "conclusion": "success",
+        "tests": null,
+        "passed": null,
+        "failed": null,
+        "skipped": null,
+        "errors": null
+      },
+      {
+        "name": "nightly-perf-8-gpu-mi35x-deepseek-v32-basic",
+        "conclusion": "success",
+        "tests": null,
+        "passed": null,
+        "failed": null,
+        "skipped": null,
+        "errors": null
+      },
+      {
+        "name": "nightly-8-gpu-mi35x-kimi-k25",
+        "conclusion": "success",
+        "tests": null,
+        "passed": null,
+        "failed": null,
+        "skipped": null,
+        "errors": null
+      },
+      {
+        "name": "nightly-8-gpu-minimax-m25",
+        "conclusion": "success",
+        "tests": null,
+        "passed": null,
+        "failed": null,
+        "skipped": null,
+        "errors": null
+      },
+      {
+        "name": "nightly-accuracy-8-gpu-mi35x",
+        "conclusion": "failure",
+        "tests": null,
+        "passed": null,
+        "failed": null,
+        "skipped": null,
+        "errors": null
+      },
+      {
+        "name": "nightly-8-gpu-mi35x-deepseek-r1-mxfp4",
+        "conclusion": "success",
+        "tests": null,
+        "passed": null,
+        "failed": null,
+        "skipped": null,
+        "errors": null
+      },
+      {
+        "name": "nightly-8-gpu-glm5",
+        "conclusion": "success",
+        "tests": null,
+        "passed": null,
+        "failed": null,
+        "skipped": null,
+        "errors": null
+      },
+      {
+        "name": "nightly-8-gpu-deepseek-v32",
+        "conclusion": "success",
+        "tests": null,
+        "passed": null,
+        "failed": null,
+        "skipped": null,
+        "errors": null
+      },
+      {
+        "name": "nightly-8-gpu-qwen3-235b",
+        "conclusion": "success",
+        "tests": null,
+        "passed": null,
+        "failed": null,
+        "skipped": null,
+        "errors": null
+      },
+      {
+        "name": "nightly-1-gpu-zimage-turbo",
+        "conclusion": "success",
+        "tests": null,
+        "passed": null,
+        "failed": null,
+        "skipped": null,
+        "errors": null
+      },
+      {
+        "name": "nightly-accuracy-8-gpu-mi35x-deepseek-v32",
+        "conclusion": "success",
+        "tests": null,
+        "passed": null,
+        "failed": null,
+        "skipped": null,
+        "errors": null
+      },
+      {
+        "name": "nightly-accuracy-8-gpu-mi35x-deepseek-v32-mtp",
+        "conclusion": "success",
+        "tests": null,
+        "passed": null,
+        "failed": null,
+        "skipped": null,
+        "errors": null
+      },
+      {
+        "name": "nightly-8-gpu-mi35x-grok2",
+        "conclusion": "failure",
+        "tests": null,
+        "passed": null,
+        "failed": null,
+        "skipped": null,
+        "errors": null
+      },
+      {
+        "name": "nightly-8-gpu-grok2",
+        "conclusion": "success",
+        "tests": null,
+        "passed": null,
+        "failed": null,
+        "skipped": null,
+        "errors": null
+      },
+      {
+        "name": "nightly-8-gpu-mi35x-grok1-int4",
+        "conclusion": "success",
+        "tests": null,
+        "passed": null,
+        "failed": null,
+        "skipped": null,
+        "errors": null
+      },
+      {
+        "name": "nightly-8-gpu-mi35x-deepseek-r1-mxfp4-ar-fusion",
+        "conclusion": "success",
+        "tests": null,
+        "passed": null,
+        "failed": null,
+        "skipped": null,
+        "errors": null
+      },
+      {
+        "name": "nightly-8-gpu-deepseek-v32-mtp",
+        "conclusion": "success",
+        "tests": null,
+        "passed": null,
+        "failed": null,
+        "skipped": null,
+        "errors": null
+      },
+      {
+        "name": "nightly-8-gpu-qwen35",
+        "conclusion": "success",
+        "tests": null,
+        "passed": null,
+        "failed": null,
+        "skipped": null,
+        "errors": null
+      },
+      {
+        "name": "nightly-8-gpu-mi35x-qwen35",
+        "conclusion": "success",
+        "tests": null,
+        "passed": null,
+        "failed": null,
+        "skipped": null,
+        "errors": null
+      },
+      {
+        "name": "nightly-8-gpu-mi35x-minimax-m25",
+        "conclusion": "success",
+        "tests": null,
+        "passed": null,
+        "failed": null,
+        "skipped": null,
+        "errors": null
+      },
+      {
+        "name": "nightly-8-gpu-mi35x-glm5",
+        "conclusion": "success",
         "tests": null,
         "passed": null,
         "failed": null,
@@ -26,7 +296,34 @@
       },
       {
         "name": "nightly-test-1-gpu-mi35x",
-        "conclusion": "skipped",
+        "conclusion": "success",
+        "tests": null,
+        "passed": null,
+        "failed": null,
+        "skipped": null,
+        "errors": null
+      },
+      {
+        "name": "nightly-8-gpu-deepseek-v31",
+        "conclusion": "success",
+        "tests": null,
+        "passed": null,
+        "failed": null,
+        "skipped": null,
+        "errors": null
+      },
+      {
+        "name": "nightly-8-gpu-mi35x-qwen3-235b-mxfp4",
+        "conclusion": "success",
+        "tests": null,
+        "passed": null,
+        "failed": null,
+        "skipped": null,
+        "errors": null
+      },
+      {
+        "name": "nightly-perf-8-gpu-mi35x-deepseek-v32-mtp",
+        "conclusion": "success",
         "tests": null,
         "passed": null,
         "failed": null,
@@ -36,21 +333,21 @@
     ]
   },
   "cuda": {
-    "workflow_name": "PR Test",
-    "run_id": 23787305244,
-    "run_url": "https://github.com/sgl-project/sglang/actions/runs/23787305244",
-    "run_date": "2026-03-31T08:19:25Z",
+    "workflow_name": "Nightly Test (Nvidia)",
+    "run_id": 23826444093,
+    "run_url": "https://github.com/sgl-project/sglang/actions/runs/23826444093",
+    "run_date": "2026-04-01T06:49:36Z",
     "conclusion": "failure",
     "summary": {
-      "total_jobs": 20,
-      "passed": 1,
-      "failed": 7,
-      "skipped": 12,
-      "pass_rate": 12.5
+      "total_jobs": 24,
+      "passed": 10,
+      "failed": 12,
+      "skipped": 2,
+      "pass_rate": 45.45
     },
     "suites": [
       {
-        "name": "stage-a-test-cpu",
+        "name": "nightly-test-general-1-gpu-h100",
         "conclusion": "success",
         "tests": null,
         "passed": null,
@@ -59,16 +356,7 @@
         "errors": null
       },
       {
-        "name": "call-jit-kernel-tests",
-        "conclusion": "skipped",
-        "tests": null,
-        "passed": null,
-        "failed": null,
-        "skipped": null,
-        "errors": null
-      },
-      {
-        "name": "stage-a-test-1-gpu-small",
+        "name": "nightly-test-perf-4-gpu-b200",
         "conclusion": "failure",
         "tests": null,
         "passed": null,
@@ -77,7 +365,34 @@
         "errors": null
       },
       {
-        "name": "call-multimodal-gen-tests / multimodal-gen-test-1-gpu (1)",
+        "name": "nightly-test-general-8-gpu-h200 (0)",
+        "conclusion": "success",
+        "tests": null,
+        "passed": null,
+        "failed": null,
+        "skipped": null,
+        "errors": null
+      },
+      {
+        "name": "nightly-test-general-8-gpu-h200 (3)",
+        "conclusion": "success",
+        "tests": null,
+        "passed": null,
+        "failed": null,
+        "skipped": null,
+        "errors": null
+      },
+      {
+        "name": "nightly-test-kernel-1-gpu-h100",
+        "conclusion": "success",
+        "tests": null,
+        "passed": null,
+        "failed": null,
+        "skipped": null,
+        "errors": null
+      },
+      {
+        "name": "nightly-test-general-8-gpu-h200 (2)",
         "conclusion": "failure",
         "tests": null,
         "passed": null,
@@ -86,7 +401,7 @@
         "errors": null
       },
       {
-        "name": "call-multimodal-gen-tests / multimodal-gen-test-1-gpu (0)",
+        "name": "nightly-test-text-accuracy-2-gpu-h100",
         "conclusion": "failure",
         "tests": null,
         "passed": null,
@@ -95,16 +410,7 @@
         "errors": null
       },
       {
-        "name": "call-sgl-kernel-tests",
-        "conclusion": "skipped",
-        "tests": null,
-        "passed": null,
-        "failed": null,
-        "skipped": null,
-        "errors": null
-      },
-      {
-        "name": "call-multimodal-gen-tests / multimodal-gen-test-2-gpu (1)",
+        "name": "nightly-test-general-4-gpu-h100",
         "conclusion": "failure",
         "tests": null,
         "passed": null,
@@ -113,7 +419,7 @@
         "errors": null
       },
       {
-        "name": "call-multimodal-gen-tests / multimodal-gen-test-2-gpu (0)",
+        "name": "nightly-test-specialized-8-gpu-b200",
         "conclusion": "failure",
         "tests": null,
         "passed": null,
@@ -122,7 +428,7 @@
         "errors": null
       },
       {
-        "name": "call-multimodal-gen-tests / multimodal-gen-unit-test",
+        "name": "nightly-test-general-8-gpu-h20",
         "conclusion": "failure",
         "tests": null,
         "passed": null,
@@ -131,61 +437,7 @@
         "errors": null
       },
       {
-        "name": "stage-b-test-1-gpu-small",
-        "conclusion": "skipped",
-        "tests": null,
-        "passed": null,
-        "failed": null,
-        "skipped": null,
-        "errors": null
-      },
-      {
-        "name": "stage-b-test-4-gpu-b200",
-        "conclusion": "skipped",
-        "tests": null,
-        "passed": null,
-        "failed": null,
-        "skipped": null,
-        "errors": null
-      },
-      {
-        "name": "stage-b-test-1-gpu-large",
-        "conclusion": "skipped",
-        "tests": null,
-        "passed": null,
-        "failed": null,
-        "skipped": null,
-        "errors": null
-      },
-      {
-        "name": "stage-b-test-2-gpu-large",
-        "conclusion": "skipped",
-        "tests": null,
-        "passed": null,
-        "failed": null,
-        "skipped": null,
-        "errors": null
-      },
-      {
-        "name": "stage-c-test-4-gpu-h100",
-        "conclusion": "skipped",
-        "tests": null,
-        "passed": null,
-        "failed": null,
-        "skipped": null,
-        "errors": null
-      },
-      {
-        "name": "stage-c-test-4-gpu-b200",
-        "conclusion": "skipped",
-        "tests": null,
-        "passed": null,
-        "failed": null,
-        "skipped": null,
-        "errors": null
-      },
-      {
-        "name": "pr-test-finish",
+        "name": "nightly-test-multimodal-server-1-gpu (0)",
         "conclusion": "failure",
         "tests": null,
         "passed": null,
@@ -194,8 +446,8 @@
         "errors": null
       },
       {
-        "name": "stage-c-test-8-gpu-h200",
-        "conclusion": "skipped",
+        "name": "nightly-test-kernel-8-gpu-h200",
+        "conclusion": "success",
         "tests": null,
         "passed": null,
         "failed": null,
@@ -203,8 +455,8 @@
         "errors": null
       },
       {
-        "name": "stage-c-test-deepep-4-gpu-h100",
-        "conclusion": "skipped",
+        "name": "nightly-test-vlm-accuracy-2-gpu-h100",
+        "conclusion": "failure",
         "tests": null,
         "passed": null,
         "failed": null,
@@ -212,8 +464,8 @@
         "errors": null
       },
       {
-        "name": "stage-c-test-deepep-8-gpu-h200",
-        "conclusion": "skipped",
+        "name": "nightly-test-general-8-gpu-b200 (0)",
+        "conclusion": "success",
         "tests": null,
         "passed": null,
         "failed": null,
@@ -221,8 +473,89 @@
         "errors": null
       },
       {
-        "name": "stage-c-test-8-gpu-h20",
-        "conclusion": "skipped",
+        "name": "nightly-test-multimodal-server-1-gpu (1)",
+        "conclusion": "success",
+        "tests": null,
+        "passed": null,
+        "failed": null,
+        "skipped": null,
+        "errors": null
+      },
+      {
+        "name": "nightly-test-general-8-gpu-h200 (1)",
+        "conclusion": "success",
+        "tests": null,
+        "passed": null,
+        "failed": null,
+        "skipped": null,
+        "errors": null
+      },
+      {
+        "name": "nightly-test-vlm-perf-2-gpu-h100",
+        "conclusion": "cancelled",
+        "tests": null,
+        "passed": null,
+        "failed": null,
+        "skipped": null,
+        "errors": null
+      },
+      {
+        "name": "nightly-test-multimodal-server-2-gpu (1)",
+        "conclusion": "failure",
+        "tests": null,
+        "passed": null,
+        "failed": null,
+        "skipped": null,
+        "errors": null
+      },
+      {
+        "name": "nightly-test-diffusion-comparison",
+        "conclusion": "success",
+        "tests": null,
+        "passed": null,
+        "failed": null,
+        "skipped": null,
+        "errors": null
+      },
+      {
+        "name": "nightly-test-general-8-gpu-b200 (1)",
+        "conclusion": "success",
+        "tests": null,
+        "passed": null,
+        "failed": null,
+        "skipped": null,
+        "errors": null
+      },
+      {
+        "name": "nightly-test-multimodal-server-2-gpu (0)",
+        "conclusion": "failure",
+        "tests": null,
+        "passed": null,
+        "failed": null,
+        "skipped": null,
+        "errors": null
+      },
+      {
+        "name": "nightly-test-text-perf-2-gpu-h100",
+        "conclusion": "cancelled",
+        "tests": null,
+        "passed": null,
+        "failed": null,
+        "skipped": null,
+        "errors": null
+      },
+      {
+        "name": "nightly-test-general-8-gpu-b200 (2)",
+        "conclusion": "failure",
+        "tests": null,
+        "passed": null,
+        "failed": null,
+        "skipped": null,
+        "errors": null
+      },
+      {
+        "name": "nightly-test-general-8-gpu-b200 (3)",
+        "conclusion": "failure",
         "tests": null,
         "passed": null,
         "failed": null,

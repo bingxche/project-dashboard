@@ -1,0 +1,559 @@
+{
+  "collected_at": "2026-04-03T09:18:50Z",
+  "commit_sha": "13ec1d0f5298",
+  "backend_summary": {
+    "CUDA": {
+      "total": 313,
+      "enabled": 303,
+      "disabled": 10,
+      "per_commit": 246,
+      "nightly": 57
+    },
+    "AMD": {
+      "total": 216,
+      "enabled": 202,
+      "disabled": 14,
+      "per_commit": 129,
+      "nightly": 73
+    }
+  },
+  "summary": {
+    "cuda": 311,
+    "amd": 216,
+    "cuda_exclusive": 64,
+    "amd_exclusive": 2,
+    "parity_pct": 86.6
+  },
+  "cuda_exclusive": [
+    {
+      "file": "test_deepseek_v3_cutedsl_4gpu.py",
+      "path": "test/registered/4-gpu-models/test_deepseek_v3_cutedsl_4gpu.py",
+      "folder": "4-gpu-models",
+      "suite": "stage-c-test-4-gpu-gb200",
+      "est_time": 1800.0,
+      "reason": "Requires 4-GPU GB200"
+    },
+    {
+      "file": "test_gpt_oss_4gpu.py",
+      "path": "test/registered/4-gpu-models/test_gpt_oss_4gpu.py",
+      "folder": "4-gpu-models",
+      "suite": "stage-c-test-4-gpu-h100",
+      "est_time": 300.0,
+      "reason": "Requires 4-GPU H100/B200"
+    },
+    {
+      "file": "test_nvidia_nemotron_3_super_nvfp4.py",
+      "path": "test/registered/4-gpu-models/test_nvidia_nemotron_3_super_nvfp4.py",
+      "folder": "4-gpu-models",
+      "suite": "stage-c-test-4-gpu-b200",
+      "est_time": 600.0,
+      "reason": "Matched pattern: nvidia_nemotron"
+    },
+    {
+      "file": "test_qwen3_next_models.py",
+      "path": "test/registered/4-gpu-models/test_qwen3_next_models.py",
+      "folder": "4-gpu-models",
+      "suite": "stage-c-test-4-gpu-h100",
+      "est_time": 350.0,
+      "reason": "Requires 4-GPU H100"
+    },
+    {
+      "file": "test_qwen3_next_models_mtp.py",
+      "path": "test/registered/4-gpu-models/test_qwen3_next_models_mtp.py",
+      "folder": "4-gpu-models",
+      "suite": "stage-c-test-4-gpu-h100",
+      "est_time": 500.0,
+      "reason": "Matched pattern: test_qwen3_next_models"
+    },
+    {
+      "file": "test_deepseek_v32.py",
+      "path": "test/registered/8-gpu-models/test_deepseek_v32.py",
+      "folder": "8-gpu-models",
+      "suite": "nightly-8-gpu-common",
+      "est_time": 5400.0,
+      "reason": "Matched pattern: test_deepseek_v32"
+    },
+    {
+      "file": "test_deepseek_v32_basic.py",
+      "path": "test/registered/8-gpu-models/test_deepseek_v32_basic.py",
+      "folder": "8-gpu-models",
+      "suite": "stage-c-test-8-gpu-h200",
+      "est_time": 360.0,
+      "reason": "Matched pattern: test_deepseek_v32"
+    },
+    {
+      "file": "test_deepseek_v32_mtp.py",
+      "path": "test/registered/8-gpu-models/test_deepseek_v32_mtp.py",
+      "folder": "8-gpu-models",
+      "suite": "stage-c-test-8-gpu-h200",
+      "est_time": 720.0,
+      "reason": "Matched pattern: test_deepseek_v32"
+    },
+    {
+      "file": "test_mimo_models.py",
+      "path": "test/registered/8-gpu-models/test_mimo_models.py",
+      "folder": "8-gpu-models",
+      "suite": "stage-c-test-8-gpu-h200",
+      "est_time": 200.0,
+      "reason": "Test failed on ROCm"
+    },
+    {
+      "file": "test_nvidia_nemotron_3_super_bf16.py",
+      "path": "test/registered/8-gpu-models/test_nvidia_nemotron_3_super_bf16.py",
+      "folder": "8-gpu-models",
+      "suite": "stage-c-test-8-gpu-h200",
+      "est_time": 300.0,
+      "reason": "Matched pattern: nvidia_nemotron"
+    },
+    {
+      "file": "test_nvidia_nemotron_3_super_nightly.py",
+      "path": "test/registered/8-gpu-models/test_nvidia_nemotron_3_super_nightly.py",
+      "folder": "8-gpu-models",
+      "suite": "nightly-8-gpu-common",
+      "est_time": 5400.0,
+      "reason": "Matched pattern: nvidia_nemotron"
+    },
+    {
+      "file": "test_fa3.py",
+      "path": "test/registered/attention/test_fa3.py",
+      "folder": "attention",
+      "suite": "stage-b-test-1-gpu-large",
+      "est_time": 300.0,
+      "reason": "Requires FA3, FlashInfer"
+    },
+    {
+      "file": "test_flash_attention_4.py",
+      "path": "test/registered/attention/test_flash_attention_4.py",
+      "folder": "attention",
+      "suite": "stage-b-test-4-gpu-b200",
+      "est_time": 200.0,
+      "reason": "Requires FA3, FlashInfer"
+    },
+    {
+      "file": "test_hybrid_attn_backend.py",
+      "path": "test/registered/attention/test_hybrid_attn_backend.py",
+      "folder": "attention",
+      "suite": "stage-b-test-1-gpu-large",
+      "est_time": 350.0,
+      "reason": "Requires FA3, FlashInfer"
+    },
+    {
+      "file": "test_deepseek_r1_fp8_trtllm_backend.py",
+      "path": "test/registered/backends/test_deepseek_r1_fp8_trtllm_backend.py",
+      "folder": "backends",
+      "suite": "nightly-8-gpu-b200",
+      "est_time": 3600.0,
+      "reason": "Matched pattern: trtllm"
+    },
+    {
+      "file": "test_deepseek_v3_fp4_cutlass_moe.py",
+      "path": "test/registered/backends/test_deepseek_v3_fp4_cutlass_moe.py",
+      "folder": "backends",
+      "suite": "nightly-4-gpu-b200",
+      "est_time": 900.0,
+      "reason": "Matched pattern: cutlass"
+    },
+    {
+      "file": "test_flashinfer_trtllm_gen_attn_backend.py",
+      "path": "test/registered/backends/test_flashinfer_trtllm_gen_attn_backend.py",
+      "folder": "backends",
+      "suite": "nightly-4-gpu-b200",
+      "est_time": 300.0,
+      "reason": "Matched pattern: flashinfer"
+    },
+    {
+      "file": "test_flashinfer_trtllm_gen_moe_backend.py",
+      "path": "test/registered/backends/test_flashinfer_trtllm_gen_moe_backend.py",
+      "folder": "backends",
+      "suite": "nightly-4-gpu-b200",
+      "est_time": 600.0,
+      "reason": "Matched pattern: flashinfer"
+    },
+    {
+      "file": "test_qwen3_fp4_trtllm_gen_moe.py",
+      "path": "test/registered/backends/test_qwen3_fp4_trtllm_gen_moe.py",
+      "folder": "backends",
+      "suite": "nightly-1-gpu",
+      "est_time": 300.0,
+      "reason": "Matched pattern: trtllm"
+    },
+    {
+      "file": "test_deepseek_v32_cp_single_node.py",
+      "path": "test/registered/cp/test_deepseek_v32_cp_single_node.py",
+      "folder": "cp",
+      "suite": "stage-c-test-deepep-8-gpu-h200",
+      "est_time": 640.0,
+      "reason": "Matched pattern: test_deepseek_v32"
+    },
+    {
+      "file": "test_disaggregation_different_tp.py",
+      "path": "test/registered/distributed/test_disaggregation_different_tp.py",
+      "folder": "distributed",
+      "suite": "stage-c-test-8-gpu-h20",
+      "est_time": 600.0,
+      "reason": "Test failed on ROCm"
+    },
+    {
+      "file": "test_disaggregation_dp_attention.py",
+      "path": "test/registered/distributed/test_disaggregation_dp_attention.py",
+      "folder": "distributed",
+      "suite": "stage-c-test-8-gpu-h20",
+      "est_time": 580.0,
+      "reason": "Private model not accessible"
+    },
+    {
+      "file": "test_disaggregation_pp.py",
+      "path": "test/registered/distributed/test_disaggregation_pp.py",
+      "folder": "distributed",
+      "suite": "stage-c-test-8-gpu-h20",
+      "est_time": 180.0,
+      "reason": "Timeout on ROCm"
+    },
+    {
+      "file": "test_epd_disaggregation.py",
+      "path": "test/registered/distributed/test_epd_disaggregation.py",
+      "folder": "distributed",
+      "suite": "stage-c-test-4-gpu-h100",
+      "est_time": 150.0,
+      "reason": "Requires 4-GPU H100"
+    },
+    {
+      "file": "test_encoder_embedding_models.py",
+      "path": "test/registered/embedding/test_encoder_embedding_models.py",
+      "folder": "embedding",
+      "suite": "stage-b-test-1-gpu-small",
+      "est_time": 270.0,
+      "reason": "Requires FlashInfer"
+    },
+    {
+      "file": "test_deepep_small.py",
+      "path": "test/registered/ep/test_deepep_small.py",
+      "folder": "ep",
+      "suite": "stage-c-test-deepep-4-gpu-h100",
+      "est_time": 531.0,
+      "reason": "Requires 4-GPU H100"
+    },
+    {
+      "file": "test_deepseek_v32.py",
+      "path": "test/registered/gb300/test_deepseek_v32.py",
+      "folder": "gb300",
+      "suite": "nightly-4-gpu-gb300",
+      "est_time": 7200.0,
+      "reason": "Matched pattern: test_deepseek_v32"
+    },
+    {
+      "file": "test_deepseek_v32_nvfp4.py",
+      "path": "test/registered/gb300/test_deepseek_v32_nvfp4.py",
+      "folder": "gb300",
+      "suite": "nightly-4-gpu-gb300",
+      "est_time": 7200.0,
+      "reason": "Matched pattern: test_deepseek_v32"
+    },
+    {
+      "file": "test_mamba2_mixer.py",
+      "path": "test/registered/layers/mamba/test_mamba2_mixer.py",
+      "folder": "layers",
+      "suite": "stage-b-test-2-gpu-large",
+      "est_time": 50.0,
+      "reason": "Matched pattern: mamba"
+    },
+    {
+      "file": "test_flashmla.py",
+      "path": "test/registered/mla/test_flashmla.py",
+      "folder": "mla",
+      "suite": "stage-b-test-1-gpu-large",
+      "est_time": 284.0,
+      "reason": "Private model (lmsys/sglang-ci-dsv3-test)"
+    },
+    {
+      "file": "test_mla_flashinfer.py",
+      "path": "test/registered/mla/test_mla_flashinfer.py",
+      "folder": "mla",
+      "suite": "stage-b-test-1-gpu-large",
+      "est_time": 302.0,
+      "reason": "Private model (lmsys/sglang-ci-dsv3-test)"
+    },
+    {
+      "file": "test_mla_int8_deepseek_v3.py",
+      "path": "test/registered/mla/test_mla_int8_deepseek_v3.py",
+      "folder": "mla",
+      "suite": "stage-b-test-1-gpu-large",
+      "est_time": 341.0,
+      "reason": "Private model (sgl-project/sglang-ci-dsv3-block-int8-test)"
+    },
+    {
+      "file": "test_nvidia_nemotron_3_nano.py",
+      "path": "test/registered/models/test_nvidia_nemotron_3_nano.py",
+      "folder": "models",
+      "suite": "stage-b-test-2-gpu-large",
+      "est_time": 660.0,
+      "reason": "Matched pattern: nvidia_nemotron"
+    },
+    {
+      "file": "test_nvidia_nemotron_nano_v2.py",
+      "path": "test/registered/models/test_nvidia_nemotron_nano_v2.py",
+      "folder": "models",
+      "suite": "stage-b-test-2-gpu-large",
+      "est_time": 240.0,
+      "reason": "Matched pattern: nvidia_nemotron"
+    },
+    {
+      "file": "test_nvidia_nemotron_nano_v2_vl.py",
+      "path": "test/registered/models/test_nvidia_nemotron_nano_v2_vl.py",
+      "folder": "models",
+      "suite": "stage-b-test-1-gpu-large",
+      "est_time": 214.0,
+      "reason": "Matched pattern: nvidia_nemotron"
+    },
+    {
+      "file": "test_qwen3_next_models_fp4.py",
+      "path": "test/registered/models/test_qwen3_next_models_fp4.py",
+      "folder": "models",
+      "suite": "nightly-4-gpu-b200",
+      "est_time": 500.0,
+      "reason": "Matched pattern: test_qwen3_next_models"
+    },
+    {
+      "file": "test_cutedsl_moe.py",
+      "path": "test/registered/moe/test_cutedsl_moe.py",
+      "folder": "moe",
+      "suite": "stage-c-test-4-gpu-b200",
+      "est_time": 20.0,
+      "reason": "FlashInfer not available"
+    },
+    {
+      "file": "test_gpt_oss_4gpu_perf.py",
+      "path": "test/registered/perf/test_gpt_oss_4gpu_perf.py",
+      "folder": "perf",
+      "suite": "nightly-4-gpu-b200",
+      "est_time": 600.0,
+      "reason": "Matched pattern: test_gpt_oss_4gpu"
+    },
+    {
+      "file": "test_piecewise_cuda_graph_support_1_gpu.py",
+      "path": "test/registered/piecewise_cuda_graph/test_piecewise_cuda_graph_support_1_gpu.py",
+      "folder": "piecewise_cuda_graph",
+      "suite": "stage-b-test-1-gpu-large",
+      "est_time": 220.0,
+      "reason": "Matched pattern: test_piecewise_cuda_graph"
+    },
+    {
+      "file": "test_autoround.py",
+      "path": "test/registered/quant/test_autoround.py",
+      "folder": "quant",
+      "suite": "stage-b-test-1-gpu-large",
+      "est_time": 77.0,
+      "reason": "gptq_marlin_repack not defined"
+    },
+    {
+      "file": "test_bnb.py",
+      "path": "test/registered/quant/test_bnb.py",
+      "folder": "quant",
+      "suite": "stage-b-test-1-gpu-small",
+      "est_time": 5.0,
+      "reason": "bitsandbytes not supported on ROCm"
+    },
+    {
+      "file": "test_deepseek_v32_fp4_4gpu.py",
+      "path": "test/registered/quant/test_deepseek_v32_fp4_4gpu.py",
+      "folder": "quant",
+      "suite": "stage-c-test-4-gpu-b200",
+      "est_time": 1200.0,
+      "reason": "Matched pattern: test_deepseek_v32"
+    },
+    {
+      "file": "test_deepseek_v32_fp4_mtp_4gpu.py",
+      "path": "test/registered/quant/test_deepseek_v32_fp4_mtp_4gpu.py",
+      "folder": "quant",
+      "suite": "stage-c-test-4-gpu-b200",
+      "est_time": 1200.0,
+      "reason": "Matched pattern: test_deepseek_v32"
+    },
+    {
+      "file": "test_deepseek_v3_fp4_4gpu.py",
+      "path": "test/registered/quant/test_deepseek_v3_fp4_4gpu.py",
+      "folder": "quant",
+      "suite": "stage-c-test-4-gpu-b200",
+      "est_time": 1200.0,
+      "reason": "Requires 4-GPU B200"
+    },
+    {
+      "file": "test_fp8_blockwise_gemm.py",
+      "path": "test/registered/quant/test_fp8_blockwise_gemm.py",
+      "folder": "quant",
+      "suite": "stage-c-test-4-gpu-b200",
+      "est_time": 420.0,
+      "reason": "Requires 4-GPU B200"
+    },
+    {
+      "file": "test_fp8_utils.py",
+      "path": "test/registered/quant/test_fp8_utils.py",
+      "folder": "quant",
+      "suite": "stage-b-test-1-gpu-large",
+      "est_time": 9.0,
+      "reason": "Requires deepGEMM"
+    },
+    {
+      "file": "test_gguf.py",
+      "path": "test/registered/quant/test_gguf.py",
+      "folder": "quant",
+      "suite": "stage-b-test-1-gpu-small",
+      "est_time": 96.0,
+      "reason": "gguf quantization not supported on ROCm"
+    },
+    {
+      "file": "test_gptqmodel_dynamic.py",
+      "path": "test/registered/quant/test_gptqmodel_dynamic.py",
+      "folder": "quant",
+      "suite": "stage-b-test-1-gpu-large",
+      "est_time": 102.0,
+      "reason": "torch.bfloat16 not supported for gptq"
+    },
+    {
+      "file": "test_marlin_moe.py",
+      "path": "test/registered/quant/test_marlin_moe.py",
+      "folder": "quant",
+      "suite": "stage-b-test-1-gpu-small",
+      "est_time": 200.0,
+      "reason": "sgl_kernel.moe_wna16_marlin_gemm not found"
+    },
+    {
+      "file": "test_modelopt_fp8.py",
+      "path": "test/registered/quant/test_modelopt_fp8.py",
+      "folder": "quant",
+      "suite": "stage-b-test-1-gpu-large",
+      "est_time": 120.0,
+      "reason": "Matched pattern: modelopt"
+    },
+    {
+      "file": "test_quantization.py",
+      "path": "test/registered/quant/test_quantization.py",
+      "folder": "quant",
+      "suite": "stage-b-test-1-gpu-large",
+      "est_time": 370.0,
+      "reason": "gptq_shuffle not defined"
+    },
+    {
+      "file": "test_w4a8_deepseek_v3.py",
+      "path": "test/registered/quant/test_w4a8_deepseek_v3.py",
+      "folder": "quant",
+      "suite": "stage-c-test-8-gpu-h20",
+      "est_time": 520.0,
+      "reason": "w4afp8 quantization not supported on ROCm"
+    },
+    {
+      "file": "test_deepseek_v3_fp4_mtp_small.py",
+      "path": "test/registered/spec/eagle/test_deepseek_v3_fp4_mtp_small.py",
+      "folder": "spec",
+      "suite": "stage-b-test-4-gpu-b200",
+      "est_time": 900.0,
+      "reason": "Requires 4-GPU B200"
+    },
+    {
+      "file": "test_eagle_infer_a.py",
+      "path": "test/registered/spec/eagle/test_eagle_infer_a.py",
+      "folder": "spec",
+      "suite": "stage-b-test-1-gpu-large",
+      "est_time": 450.0,
+      "reason": "EAGLE not supported"
+    },
+    {
+      "file": "test_eagle_infer_b.py",
+      "path": "test/registered/spec/eagle/test_eagle_infer_b.py",
+      "folder": "spec",
+      "suite": "stage-b-test-1-gpu-large",
+      "est_time": 600.0,
+      "reason": "EAGLE not supported"
+    },
+    {
+      "file": "test_eagle_infer_beta.py",
+      "path": "test/registered/spec/eagle/test_eagle_infer_beta.py",
+      "folder": "spec",
+      "suite": "stage-b-test-1-gpu-small",
+      "est_time": 283.0,
+      "reason": "EAGLE not supported"
+    },
+    {
+      "file": "test_eagle_infer_beta_dp_attention.py",
+      "path": "test/registered/spec/eagle/test_eagle_infer_beta_dp_attention.py",
+      "folder": "spec",
+      "suite": "stage-c-test-4-gpu-b200",
+      "est_time": 100.0,
+      "reason": "Matched pattern: test_eagle_infer"
+    },
+    {
+      "file": "test_eagle_infer_beta_dp_attention_large.py",
+      "path": "test/registered/spec/eagle/test_eagle_infer_beta_dp_attention_large.py",
+      "folder": "spec",
+      "suite": "nightly-8-gpu-b200",
+      "est_time": 600.0,
+      "reason": "Matched pattern: test_eagle_infer"
+    },
+    {
+      "file": "test_ngram_speculative_decoding.py",
+      "path": "test/registered/spec/test_ngram_speculative_decoding.py",
+      "folder": "spec",
+      "suite": "stage-b-test-1-gpu-large",
+      "est_time": 230.0,
+      "reason": "Requires FA3, FlashInfer"
+    },
+    {
+      "file": "test_standalone_speculative_decoding.py",
+      "path": "test/registered/spec/test_standalone_speculative_decoding.py",
+      "folder": "spec",
+      "suite": "stage-b-test-1-gpu-large",
+      "est_time": 308.0,
+      "reason": "Requires FA3, FlashInfer"
+    },
+    {
+      "file": "test_mamba_state_scatter_triton.py",
+      "path": "test/registered/unit/layers/test_mamba_state_scatter_triton.py",
+      "folder": "unit",
+      "suite": "stage-b-test-1-gpu-small",
+      "est_time": 10.0,
+      "reason": "Matched pattern: mamba"
+    },
+    {
+      "file": "test_modelopt_loader.py",
+      "path": "test/registered/unit/model_loader/test_modelopt_loader.py",
+      "folder": "unit",
+      "suite": "stage-b-test-1-gpu-small",
+      "est_time": 11.0,
+      "reason": "modelopt_fp8 quantization not supported on ROCm"
+    },
+    {
+      "file": "test_vision_openai_server_a.py",
+      "path": "test/registered/vlm/test_vision_openai_server_a.py",
+      "folder": "vlm",
+      "suite": "stage-b-test-1-gpu-large",
+      "est_time": 957.0,
+      "reason": "ROCm compiler error (uint32_t)"
+    },
+    {
+      "file": "test_vlm_input_format.py",
+      "path": "test/registered/vlm/test_vlm_input_format.py",
+      "folder": "vlm",
+      "suite": "stage-b-test-1-gpu-large",
+      "est_time": 447.0,
+      "reason": "Assertion error on ROCm"
+    }
+  ],
+  "amd_exclusive": [
+    {
+      "file": "test_kimi_k25_aiter_mla_eval_mi35x.py",
+      "path": "test/registered/amd/accuracy/mi35x/test_kimi_k25_aiter_mla_eval_mi35x.py",
+      "folder": "amd",
+      "suite": "nightly-amd-8-gpu-mi35x-kimi-k25-aiter-mla",
+      "est_time": 7200.0,
+      "reason": "Matched pattern: aiter"
+    },
+    {
+      "file": "test_aiter_allreduce_fusion_amd.py",
+      "path": "test/registered/ops/test_aiter_allreduce_fusion_amd.py",
+      "folder": "ops",
+      "suite": "stage-c-test-large-8-gpu-amd",
+      "est_time": 240.0,
+      "reason": "Matched pattern: aiter"
+    }
+  ]
+}
