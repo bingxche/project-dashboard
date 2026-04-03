@@ -16,7 +16,7 @@
   const dataMap = {};
 
   const fetches = names.map(async (name) => {
-    const [prs, issues, releases, testResults, activity, parityReport, buildTimes] = await Promise.all([
+    const [prs, issues, releases, testResults, activity, parityReport, buildTimes, ciParity] = await Promise.all([
       fetchJSON("data/" + name + "/prs.json"),
       fetchJSON("data/" + name + "/issues.json"),
       fetchJSON("data/" + name + "/releases.json"),
@@ -24,8 +24,9 @@
       fetchJSON("data/" + name + "/activity.json"),
       fetchJSON("data/" + name + "/parity_report.json"),
       fetchJSON("data/" + name + "/build_times.json"),
+      fetchJSON("data/" + name + "/ci_parity.json"),
     ]);
-    dataMap[name] = { prs, issues, releases, testResults, activity, parityReport, buildTimes };
+    dataMap[name] = { prs, issues, releases, testResults, activity, parityReport, buildTimes, ciParity };
   });
 
   // Also load trend history + parity history
@@ -165,7 +166,7 @@ function renderParityView(projectsCfg, dataMap, parityHistData) {
   var hasAny = false;
 
   for (var name in dataMap) {
-    if (dataMap[name].testResults || dataMap[name].parityReport) { hasAny = true; break; }
+    if (dataMap[name].testResults || dataMap[name].parityReport || dataMap[name].ciParity) { hasAny = true; break; }
   }
 
   if (!hasAny) {
@@ -180,7 +181,7 @@ function renderParityView(projectsCfg, dataMap, parityHistData) {
     var cfg = projectsCfg[name];
     var d = dataMap[name] || {};
     var tr = d.testResults;
-    if (!tr && !d.parityReport) continue;
+    if (!tr && !d.parityReport && !d.ciParity) continue;
 
     // Enhanced PyTorch card when parityReport is available
     if (name === "pytorch" && d.parityReport) {
@@ -241,6 +242,11 @@ function renderParityView(projectsCfg, dataMap, parityHistData) {
     if (suiteHtml) {
       var suiteCount = ((rocm && rocm.suites) ? rocm.suites.length : 0) + ((cuda && cuda.suites) ? cuda.suites.length : 0);
       html += '<details><summary>Test Suites (' + suiteCount + ')</summary>' + suiteHtml + '</details>';
+    }
+
+    // CI Test Coverage (collapsible, from ci_parity.json)
+    if (d.ciParity && d.ciParity.summary) {
+      html += buildCiCoverageDetails(d.ciParity, cfg);
     }
 
     // Freshness line
@@ -364,6 +370,116 @@ function buildPytorchParityCard(name, cfg, report, history) {
   return html;
 }
 
+function buildCiCoverageDetails(report, cfg) {
+  var s = report.summary;
+  var pct = s.parity_pct;
+  var colorClass = pct >= 90 ? "rate-good-text" : pct >= 70 ? "rate-warn-text" : "rate-bad-text";
+  var barColorClass = pct >= 90 ? "rate-good" : pct >= 70 ? "rate-warn" : "rate-bad";
+
+  var summaryLabel = 'CI Test File Coverage <span class="' + colorClass + '">' + pct.toFixed(1) + '%</span>';
+  summaryLabel += ' <span class="parity-detail">(' + (s.amd - s.amd_exclusive) + ' / ' + (s.cuda - s.cuda_exclusive) + ' tests)</span>';
+
+  var html = '<details><summary>' + summaryLabel + '</summary>';
+
+  // Coverage bar
+  var barWidth = Math.min(pct, 100);
+  html += '<div class="pass-rate-row">';
+  html += '<span class="pass-rate-label">Coverage</span>';
+  html += '<div class="pass-rate-bar-bg"><div class="pass-rate-bar-fill ' + barColorClass + '" style="width:' + barWidth + '%"></div></div>';
+  html += '<span class="pass-rate-pct">' + pct.toFixed(1) + '%</span>';
+  html += '</div>';
+
+  // Gap breakdown
+  html += '<div class="parity-gap-breakdown">';
+  html += '<span class="gap-item">CUDA tests: <strong>' + s.cuda + '</strong></span>';
+  html += '<span class="gap-item">AMD tests: <strong>' + s.amd + '</strong></span>';
+  html += '<span class="gap-item">CUDA-exclusive: <strong>' + s.cuda_exclusive + '</strong></span>';
+  html += '<span class="gap-item">AMD-exclusive: <strong>' + s.amd_exclusive + '</strong></span>';
+  html += '</div>';
+
+  // Backend summary table (use deduplicated file counts from summary)
+  var bs = report.backend_summary;
+  if (bs) {
+    html += '<table class="parity-workflow-table">';
+    html += '<tr><th>Backend</th><th>Files</th><th>Exclusive</th><th>Per-Commit</th><th>Nightly</th></tr>';
+    if (bs.CUDA) {
+      html += '<tr>';
+      html += '<td class="project-name">CUDA</td>';
+      html += '<td>' + s.cuda + '</td>';
+      html += '<td>' + s.cuda_exclusive + '</td>';
+      html += '<td>' + bs.CUDA.per_commit + '</td>';
+      html += '<td>' + bs.CUDA.nightly + '</td>';
+      html += '</tr>';
+    }
+    if (bs.AMD) {
+      html += '<tr>';
+      html += '<td class="project-name">AMD</td>';
+      html += '<td>' + s.amd + '</td>';
+      html += '<td>' + s.amd_exclusive + '</td>';
+      html += '<td>' + bs.AMD.per_commit + '</td>';
+      html += '<td>' + bs.AMD.nightly + '</td>';
+      html += '</tr>';
+    }
+    html += '</table>';
+  }
+
+  var ghBase = "https://github.com/" + cfg.repo + "/blob/main/";
+  var ghTreeBase = "https://github.com/" + cfg.repo + "/tree/main/test/registered/";
+
+  // CUDA-exclusive tests (nested collapsible)
+  var cudaExcl = report.cuda_exclusive;
+  if (cudaExcl && cudaExcl.length > 0) {
+    html += '<details>';
+    html += '<summary>CUDA-Exclusive Tests (' + cudaExcl.length + ')</summary>';
+    html += '<table class="parity-workflow-table ci-exclusive-table">';
+    html += '<tr><th>Test File</th><th>Folder</th><th>Suite</th><th>Reason</th></tr>';
+    for (var i = 0; i < cudaExcl.length; i++) {
+      var t = cudaExcl[i];
+      html += '<tr>';
+      html += '<td class="ci-excl-file"><a href="' + ghBase + escapeHtml(t.path) + '" target="_blank">' + escapeHtml(t.file) + '</a></td>';
+      html += '<td><a href="' + ghTreeBase + escapeHtml(t.folder) + '" target="_blank">' + escapeHtml(t.folder) + '</a></td>';
+      html += '<td>' + escapeHtml(t.suite) + '</td>';
+      html += '<td class="ci-excl-reason">' + escapeHtml(t.reason) + '</td>';
+      html += '</tr>';
+    }
+    html += '</table></details>';
+  }
+
+  // AMD-exclusive tests (nested collapsible)
+  var amdExcl = report.amd_exclusive;
+  if (amdExcl && amdExcl.length > 0) {
+    html += '<details>';
+    html += '<summary>AMD-Exclusive Tests (' + amdExcl.length + ')</summary>';
+    html += '<table class="parity-workflow-table ci-exclusive-table">';
+    html += '<tr><th>Test File</th><th>Folder</th><th>Suite</th><th>Reason</th></tr>';
+    for (var i = 0; i < amdExcl.length; i++) {
+      var t = amdExcl[i];
+      html += '<tr>';
+      html += '<td class="ci-excl-file"><a href="' + ghBase + escapeHtml(t.path) + '" target="_blank">' + escapeHtml(t.file) + '</a></td>';
+      html += '<td><a href="' + ghTreeBase + escapeHtml(t.folder) + '" target="_blank">' + escapeHtml(t.folder) + '</a></td>';
+      html += '<td>' + escapeHtml(t.suite) + '</td>';
+      html += '<td class="ci-excl-reason">' + escapeHtml(t.reason) + '</td>';
+      html += '</tr>';
+    }
+    html += '</table></details>';
+  }
+
+  // Formula + Metadata
+  html += '<div class="parity-meta">';
+  html += 'Coverage = (AMD &minus; AMD_exclusive) / (CUDA &minus; CUDA_exclusive) = ';
+  html += '(' + s.amd + ' &minus; ' + s.amd_exclusive + ') / (' + s.cuda + ' &minus; ' + s.cuda_exclusive + ') = ' + pct.toFixed(1) + '%';
+  html += '</div>';
+  html += '<div class="parity-meta">';
+  var shaShort = report.commit_sha ? report.commit_sha.slice(0, 8) : "?";
+  var shaUrl = "https://github.com/" + cfg.repo + "/commit/" + report.commit_sha;
+  html += 'Commit: <a href="' + shaUrl + '" target="_blank">' + shaShort + '</a>';
+  html += ' &middot; Collected: ' + formatDate(report.collected_at);
+  html += '</div>';
+
+  html += '</details>';
+  return html;
+}
+
 function drawParityMiniChart(canvasId, history) {
   var canvas = document.getElementById(canvasId);
   if (!canvas) return;
@@ -433,7 +549,7 @@ function buildCard(name, cfg, d) {
 
   // Test Results section (ROCm vs CUDA)
   if (d.testResults) {
-    html += buildTestSection(d.testResults, d.parityReport);
+    html += buildTestSection(d.testResults, d.parityReport, d.ciParity);
   }
 
   // This Week section
@@ -587,7 +703,7 @@ function buildReleaseSection(releases) {
   return html;
 }
 
-function buildTestSection(testResults, parityReport) {
+function buildTestSection(testResults, parityReport, ciParity) {
   var rocm = testResults.rocm;
   var cuda = testResults.cuda;
 
@@ -595,6 +711,8 @@ function buildTestSection(testResults, parityReport) {
   var summaryText = "";
   if (parityReport && parityReport.summary) {
     summaryText = "Parity: " + parityReport.summary.parity_pct.toFixed(1) + "% (matched)";
+  } else if (ciParity && ciParity.summary) {
+    summaryText = "Coverage: " + ciParity.summary.parity_pct.toFixed(1) + "% (registered)";
   } else if (testResults.cuda_parity) {
     summaryText = "Parity: " + testResults.cuda_parity.ratio.toFixed(1) + "%";
   } else {

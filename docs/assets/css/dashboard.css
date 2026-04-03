@@ -834,6 +834,13 @@ footer {
 .parity-trend h4 { font-size: 13px; font-weight: 600; color: var(--text-muted); margin-bottom: 8px; }
 .parity-meta { font-size: 12px; color: var(--text-muted); margin-top: 8px; }
 
+/* CI Registration Parity (SGLang-style) */
+.ci-exclusive-table td { font-size: 12px; }
+.ci-excl-file { font-family: var(--font-mono, "SFMono-Regular", Consolas, monospace); font-size: 11px; word-break: break-all; }
+.ci-excl-reason { color: var(--text-muted); font-size: 11px; max-width: 260px; }
+.ci-parity-ci-rates { margin-top: 12px; border-top: 1px solid var(--border); padding-top: 12px; }
+.ci-parity-ci-rates h4 { font-size: 13px; font-weight: 600; color: var(--text-muted); margin-bottom: 8px; }
+
 /* ---------------------------------------------------------------------------
    Builds View (Tab 5)
    --------------------------------------------------------------------------- */
@@ -842,7 +849,7 @@ footer {
   font-size: 16px;
   font-weight: 600;
   margin-bottom: 16px;
-  color: var(--text-muted);
+  color: var(--text-muted); 
 }
 
 /* Dependency Graph */
