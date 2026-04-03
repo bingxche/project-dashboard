@@ -31,6 +31,9 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
+      - name: Collect sglang CI parity
+        run: python scripts/collect_sglang_parity.py --clone
+
       - name: Collect activity metrics
         run: python scripts/collect_activity.py
         env:
