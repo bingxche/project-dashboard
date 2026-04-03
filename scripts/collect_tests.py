@@ -44,10 +44,16 @@ WORKFLOWS = {
         "rocm": {
             "workflow_id": 158870224,
             "name": "Nightly Test (AMD)",
+            "event": "schedule",
+            "branch": "main",
+            "job_filter": "nightly",
         },
         "cuda": {
-            "workflow_id": 115218617,
-            "name": "PR Test",
+            "workflow_id": 206785642,
+            "name": "Nightly Test (Nvidia)",
+            "event": "schedule",
+            "branch": "main",
+            "job_filter": "nightly",
         },
     },
     "triton": {
@@ -120,7 +126,8 @@ def now_iso():
 # ---------------------------------------------------------------------------
 
 
-def get_latest_run(repo, workflow_id, prefer_success=False, max_pages=3):
+def get_latest_run(repo, workflow_id, prefer_success=False, max_pages=3,
+                   event=None, branch=None):
     """Get the latest completed (success or failure) run.
 
     When prefer_success=True, search for the latest successful run first.
@@ -128,10 +135,13 @@ def get_latest_run(repo, workflow_id, prefer_success=False, max_pages=3):
     """
     fallback = None
     for page in range(1, max_pages + 1):
-        data = gh_api(
-            f"/repos/{repo}/actions/workflows/{workflow_id}/runs"
-            f"?per_page=10&page={page}"
-        )
+        url = (f"/repos/{repo}/actions/workflows/{workflow_id}/runs"
+               f"?per_page=10&page={page}")
+        if event:
+            url += f"&event={event}"
+        if branch:
+            url += f"&branch={branch}"
+        data = gh_api(url)
         for run in data.get("workflow_runs", []):
             if run.get("status") != "completed":
                 continue
@@ -215,7 +225,8 @@ def summarize_jobs(jobs):
     }
 
 
-def find_run_with_real_tests(repo, workflow_id, job_filter=None, max_runs=15):
+def find_run_with_real_tests(repo, workflow_id, job_filter=None, max_runs=15,
+                             event=None, branch=None):
     """Find the latest completed run where at least one test job actually executed.
 
     Skips runs where all test jobs were skipped/cancelled (e.g. JAX CUDA
@@ -224,10 +235,13 @@ def find_run_with_real_tests(repo, workflow_id, job_filter=None, max_runs=15):
     page = 1
     checked = 0
     while checked < max_runs:
-        data = gh_api(
-            f"/repos/{repo}/actions/workflows/{workflow_id}/runs"
-            f"?per_page=10&page={page}&status=completed"
-        )
+        url = (f"/repos/{repo}/actions/workflows/{workflow_id}/runs"
+               f"?per_page=10&page={page}&status=completed")
+        if event:
+            url += f"&event={event}"
+        if branch:
+            url += f"&branch={branch}"
+        data = gh_api(url)
         runs = data.get("workflow_runs", [])
         if not runs:
             break
@@ -486,6 +500,8 @@ def collect_job_level(project_name, cfg):
         job_filter = wf_cfg.get("job_filter")
         prefer_success = wf_cfg.get("prefer_success", False)
         skip_all_skipped = wf_cfg.get("skip_all_skipped", False)
+        event = wf_cfg.get("event")
+        branch = wf_cfg.get("branch")
         print(f"  Fetching {platform} ({wf_name})...")
 
         run = None
@@ -494,10 +510,12 @@ def collect_job_level(project_name, cfg):
         if skip_all_skipped:
             # Need to find a run where tests actually executed
             run, test_jobs = find_run_with_real_tests(
-                repo, wf_id, job_filter=job_filter, max_runs=30
+                repo, wf_id, job_filter=job_filter, max_runs=30,
+                event=event, branch=branch,
             )
         else:
-            run = get_latest_run(repo, wf_id, prefer_success=prefer_success)
+            run = get_latest_run(repo, wf_id, prefer_success=prefer_success,
+                                event=event, branch=branch)
             if run:
                 all_jobs = get_all_jobs(repo, run["id"])
                 test_jobs = filter_test_jobs(all_jobs, job_filter)
@@ -506,7 +524,8 @@ def collect_job_level(project_name, cfg):
                 if not test_jobs:
                     print(f"    Run {run['id']} has 0 matching jobs, searching older runs...")
                     run2, test_jobs2 = find_run_with_real_tests(
-                        repo, wf_id, job_filter=job_filter, max_runs=10
+                        repo, wf_id, job_filter=job_filter, max_runs=10,
+                        event=event, branch=branch,
                     )
                     if run2 and test_jobs2:
                         run = run2
